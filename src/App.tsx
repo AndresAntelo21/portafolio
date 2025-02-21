@@ -8,10 +8,10 @@ function App() {
             bg-gradient-to-r from-[#763CAC]/40 to-[#320F85]/40 blur-lg opacity-90 -z-10">
         </div>
         <div className="w-50 h-auto relative">
-          <img src="src/assets/hero/meTest.png" className="relative" />
+          <img src="./public/hero/meTest.png" className="relative" />
         </div>
         <div className="absolute top-30 left-80">
-          <img src="src/assets/hero/Arrow.png" className="w-30 h-auto" />
+          <img src="./public/hero/Arrow.png" className="w-30 h-auto" />
         </div>
         <div className="absolute top-35 left-107">
           <h2 className="font-[Preahvihear] text-[20px]">Hello! I Am <span className="text-[#7127BA]">Andres Antelo</span></h2>
