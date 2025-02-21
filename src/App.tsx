@@ -2,7 +2,7 @@
 function App() {
 
   return (
-    <div className="w-full h-screen mx-auto flex flex-col">
+    <div className="w-full h-screen mx-auto flex flex-col ">
       <div className="pt-50 pl-50  flex flex-row gap-4 ">
         <div className="absolute top-45 left-45 w-65 h-65 rounded-full
             bg-gradient-to-r from-[#763CAC]/40 to-[#320F85]/40 blur-lg opacity-90 -z-10">
