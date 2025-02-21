@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import '@fontsource/preahvihear';
+@import '@fontsource/poppins';
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
