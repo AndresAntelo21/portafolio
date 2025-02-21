@@ -8,11 +8,11 @@ function App() {
           <img src="src/assets/hero/meTest.png" />
         </div>
         <div className="w-max flex flex-col">
-          <span>A front end programmer who</span>
-          <div className="flex w-140">
-            <h1 className="text-[50px]">With great power comes great <span>responsibility</span></h1>
+          <span className="font-[Preahvihear] text-[20px]">A front end programmer who</span>
+          <div className="flex w-160">
+            <h1 className="text-[50px] font-[Preahvihear]">With great power comes great <span className="text-[#7127BA]">responsibility</span>...</h1>
           </div>
-          <span>I really like Spiderman</span>
+          <span className="font-[Preahvihear] text-[20px]">I really like Spiderman</span>
         </div>
       </div>
     </div>
