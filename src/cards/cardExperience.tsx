@@ -1,6 +1,6 @@
 const cardExperience = () => {
     return (
-        <div className="w-[500px] h-[192.68px] rounded-[15px] bg-gradient-to-br from-[#130428] via-[#130428] to-[#38126D] flex items-center justify-center p-10">
+        <div className="w-[500px] h-[192.68px] rounded-[15px] bg-gradient-to-br from-[#130428] via-[#130428] to-[#38126D] flex items-center justify-center p-10 border-t border-t-[1px] border-t-[#693B93]">
             <div className="flex flex-row gap-4">
                 <div className="w-[250px] h-auto flex items-center justify-center">
                     <img src="./public/hero/test-image.png" />

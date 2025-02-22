@@ -32,7 +32,7 @@ export default function App() {
       </div>
       <div className="flex justify-start pt-30 flex-col">
         <h2 className="font-[Preahvihear] text-[40px]">Work Experience</h2>
-        <div className='pt-[40px] grid grid-cols-1 md:grid-cols-2 gap-4'>
+        <div className='pt-10 grid grid-cols-1 md:grid-cols-2 gap-4'>
           <CardExperience />
           <CardExperience />
           <CardExperience />
