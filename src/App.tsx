@@ -9,7 +9,7 @@ export default function App() {
         <div className="w-50 h-auto relative">
           <img src="./public/hero/meTest.png" className="relative" />
         </div>
-        <div className="absolute top-25 left-90">
+        <div className="absolute top-25 left-90 flex items-center justify-center">
           <img src="./public/hero/Arrow.png" className="w-30 h-auto" />
         </div>
         <div className="absolute top-30 left-117">
@@ -42,7 +42,7 @@ export default function App() {
       <div className='pt-50 w-[895px] text-center'>
         <h2 className='font-[Preahvihear] text-[24px]'>I'm currently looking to join a <span className='text-[#7127BA]'>cross-functional</span> team
           that values improving people's lives through accessible design </h2>
-        <div className='flex flex-col justify-center gap-2 p-5' >
+        <div className='flex flex-col justify-center gap-2 p-5 select-none' >
           <div className='flex flex-row items-center justify-center gap-2 '>
             <div className='w-[44px] h-[44px] bg-[#251c31] rounded-full flex items-center justify-center p-1'>
               <img src="./public/tools/react.svg" />
