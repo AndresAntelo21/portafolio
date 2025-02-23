@@ -22,7 +22,7 @@ const Projects: React.FC<ProjectsProps> = ({ reverse = false, title, description
                             {description}
                         </p>
                     </div>
-                    <div className={`w-full pt-4 text-[25px] flex gap-4 items-end ${reverse ? 'justify-end' : 'justify-start'}`}>
+                    <div className={`w-full pt-4 text-[25px] flex gap-4 items-end ${reverse ? 'justify-end' : 'justify-start'} ${reverse ? 'pr-5' : 'pl-5'}`}>
                         {icons.map((Icon, index) => (
                             <Icon key={index} />
                         ))}
