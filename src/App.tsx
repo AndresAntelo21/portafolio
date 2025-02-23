@@ -94,7 +94,7 @@ export default function App() {
           reverse={false}
           title="Example Project 1"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          imageSrc="./projects/projectTest.png"
+          imageSrc="./projects/gokussj.jpg"
           featuredText="Featured Project"
           icons={[RiReactjsFill, RiTailwindCssFill, SiVite]}
         />
@@ -102,7 +102,7 @@ export default function App() {
           reverse={true}
           title="Example Project 2"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          imageSrc="./projects/projectTest.png"
+          imageSrc="./projects/gokussj2.jpg"
           featuredText="Featured Project"
           icons={[RiReactjsFill, RiTailwindCssFill]}
         />
@@ -110,7 +110,7 @@ export default function App() {
           reverse={false}
           title="Example Project 3"
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
-          imageSrc="./projects/projectTest.png"
+          imageSrc="./projects/gokussj3.jpg"
           featuredText="Featured Project"
           icons={[RiReactjsFill, SiVite]}
         />
@@ -122,6 +122,7 @@ export default function App() {
           featuredText="Featured Project"
           icons={[RiTailwindCssFill, SiVite]}
         />
+
       </div>
     </div >
   )
