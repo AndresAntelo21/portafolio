@@ -1,5 +1,7 @@
 import CardExperience from './cards/cardExperience';
 import Projects from './project/projects';
+import { RiTailwindCssFill, RiReactjsFill } from "react-icons/ri";
+import { SiVite } from "react-icons/si";
 export default function App() {
   return (
     <div className="w-full h-screen mx-auto flex flex-col items-center">
@@ -94,6 +96,7 @@ export default function App() {
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           imageSrc="./projects/projectTest.png"
           featuredText="Featured Project"
+          icons={[RiReactjsFill, RiTailwindCssFill, SiVite]}
         />
         <Projects
           reverse={true}
@@ -101,6 +104,7 @@ export default function App() {
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           imageSrc="./projects/projectTest.png"
           featuredText="Featured Project"
+          icons={[RiReactjsFill, RiTailwindCssFill]}
         />
         <Projects
           reverse={false}
@@ -108,6 +112,7 @@ export default function App() {
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           imageSrc="./projects/projectTest.png"
           featuredText="Featured Project"
+          icons={[RiReactjsFill, SiVite]}
         />
         <Projects
           reverse={true}
@@ -115,6 +120,7 @@ export default function App() {
           description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
           imageSrc="./projects/projectTest.png"
           featuredText="Featured Project"
+          icons={[RiTailwindCssFill, SiVite]}
         />
 
       </div>

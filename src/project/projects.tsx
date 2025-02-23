@@ -1,5 +1,5 @@
-import { RiTailwindCssFill, RiReactjsFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
+import { IconType } from "react-icons";
+
 
 interface ProjectsProps {
     reverse?: boolean;
@@ -7,9 +7,10 @@ interface ProjectsProps {
     description: string;
     imageSrc: string;
     featuredText: string;
+    icons: IconType[];
 }
 
-const Projects: React.FC<ProjectsProps> = ({ reverse = false, title, description, imageSrc, featuredText }) => {
+const Projects: React.FC<ProjectsProps> = ({ reverse = false, title, description, imageSrc, featuredText, icons }) => {
     return (
         <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'}`}>
             <div className={`w-[657px] h-auto flex flex-row z-10 relative ${reverse ? 'pl-[215px]' : 'left-[70px]'}`}>
@@ -22,9 +23,9 @@ const Projects: React.FC<ProjectsProps> = ({ reverse = false, title, description
                         </p>
                     </div>
                     <div className={`w-full pt-4 text-[25px] flex gap-4 items-end ${reverse ? 'justify-end' : 'justify-start'}`}>
-                        <RiReactjsFill />
-                        <RiTailwindCssFill />
-                        <SiVite />
+                        {icons.map((Icon, index) => (
+                            <Icon key={index} />
+                        ))}
                     </div>
                 </div>
             </div>
