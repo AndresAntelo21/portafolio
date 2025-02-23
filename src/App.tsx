@@ -1,4 +1,5 @@
 import CardExperience from './cards/cardExperience';
+import Projects from './project/projects';
 export default function App() {
   return (
     <div className="w-full h-screen mx-auto flex flex-col items-center">
@@ -30,7 +31,8 @@ export default function App() {
           I make meaningful and delightful digital products that create an equilibrium
           between user needs and business goals.</p>
       </div>
-      <div className="flex justify-start pt-30 flex-col">
+      <div className="relative flex justify-start pt-30 flex-col">
+        <div className="absolute top-[400px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-130 h-130 rounded-full bg-gradient-to-r from-[#763CAC]/40 to-[#320F85]/40 blur-lg opacity-90 -z-10"></div>
         <h2 className="font-[Preahvihear] text-[40px]">Work Experience</h2>
         <div className='pt-10 grid grid-cols-1 md:grid-cols-2 gap-4'>
           <CardExperience />
@@ -85,6 +87,11 @@ export default function App() {
           </div>
         </div>
       </div >
+      <div className='flex flex-col gap-4'>
+        <Projects />
+        <Projects />
+        <Projects />
+      </div>
     </div >
   )
 }
