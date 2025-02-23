@@ -3,7 +3,7 @@ import { SiVite } from "react-icons/si";
 const Projects = ({ reverse = false }) => {
     return (
         <div className={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'}`}>
-            <div className={`w-[657px] h-auto flex flex-row z-10 relative ${reverse ? 'pl-[215px]' : 'left-[135px]'}`}>
+            <div className={`w-[657px] h-auto flex flex-row z-10 relative ${reverse ? 'pl-[215px]' : 'left-[70px]'}`}>
                 <div className={`flex-col w-[372px] flex ${reverse ? 'items-end' : 'items-start'}`}>
                     <h2 className="font-[poppins] text-[16px] text-[#9857D3]">Featured Project</h2>
                     <h3 className="font-[poppins] text-[34px]">Example Project</h3>
