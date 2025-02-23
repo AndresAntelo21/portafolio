@@ -122,7 +122,6 @@ export default function App() {
           featuredText="Featured Project"
           icons={[RiTailwindCssFill, SiVite]}
         />
-
       </div>
     </div >
   )
