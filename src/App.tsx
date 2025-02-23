@@ -41,7 +41,7 @@ export default function App() {
           <CardExperience />
         </div>
       </div>
-      <div className='pt-50 w-[895px] text-center'>
+      <div className='pt-20 w-[895px] text-center'>
         <h2 className='font-[Preahvihear] text-[24px]'>I'm currently looking to join a <span className='text-[#7127BA]'>cross-functional</span> team
           that values improving people's lives through accessible design </h2>
         <div className='flex flex-col justify-center gap-2 p-5 select-none' >
@@ -87,10 +87,11 @@ export default function App() {
           </div>
         </div>
       </div >
-      <div className='flex flex-col gap-4'>
+      <div className='flex flex-col pt-10 gap-8'>
         <Projects />
+        <Projects reverse={true} />
         <Projects />
-        <Projects />
+        <Projects reverse={true} />
       </div>
     </div >
   )
