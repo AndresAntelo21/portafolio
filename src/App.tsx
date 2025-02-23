@@ -87,7 +87,7 @@ export default function App() {
           </div>
         </div>
       </div >
-      <div className='flex flex-col pt-10 gap-8'>
+      <div className='flex flex-col pt-10 gap-10'>
         <Projects />
         <Projects reverse={true} />
         <Projects />
