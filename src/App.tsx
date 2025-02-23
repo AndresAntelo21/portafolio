@@ -95,6 +95,28 @@ export default function App() {
           imageSrc="./projects/projectTest.png"
           featuredText="Featured Project"
         />
+        <Projects
+          reverse={true}
+          title="Example Project 1"
+          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+          imageSrc="./projects/projectTest.png"
+          featuredText="Featured Project"
+        />
+        <Projects
+          reverse={false}
+          title="Example Project 1"
+          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+          imageSrc="./projects/projectTest.png"
+          featuredText="Featured Project"
+        />
+        <Projects
+          reverse={true}
+          title="Example Project 1"
+          description="A web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks, and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more."
+          imageSrc="./projects/projectTest.png"
+          featuredText="Featured Project"
+        />
+
       </div>
     </div >
   )
