@@ -1,10 +1,13 @@
 import CardExperience from './cards/cardExperience';
 import Projects from './project/projects';
+import Navigator from './components/navigator/navigator';
+import Foooter from './components/footer/footer';
 import { RiTailwindCssFill, RiReactjsFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 export default function App() {
   return (
     <div className="w-full h-screen mx-auto flex flex-col items-center">
+      <Navigator />
       <div className="pt-50   flex flex-row gap-4 ">
         <div className="absolute top-43 left-50 w-65 h-65 rounded-full
             bg-gradient-to-r from-[#763CAC]/40 to-[#320F85]/40 blur-lg opacity-90 -z-10">
@@ -122,8 +125,8 @@ export default function App() {
           featuredText="Featured Project"
           icons={[RiTailwindCssFill, SiVite]}
         />
-
       </div>
+      <Foooter />
     </div >
   )
 }
