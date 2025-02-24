@@ -6,19 +6,19 @@ import { RiTailwindCssFill, RiReactjsFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 export default function App() {
   return (
-    <div className="w-full h-screen mx-auto flex flex-col items-center">
+    <div className="w-full h-auto mx-auto flex flex-col items-center">
       <Navigator />
-      <div className="pt-50   flex flex-row gap-4 ">
-        <div className="absolute top-43 left-50 w-65 h-65 rounded-full
+      <div className="pt-70   flex flex-row gap-4 ">
+        <div className="absolute top-63 left-55 w-65 h-65 rounded-full
             bg-gradient-to-r from-[#763CAC]/40 to-[#320F85]/40 blur-lg opacity-90 -z-10">
         </div>
         <div className="w-50 h-auto relative">
           <img src="./public/hero/meTest.png" className="relative" />
         </div>
-        <div className="absolute top-25 left-90 flex items-center justify-center">
+        <div className="absolute top-45 left-90 flex items-center justify-center">
           <img src="./public/hero/Arrow.png" className="w-30 h-auto" />
         </div>
-        <div className="absolute top-30 left-117">
+        <div className="absolute top-50 left-117">
           <h2 className="font-[Preahvihear] text-[20px]">Hello! I Am <span className="text-[#7127BA]">Andres Antelo</span></h2>
         </div>
         <div className="w-max flex flex-col">
