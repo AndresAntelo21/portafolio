@@ -5,7 +5,7 @@ export const Navigator = () => {
         <a href="">Andres | Portafolio</a>
       </h1>
       <menu className="w-full justify-end flex gap-15 font-[Preahvihear] text-4">
-        <a
+        {/* <a
           href=""
           className="relative text-white hover:after:w-full after:content-[''] after:absolute after:block after:w-0 after:h-[2px] after:bg-white after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:rounded-full after:transition-all after:duration-300"
         >
@@ -22,7 +22,7 @@ export const Navigator = () => {
           className="relative text-white hover:after:w-full after:content-[''] after:absolute after:block after:w-0 after:h-[2px] after:bg-white after:bottom-[-5px] after:left-1/2 after:transform after:-translate-x-1/2 after:rounded-full after:transition-all after:duration-300"
         >
           Project
-        </a>
+        </a> */}
         <a
           target="_blank"
           rel="noreferrer"
