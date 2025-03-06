@@ -1,6 +1,8 @@
+import { ContactButton } from "@/components/button/contact-button";
+
 export const Hero = () => {
   return (
-    <div className="font-poppins flex flex-col items-center gap-4 px-12 py-4 text-center text-lg">
+    <div className="font-poppins flex h-screen flex-col items-center gap-4 px-12 py-4 text-center text-lg">
       <h1>A Software Developer</h1>
       <span className="text-3xl font-bold">
         Where logic meets creativity...
@@ -17,6 +19,7 @@ export const Hero = () => {
           className="relative z-10 w-50 pt-5"
         />
       </div>
+      <ContactButton className="pt-10" />
     </div>
   );
 };
