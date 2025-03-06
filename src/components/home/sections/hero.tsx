@@ -23,12 +23,12 @@ export const Hero = () => {
           </h3>
         </div>
         <div className="hidden lg:block">
-          <ContactButton className="mt-15" />
+          <ContactButton className="mt-10" />
         </div>
       </div>
       <div className="relative mt-10 md:mt-2 lg:px-10">
-        <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-500 blur-2xl lg:h-50 lg:w-50"></div>
-        <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl lg:h-20 lg:w-20"></div>
+        <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-500 blur-2xl md:h-50 md:w-50 lg:h-50 lg:w-50"></div>
+        <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl md:h-20 md:w-20 lg:h-20 lg:w-20"></div>
         <img
           src="/public/hero/test-img.png"
           alt="yo merito"
