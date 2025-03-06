@@ -1,7 +1,9 @@
+import { Hero } from "@/components/home/sections/hero";
 export const Home = () => {
   return (
-    <div>
-      <h1>hello /home</h1>
-    </div>
+    <>
+      <Hero />
+      <main></main>
+    </>
   );
 };

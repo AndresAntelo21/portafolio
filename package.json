@@ -13,6 +13,8 @@
   "dependencies": {
     "@fontsource/poppins": "^5.1.1",
     "@fontsource/preahvihear": "^5.1.1",
+    "@radix-ui/react-dialog": "^1.1.6",
+    "@radix-ui/react-navigation-menu": "^1.2.5",
     "@radix-ui/react-slot": "^1.1.2",
     "@tailwindcss/vite": "^4.0.7",
     "class-variance-authority": "^0.7.1",
