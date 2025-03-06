@@ -2,7 +2,7 @@ import { ContactButton } from "@/components/button/contact-button";
 
 export const Hero = () => {
   return (
-    <div className="font-poppins flex h-screen flex-col items-center gap-4 px-12 py-4 text-center text-lg">
+    <div className="font-poppins flex h-screen flex-col items-center gap-4 px-10 py-4 text-center text-lg">
       <h1>A Software Developer</h1>
       <span className="text-3xl font-bold">
         Where logic meets creativity...
@@ -20,6 +20,18 @@ export const Hero = () => {
         />
       </div>
       <ContactButton className="pt-10" />
+
+      <div className="flex flex-col gap-10 pt-10 text-2xl font-bold">
+        <div className="flex flex-col gap-2">
+          <span>I'm a Software Engineer</span>
+          <div className="h-1 w-full bg-violet-950"></div>
+        </div>
+        <p className="text-justify text-base font-normal">
+          I'm a passionate software developer focused on creating functional and
+          appealing digital solutions. I love turning ideas into reality through
+          code, always striving to innovate and enhance the user experience.
+        </p>
+      </div>
     </div>
   );
 };
