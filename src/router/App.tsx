@@ -1,7 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "@/components/home/home";
 import { Navigator } from "@/components/navigator/navigator";
-import { Hero } from "@/components/home/sections/hero";
+import { Hero } from "@/components/home/sections/hero/hero";
 export default function App() {
   return (
     <>
