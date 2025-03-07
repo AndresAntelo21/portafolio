@@ -49,7 +49,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
       </div>
       <div className="font-poppins flex w-[60%] flex-col gap-4">
         <h1 className="text-start font-bold">{title}</h1>
-        <div className="line-clamp-3 overflow-hidden text-sm">
+        <div className="line-clamp-3 overflow-hidden text-sm md:text-start">
           <p>{description}</p>
         </div>
         <a
