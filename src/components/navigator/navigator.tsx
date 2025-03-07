@@ -50,7 +50,7 @@ export const Navigator = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="lg:px-12">
+      <div className="text-xl lg:px-12">
         <Link to="/">
           <h1>Andres Portafolio</h1>
         </Link>
