@@ -53,6 +53,7 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
   --poppins: "Poppins";
+  --opaque-purple:hsl(266 27%, 15%);
 }
 
 .dark {
@@ -130,6 +131,8 @@
 
 /* Custom */
 --font-poppins: "Poppins", sans-serif;
+
+--opaque-purple: var(--opaque-purple);
 }
 
 @layer base {

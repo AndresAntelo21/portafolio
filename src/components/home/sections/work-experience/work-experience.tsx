@@ -2,9 +2,9 @@ import { ExperienceCard } from "./experience-card";
 
 export const WorkExperience = () => {
   return (
-    <div className="font-poppins gap-1- flex flex-col gap-10 text-2xl lg:px-10 lg:text-center xl:px-55 2xl:px-200">
+    <div className="font-poppins flex flex-col gap-10 text-2xl lg:px-10 lg:text-center xl:px-55 2xl:px-200">
       <div className="flex flex-col gap-2">
-        <h1 className="text-center font-bold">
+        <h1 className="text-center">
           Work <span className="text-violet-600">Experience</span>
         </h1>
         <div className="h-1 w-full rounded-full bg-violet-700"></div>

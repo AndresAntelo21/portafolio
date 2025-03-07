@@ -40,7 +40,7 @@ export const Hero = () => {
       </div>
       <div className="flex flex-col gap-4 pt-10 text-justify lg:pt-20 lg:text-center xl:px-55 2xl:px-200">
         <div className="flex flex-col gap-2">
-          <h3 className="text-center text-2xl font-bold">
+          <h3 className="text-center text-2xl">
             I'm a <span className="text-violet-600">software Engineer</span>.
           </h3>
           <div className="h-1 w-full rounded-full bg-violet-800"></div>
