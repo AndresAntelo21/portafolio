@@ -6,7 +6,7 @@ export const Tools = () => {
     "/public/tools/vue.svg",
     "/public/tools/html.svg",
     "/public/tools/python.svg",
-    "/public/tools/node.svg",
+    "/public/tools/nodejs-white.svg",
     "/public/tools/typescript.svg",
     "/public/tools/js.svg",
     "/public/tools/git.svg",

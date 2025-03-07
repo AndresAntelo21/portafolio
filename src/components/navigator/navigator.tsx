@@ -42,6 +42,9 @@ export const Navigator = () => {
                     <Link to="/work-experience">Work Experience</Link>
                   </SheetClose>
                   <SheetClose asChild>
+                    <Link to="/projects">Projects</Link>
+                  </SheetClose>
+                  <SheetClose asChild>
                     <a
                       href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
                       target="_blank"
@@ -82,6 +85,16 @@ export const Navigator = () => {
                   className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
                 >
                   Work Experience
+                </Link>
+              </NavigationMenuLink>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuLink asChild>
+                <Link
+                  to="/projects"
+                  className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                >
+                  Projects
                 </Link>
               </NavigationMenuLink>
             </NavigationMenuItem>

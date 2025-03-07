@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="flex flex-col gap-10 py-4">
       <Hero />
-      <main className="flex flex-col gap-10">
+      <main className="flex flex-col gap-10 md:gap-10">
         <WorkExperience />
         <Tools />
         <Projects />
