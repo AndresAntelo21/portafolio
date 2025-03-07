@@ -17,7 +17,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simula una carga de datos
     const timer = setTimeout(() => {
       setLoading(false);
     }, 1400);
