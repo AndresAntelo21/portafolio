@@ -4,6 +4,7 @@ import { Navigator } from "@/components/navigator/navigator";
 // import { Hero } from "@/components/home/sections/hero/hero";
 import { WorkExperience } from "@/components/home/sections/work-experience/work-experience";
 import { Projects } from "@/components/home/sections/projects/projects";
+import { Foooter } from "@/components/footer/footer";
 export default function App() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/work-experience" element={<WorkExperience />} />
         <Route path="/projects" element={<Projects />} />
       </Routes>
+      <Foooter />
     </>
   );
 }
