@@ -20,7 +20,7 @@ import {
 
 export const Navigator = () => {
   return (
-    <nav className="font-poppins sticky top-0 z-50 flex w-full items-center gap-12 bg-black px-7 py-4 text-2xl lg:justify-between">
+    <nav className="font-poppins sticky top-0 z-50 flex w-full items-center gap-12 bg-black px-7 py-4 text-2xl lg:justify-between xl:px-55 2xl:px-200">
       <div className="block lg:hidden">
         <Sheet>
           <SheetTrigger className="flex items-center">
@@ -59,7 +59,7 @@ export const Navigator = () => {
           </SheetContent>
         </Sheet>
       </div>
-      <div className="text-xl lg:px-12">
+      <div className="text-center text-xl">
         <Link to="/">
           <h1>Andres Portafolio</h1>
         </Link>
@@ -67,7 +67,7 @@ export const Navigator = () => {
       {/* navigation-menu */}
       <div className="hidden lg:block">
         <NavigationMenu>
-          <NavigationMenuList className="space-x-2 px-12 text-base">
+          <NavigationMenuList className="space-x-2 text-base">
             <NavigationMenuItem>
               <NavigationMenuLink asChild>
                 <Link
