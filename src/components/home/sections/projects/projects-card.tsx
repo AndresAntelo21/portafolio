@@ -95,7 +95,9 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
           className={`${reverse ? "lg:items-end" : "lg:items-start"} flex flex-col gap-2`}
         >
           <div className="hidden lg:block">
-            <div className="flex items-center gap-4 text-sm">
+            <div
+              className={`flex items-center gap-2 text-sm ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+            >
               <FaCalendar className="text-violet-500" />
               <span className="text-sm text-violet-500">{date}</span>
             </div>
