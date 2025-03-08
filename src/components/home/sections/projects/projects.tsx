@@ -14,7 +14,7 @@ export const Projects = () => {
       />
       <ProjectsCard
         imageSrc="/public/projects/gokussj2.png"
-        title="Prueba numero 2"
+        title="CSI PRO"
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, RiTailwindCssFill]}
@@ -22,14 +22,14 @@ export const Projects = () => {
       />
       <ProjectsCard
         imageSrc="/public/projects/gokussj3.png"
-        title="Prueba numero 3"
+        title="Umana"
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[RiTailwindCssFill, SiVite]}
       />
       <ProjectsCard
         imageSrc="/public/projects/gokussj4.png"
-        title="Prueba numero 4"
+        title="CbC"
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, SiVite]}
