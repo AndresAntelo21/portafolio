@@ -1,5 +1,7 @@
 import { FaCalendar } from "react-icons/fa";
 import { IconType } from "react-icons";
+import { useState, useEffect } from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
 interface ProjectsCardProps {
   imageSrc: string;
@@ -18,6 +20,47 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
   icons,
   reverse = false,
 }) => {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1400);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <Skeleton
+        className={`relative flex flex-col gap-4 ${reverse ? "lg:flex-row" : "lg:flex-row-reverse"}`}
+      >
+        <div className="absolute top-20 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-950 blur-2xl md:h-90 md:w-90 lg:hidden"></div>
+        <div className="relative h-50 w-full overflow-hidden rounded-2xl bg-violet-950 lg:h-75 lg:w-[60%]"></div>
+        <div
+          className={`flex w-full flex-col gap-4 lg:absolute lg:flex-col-reverse`}
+        >
+          <div
+            className={`flex flex-row items-center justify-between ${reverse ? "lg:justify-end" : "lg:justify-start"}`}
+          >
+            <div className="flex h-6 w-40 items-center gap-4 rounded-xl bg-violet-950 lg:hidden"></div>
+            <div
+              className={`flex h-6 w-30 flex-row-reverse gap-4 rounded-xl bg-violet-950 text-2xl text-gray-300 lg:h-9 lg:text-3xl`}
+            ></div>
+          </div>
+          <div
+            className={`${reverse ? "lg:items-end" : "lg:items-start"} flex flex-col gap-2`}
+          >
+            <div className="hidden lg:block">
+              <div className="flex h-7 w-28 items-center gap-4 rounded-xl bg-violet-950 text-sm"></div>
+            </div>
+            <div className="font-poppins text-medium h-8 w-60 rounded-2xl bg-violet-950 text-2xl lg:text-3xl"></div>
+            <div className="lg:bg-secondary h-25 w-full rounded-md bg-violet-950 p-2 lg:mt-5 lg:h-40 lg:w-2/3 lg:rounded-xl lg:p-4"></div>
+          </div>
+        </div>
+      </Skeleton>
+    );
+  }
   return (
     <div
       className={`relative flex flex-col gap-4 ${reverse ? "lg:flex-row" : "lg:flex-row-reverse"}`}
