@@ -20,7 +20,7 @@ import {
 
 export const Navigator = () => {
   return (
-    <nav className="bg-secondary font-poppins flex w-full items-center gap-12 px-7 py-4 text-2xl lg:justify-between">
+    <nav className="bg-secondary font-poppins sticky top-0 z-50 flex w-full items-center gap-12 px-7 py-4 text-2xl lg:justify-between">
       <div className="block lg:hidden">
         <Sheet>
           <SheetTrigger className="flex items-center">
