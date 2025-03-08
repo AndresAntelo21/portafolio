@@ -1,8 +1,16 @@
 import { ExperienceCard } from "./experience-card";
 
-export const WorkExperience = () => {
+interface WorkExperienceProps {
+  className?: string;
+}
+
+export const WorkExperience: React.FC<WorkExperienceProps> = ({
+  className,
+}) => {
   return (
-    <div className="font-poppins flex flex-col gap-10 pt-2 text-2xl lg:text-center">
+    <div
+      className={`font-poppins flex flex-col gap-10 pt-2 text-2xl lg:text-center ${className}`}
+    >
       <div className="flex flex-col gap-2">
         <h1 className="text-center">
           Work <span className="text-violet-600">Experience</span>
@@ -33,7 +41,7 @@ export const WorkExperience = () => {
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img4.png"
             title="CbC"
-            description="Colegio BC is a school that combines academic excellence, values education, and sports development. We provide a comprehensive environment for your children to grow and succeed. "
+            description="Colegio BC is a school that combines academic excellence, values education, and sports development. We provide a comprehensive environment for your children to grow and succeed."
             buttonUrl="/"
           />
         </div>

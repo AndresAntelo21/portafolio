@@ -2,9 +2,14 @@ import { ProjectsCard } from "./projects-card";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
-export const Projects = () => {
+
+interface ProjectsProps {
+  className?: string;
+}
+
+export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
-    <div className="font-poppins flex flex-col gap-15 py-10">
+    <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
       <ProjectsCard
         imageSrc="/public/projects/gokussj1.png"
         title="Movilidad"
