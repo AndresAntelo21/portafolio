@@ -20,7 +20,8 @@ export const Hero = () => {
               ...
             </h2>
             <h3 className="relative text-xs lg:text-base">
-              Because every great app starts with a single line of code
+              Because every great app starts with a{" "}
+              <span className="text-violet-600">single line</span> of code
             </h3>
           </div>
           <div className="hidden lg:block">
@@ -47,9 +48,11 @@ export const Hero = () => {
         </div>
 
         <p>
-          I'm a passionate software developer focused an creating functional and
-          appealing digital solutions. I love turning ideas into reality through
-          code, always striving to innovate and enhance the user experience.
+          I'm a passionate{" "}
+          <span className="text-violet-500">software developer</span> focused an
+          creating functional and appealing digital solutions. I love turning
+          ideas into reality through code, always striving to innovate and
+          enhance the user experience.
         </p>
       </div>
     </div>
