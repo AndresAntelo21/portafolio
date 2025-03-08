@@ -4,9 +4,9 @@ import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 export const Home = () => {
   return (
-    <div className="flex flex-col gap-10 py-4">
+    <div className="mx-auto flex w-full flex-col items-center justify-center gap-10 px-4 py-4 md:w-150 md:px-0 lg:w-250">
       <Hero />
-      <main className="flex flex-col gap-10 md:gap-10">
+      <main className="flex flex-col gap-10">
         <WorkExperience />
         <Tools />
         <Projects />

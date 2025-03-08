@@ -2,8 +2,8 @@ import { ContactButton } from "@/components/button/contact-button";
 
 export const Hero = () => {
   return (
-    <div className="font-poppins px-5 lg:px-0">
-      <div className="flex flex-col items-center gap-4 text-center text-lg md:gap-2 lg:h-auto lg:flex-row-reverse lg:justify-center lg:text-left">
+    <div className="font-poppins lg:px-0">
+      <div className="flex flex-col items-center text-center text-lg md:gap-2 lg:h-auto lg:flex-row-reverse lg:justify-center lg:text-left">
         <div className="flex flex-col gap-4 lg:h-40 lg:gap-2">
           <div className="flex flex-col gap-4 lg:justify-end lg:gap-3">
             <h1 className="text-2xl">A Software Developer</h1>
@@ -39,7 +39,7 @@ export const Hero = () => {
         </div>
         <ContactButton className="pt-10 lg:hidden" />
       </div>
-      <div className="flex flex-col gap-4 pt-10 text-justify lg:pt-20 lg:text-center xl:px-55 2xl:px-200">
+      <div className="flex flex-col gap-4 pt-10 text-justify lg:pt-20 lg:text-center">
         <div className="flex flex-col gap-2">
           <h3 className="text-center text-2xl">
             I'm a <span className="text-violet-600">software Engineer</span>.

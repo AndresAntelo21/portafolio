@@ -4,7 +4,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 export const Projects = () => {
   return (
-    <div className="font-poppins flex flex-col gap-15 px-5 py-10 xl:px-55 2xl:px-200">
+    <div className="font-poppins flex flex-col gap-15 py-10">
       <ProjectsCard
         imageSrc="/public/projects/gokussj1.png"
         title="Movilidad"
