@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <Navigator />
-      <main className="mx-auto px-4 md:w-150 md:px-0 lg:w-250">
+      <main className="mx-auto px-4 py-4 md:w-150 md:px-0 lg:w-250">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />
