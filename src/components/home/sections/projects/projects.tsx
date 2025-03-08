@@ -18,6 +18,7 @@ export const Projects = () => {
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, RiTailwindCssFill]}
+        reverse={true}
       />
       <ProjectsCard
         imageSrc="/public/projects/gokussj3.png"
@@ -32,6 +33,7 @@ export const Projects = () => {
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, SiVite]}
+        reverse={true}
       />
     </div>
   );
