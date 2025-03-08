@@ -6,7 +6,7 @@ export const Home = () => {
   return (
     <div className="mx-auto flex w-full flex-col items-center justify-center gap-10 px-4 py-4 md:w-150 md:px-0 lg:w-250">
       <Hero />
-      <main className="flex flex-col gap-10">
+      <main className="flex w-full flex-col gap-10">
         <WorkExperience />
         <Tools />
         <Projects />
