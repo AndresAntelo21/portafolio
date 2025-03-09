@@ -12,7 +12,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
       className={`font-poppins flex flex-col gap-10 pt-2 text-2xl lg:text-center ${className}`}
     >
       <div className="flex flex-col gap-2">
-        <h1 className="text-center">
+        <h1 className="relative z-999 text-center">
           Work <span className="text-violet-600">Experience</span>
         </h1>
         <div className="h-1 w-full rounded-full bg-violet-700"></div>
