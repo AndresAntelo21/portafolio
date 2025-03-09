@@ -3,9 +3,10 @@ import { Skeleton } from "@/components/ui/skeleton";
 
 interface ExperienceCardProps {
   imageSrc: string;
-  title: string;
+  title: React.ReactNode;
   description: string;
   buttonUrl: string;
+  className?: string;
 }
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
@@ -13,6 +14,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   title,
   description,
   buttonUrl,
+  className,
 }) => {
   const [loading, setLoading] = useState(true);
 
@@ -24,9 +26,11 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     return () => clearTimeout(timer);
   }, []);
 
+  const cardClasses = `bg-secondary flex h-50 w-full gap-4 overflow-hidden rounded-2xl border-t-3 border-t-violet-900 p-4 ${className}`;
+
   if (loading) {
     return (
-      <Skeleton className="bg-secondary flex h-50 w-full gap-4 overflow-hidden rounded-2xl border-t-3 border-t-violet-900 p-4">
+      <Skeleton className={cardClasses}>
         <div className="h-full w-[40%] flex-col rounded-2xl bg-violet-900"></div>
         <div className="flex w-[60%] flex-col gap-4">
           <div className="h-7 w-full rounded bg-violet-900"></div>
@@ -38,7 +42,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   }
 
   return (
-    <div className="bg-secondary flex h-50 w-full gap-4 overflow-hidden rounded-2xl border-t-3 border-t-violet-900 p-4">
+    <div className={cardClasses}>
       <div className="h-full w-[40%] overflow-hidden rounded-2xl">
         <img
           src={imageSrc}
@@ -47,7 +51,9 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         />
       </div>
       <div className="font-poppins flex w-[60%] flex-col gap-4">
-        <h1 className="text-start font-bold">{title}</h1>
+        <div className="title-container">
+          <h1 className="text-start text-3xl">{title}</h1>
+        </div>
         <div className="line-clamp-3 overflow-hidden text-sm md:text-start">
           <p>{description}</p>
         </div>
