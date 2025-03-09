@@ -39,7 +39,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
             buttonUrl="/"
           />
-          {/* <ExperienceCard
+          <ExperienceCard
             imageSrc="/public/projects/movilidad/img3.png"
             title="Umana"
             description="Umana is a website that offers exercise class services and eating plans, focused on promoting a healthy and balanced lifestyle. The page provides information on different training programs and food options designed to improve the physical and nutritional well-being of its users."
@@ -50,7 +50,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             title="CbC"
             description="Colegio BC is a school that combines academic excellence, values education, and sports development. We provide a comprehensive environment for your children to grow and succeed."
             buttonUrl="/"
-          /> */}
+          />
         </div>
       </div>
     </div>
