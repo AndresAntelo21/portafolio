@@ -38,24 +38,51 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
               </div>
             }
             description="We are students from the University of Sonora seeking to innovate. We develop and implement technologies, including software created by us."
-            buttonUrl="/csipro-web"
+            buttonUrl="/"
           />
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img1.png"
-            title="Movilidad"
-            description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
+            title={
+              <div className="flex items-center gap-2">
+                <img
+                  src="/public/projects/unison.svg"
+                  alt="Logo del laboratorio CSI PRO"
+                  className="h-10 w-10"
+                />
+                <div className="font-normal">UNISON</div>
+              </div>
+            }
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat."
             buttonUrl="/"
           />
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img3.png"
-            title="Umana"
-            description="Umana is a website that offers exercise class services and eating plans, focused on promoting a healthy and balanced lifestyle. The page provides information on different training programs and food options designed to improve the physical and nutritional well-being of its users."
+            title={
+              <div className="flex items-center justify-start">
+                <img
+                  src="/public/projects/legrafica.svg"
+                  alt="Logo del laboratorio CSI PRO"
+                  className="h-9"
+                />
+                {/* <div className="font-normal">LEGRAFICA</div> */}
+              </div>
+            }
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat."
             buttonUrl="/"
           />
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img4.png"
-            title="CbC"
-            description="Colegio BC is a school that combines academic excellence, values education, and sports development. We provide a comprehensive environment for your children to grow and succeed."
+            title="IDK"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat."
             buttonUrl="/"
           />
         </div>

@@ -73,7 +73,10 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
   }
   return (
     <div
-      className={`relative flex flex-col gap-4 ${reverse ? "lg:flex-row" : "lg:flex-row-reverse"} ${className}`}
+      className={`relative flex cursor-pointer flex-col gap-4 ${
+        reverse ? "lg:flex-row" : "lg:flex-row-reverse"
+      } ${className} `}
+      onClick={handleRedirect}
     >
       <div className="absolute top-20 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-950 blur-2xl md:h-90 md:w-90 lg:hidden"></div>
       <div className="relative h-50 w-full overflow-hidden rounded-2xl bg-violet-900 lg:h-75 lg:w-[60%]">
@@ -81,7 +84,6 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
           src={imageSrc}
           alt=""
           className="h-full w-full object-cover object-center"
-          onClick={handleRedirect}
         />
       </div>
       <div
