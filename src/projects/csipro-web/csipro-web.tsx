@@ -11,7 +11,12 @@ export const CsiproWeb = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8">
       <CsiCarousel />
-      <div className="flex items-center justify-center">
+      <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
+        <img
+          src="/public/projects/csipro.svg"
+          alt="Logo del laboratorio CSI PRO"
+          className="h-10 w-10"
+        />
         <h1 className="font-poppins text-3xl font-normal">
           CSI <span className="rounded-xl bg-violet-800 px-2">PRO</span>
         </h1>

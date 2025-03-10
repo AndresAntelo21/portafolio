@@ -13,7 +13,7 @@ export const CsiCarousel = () => {
       autoplay={{ delay: 10000, disableOnInteraction: false }}
       modules={[Pagination, Autoplay]}
       loop={true}
-      className="h-[50svh] w-full"
+      className="h-70 w-full"
     >
       <SwiperSlide>
         <div className="flex h-full w-full">

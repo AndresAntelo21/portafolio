@@ -11,6 +11,7 @@ interface ProjectsCardProps {
   icons: IconType[];
   className?: string;
   reverse?: boolean;
+  linkUrl?: string;
 }
 
 export const ProjectsCard: React.FC<ProjectsCardProps> = ({
@@ -21,6 +22,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
   icons,
   className,
   reverse = false,
+  linkUrl,
 }) => {
   const [loading, setLoading] = useState(true);
 
@@ -31,6 +33,12 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleRedirect = () => {
+    if (linkUrl) {
+      window.location.href = linkUrl;
+    }
+  };
 
   if (loading) {
     return (
@@ -73,6 +81,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
           src={imageSrc}
           alt=""
           className="h-full w-full object-cover object-center"
+          onClick={handleRedirect}
         />
       </div>
       <div

@@ -23,11 +23,18 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img2.png"
             title={
-              <div className="font-normal">
-                CSI{" "}
-                <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                  PRO
-                </span>
+              <div className="flex items-center gap-2">
+                <img
+                  src="/public/projects/csipro.svg"
+                  alt="Logo del laboratorio CSI PRO"
+                  className="h-8 w-8"
+                />
+                <div className="font-normal">
+                  CSI{" "}
+                  <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
+                    PRO
+                  </span>
+                </div>
               </div>
             }
             description="We are students from the University of Sonora seeking to innovate. We develop and implement technologies, including software created by us."

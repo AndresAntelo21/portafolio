@@ -13,16 +13,24 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       <ProjectsCard
         imageSrc="/public/projects/gokussj1.png"
         title={
-          <div className="font-normal">
-            CSI{" "}
-            <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-              PRO
-            </span>
+          <div className="flex items-center gap-2">
+            <img
+              src="/public/projects/csipro.svg"
+              alt="Logo del laboratorio CSI PRO"
+              className="h-8 w-8"
+            />
+            <div className="font-normal">
+              CSI{" "}
+              <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
+                PRO
+              </span>
+            </div>
           </div>
         }
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, RiTailwindCssFill]}
+        linkUrl="/csipro-web"
       />
       <ProjectsCard
         imageSrc="/public/projects/gokussj2.png"
