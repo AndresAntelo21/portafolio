@@ -143,3 +143,49 @@
     @apply bg-background text-foreground;
   }
 }
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  transition: all 0.3s ease !important;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 3rem !important;
+  height: 1rem !important;
+  border-radius: var(--radius-2xl) !important;
+  background-color: rgb(231, 231, 231) !important;
+  @apply rounded-full;
+}
+
+.swiper-pagination-bullet {
+  width: 1rem !important;
+  height: 1rem !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 3rem !important;
+  height: 1rem !important;
+  border-radius: var(--radius-2xl) !important;
+  background-color: rgb(231, 231, 231) !important;
+  @apply rounded-full;
+}
+
+/* a partir de md (>=768px), hacemos los bullets más pequeños */
+@media (min-width: 768px) {
+  .swiper-pagination-bullet {
+    width: 0.8rem !important;
+    height: 0.8rem !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    width: 2rem !important;
+    height: 0.8rem !important;
+  }
+}

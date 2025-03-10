@@ -5,6 +5,7 @@ import { Navigator } from "@/components/navigator/navigator";
 import { WorkExperience } from "@/components/home/sections/work-experience/work-experience";
 import { Projects } from "@/components/home/sections/projects/projects";
 import { Foooter } from "@/components/footer/footer";
+import { CsiproWeb } from "@/projects/csipro-web/csipro-web";
 export default function App() {
   return (
     <>
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/csipro-web" element={<CsiproWeb />} />
         </Routes>
       </main>
       <Foooter />

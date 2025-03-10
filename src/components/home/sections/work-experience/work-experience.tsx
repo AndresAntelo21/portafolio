@@ -31,7 +31,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
               </div>
             }
             description="We are students from the University of Sonora seeking to innovate. We develop and implement technologies, including software created by us."
-            buttonUrl="/"
+            buttonUrl="/csipro-web"
           />
           <ExperienceCard
             imageSrc="/public/projects/movilidad/img1.png"
