@@ -18,7 +18,7 @@ export const CsiproWeb = () => {
           className="h-10 w-10"
         />
         <h1 className="font-poppins text-3xl font-normal">
-          CSI <span className="rounded-xl bg-violet-800 px-2">PRO</span>
+          CSI PRO <span className="rounded-xl bg-violet-800 px-2">REBOOT</span>
         </h1>
       </div>
       {/* cuadro de tecnologias */}

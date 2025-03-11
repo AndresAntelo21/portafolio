@@ -22,7 +22,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="font-normal">
               CSI PRO{" "}
               <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                WEB
+                REBOOT
               </span>
             </div>
           </div>
