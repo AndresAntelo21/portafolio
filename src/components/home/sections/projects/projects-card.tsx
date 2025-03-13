@@ -97,7 +97,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
             <span className="text-sm text-violet-500">{date}</span>
           </div>
           <div
-            className={`flex flex-row-reverse gap-4 text-2xl text-gray-300 lg:text-3xl`}
+            className={`flex flex-row-reverse gap-4 text-2xl text-gray-300 lg:text-3xl ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} `}
           >
             {icons.map((Icon, index) => (
               <Icon key={index} />
