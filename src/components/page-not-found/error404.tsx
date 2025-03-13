@@ -11,11 +11,14 @@ export const Error404 = () => {
       <div className="flex flex-col items-center gap-20 lg:justify-center">
         <div className="font-poppins flex flex-col gap-3 text-center">
           <h1 className="font-poppins text-center text-3xl">
-            Something went wrong.
+            Something went <span className="text-violet-700">wrong</span>.
           </h1>
           <h2>
-            We couldn’t find what you were looking for. Try going back to the
-            homepage.
+            We couldn’t find what you were looking for.{" "}
+            <span className="text-violet-700">
+              Try going back to the homepage
+            </span>
+            .
           </h2>
         </div>
         <a
