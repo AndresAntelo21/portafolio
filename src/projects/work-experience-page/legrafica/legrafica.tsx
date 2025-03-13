@@ -35,7 +35,6 @@ export const Legrafica = () => {
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[RiTailwindCssFill, SiVite]}
-        reverse={true}
         linkUrl="/umana-web"
       />
 
@@ -53,6 +52,7 @@ export const Legrafica = () => {
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[RiTailwindCssFill, SiVite]}
+        reverse={true}
         linkUrl="/gng-web"
       />
 
@@ -68,7 +68,6 @@ export const Legrafica = () => {
         date="21/12/2002"
         description="Aqui mero va la descripcion"
         icons={[FaReact, SiVite]}
-        reverse={true}
         linkUrl="/cbc-web"
       />
     </div>
