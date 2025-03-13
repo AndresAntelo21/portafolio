@@ -6,6 +6,10 @@ import { WorkExperience } from "@/components/home/sections/work-experience/work-
 import { Projects } from "@/components/home/sections/projects/projects";
 import { Foooter } from "@/components/footer/footer";
 import { CsiproWeb } from "@/projects/csipro-web/csipro-web";
+import { MovilidadWeb } from "@/projects/movilidad/movilidad-web";
+import { UmanaWeb } from "@/projects/umana/umana-web";
+import { GnGWeb } from "@/projects/gng/gng-web";
+import { CbCWeb } from "@/projects/cbc/cbc-web";
 export default function App() {
   return (
     <>
@@ -15,7 +19,12 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="/projects" element={<Projects />} />
+          {/* Projects */}
           <Route path="/csipro-web" element={<CsiproWeb />} />
+          <Route path="/movilidad-web" element={<MovilidadWeb />} />
+          <Route path="/umana-web" element={<UmanaWeb />} />
+          <Route path="/gng-web" element={<GnGWeb />} />
+          <Route path="/cbc-web" element={<CbCWeb />} />
         </Routes>
       </main>
       <Foooter />
