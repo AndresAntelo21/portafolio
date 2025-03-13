@@ -10,6 +10,10 @@ import { MovilidadWeb } from "@/projects/movilidad/movilidad-web";
 import { UmanaWeb } from "@/projects/umana/umana-web";
 import { GnGWeb } from "@/projects/gng/gng-web";
 import { CbCWeb } from "@/projects/cbc/cbc-web";
+import { Csipro } from "@/projects/work-experience-page/csipro/csipro";
+import { Legrafica } from "@/projects/work-experience-page/legrafica/legrafica";
+import { Unison } from "@/projects/work-experience-page/unison/unison";
+import { Error404 } from "@/components/page-not-found/error404";
 export default function App() {
   return (
     <>
@@ -25,6 +29,12 @@ export default function App() {
           <Route path="/umana-web" element={<UmanaWeb />} />
           <Route path="/gng-web" element={<GnGWeb />} />
           <Route path="/cbc-web" element={<CbCWeb />} />
+          {/* Work Experience */}
+          <Route path="/csipro" element={<Csipro />} />
+          <Route path="/legrafica" element={<Legrafica />} />
+          <Route path="/unison" element={<Unison />} />
+          {/* Page not found */}
+          <Route path="*" element={<Error404 />} />
         </Routes>
       </main>
       <Foooter />

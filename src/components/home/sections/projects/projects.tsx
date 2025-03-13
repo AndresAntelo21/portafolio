@@ -11,7 +11,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
     <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
       <ProjectsCard
-        imageSrc="/public/projects/gokussj1.png"
+        imageSrc="/public/projects/csipro/csipro-reboot.png"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -28,30 +28,14 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
           </div>
         }
         date="21/12/2002"
-        description="Aqui mero va la descripcion"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat."
         icons={[FaReact, RiTailwindCssFill]}
         linkUrl="/csipro-web"
       />
-      <ProjectsCard
-        imageSrc="/public/projects/gokussj2.png"
-        title={
-          <div className="flex items-center gap-2 lg:flex-row-reverse">
-            <img
-              src="/public/projects/movilidad/movilidad-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              <span>MOVILIDAD URBANA</span>
-            </div>
-          </div>
-        }
-        date="21/12/2002"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaReact, RiTailwindCssFill, SiVite]}
-        linkUrl="/movilidad-web"
-        reverse={true}
-      />
+
       <ProjectsCard
         imageSrc="/public/projects/gokussj3.png"
         title={
@@ -64,8 +48,12 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
           </div>
         }
         date="21/12/2002"
-        description="Aqui mero va la descripcion"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat."
         icons={[RiTailwindCssFill, SiVite]}
+        reverse={true}
         linkUrl="/umana-web"
       />
 
@@ -81,9 +69,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
           </div>
         }
         date="21/12/2002"
-        description="Aqui mero va la descripcion"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat."
         icons={[RiTailwindCssFill, SiVite]}
-        reverse={true}
         linkUrl="/gng-web"
       />
 
@@ -97,9 +87,32 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
           </div>
         }
         date="21/12/2002"
-        description="Aqui mero va la descripcion"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat."
         icons={[FaReact, SiVite]}
+        reverse={true}
         linkUrl="/cbc-web"
+      />
+      <ProjectsCard
+        imageSrc="/public/projects/gokussj2.png"
+        title={
+          <div className="flex items-center gap-2">
+            <img
+              src="/public/projects/movilidad/movilidad-logo.svg"
+              alt="Logo del laboratorio CSI PRO"
+              className="h-8 w-8"
+            />
+            <div className="font-normal">
+              <span>MOVILIDAD URBANA</span>
+            </div>
+          </div>
+        }
+        date="21/12/2002"
+        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
+        icons={[FaReact, RiTailwindCssFill, SiVite]}
+        linkUrl="/movilidad-web"
       />
     </div>
   );

@@ -32,12 +32,12 @@ export const Hero = () => {
           <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-500 blur-2xl md:h-50 md:w-50 lg:h-50 lg:w-50"></div>
           <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl md:h-20 md:w-20 lg:h-20 lg:w-20"></div>
           <img
-            src="/public/hero/test-img.png"
-            alt="yo merito"
-            className="relative z-10 w-50 pt-5"
+            src="/public/hero/me.png"
+            alt="Andres Antelo Figueroa"
+            className="relative -top-10 left-3 z-10 w-75"
           />
         </div>
-        <ContactButton className="pt-10 lg:hidden" />
+        <ContactButton className="lg:hidden" />
       </div>
       <div className="flex flex-col gap-4 pt-10 text-justify lg:pt-20 lg:text-center">
         <div className="flex flex-col gap-2">
