@@ -56,38 +56,6 @@ export const Csipro = () => {
         ]}
         linkUrl="/csipro-web"
       />
-      <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-cover.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/csipro.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              CSI PRO{" "}
-              <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                REBOOT
-              </span>
-            </div>
-          </div>
-        }
-        date="10/11/2023"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                      aliquip ex ea commodo consequat."
-        icons={[
-          FaReact,
-          BiLogoTypescript,
-          SiReactrouter,
-          SiVite,
-          RiTailwindCssFill,
-        ]}
-        reverse={true}
-        linkUrl="/csipro-web"
-      />
     </div>
   );
 };

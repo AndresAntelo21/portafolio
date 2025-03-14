@@ -1,7 +1,6 @@
 import { ProjectsCard } from "@/components/home/sections/projects/projects-card";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
+import { FaPython, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { SiJupyter } from "react-icons/si";
 
 export const Unison = () => {
   return (
@@ -24,7 +23,7 @@ export const Unison = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/gokussj2.png"
+        imageSrc="/public/projects/movilidad/movilidad-cover.png"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -37,48 +36,9 @@ export const Unison = () => {
             </div>
           </div>
         }
-        date="21/12/2002"
+        date="08/02/2023"
         description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaReact, RiTailwindCssFill, SiVite]}
-        linkUrl="/movilidad-web"
-      />
-      <ProjectsCard
-        imageSrc="/public/projects/gokussj2.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/movilidad/movilidad-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              <span>MOVILIDAD URBANA</span>
-            </div>
-          </div>
-        }
-        date="21/12/2002"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaReact, RiTailwindCssFill, SiVite]}
-        reverse={true}
-        linkUrl="/movilidad-web"
-      />
-      <ProjectsCard
-        imageSrc="/public/projects/gokussj2.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/movilidad/movilidad-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              <span>MOVILIDAD URBANA</span>
-            </div>
-          </div>
-        }
-        date="21/12/2002"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaReact, RiTailwindCssFill, SiVite]}
+        icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
         linkUrl="/movilidad-web"
       />
     </div>
