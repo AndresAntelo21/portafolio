@@ -109,6 +109,24 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         reverse={true}
         linkUrl="/cbc-web"
       />
+
+      <ProjectsCard
+        imageSrc="/public/projects/revolt/revolt-cover.png"
+        title={
+          <div className="flex items-center gap-2">
+            <img
+              src="/public/projects/revolt/revolt-logo.svg"
+              alt="Logo del laboratorio CSI PRO"
+              className="w-40"
+            />
+          </div>
+        }
+        date="08/02/2023"
+        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
+        icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
+        linkUrl="/revolt-web"
+      />
+
       <ProjectsCard
         imageSrc="/public/projects/movilidad/movilidad-cover.png"
         title={
@@ -126,6 +144,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         date="08/02/2023"
         description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
         icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
+        reverse={true}
         linkUrl="/movilidad-web"
       />
     </div>

@@ -14,6 +14,7 @@ import { Csipro } from "@/projects/work-experience-page/csipro/csipro";
 import { Legrafica } from "@/projects/work-experience-page/legrafica/legrafica";
 import { Unison } from "@/projects/work-experience-page/unison/unison";
 import { Error404 } from "@/components/page-not-found/error404";
+import { RevoltWeb } from "@/projects/revolt/revolt-web";
 export default function App() {
   return (
     <>
@@ -29,6 +30,7 @@ export default function App() {
           <Route path="/umana-web" element={<UmanaWeb />} />
           <Route path="/gng-web" element={<GnGWeb />} />
           <Route path="/cbc-web" element={<CbCWeb />} />
+          <Route path="/revolt-web" element={<RevoltWeb />} />
           {/* Work Experience */}
           <Route path="/csipro" element={<Csipro />} />
           <Route path="/legrafica" element={<Legrafica />} />
