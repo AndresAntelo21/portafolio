@@ -13,12 +13,12 @@ export const CbCCarousel = () => {
       autoplay={{ delay: 10000, disableOnInteraction: false }}
       modules={[Pagination, Autoplay]}
       loop={true}
-      className="h-70 w-full"
+      className="h-60 w-full lg:h-90"
     >
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/gokussj1.png"
+            src="/public/projects/cbc/cbc-slide1.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -27,7 +27,7 @@ export const CbCCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/img2.png"
+            src="/public/projects/cbc/cbc-slide2.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -36,7 +36,7 @@ export const CbCCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/img1.png"
+            src="/public/projects/cbc/cbc-slide3.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -45,7 +45,7 @@ export const CbCCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/gokussj4.png"
+            src="/public/projects/cbc/cbc-slide4.png"
             alt=""
             className="h-full w-full object-cover"
           />

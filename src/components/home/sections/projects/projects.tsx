@@ -13,7 +13,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
     <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-reboot.png"
+        imageSrc="/public/projects/csipro/csipro-cover.png"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -45,7 +45,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/umana/umana-slide.png"
+        imageSrc="/public/projects/umana/umana-cover.png"
         title={
           <div className="flex items-center pt-2">
             <img
@@ -66,7 +66,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/kamehameha.png"
+        imageSrc="/public/projects/gng/gng-cover.png"
         title={
           <div className="flex items-center pt-2">
             <img
@@ -86,7 +86,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/gokussj4.png"
+        imageSrc="/public/projects/cbc/cbc-cover.png"
         title={
           <div className="flex items-center gap-2">
             <div className="font-alegreya font-normal">
@@ -110,7 +110,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         linkUrl="/cbc-web"
       />
       <ProjectsCard
-        imageSrc="/public/projects/gokussj2.png"
+        imageSrc="/public/projects/movilidad/movilidad-cover.png"
         title={
           <div className="flex items-center gap-2">
             <img

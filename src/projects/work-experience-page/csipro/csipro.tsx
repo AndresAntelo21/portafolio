@@ -1,7 +1,8 @@
 import { ProjectsCard } from "@/components/home/sections/projects/projects-card";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-
+import { SiVite, SiReactrouter } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 export const Csipro = () => {
   return (
     <div className="flex flex-col justify-center gap-10">
@@ -25,7 +26,7 @@ export const Csipro = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-reboot.png"
+        imageSrc="/public/projects/csipro/csipro-cover.png"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -41,13 +42,22 @@ export const Csipro = () => {
             </div>
           </div>
         }
-        date="21/12/2002"
-        description="Aqui mero va la descripcion"
-        icons={[FaReact, RiTailwindCssFill]}
+        date="10/11/2023"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat."
+        icons={[
+          FaReact,
+          BiLogoTypescript,
+          SiReactrouter,
+          SiVite,
+          RiTailwindCssFill,
+        ]}
         linkUrl="/csipro-web"
       />
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-reboot.png"
+        imageSrc="/public/projects/csipro/csipro-cover.png"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -63,32 +73,19 @@ export const Csipro = () => {
             </div>
           </div>
         }
-        date="21/12/2002"
-        description="Aqui mero va la descripcion"
-        icons={[FaReact, RiTailwindCssFill]}
+        date="10/11/2023"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                      eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                      minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                      aliquip ex ea commodo consequat."
+        icons={[
+          FaReact,
+          BiLogoTypescript,
+          SiReactrouter,
+          SiVite,
+          RiTailwindCssFill,
+        ]}
         reverse={true}
-        linkUrl="/csipro-web"
-      />
-      <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-reboot.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/csipro.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              CSI PRO{" "}
-              <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                REBOOT
-              </span>
-            </div>
-          </div>
-        }
-        date="21/12/2002"
-        description="Aqui mero va la descripcion"
-        icons={[FaReact, RiTailwindCssFill]}
         linkUrl="/csipro-web"
       />
     </div>

@@ -13,12 +13,12 @@ export const UmanaCarousel = () => {
       autoplay={{ delay: 10000, disableOnInteraction: false }}
       modules={[Pagination, Autoplay]}
       loop={true}
-      className="h-70 w-full"
+      className="h-60 w-full lg:h-90"
     >
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/gokussj1.png"
+            src="/public/projects/umana/umana-slide1.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -27,7 +27,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/img2.png"
+            src="/public/projects/umana/umana-slide2.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -36,7 +36,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/img1.png"
+            src="/public/projects/umana/umana-slide3.png"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -45,7 +45,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/gokussj4.png"
+            src="/public/projects/umana/umana-slide4.png"
             alt=""
             className="h-full w-full object-cover"
           />
