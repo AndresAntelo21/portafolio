@@ -2,7 +2,7 @@ import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { CsiCarousel } from "@/projects/csipro-web/csipro-carousel";
 import { FaReact, FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
+import { SiVite, SiReactrouter } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaLink } from "react-icons/fa6";
 // CODIGO SUCIO - PASAR TODO A UN COMPONENTE NO HAY TIEMPO, SOLO ES UNA DEMOSTRACION
@@ -33,8 +33,9 @@ export const CsiproWeb = () => {
           </div>
           <div className="mt-10 flex flex-wrap gap-2 p-2">
             <ToolsText title="React" icons={[FaReact]} />
-            <ToolsText title="Tailwind" icons={[RiTailwindCssFill]} />
             <ToolsText title="Typescript" icons={[BiLogoTypescript]} />
+            <ToolsText title="React Router" icons={[SiReactrouter]} />
+            <ToolsText title="Tailwind" icons={[RiTailwindCssFill]} />
             <ToolsText title="Vite" icons={[SiVite]} />
           </div>
           <div>
@@ -46,7 +47,7 @@ export const CsiproWeb = () => {
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3 className="">November -</h3>
+              <h3 className="">November 2023 -</h3>
               <span className="italic">Present</span>
             </div>
           </div>
@@ -60,7 +61,8 @@ export const CsiproWeb = () => {
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
               <a
-                href="/"
+                href="https://github.com/CSIPro/csipro"
+                target="_blank"
                 className="flex justify-center rounded-lg bg-violet-800/70 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
@@ -69,7 +71,8 @@ export const CsiproWeb = () => {
                 </span>
               </a>
               <a
-                href="/"
+                href="https://csipro.isi.unison.mx/"
+                target="_blank"
                 className="flex justify-center rounded-lg bg-violet-700/30 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">

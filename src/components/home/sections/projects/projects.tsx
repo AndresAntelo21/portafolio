@@ -121,9 +121,9 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             />
           </div>
         }
-        date="08/02/2023"
+        date="26/12/2024"
         description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
+        icons={[FaVuejs, FaJs]}
         linkUrl="/revolt-web"
       />
 

@@ -12,7 +12,7 @@ export const Foooter = () => {
         <div className="flex flex-col gap-5 md:text-left">
           <div className="font-poppins w-full text-2xl">
             <h1 className="mb-2 inline-block border-b-2 border-violet-900">
-              Andres Portafolio
+              Andres Portfolio
             </h1>
           </div>
           <div className="font-poppins flex flex-col gap-5 text-lg">

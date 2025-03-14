@@ -22,7 +22,6 @@ export const Navigator = () => {
   return (
     <nav className="font-poppins sticky top-0 z-50 w-full bg-black py-4 text-2xl">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
-        {/* Menú hamburguesa solo en móvil */}
         <div className="absolute left-0 block lg:hidden">
           <Sheet>
             <SheetTrigger className="flex items-center">
@@ -62,14 +61,12 @@ export const Navigator = () => {
           </Sheet>
         </div>
 
-        {/* Texto siempre centrado en móvil, a la izquierda en pantallas grandes */}
         <div className="flex-grow text-center lg:text-left">
           <Link to="/">
-            <h1>Andres Portafolio</h1>
+            <h1>Andres Portfolio</h1>
           </Link>
         </div>
 
-        {/* Menú principal solo en pantallas grandes */}
         <div className="hidden lg:block">
           <NavigationMenu>
             <NavigationMenuList className="space-x-2 text-base">
