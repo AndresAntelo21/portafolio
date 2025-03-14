@@ -37,7 +37,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
                 </div>
               </div>
             }
-            description="We are students from the University of Sonora seeking to innovate. We develop and implement technologies, including software created by us."
+            description="At CSI PRO, a laboratory within the University of Sonora, we are a group of students passionate about software development. Here, we combine our knowledge, creativity, and teamwork to build projects that solve real problems. Whether it's developing apps, designing systems, or experimenting with new technologies, CSI PRO is our space to learn, create, and grow as future professionals in the tech industry."
             buttonUrl="/csipro"
           />
           <ExperienceCard
@@ -52,10 +52,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
                 {/* <div className="font-normal">LEGRAFICA</div> */}
               </div>
             }
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+            description="Legrafica is a marketing and digital development agency specializing in creating comprehensive experiences for brands and their consumers. They combine creativity and technology to drive growth and authentic audience connections."
             buttonUrl="/legrafica"
           />
           <ExperienceCard
@@ -70,10 +67,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
                 <div className="font-normal">UNISON</div>
               </div>
             }
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat."
+            description="The Universidad de Sonora is a leading institution in higher education and research in northwest Mexico. With a wide range of academic programs and a commitment to innovation, it prepares professionals who contribute to the social, economic, and cultural development of the region."
             buttonUrl="/unison"
           />
           <ExperienceCard

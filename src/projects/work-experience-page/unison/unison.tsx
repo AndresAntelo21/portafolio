@@ -15,10 +15,15 @@ export const Unison = () => {
       </div>
       <div className="z-10 text-justify lg:text-center">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          The <span className="text-violet-600">Universidad de Sonora</span> is
+          a leading institution in higher education and research in northwest{" "}
+          <span className="text-violet-600">Mexico</span>. With a wide range of
+          academic programs and a commitment to innovation, it prepares
+          professionals who contribute to the{" "}
+          <span className="text-violet-600"> social</span>,{" "}
+          <span className="text-violet-600"> economic</span>, and{" "}
+          <span className="text-violet-600">cultural</span> development of the
+          region.
         </p>
       </div>
 

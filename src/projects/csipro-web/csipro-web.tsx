@@ -5,8 +5,6 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite, SiReactrouter } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaLink } from "react-icons/fa6";
-// CODIGO SUCIO - PASAR TODO A UN COMPONENTE NO HAY TIEMPO, SOLO ES UNA DEMOSTRACION
-// QUIEN LEA ESTO ES UN METICHE MUEJEJEJE
 export const CsiproWeb = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8">

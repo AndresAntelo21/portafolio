@@ -19,10 +19,14 @@ export const Legrafica = () => {
       </div>
       <div className="z-10 text-justify lg:text-center">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Legrafica is a <span className="text-violet-600">marketing</span> and{" "}
+          <span className="text-violet-600">digital development</span> agency
+          specializing in creating comprehensive experiences for brands and
+          their consumers. They combine{" "}
+          <span className="text-violet-600">creativity</span> and{" "}
+          <span className="text-violet-600">technology</span> to drive{" "}
+          <span className="text-violet-600">growth</span> and authentic audience
+          connections.
         </p>
       </div>
       <ProjectsCard
