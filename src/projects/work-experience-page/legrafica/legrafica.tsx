@@ -4,8 +4,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaVuejs, FaJs } from "react-icons/fa";
-import { FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
-import { SiReactrouter, SiJupyter } from "react-icons/si";
+import { SiReactrouter } from "react-icons/si";
 
 export const Legrafica = () => {
   return (
@@ -50,6 +49,24 @@ export const Legrafica = () => {
       />
 
       <ProjectsCard
+        imageSrc="/public/projects/revolt/revolt-cover.png"
+        title={
+          <div className="flex items-center gap-2">
+            <img
+              src="/public/projects/revolt/revolt-logo.svg"
+              alt="Logo del laboratorio CSI PRO"
+              className="w-40"
+            />
+          </div>
+        }
+        date="08/02/2023"
+        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
+        icons={[FaVuejs, FaJs]}
+        reverse={true}
+        linkUrl="/revolt-web"
+      />
+
+      <ProjectsCard
         imageSrc="/public/projects/gng/gng-cover.png"
         title={
           <div className="flex items-center pt-2">
@@ -66,7 +83,6 @@ export const Legrafica = () => {
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat."
         icons={[FaVuejs, FaJs]}
-        reverse={true}
         linkUrl="/gng-web"
       />
 
@@ -91,25 +107,8 @@ export const Legrafica = () => {
           SiVite,
           RiTailwindCssFill,
         ]}
-        linkUrl="/cbc-web"
-      />
-
-      <ProjectsCard
-        imageSrc="/public/projects/revolt/revolt-cover.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/revolt/revolt-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="w-40"
-            />
-          </div>
-        }
-        date="08/02/2023"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
         reverse={true}
-        linkUrl="/revolt-web"
+        linkUrl="/cbc-web"
       />
     </div>
   );
