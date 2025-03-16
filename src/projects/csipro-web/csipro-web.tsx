@@ -31,7 +31,7 @@ export const CsiproWeb = () => {
           </div>
           <div className="mt-10 flex flex-wrap gap-2 p-2">
             <ToolsText title="React" icons={[FaReact]} />
-            <ToolsText title="Typescript" icons={[BiLogoTypescript]} />
+            <ToolsText title="TypeScript" icons={[BiLogoTypescript]} />
             <ToolsText title="React Router" icons={[SiReactrouter]} />
             <ToolsText title="Tailwind" icons={[RiTailwindCssFill]} />
             <ToolsText title="Vite" icons={[SiVite]} />
