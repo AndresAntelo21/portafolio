@@ -120,7 +120,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
           </h1>
           <div className="bg-secondary lg:bg-secondary/70 lg:rounded-x h-25 w-full rounded-md p-2 lg:mt-5 lg:h-40 lg:w-2/3 lg:p-4">
             <p
-              className={`line-clamp-4 text-start text-sm lg:text-base ${reverse ? "lg:text-right" : "lg:text-left"}`}
+              className={`line-clamp-4 text-start text-sm lg:line-clamp-7 lg:text-base ${reverse ? "lg:text-right" : "lg:text-left"}`}
             >
               {description}
             </p>

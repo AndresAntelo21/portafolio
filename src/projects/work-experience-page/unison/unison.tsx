@@ -33,7 +33,7 @@ export const Unison = () => {
           <div className="flex items-center gap-2">
             <img
               src="/public/projects/movilidad/movilidad-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
+              alt="Logo de movilidad urbana"
               className="h-8 w-8"
             />
             <div className="font-normal">
@@ -42,7 +42,15 @@ export const Unison = () => {
           </div>
         }
         date="08/02/2024"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
+        description="Movilidad Urbana is a project designed to
+              analyze, visualize, and optimize traffic and urban mobility. By
+              leveraging technology, it provides valuable insights to aid in
+              transportation planning, route optimization, and traffic
+              congestion reduction.
+              The Movilidad Urbana website presents data,
+              analysis, and visualizations on traffic patterns and urban
+              movement, making key information accessible to researchers, urban
+              planners, and mobility authorities."
         icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
         linkUrl="/movilidad-web"
       />

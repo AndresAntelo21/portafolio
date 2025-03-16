@@ -40,7 +40,19 @@ export const Legrafica = () => {
           </div>
         }
         date="05/11/2024"
-        description="Umana is a fitness app created by Anabel Soto, designed to help you transform your physical and mental well-being. Access workout videos, fitness routines, live classes, healthy recipes, and a community chat to stay motivated every step of the way."
+        description="Umana is an online platform designed to improve
+            people’s health and well-being through
+            virtual workouts,
+            personalized nutrition,
+            and an active community. It provides access to
+            live and on-demand workout classes, along with a
+            wide selection of healthy recipes and
+            meal plans to help users maintain a balanced
+            lifestyle. Umana also features a membership system that unlocks
+            exclusive content, providing a more complete and personalized
+            experience. Additionally, its community allows users to share
+            progress, receive support, and stay motivated on their journey to a
+            healthier life."
         icons={[FaVuejs, FaJs]}
         linkUrl="/umana-web"
       />
@@ -57,7 +69,18 @@ export const Legrafica = () => {
           </div>
         }
         date="15/02/2025"
-        description="Glam N Glow by Ale Murillo is a beauty studio dedicated to highlighting the essence and uniqueness of each individual. They specialize in enhancing natural beauty through personalized services. Their website is designed to showcase their service catalog and streamline the booking process, making it easy and efficient to schedule appointments. With a focus on professionalism, innovation, and quality, Glam N Glow creates unique experiences that reflect style and confidence."
+        description="Glam N Glow by Ale Murillo is an exclusive
+              beauty studio dedicated to enhancing the essence
+              and uniqueness of every individual through personalized services.
+              With a focus on professionalism,
+              innovation, and quality, the
+              studio delivers a unique experience that highlights natural
+              beauty, allowing each client to showcase their style and
+              confidence.
+              From professional makeup and facial treatments to hairstyling and
+              hair care, Glam N Glow is the perfect destination
+              for those seeking top-tier beauty services.
+            "
         icons={[FaVuejs, FaJs]}
         reverse={true}
         linkUrl="/gng-web"
@@ -73,7 +96,19 @@ export const Legrafica = () => {
           </div>
         }
         date="24/02/2025"
-        description="The Colegio Bicultural Cananea is an educational institution committed to the comprehensive development of its students. Through its website, parents and students can explore the academic offerings, facilities, and values that guide the school's education. The platform is designed to provide clear and accessible information about educational programs, extracurricular activities, and enrollment processes, making it easier to connect with the institution."
+        description="Colegio Bicultural Cananea (CBC) is an
+              educational institution committed to the comprehensive development
+              of its students, offering a
+               bilingual learning model that fosters academic,
+              cultural, and personal growth. With an innovative approach, CBC
+              provides a dynamic and high-quality learning environment,
+              preparing students for future challenges.
+              The school’s website has been designed to offer
+               clear and accessible information about its
+              educational programs, institutional values, and admissions
+              process, making it easier for the school community to stay
+              connected.
+            "
         icons={[
           FaReact,
           BiLogoTypescript,
@@ -90,15 +125,23 @@ export const Legrafica = () => {
           <div className="flex items-center gap-2">
             <img
               src="/public/projects/revolt/revolt-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
+              alt="Logo del revolt"
               className="w-40"
             />
           </div>
         }
         date="26/12/2024"
-        description="Revolt is a Mexican company with over 20 years of experience in manufacturing voltage regulation, transformation, and conditioning equipment. Its mission is to provide high-quality energy solutions that ensure an efficient and reliable power supply.
-
-Through its website, customers can learn more about the company, its values, and the services it offers, including voltage regulators, transformers, surge suppressors, uninterruptible power supply (UPS) systems, and voltage studies. Revolt stands out for its commitment to innovation, honesty, and quality, offering tailored solutions to optimize its clients' energy performance."
+        description="Revolt is a company focused on
+              sustainable energy solutions, offering solar
+              panel systems that help homes and businesses reduce electricity
+              costs while minimizing their environmental impact. With a focus on
+              innovation and efficiency, Revolt aims to provide clean and
+              accessible technology to drive a more sustainable future.
+              The Revolt landing page is designed to showcase
+              the company, its values, and the benefits of adopting solar
+              energy, while also making it easy for potential customers to get
+              in touch.
+            "
         icons={[FaVuejs, FaJs]}
         reverse={true}
         linkUrl="/revolt-web"

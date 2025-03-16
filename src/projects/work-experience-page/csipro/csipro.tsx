@@ -50,7 +50,14 @@ export const Csipro = () => {
           </div>
         }
         date="10/11/2023"
-        description="CSI PRO REBOOT is the official platform of the CSI PRO laboratory at the Universidad de Sonora. Here, you will find information about our team of researchers, collaborators, and students, as well as the innovative projects we are leading in various scientific and technological fields."
+        description="CSI PRO REBOOT is a platform created to showcase
+              the CSI PRO laboratory at the
+              Universidad de Sonora. The main goal of this
+              website is to highlight the lab's work, projects, and impact on
+              both students and professionals.
+              The site was developed to address the lack of awareness about the
+              lab among students, providing them with valuable information and
+              opportunities to get involved in its activities."
         icons={[
           FaReact,
           BiLogoTypescript,
