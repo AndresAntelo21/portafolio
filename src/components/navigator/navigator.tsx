@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-
+import { IoIosClose } from "react-icons/io";
 import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+  Drawer,
+  DrawerContent,
+  DrawerDescription,
+  DrawerHeader,
+  DrawerTitle,
+  DrawerTrigger,
+  DrawerClose,
+} from "@/components/ui/drawer";
 
 import {
   NavigationMenu,
@@ -27,35 +27,40 @@ export const Navigator = () => {
     <nav className="font-poppins sticky top-0 z-50 w-full bg-black py-4 text-2xl">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
         <div className="absolute left-0 block lg:hidden">
-          <Sheet>
-            <SheetTrigger className="flex items-center">
+          <Drawer direction="left">
+            <DrawerTrigger className="flex items-center">
               <RxHamburgerMenu />
-            </SheetTrigger>
-            <SheetContent side="left">
-              <SheetHeader>
-                <SheetTitle>
+            </DrawerTrigger>
+            <DrawerContent>
+              <DrawerHeader>
+                <DrawerTitle>
                   <h1 className="font-poppins text-left text-2xl font-bold">
                     Andres Portafolio
                   </h1>
-                </SheetTitle>
-                <SheetDescription>
+                </DrawerTitle>
+                <DrawerClose asChild>
+                  <button className="absolute top-4 right-4">
+                    <IoIosClose size={24} />
+                  </button>
+                </DrawerClose>
+                <DrawerDescription>
                   <div className="font-poppins flex flex-col gap-8 pt-4 text-left text-2xl text-white">
-                    <SheetClose asChild>
+                    <DrawerClose asChild>
                       <Link to="/" onClick={handleLinkClick}>
                         Home
                       </Link>
-                    </SheetClose>
-                    <SheetClose asChild>
+                    </DrawerClose>
+                    <DrawerClose asChild>
                       <Link to="/work-experience" onClick={handleLinkClick}>
                         Work Experience
                       </Link>
-                    </SheetClose>
-                    <SheetClose asChild>
+                    </DrawerClose>
+                    <DrawerClose asChild>
                       <Link to="/projects" onClick={handleLinkClick}>
                         Projects
                       </Link>
-                    </SheetClose>
-                    <SheetClose asChild>
+                    </DrawerClose>
+                    <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
                         target="_blank"
@@ -64,17 +69,17 @@ export const Navigator = () => {
                       >
                         Resume
                       </a>
-                    </SheetClose>
+                    </DrawerClose>
                   </div>
-                </SheetDescription>
-              </SheetHeader>
-            </SheetContent>
-          </Sheet>
+                </DrawerDescription>
+              </DrawerHeader>
+            </DrawerContent>
+          </Drawer>
         </div>
 
         <div className="flex-grow text-center lg:text-left">
           <Link to="/" onClick={handleLinkClick}>
-            <h1>Andres Portfolio</h1>
+            <h1 className="inline-block">Andres Portfolio</h1>
           </Link>
         </div>
 
