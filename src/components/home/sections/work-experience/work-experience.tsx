@@ -61,7 +61,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
               <div className="flex items-center gap-2">
                 <img
                   src="/public/projects/unison.svg"
-                  alt="Logo del laboratorio CSI PRO"
+                  alt="Logo de la Universidad de Sonora"
                   className="h-10 w-10"
                 />
                 <div className="font-normal">UNISON</div>
@@ -70,7 +70,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             description="The Universidad de Sonora is a leading institution in higher education and research in northwest Mexico. With a wide range of academic programs and a commitment to innovation, it prepares professionals who contribute to the social, economic, and cultural development of the region."
             buttonUrl="/unison"
           />
-          <ExperienceCard
+          {/* <ExperienceCard
             imageSrc="/public/projects/movilidad/img4.png"
             title={
               <div className="flex items-center gap-2">
@@ -82,7 +82,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat."
             buttonUrl="/"
-          />
+          /> */}
         </div>
       </div>
     </div>

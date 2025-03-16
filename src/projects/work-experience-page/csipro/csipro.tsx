@@ -50,10 +50,7 @@ export const Csipro = () => {
           </div>
         }
         date="10/11/2023"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+        description="CSI PRO REBOOT is the official platform of the CSI PRO laboratory at the Universidad de Sonora. Here, you will find information about our team of researchers, collaborators, and students, as well as the innovative projects we are leading in various scientific and technological fields."
         icons={[
           FaReact,
           BiLogoTypescript,

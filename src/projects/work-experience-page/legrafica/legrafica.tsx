@@ -40,30 +40,9 @@ export const Legrafica = () => {
           </div>
         }
         date="05/11/2024"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+        description="Umana is a fitness app created by Anabel Soto, designed to help you transform your physical and mental well-being. Access workout videos, fitness routines, live classes, healthy recipes, and a community chat to stay motivated every step of the way."
         icons={[FaVuejs, FaJs]}
         linkUrl="/umana-web"
-      />
-
-      <ProjectsCard
-        imageSrc="/public/projects/revolt/revolt-cover.png"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/public/projects/revolt/revolt-logo.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="w-40"
-            />
-          </div>
-        }
-        date="08/02/2023"
-        description="In a world that is constantly evolving, understanding the dynamics of urban mobility becomes essential for building more efficient, sustainable, and citizen-centered cities."
-        icons={[FaVuejs, FaJs]}
-        reverse={true}
-        linkUrl="/revolt-web"
       />
 
       <ProjectsCard
@@ -78,11 +57,9 @@ export const Legrafica = () => {
           </div>
         }
         date="15/02/2025"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+        description="Glam N Glow by Ale Murillo is a beauty studio dedicated to highlighting the essence and uniqueness of each individual. They specialize in enhancing natural beauty through personalized services. Their website is designed to showcase their service catalog and streamline the booking process, making it easy and efficient to schedule appointments. With a focus on professionalism, innovation, and quality, Glam N Glow creates unique experiences that reflect style and confidence."
         icons={[FaVuejs, FaJs]}
+        reverse={true}
         linkUrl="/gng-web"
       />
 
@@ -96,10 +73,7 @@ export const Legrafica = () => {
           </div>
         }
         date="24/02/2025"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat."
+        description="The Colegio Bicultural Cananea is an educational institution committed to the comprehensive development of its students. Through its website, parents and students can explore the academic offerings, facilities, and values that guide the school's education. The platform is designed to provide clear and accessible information about educational programs, extracurricular activities, and enrollment processes, making it easier to connect with the institution."
         icons={[
           FaReact,
           BiLogoTypescript,
@@ -107,8 +81,27 @@ export const Legrafica = () => {
           SiVite,
           RiTailwindCssFill,
         ]}
-        reverse={true}
         linkUrl="/cbc-web"
+      />
+
+      <ProjectsCard
+        imageSrc="/public/projects/revolt/revolt-cover.png"
+        title={
+          <div className="flex items-center gap-2">
+            <img
+              src="/public/projects/revolt/revolt-logo.svg"
+              alt="Logo del laboratorio CSI PRO"
+              className="w-40"
+            />
+          </div>
+        }
+        date="26/12/2024"
+        description="Revolt is a Mexican company with over 20 years of experience in manufacturing voltage regulation, transformation, and conditioning equipment. Its mission is to provide high-quality energy solutions that ensure an efficient and reliable power supply.
+
+Through its website, customers can learn more about the company, its values, and the services it offers, including voltage regulators, transformers, surge suppressors, uninterruptible power supply (UPS) systems, and voltage studies. Revolt stands out for its commitment to innovation, honesty, and quality, offering tailored solutions to optimize its clients' energy performance."
+        icons={[FaVuejs, FaJs]}
+        reverse={true}
+        linkUrl="/revolt-web"
       />
     </div>
   );
