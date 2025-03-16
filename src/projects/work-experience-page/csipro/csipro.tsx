@@ -20,13 +20,13 @@ export const Csipro = () => {
         <p>
           At CSI <span className="rounded-md bg-violet-800 px-1">PRO</span>, a
           laboratory within the{" "}
-          <span className="text-violet-600">University of Sonora</span>, we are
+          <span className="text-violet-600">Universidad de Sonora</span>, we are
           a group of students passionate about{" "}
           <span className="text-violet-600">software development</span>. Here,
           we combine our knowledge, creativity, and teamwork to build projects
           that solve real problems. Whether it's developing apps, designing
           systems, or experimenting with new technologies, CSI{" "}
-          <span className="rounded-md bg-violet-700 px-1">PRO</span> is our
+          <span className="rounded-md bg-violet-800 px-1">PRO</span> is our
           space to learn, create, and grow as future professionals in the tech
           industry.
         </p>
