@@ -19,6 +19,10 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export const Navigator = () => {
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <nav className="font-poppins sticky top-0 z-50 w-full bg-black py-4 text-2xl">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
@@ -37,19 +41,26 @@ export const Navigator = () => {
                 <SheetDescription>
                   <div className="font-poppins flex flex-col gap-8 pt-4 text-left text-2xl text-white">
                     <SheetClose asChild>
-                      <Link to="/">Home</Link>
+                      <Link to="/" onClick={handleLinkClick}>
+                        Home
+                      </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Link to="/work-experience">Work Experience</Link>
+                      <Link to="/work-experience" onClick={handleLinkClick}>
+                        Work Experience
+                      </Link>
                     </SheetClose>
                     <SheetClose asChild>
-                      <Link to="/projects">Projects</Link>
+                      <Link to="/projects" onClick={handleLinkClick}>
+                        Projects
+                      </Link>
                     </SheetClose>
                     <SheetClose asChild>
                       <a
                         href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={handleLinkClick}
                       >
                         Resume
                       </a>
@@ -62,7 +73,7 @@ export const Navigator = () => {
         </div>
 
         <div className="flex-grow text-center lg:text-left">
-          <Link to="/">
+          <Link to="/" onClick={handleLinkClick}>
             <h1>Andres Portfolio</h1>
           </Link>
         </div>
@@ -75,6 +86,7 @@ export const Navigator = () => {
                   <Link
                     to="/"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    onClick={handleLinkClick}
                   >
                     Home
                   </Link>
@@ -85,6 +97,7 @@ export const Navigator = () => {
                   <Link
                     to="/work-experience"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    onClick={handleLinkClick}
                   >
                     Work Experience
                   </Link>
@@ -95,6 +108,7 @@ export const Navigator = () => {
                   <Link
                     to="/projects"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    onClick={handleLinkClick}
                   >
                     Projects
                   </Link>
@@ -107,6 +121,7 @@ export const Navigator = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    onClick={handleLinkClick}
                   >
                     Resume
                   </a>
