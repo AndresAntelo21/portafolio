@@ -81,18 +81,84 @@ export const CsiproWeb = () => {
             </div>
           </div>
         </div>
-        <div className="font-poppins flex w-full flex-col gap-2 p-2 text-left lg:w-[60%]">
-          <div className="flex flex-col gap-4 py-5">
+        <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
+          <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
+            <span>Project Description</span>
+          </div>
+          <div className="flex flex-col gap-2">
             <p>
-              CSI PRO REBOOT is the official platform of the CSI PRO laboratory
-              at the Universidad de Sonora. Here, you will find information
-              about our team of researchers, collaborators, and students, as
-              well as the innovative projects we are leading in various
-              scientific and technological fields.
+              <strong>CSI PRO REBOOT</strong> is a platform created to showcase
+              the <strong>CSI PRO laboratory</strong> at the{" "}
+              <strong>Universidad de Sonora</strong>. The main goal of this
+              website is to highlight the lab's work, projects, and impact on
+              both students and professionals.
+            </p>
+            <p>
+              The site was developed to address the lack of awareness about the
+              lab among students, providing them with valuable information and
+              opportunities to get involved in its activities.
             </p>
           </div>
           <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
-            <h1>Project Description</h1>
+            <span>Features</span>
+          </div>
+          <div>
+            <ul className="ml-5 flex list-disc flex-col gap-2">
+              <li>
+                <strong>Lab Presentation</strong>: Detailed information about
+                CSI PRO’s mission and purpose.
+              </li>
+              <li>
+                <strong>Members Section</strong>: A dedicated area showcasing
+                the lab members and their roles in different projects.
+              </li>
+              <li>
+                <strong>Active Projects</strong>: A space to display ongoing
+                developments and technological advancements.
+              </li>
+              <li>
+                <strong>Events and Participation</strong>: A calendar featuring
+                events in which the lab collaborates within the university and
+                beyond.
+              </li>
+              <li>
+                <strong>Activity Registration</strong>: A feature allowing
+                students to sign up for events and projects.
+              </li>
+              <li>
+                <strong> Modern & Responsive Design</strong>: Optimized for
+                smooth navigation on both mobile devices and desktops.
+              </li>
+            </ul>
+          </div>
+
+          <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
+            <span> How It Works?</span>
+          </div>
+          <div className="flex flex-col gap-2">
+            <p>
+              The <strong>CSI PRO REBOOT</strong> website is built using modern
+              technologies that ensure fast performance, accessibility, and a
+              seamless user experience.
+            </p>
+            <p>
+              The <strong>frontend</strong> is developed with{" "}
+              <strong>React and TypeScript</strong>, providing a scalable and
+              robust structure. <strong>React Router</strong> is used to manage
+              navigation between different sections without reloading the page.
+            </p>
+            <p>
+              For the user interface and styling, <strong>Tailwind CSS</strong>{" "}
+              is implemented, ensuring a clean and responsive design. The
+              project runs on <strong>Vite</strong>, a powerful tool that
+              enhances performance and speeds up development.
+            </p>
+            <p>
+              With this technology stack, <strong>CSI PRO REBOOT</strong> not
+              only informs students about the lab but also encourages them to
+              become part of its community and actively participate in its
+              projects.
+            </p>
           </div>
         </div>
       </div>
