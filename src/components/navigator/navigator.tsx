@@ -19,10 +19,6 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export const Navigator = () => {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <nav className="font-poppins sticky top-0 z-50 w-full bg-black py-4 text-2xl">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
@@ -46,26 +42,19 @@ export const Navigator = () => {
                 <DrawerDescription>
                   <div className="font-poppins flex flex-col gap-8 pt-4 text-left text-2xl text-white">
                     <DrawerClose asChild>
-                      <Link to="/" onClick={handleLinkClick}>
-                        Home
-                      </Link>
+                      <Link to="/">Home</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/work-experience" onClick={handleLinkClick}>
-                        Work Experience
-                      </Link>
+                      <Link to="/work-experience">Work Experience</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/projects" onClick={handleLinkClick}>
-                        Projects
-                      </Link>
+                      <Link to="/projects">Projects</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
-                        onClick={handleLinkClick}
                       >
                         Resume
                       </a>
@@ -78,7 +67,7 @@ export const Navigator = () => {
         </div>
 
         <div className="flex-grow text-center lg:text-left">
-          <Link to="/" onClick={handleLinkClick}>
+          <Link to="/">
             <h1 className="inline-block">Andres Portfolio</h1>
           </Link>
         </div>
@@ -91,7 +80,6 @@ export const Navigator = () => {
                   <Link
                     to="/"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
-                    onClick={handleLinkClick}
                   >
                     Home
                   </Link>
@@ -102,7 +90,6 @@ export const Navigator = () => {
                   <Link
                     to="/work-experience"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
-                    onClick={handleLinkClick}
                   >
                     Work Experience
                   </Link>
@@ -113,7 +100,6 @@ export const Navigator = () => {
                   <Link
                     to="/projects"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
-                    onClick={handleLinkClick}
                   >
                     Projects
                   </Link>
@@ -126,7 +112,6 @@ export const Navigator = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
-                    onClick={handleLinkClick}
                   >
                     Resume
                   </a>
