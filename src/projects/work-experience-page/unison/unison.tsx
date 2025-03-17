@@ -28,11 +28,11 @@ export const Unison = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/movilidad/movilidad-cover.webp"
+        imageSrc="/projects/movilidad/movilidad-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/movilidad/movilidad-logo.svg"
+              src="/projects/movilidad/movilidad-logo.svg"
               alt="Logo de movilidad urbana"
               className="h-8 w-8"
             />
