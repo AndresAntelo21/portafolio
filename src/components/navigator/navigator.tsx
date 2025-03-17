@@ -62,7 +62,7 @@ export const Navigator = () => {
                     </DrawerClose>
                     <DrawerClose asChild>
                       <a
-                        href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
+                        href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={handleLinkClick}
@@ -122,7 +122,7 @@ export const Navigator = () => {
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <a
-                    href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
+                    href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
