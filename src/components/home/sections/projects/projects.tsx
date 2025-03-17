@@ -13,7 +13,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
     <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-cover.png"
+        imageSrc="/public/projects/csipro/csipro-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -49,7 +49,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/umana/umana-cover.png"
+        imageSrc="/public/projects/umana/umana-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
@@ -79,7 +79,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/gng/gng-cover.png"
+        imageSrc="/public/projects/gng/gng-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
@@ -107,7 +107,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/cbc/cbc-cover.png"
+        imageSrc="/public/projects/cbc/cbc-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <div className="font-alegreya font-normal">
@@ -141,7 +141,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/revolt/revolt-cover.png"
+        imageSrc="/public/projects/revolt/revolt-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
@@ -168,7 +168,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/movilidad/movilidad-cover.png"
+        imageSrc="/public/projects/movilidad/movilidad-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img

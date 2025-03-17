@@ -33,7 +33,7 @@ export const Csipro = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-cover.png"
+        imageSrc="/public/projects/csipro/csipro-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img

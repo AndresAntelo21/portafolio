@@ -28,7 +28,7 @@ export const Unison = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/movilidad/movilidad-cover.png"
+        imageSrc="/public/projects/movilidad/movilidad-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img

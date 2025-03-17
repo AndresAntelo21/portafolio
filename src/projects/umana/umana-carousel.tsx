@@ -18,7 +18,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/umana/umana-slide1.png"
+            src="/public/projects/umana/umana-slide1.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -27,7 +27,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/umana/umana-slide2.png"
+            src="/public/projects/umana/umana-slide2.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -36,7 +36,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/umana/umana-slide3.png"
+            src="/public/projects/umana/umana-slide3.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -45,7 +45,7 @@ export const UmanaCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/umana/umana-slide4.png"
+            src="/public/projects/umana/umana-slide4.webp"
             alt=""
             className="h-full w-full object-cover"
           />
