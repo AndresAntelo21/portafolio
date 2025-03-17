@@ -10,7 +10,7 @@ export const UmanaWeb = () => {
       <UmanaCarousel />
       <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
         <img
-          src="/public/projects/umana/umana-logo-text.svg"
+          src="/projects/umana/umana-logo-text.svg"
           alt="Logo de la pagina de Umana"
           className="w-50"
         />

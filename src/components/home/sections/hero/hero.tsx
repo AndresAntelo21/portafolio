@@ -12,7 +12,7 @@ export const Hero = () => {
               <span className="relative text-violet-600 lg:pl-1">
                 creativity
                 <img
-                  src="/public/hero/eclipse.png"
+                  src="/hero/eclipse.png"
                   alt="eclipse llamativo"
                   className="absolute top-0 left-0 h-15 w-48"
                 />
@@ -32,7 +32,7 @@ export const Hero = () => {
           <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-500 blur-2xl md:h-50 md:w-50 lg:h-50 lg:w-50"></div>
           <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl md:h-20 md:w-20 lg:h-20 lg:w-20"></div>
           <img
-            src="/public/hero/me.png"
+            src="/hero/me.png"
             alt="Andres Antelo Figueroa"
             className="relative -top-10 left-3 z-10 w-75"
           />

@@ -11,7 +11,7 @@ export const Legrafica = () => {
     <div className="flex flex-col justify-center gap-10">
       <div className="flex flex-row items-center justify-center gap-4 text-3xl">
         <img
-          src="/public/projects/legrafica.svg"
+          src="/projects/legrafica.svg"
           alt="logo del Legrafica"
           className="w-40"
         />
@@ -29,11 +29,11 @@ export const Legrafica = () => {
         </p>
       </div>
       <ProjectsCard
-        imageSrc="/public/projects/umana/umana-cover.webp"
+        imageSrc="/projects/umana/umana-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
-              src="/public/projects/umana/umana-logo-text.svg"
+              src="/projects/umana/umana-logo-text.svg"
               alt="Logo de la pagina web de Umana"
               className="h-8 w-40"
             />
@@ -58,11 +58,11 @@ export const Legrafica = () => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/gng/gng-cover.webp"
+        imageSrc="/projects/gng/gng-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
-              src="/public/projects/gng/gng-logo.svg"
+              src="/projects/gng/gng-logo.svg"
               alt="Logo de Glam N Glow"
               className="h-8 w-50"
             />
@@ -87,7 +87,7 @@ export const Legrafica = () => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/cbc/cbc-cover.webp"
+        imageSrc="/projects/cbc/cbc-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <div className="font-alegreya font-normal">
@@ -120,11 +120,11 @@ export const Legrafica = () => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/revolt/revolt-cover.webp"
+        imageSrc="/projects/revolt/revolt-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/revolt/revolt-logo.svg"
+              src="/projects/revolt/revolt-logo.svg"
               alt="Logo del revolt"
               className="w-40"
             />

@@ -10,7 +10,7 @@ export const GnGWeb = () => {
       <GnGCarousel />
       <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
         <img
-          src="/public/projects/gng/gng-logo.svg"
+          src="/projects/gng/gng-logo.svg"
           alt="Logo del laboratorio CSI PRO"
           className="w-70"
         />

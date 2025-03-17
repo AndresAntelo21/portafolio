@@ -8,7 +8,7 @@ export const Csipro = () => {
     <div className="flex flex-col justify-center gap-10">
       <div className="flex flex-row items-center justify-center gap-4 text-3xl">
         <img
-          src="/public/projects/csipro.svg"
+          src="/projects/csipro.svg"
           alt="logo del laboratorio CSI PRO"
           className="h-10 w-10"
         />
@@ -33,11 +33,11 @@ export const Csipro = () => {
       </div>
 
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-cover.webp"
+        imageSrc="/projects/csipro/csipro-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/csipro.svg"
+              src="/projects/csipro.svg"
               alt="Logo del laboratorio CSI PRO"
               className="h-8 w-8"
             />

@@ -3,7 +3,7 @@ export const Error404 = () => {
     <div className="flex h-screen flex-col gap-5 lg:flex-row">
       <div className="flex justify-center rounded-xl pt-13 md:pt-2 lg:items-center lg:rounded-xl lg:pt-0">
         <img
-          src="/public/page-not-found/page-not-found.png"
+          src="/page-not-found/page-not-found.png"
           alt="Something went wrong"
           className="overflow-hidden rounded-xl lg:h-90 lg:w-200"
         />

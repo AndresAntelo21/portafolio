@@ -9,7 +9,7 @@ export const MovilidadWeb = () => {
       <MovilidadCarousel />
       <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
         <img
-          src="/public/projects/movilidad/movilidad-logo.svg"
+          src="/projects/movilidad/movilidad-logo.svg"
           alt="Logo de movilidad urbana"
           className="h-10 w-10"
         />

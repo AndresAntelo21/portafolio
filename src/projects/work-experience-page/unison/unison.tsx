@@ -7,7 +7,7 @@ export const Unison = () => {
     <div className="flex flex-col justify-center gap-10 pb-10">
       <div className="flex flex-row items-center justify-center gap-4 text-xl lg:text-3xl">
         <img
-          src="/public/projects/unison.svg"
+          src="/projects/unison.svg"
           alt="Logo de la Universidad de Sonora"
           className="w-15 lg:w-25"
         />

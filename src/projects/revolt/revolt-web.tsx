@@ -10,7 +10,7 @@ export const RevoltWeb = () => {
       <RevoltCarousel />
       <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
         <img
-          src="/public/projects/revolt/revolt-logo.svg"
+          src="/projects/revolt/revolt-logo.svg"
           alt="Logo de revolt"
           className="w-50"
         />

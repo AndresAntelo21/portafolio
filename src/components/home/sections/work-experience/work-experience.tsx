@@ -21,11 +21,11 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
         <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-950 blur-2xl md:h-90 md:w-90"></div>
         <div className="relative grid grid-cols-1 gap-4 md:grid-cols-2">
           <ExperienceCard
-            imageSrc="/public/work-experience/csipro/csi-logo.png"
+            imageSrc="/work-experience/csipro/csi-logo.png"
             title={
               <div className="flex items-center gap-2">
                 <img
-                  src="/public/projects/csipro.svg"
+                  src="/projects/csipro.svg"
                   alt="Logo del laboratorio CSI PRO"
                   className="h-8 w-8"
                 />
@@ -41,11 +41,11 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             buttonUrl="/csipro"
           />
           <ExperienceCard
-            imageSrc="/public/work-experience/legrafica/legrafica-logo.png"
+            imageSrc="/work-experience/legrafica/legrafica-logo.png"
             title={
               <div className="flex items-center justify-start">
                 <img
-                  src="/public/projects/legrafica.svg"
+                  src="/projects/legrafica.svg"
                   alt="Logo de legrafica"
                   className="h-9"
                 />
@@ -56,11 +56,11 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             buttonUrl="/legrafica"
           />
           <ExperienceCard
-            imageSrc="/public/work-experience/unison/unison-logo.png"
+            imageSrc="/work-experience/unison/unison-logo.png"
             title={
               <div className="flex items-center gap-2">
                 <img
-                  src="/public/projects/unison.svg"
+                  src="/projects/unison.svg"
                   alt="Logo de la Universidad de Sonora"
                   className="h-10 w-10"
                 />
@@ -71,7 +71,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
             buttonUrl="/unison"
           />
           {/* <ExperienceCard
-            imageSrc="/public/projects/movilidad/img4.png"
+            imageSrc="/projects/movilidad/img4.png"
             title={
               <div className="flex items-center gap-2">
                 <div className="text-2xl font-normal">TELSOLUCIONES</div>

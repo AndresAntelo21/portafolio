@@ -13,11 +13,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
     <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
       <ProjectsCard
-        imageSrc="/public/projects/csipro/csipro-cover.webp"
+        imageSrc="/projects/csipro/csipro-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/csipro.svg"
+              src="/projects/csipro.svg"
               alt="Logo del laboratorio CSI PRO"
               className="h-8 w-8"
             />
@@ -49,11 +49,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/umana/umana-cover.webp"
+        imageSrc="/projects/umana/umana-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
-              src="/public/projects/umana/umana-logo-text.svg"
+              src="/projects/umana/umana-logo-text.svg"
               alt="Logo de la pagina web de Umana"
               className="h-8 w-40"
             />
@@ -79,11 +79,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/gng/gng-cover.webp"
+        imageSrc="/projects/gng/gng-cover.webp"
         title={
           <div className="flex items-center pt-2">
             <img
-              src="/public/projects/gng/gng-logo.svg"
+              src="/projects/gng/gng-logo.svg"
               alt="Logo de Glam N Glow"
               className="h-8 w-50"
             />
@@ -107,7 +107,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/cbc/cbc-cover.webp"
+        imageSrc="/projects/cbc/cbc-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <div className="font-alegreya font-normal">
@@ -141,11 +141,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/revolt/revolt-cover.webp"
+        imageSrc="/projects/revolt/revolt-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/revolt/revolt-logo.svg"
+              src="/projects/revolt/revolt-logo.svg"
               alt="Logo del revolt"
               className="w-40"
             />
@@ -168,11 +168,11 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       />
 
       <ProjectsCard
-        imageSrc="/public/projects/movilidad/movilidad-cover.webp"
+        imageSrc="/projects/movilidad/movilidad-cover.webp"
         title={
           <div className="flex items-center gap-2">
             <img
-              src="/public/projects/movilidad/movilidad-logo.svg"
+              src="/projects/movilidad/movilidad-logo.svg"
               alt="Logo de movilidad urbana"
               className="h-8 w-8"
             />

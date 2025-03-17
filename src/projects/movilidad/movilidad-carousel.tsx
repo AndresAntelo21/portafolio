@@ -18,7 +18,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/movilidad-slide1.webp"
+            src="/projects/movilidad/movilidad-slide1.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -27,7 +27,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/movilidad-slide2.webp"
+            src="/projects/movilidad/movilidad-slide2.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -36,7 +36,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/movilidad-slide3.webp"
+            src="/projects/movilidad/movilidad-slide3.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -45,7 +45,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/public/projects/movilidad/movilidad-slide4.webp"
+            src="/projects/movilidad/movilidad-slide4.webp"
             alt=""
             className="h-full w-full object-cover"
           />
