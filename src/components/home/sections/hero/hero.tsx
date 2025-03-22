@@ -9,7 +9,7 @@ export const Hero = () => {
             <h1 className="text-2xl">A Software Developer</h1>
             <h2 className="text-3xl font-bold lg:text-4xl">
               Where logic meets{" "}
-              <span className="relative text-violet-600 lg:pl-1">
+              <span className="relative text-blue-600 lg:pl-1">
                 creativity
                 <img
                   src="/hero/eclipse.png"
@@ -21,7 +21,7 @@ export const Hero = () => {
             </h2>
             <h3 className="relative text-xs lg:text-base">
               Because every great app starts with a{" "}
-              <span className="text-violet-600">single line</span> of code
+              <span className="text-blue-500">single line</span> of code
             </h3>
           </div>
           <div className="hidden lg:block">
@@ -29,8 +29,8 @@ export const Hero = () => {
           </div>
         </div>
         <div className="relative mt-10 md:mt-2 lg:px-10">
-          <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-500 blur-2xl md:h-50 md:w-50 lg:h-50 lg:w-50"></div>
-          <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl md:h-20 md:w-20 lg:h-20 lg:w-20"></div>
+          <div className="absolute top-1/2 left-1/2 z-0 h-70 w-70 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-blue-800 blur-2xl md:h-50 md:w-50 lg:h-70 lg:w-70"></div>
+          <div className="absolute top-1/2 left-1/2 z-0 h-30 w-30 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-amber-50 blur-2xl md:h-20 md:w-20 lg:h-30 lg:w-30"></div>
           <img
             src="/hero/me.webp"
             alt="Andres Antelo Figueroa"
@@ -42,14 +42,14 @@ export const Hero = () => {
       <div className="flex flex-col gap-4 pt-10 text-justify lg:pt-20 lg:text-center">
         <div className="flex flex-col gap-2">
           <h3 className="text-center text-2xl">
-            I'm a <span className="text-violet-600">software Engineer</span>.
+            I'm a <span className="text-blue-500">software Engineer</span>.
           </h3>
-          <div className="h-1 w-full rounded-full bg-violet-800"></div>
+          <div className="h-1 w-full rounded-full bg-blue-700"></div>
         </div>
 
         <p>
           I'm a passionate{" "}
-          <span className="text-violet-500">software developer</span> focused an
+          <span className="text-blue-500">software developer</span> focused an
           creating functional and appealing digital solutions. I love turning
           ideas into reality through code, always striving to innovate and
           enhance the user experience.

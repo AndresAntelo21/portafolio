@@ -12,7 +12,7 @@ export const ToolsText: React.FC<ToolsTextProps> = ({
 }) => {
   return (
     <div className={`flex gap-2 ${className}`}>
-      <div className="rounded-full border-1 border-violet-600 bg-violet-950">
+      <div className="rounded-full border-1 border-blue-600 bg-blue-950">
         <div className="flex items-center justify-center gap-2 py-1 pr-4 pl-2">
           <div className="flex h-10 w-10 items-center justify-center rounded-full bg-black text-2xl">
             {icons.map((Icon, index) => (

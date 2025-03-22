@@ -26,16 +26,16 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
     return () => clearTimeout(timer);
   }, []);
 
-  const cardClasses = `bg-secondary flex h-50 w-full gap-4 overflow-hidden rounded-2xl border-t-3 border-t-violet-900 p-4 ${className}`;
+  const cardClasses = `bg-secondary flex h-50 w-full gap-4 overflow-hidden rounded-2xl border-t-3 border-t-blue-900 p-4 ${className}`;
 
   if (loading) {
     return (
       <Skeleton className={cardClasses}>
-        <div className="h-full w-[40%] flex-col rounded-2xl bg-violet-900"></div>
+        <div className="h-full w-[40%] flex-col rounded-2xl bg-blue-900"></div>
         <div className="flex w-[60%] flex-col gap-4">
-          <div className="h-7 w-full rounded bg-violet-900"></div>
-          <div className="h-14 w-full rounded bg-violet-900"></div>
-          <div className="h-10 w-full rounded bg-violet-900"></div>
+          <div className="h-7 w-full rounded bg-blue-900"></div>
+          <div className="h-14 w-full rounded bg-blue-900"></div>
+          <div className="h-10 w-full rounded bg-blue-900"></div>
         </div>
       </Skeleton>
     );
@@ -59,7 +59,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
         </div>
         <a
           href={buttonUrl}
-          className="flex justify-center rounded-lg border-1 border-violet-600 bg-violet-950 py-1"
+          className="flex justify-center rounded-lg border-1 border-blue-600 bg-blue-950 py-1"
         >
           <span className="text-lg uppercase">Learn More</span>
         </a>

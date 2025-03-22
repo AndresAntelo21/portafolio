@@ -13,12 +13,12 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
     >
       <div className="flex flex-col gap-2">
         <h1 className="relative z-10 text-center">
-          Work <span className="text-violet-600">Experience</span>
+          Work <span className="text-blue-600">Experience</span>
         </h1>
-        <div className="h-1 w-full rounded-full bg-violet-700"></div>
+        <div className="h-1 w-full rounded-full bg-blue-700"></div>
       </div>
       <div className="relative">
-        <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-violet-950 blur-2xl md:h-90 md:w-90"></div>
+        <div className="absolute top-1/2 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-blue-950 blur-2xl md:h-90 md:w-90"></div>
         <div className="relative grid grid-cols-1 gap-4 md:grid-cols-2">
           <ExperienceCard
             imageSrc="/work-experience/csipro/csi-logo.png"

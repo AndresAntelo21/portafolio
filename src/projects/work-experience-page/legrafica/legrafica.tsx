@@ -18,13 +18,13 @@ export const Legrafica = () => {
       </div>
       <div className="z-10 text-justify lg:text-center">
         <p>
-          Legrafica is a <span className="text-violet-600">marketing</span> and{" "}
-          <span className="text-violet-600">digital development</span> agency
+          Legrafica is a <span className="text-blue-600">marketing</span> and{" "}
+          <span className="text-blue-600">digital development</span> agency
           specializing in creating comprehensive experiences for brands and
           their consumers. They combine{" "}
-          <span className="text-violet-600">creativity</span> and{" "}
-          <span className="text-violet-600">technology</span> to drive{" "}
-          <span className="text-violet-600">growth</span> and authentic audience
+          <span className="text-blue-600">creativity</span> and{" "}
+          <span className="text-blue-600">technology</span> to drive{" "}
+          <span className="text-blue-600">growth</span> and authentic audience
           connections.
         </p>
       </div>

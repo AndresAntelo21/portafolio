@@ -18,7 +18,7 @@ export const Tools = () => {
   return (
     <div className="font-poppins relative z-10 flex flex-col gap-5 text-center text-2xl lg:px-10 lg:text-center">
       <h1>
-        Frameworks <span className="text-violet-600">&</span> Tools
+        Frameworks <span className="text-blue-600">&</span> Tools
       </h1>
 
       <div className="flex flex-col gap-1">

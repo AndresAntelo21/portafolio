@@ -17,9 +17,9 @@ export const UmanaWeb = () => {
       </div>
       {/* cuadro de tecnologias */}
       <div className="flex w-full flex-col gap-5 lg:flex-row-reverse">
-        <div className="flex h-max w-full flex-col rounded-md border-1 border-violet-800 py-4 pr-4 lg:w-[40%]">
+        <div className="flex h-max w-full flex-col rounded-md border-1 border-blue-800 py-4 pr-4 lg:w-[40%]">
           <div className="w-full">
-            <div className="flex w-max items-center justify-center rounded-r-md bg-violet-800 px-4 py-2">
+            <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
                 Technologies
               </span>
@@ -31,7 +31,7 @@ export const UmanaWeb = () => {
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-violet-800 px-4 py-2">
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
                   Period
                 </span>
@@ -44,7 +44,7 @@ export const UmanaWeb = () => {
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-violet-800 px-4 py-2">
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
                   Links
                 </span>
@@ -54,7 +54,7 @@ export const UmanaWeb = () => {
               <a
                 href="https://github.com/Legrafica/umana_front"
                 target="_blank"
-                className="flex justify-center rounded-lg bg-violet-800/70 py-1"
+                className="flex justify-center rounded-lg bg-blue-800/70 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaGithub />
@@ -64,7 +64,7 @@ export const UmanaWeb = () => {
               <a
                 href="https://umana.com.mx/"
                 target="_blank"
-                className="flex justify-center rounded-lg bg-violet-700/30 py-1"
+                className="flex justify-center rounded-lg bg-blue-700/30 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
@@ -75,7 +75,7 @@ export const UmanaWeb = () => {
           </div>
         </div>
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
-          <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
+          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
             <span>Project Description</span>
           </div>
           <p>
@@ -93,7 +93,7 @@ export const UmanaWeb = () => {
             progress, receive support, and stay motivated on their journey to a
             healthier life.
           </p>
-          <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
+          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
             <span>Features</span>
           </div>
           <div>
@@ -125,7 +125,7 @@ export const UmanaWeb = () => {
             </ul>
           </div>
 
-          <div className="w-full rounded-md bg-violet-800 py-2 text-center text-2xl tracking-widest">
+          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
             <span> How It Works?</span>
           </div>
           <div className="flex flex-col gap-2">

@@ -79,7 +79,7 @@ export const Navigator = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     to="/"
-                    className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
                     Home
                   </Link>
@@ -89,7 +89,7 @@ export const Navigator = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     to="/work-experience"
-                    className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
                     Work Experience
                   </Link>
@@ -99,7 +99,7 @@ export const Navigator = () => {
                 <NavigationMenuLink asChild>
                   <Link
                     to="/projects"
-                    className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
                     Projects
                   </Link>
@@ -111,7 +111,7 @@ export const Navigator = () => {
                     href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block rounded-md px-4 py-2 transition-colors hover:bg-violet-900"
+                    className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
                     Resume
                   </a>
