@@ -11,7 +11,7 @@ export const Foooter = () => {
       <div className="mx-auto flex flex-col gap-10 pt-10 text-center md:w-150 md:flex-row md:items-start md:justify-between md:pt-10 lg:w-250">
         <div className="flex flex-col gap-5 md:text-left">
           <div className="font-poppins w-full text-2xl">
-            <h1 className="mb-2 inline-block border-b-2 border-blue-900">
+            <h1 className="inline-block border-b-2 border-blue-900">
               Andres Portfolio
             </h1>
           </div>

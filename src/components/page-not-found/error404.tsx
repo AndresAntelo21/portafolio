@@ -1,7 +1,7 @@
 export const Error404 = () => {
   return (
-    <div className="flex h-screen flex-col gap-5 lg:flex-row">
-      <div className="flex justify-center rounded-xl pt-13 md:pt-2 lg:items-center lg:rounded-xl lg:pt-0">
+    <div className="flex h-[100svh] w-full flex-col gap-5 lg:flex-row">
+      <div className="lg:rounded-x1 flex justify-center rounded-xl pt-13 md:pt-2 lg:items-center lg:pt-0">
         <img
           src="/page-not-found/page-not-found.webp"
           alt="Something went wrong"
