@@ -63,6 +63,7 @@ export const GnGWeb = () => {
               </a> */}
               <a
                 href="https://glamnglow.mx/"
+                target="_blank"
                 className="flex justify-center rounded-lg bg-blue-700/30 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
