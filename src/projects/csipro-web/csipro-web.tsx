@@ -1,6 +1,6 @@
 import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { CsiCarousel } from "@/projects/csipro-web/csipro-carousel";
-import { FaReact, FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite, SiReactrouter } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -58,7 +58,7 @@ export const CsiproWeb = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              <a
+              {/* <a
                 href="https://github.com/CSIPro/csipro"
                 target="_blank"
                 className="flex justify-center rounded-lg bg-blue-800/70 py-1"
@@ -67,7 +67,7 @@ export const CsiproWeb = () => {
                   <FaGithub />
                   Front-end Repository
                 </span>
-              </a>
+              </a> */}
               <a
                 href="https://csipro.isi.unison.mx/"
                 target="_blank"
