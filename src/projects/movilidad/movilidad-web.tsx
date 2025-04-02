@@ -1,6 +1,6 @@
 import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { MovilidadCarousel } from "@/projects/movilidad/movilidad-carousel";
-import { FaGithub, FaPython, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
+import { FaPython, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
 import { SiJupyter } from "react-icons/si";
 import { FaLink } from "react-icons/fa6";
 export const MovilidadWeb = () => {
@@ -54,7 +54,7 @@ export const MovilidadWeb = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              <a
+              {/* <a
                 href="https://github.com/Kartleth/movilidad"
                 target="_blank"
                 className="flex justify-center rounded-lg bg-blue-800/70 py-1"
@@ -63,7 +63,7 @@ export const MovilidadWeb = () => {
                   <FaGithub />
                   Github Repository
                 </span>
-              </a>
+              </a> */}
               <a
                 href="https://movilidad.isi.unison.mx/"
                 target="_blank"

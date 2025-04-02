@@ -1,6 +1,6 @@
 import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { CbCCarousel } from "@/projects/cbc/cbc-carousel";
-import { FaReact, FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiReactrouter, SiVite } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
@@ -55,7 +55,7 @@ export const CbCWeb = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              <a
+              {/* <a
                 href="https://github.com/Legrafica/cbc_front"
                 target="_blank"
                 className="flex justify-center rounded-lg bg-blue-800/70 py-1"
@@ -64,7 +64,7 @@ export const CbCWeb = () => {
                   <FaGithub />
                   Github Repository
                 </span>
-              </a>
+              </a> */}
               <a
                 href="https://colegiobc.xyz/"
                 target="_blank"

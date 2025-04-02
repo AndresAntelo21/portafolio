@@ -1,6 +1,6 @@
 import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { UmanaCarousel } from "@/projects/umana/umana-carousel";
-import { FaGithub, FaVuejs, FaJs } from "react-icons/fa";
+import { FaVuejs, FaJs } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 // CODIGO SUCIO - PASAR TODO A UN COMPONENTE NO HAY TIEMPO, SOLO ES UNA DEMOSTRACION
 // QUIEN LEA ESTO ES UN METICHE MUEJEJEJE
@@ -51,7 +51,7 @@ export const UmanaWeb = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              <a
+              {/* <a
                 href="https://github.com/Legrafica/umana_front"
                 target="_blank"
                 className="flex justify-center rounded-lg bg-blue-800/70 py-1"
@@ -60,7 +60,7 @@ export const UmanaWeb = () => {
                   <FaGithub />
                   Front-End Repository
                 </span>
-              </a>
+              </a> */}
               <a
                 href="https://umana.com.mx/"
                 target="_blank"

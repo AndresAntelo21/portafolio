@@ -1,6 +1,6 @@
 import { ToolsText } from "@/components/home/sections/tools/tools-text";
 import { GnGCarousel } from "@/projects/gng/gng-carousel";
-import { FaGithub, FaVuejs, FaJs } from "react-icons/fa";
+import { FaVuejs, FaJs } from "react-icons/fa";
 import { FaLink } from "react-icons/fa6";
 // CODIGO SUCIO - PASAR TODO A UN COMPONENTE NO HAY TIEMPO, SOLO ES UNA DEMOSTRACION
 // QUIEN LEA ESTO ES UN METICHE MUEJEJEJE
@@ -51,7 +51,7 @@ export const GnGWeb = () => {
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              <a
+              {/* <a
                 href="https://github.com/Legrafica/glamnglow_front"
                 target="_blank"
                 className="flex justify-center rounded-lg bg-blue-800/70 py-1"
@@ -60,9 +60,9 @@ export const GnGWeb = () => {
                   <FaGithub />
                   Github Repository
                 </span>
-              </a>
+              </a> */}
               <a
-                href="/"
+                href="https://glamnglow.mx/"
                 className="flex justify-center rounded-lg bg-blue-700/30 py-1"
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
