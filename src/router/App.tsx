@@ -20,7 +20,7 @@ export default function App() {
     <>
       <ScrollToTop />
       <Navigator />
-      <main className="mx-auto px-4 py-4 md:w-150 md:px-0 lg:w-250">
+      <main className="mx-auto px-5 md:px-0 md:w-170 lg:w-270">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />

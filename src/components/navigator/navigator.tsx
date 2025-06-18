@@ -20,7 +20,7 @@ import {
 
 export const Navigator = () => {
   return (
-    <nav className="font-montserrat sticky top-0 z-50 w-full bg-black py-6 text-2xl lg:bg-transparent">
+    <nav className="font-montserrat sticky top-0 z-50 w-full bg-transparent py-6 text-2xl lg:bg-transparent">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:justify-center lg:w-250">
         <div className="absolute right-0 block lg:hidden">
           <Drawer direction="right">

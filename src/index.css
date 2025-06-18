@@ -15,8 +15,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: hsl(240 4% 10%);
-
+  background-color:hsl(240 6% 6%);
+ 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@
   --primary: oklch(0.205 0 0);
   --primary-foreground: oklch(0.985 0 0);
   --secondary: hsl(226, 100%, 11%);
-  --blue-primary:hsl(204 100% 42%);
+  --blue-primary: hsl(204 100% 42%);
   
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
