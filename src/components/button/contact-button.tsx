@@ -1,4 +1,4 @@
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 interface ContactButtonProps {
@@ -7,15 +7,11 @@ interface ContactButtonProps {
 
 export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
   return (
-    <div className={`font-poppins flex ${className}`}>
-      <Button asChild variant="outline" className="rounded-l-full border-r-0">
-        <a href="mailto:andresantelo12@gmail.com">Contact Me</a>
-      </Button>
-      <Button
-        asChild
-        variant="outline"
-        className="rounded-l-none rounded-r-none border-r-0 border-l-0"
-      >
+    <div
+      className={`font-montserrat flex flex-col gap-2 text-center text-3xl text-white/70 ${className}`}
+    >
+      <h1 className="text-center text-xl font-medium">Contactame</h1>
+      <div className="flex justify-center gap-6">
         <a
           href="https://github.com/AndresAntelo21"
           target="_blank"
@@ -23,12 +19,6 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
         >
           <FaGithub />
         </a>
-      </Button>
-      <Button
-        asChild
-        variant="outline"
-        className="rounded-l-none rounded-r-none border-r-0 border-l-0"
-      >
         <a
           href="https://linkedin.com/in/andresantel0"
           target="_blank"
@@ -36,12 +26,10 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
         >
           <FaLinkedin />
         </a>
-      </Button>
-      <Button asChild variant="outline" className="rounded-r-full border-l-0">
         <a href="mailto:andresantelo12@gmail.com">
           <FaEnvelope />
         </a>
-      </Button>
+      </div>
     </div>
   );
 };

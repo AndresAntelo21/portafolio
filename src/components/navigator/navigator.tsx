@@ -20,35 +20,35 @@ import {
 
 export const Navigator = () => {
   return (
-    <nav className="font-poppins sticky top-0 z-50 w-full bg-black py-4 text-2xl">
+    <nav className="font-montserrat sticky top-0 z-50 w-full bg-black py-4 text-2xl">
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
-        <div className="absolute left-0 block lg:hidden">
-          <Drawer direction="left">
+        <div className="absolute right-0 block lg:hidden">
+          <Drawer direction="right">
             <DrawerTrigger className="flex items-center">
               <RxHamburgerMenu />
             </DrawerTrigger>
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>
-                  <h1 className="font-poppins text-left text-2xl font-bold">
+                  <h1 className="font-montserrat text-left text-2xl font-bold">
                     Andres Portafolio
                   </h1>
                 </DrawerTitle>
                 <DrawerClose asChild>
                   <button className="absolute top-4 right-4">
-                    <IoIosClose size={24} />
+                    <IoIosClose size={36} />
                   </button>
                 </DrawerClose>
                 <DrawerDescription>
-                  <div className="font-poppins flex flex-col gap-8 pt-4 text-left text-2xl text-white">
+                  <div className="font-montserrat flex flex-col gap-8 pt-4 text-left text-2xl text-white">
                     <DrawerClose asChild>
-                      <Link to="/">Home</Link>
+                      <Link to="/">Inicio</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/work-experience">Work Experience</Link>
+                      <Link to="/work-experience">Experiencia</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/projects">Projects</Link>
+                      <Link to="/projects">Proyectos</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
                       <a
@@ -56,7 +56,7 @@ export const Navigator = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Resume
+                        CV
                       </a>
                     </DrawerClose>
                   </div>
@@ -66,9 +66,9 @@ export const Navigator = () => {
           </Drawer>
         </div>
 
-        <div className="flex-grow text-center lg:text-left">
+        <div className="flex-grow text-left font-semibold lg:text-left">
           <Link to="/">
-            <h1 className="inline-block">Andres Portfolio</h1>
+            <h1 className="inline-block">Andres Portafolio</h1>
           </Link>
         </div>
 
@@ -81,7 +81,7 @@ export const Navigator = () => {
                     to="/"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
-                    Home
+                    Inicio
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -91,7 +91,7 @@ export const Navigator = () => {
                     to="/work-experience"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
-                    Work Experience
+                    Experiencia
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -101,7 +101,7 @@ export const Navigator = () => {
                     to="/projects"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
-                    Projects
+                    Proyectos
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -113,7 +113,7 @@ export const Navigator = () => {
                     rel="noopener noreferrer"
                     className="block rounded-md px-4 py-2 transition-colors hover:bg-blue-900"
                   >
-                    Resume
+                    CV
                   </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>

@@ -11,7 +11,10 @@ interface ProjectsProps {
 
 export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   return (
-    <div className={`font-poppins flex flex-col gap-15 py-10 ${className}`}>
+    <div className={`font-poppins flex flex-col gap-4 py-10 ${className}`}>
+      <h1 className="relative z-10 text-left text-3xl font-bold">
+        MIS <span className="text-blue-primary">PROYECTOS</span>
+      </h1>
       <ProjectsCard
         imageSrc="/projects/csipro/csipro-cover.webp"
         title={

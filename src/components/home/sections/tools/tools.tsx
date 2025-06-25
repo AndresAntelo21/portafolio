@@ -16,9 +16,9 @@ export const Tools = () => {
     "/tools/figma.svg",
   ];
   return (
-    <div className="font-poppins relative z-10 flex flex-col gap-5 text-center text-2xl lg:px-10 lg:text-center">
-      <h1>
-        Frameworks <span className="text-blue-600">&</span> Tools
+    <div className="font-poppins relative z-10 flex flex-col gap-5 text-center text-2xl lg:text-center">
+      <h1 className="relative z-10 text-left text-4xl font-bold lg:text-3xl">
+        FRAMEWORKS & <span className="text-blue-primary">HERRAMIENTAS</span>
       </h1>
 
       <div className="flex flex-col gap-1">

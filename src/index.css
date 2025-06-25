@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
 
 @plugin "tailwindcss-animate";
@@ -20,7 +21,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --background: hsl(229 84% 5%);
+  --background: hsl(240 6% 6%);
   --foreground: hsl(0 0% 100%);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -57,6 +58,8 @@
   --poppins: "Poppins";
   --alegreya: "Alegreya";
   --opaque:hsl(266 27%, 15%);
+
+  --blue-primary: hsl(204 100% 42%);
 }
 
 .dark {
@@ -135,8 +138,11 @@
 /* Custom */
 --font-poppins: "Poppins", sans-serif;
 --font-alegreya: "Alegreya", sans-serif;
+--font-montserrat: "Montserrat", sans-serif;
+
 
 --color-opaque: var(--opaque);
+--color-blue-primary: var(--blue-primary);
 }
 
 @layer base {

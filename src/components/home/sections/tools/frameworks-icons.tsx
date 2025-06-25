@@ -3,16 +3,16 @@ interface CircleGridProps {
 }
 
 export const CircleGrid: React.FC<CircleGridProps> = ({ images }) => {
-  const firstRowImages = images.slice(0, 7);
-  const secondRowImages = images.slice(7);
+  const firstRowImages = images.slice(0, 6);
+  const secondRowImages = images.slice(6);
 
   return (
-    <div className="flex flex-col items-center gap-2 md:gap-4">
-      <div className="flex justify-center gap-1 md:gap-4">
+    <div className="flex flex-col items-center gap-2">
+      <div className="flex justify-center gap-2 pl-9 lg:gap-4 lg:pl-15">
         {firstRowImages.map((imageSrc, index) => (
           <div
             key={index}
-            className="relative h-10 w-10 overflow-hidden rounded-full bg-[#251C31] p-1 lg:h-12 lg:w-12"
+            className="relative size-12 overflow-hidden rounded-full bg-[#251C31] p-1 lg:size-13"
           >
             <img
               src={imageSrc}
@@ -22,16 +22,17 @@ export const CircleGrid: React.FC<CircleGridProps> = ({ images }) => {
           </div>
         ))}
       </div>
+
       {secondRowImages.length > 0 && (
-        <div className="flex justify-center gap-4 md:gap-4">
+        <div className="flex justify-center gap-2 lg:gap-4">
           {secondRowImages.map((imageSrc, index) => (
             <div
               key={index}
-              className="relative h-10 w-10 overflow-hidden rounded-full bg-[#251C31] p-1 lg:h-12 lg:w-12"
+              className="relative size-12 overflow-hidden rounded-full bg-[#251C31] p-1 lg:size-13"
             >
               <img
                 src={imageSrc}
-                alt={`circle ${index + 7}`}
+                alt={`circle ${index + 6}`}
                 className="h-full w-full object-cover object-center"
               />
             </div>
