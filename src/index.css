@@ -15,7 +15,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: hsl(229 84% 5%);
+  background-color: hsl(240 6% 6%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -139,23 +139,35 @@
 --font-poppins: "Poppins", sans-serif;
 --font-alegreya: "Alegreya", sans-serif;
 --font-montserrat: "Montserrat", sans-serif;
+--font-minecraft: "Mojangles", sans-serif;
+
 
 
 --color-opaque: var(--opaque);
 --color-blue-primary: var(--blue-primary);
 }
 
-@layer base {
+@font-face {
+    font-family: 'Mojangles';
+    src: url('/font/Mojangles.woff2') format('woff2'),
+        url('/font/Mojangles.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* @layer base {
   * {
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
-  }
-}
-
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+    @apply bg-background text-foregr  ound;
+  }  
+}   */
+  
+.swiper-pagination-bullet,  
+.swiper-pagination-bullet-active {  
   transition: all 0.3s ease !important;
 }
 
@@ -198,4 +210,34 @@
     width: 2rem !important;
     height: 0.8rem !important;
   }
+}
+
+.shiny-text {
+  color: #b5b5b5a4;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 40%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0) 60%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: -100%;
+  }
+}
+
+.shiny-text.disabled {
+  animation: none;
 }

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosClose } from "react-icons/io";
@@ -19,8 +20,25 @@ import {
 } from "@/components/ui/navigation-menu";
 
 export const Navigator = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="font-montserrat sticky top-0 z-50 w-full bg-black py-4 text-2xl">
+    <nav
+      className={`font-montserrat sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${
+        isScrolled ? "bg-black" : "bg-transparent"
+      }`}
+    >
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
         <div className="absolute right-0 block lg:hidden">
           <Drawer direction="right">
