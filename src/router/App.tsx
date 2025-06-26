@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 import { Home } from "@/components/home/home";
 import { Navigator } from "@/components/navigator/navigator";
 import { WorkExperience } from "@/components/home/sections/work-experience/work-experience";
@@ -15,7 +16,31 @@ import { Unison } from "@/projects/work-experience-page/unison/unison";
 import { Error404 } from "@/components/page-not-found/error404";
 import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
+
 export default function App() {
+  const location = useLocation();
+
+  useEffect(() => {
+    const routeTitles: Record<string, string> = {
+      "/": "Inicio | Andres Portafolio",
+      "/work-experience": "Experiencia | Andres Portafolio",
+      "/projects": "Proyectos | Andres Portafolio",
+      "/csipro-web": "CSI PRO REBOOT | Andres Portafolio",
+      "/movilidad-web": "Movilidad Urbana | Andres Portafolio",
+      "/umana-web": "Umana | Andres Portafolio",
+      "/gng-web": "Glam N Glow | Andres Portafolio",
+      "/cbc-web": "Colegio Bicultural Cananea | Andres Portafolio",
+      "/revolt-web": "Revolt | Andres Portafolio",
+      "/csipro": "CSI PRO | Andres Portafolio",
+      "/legrafica": "Legrafica | Andres Portafolio",
+      "/unison": "Universidad de Sonora | Andres Portafolio",
+      "*": "Error 404 | Andres Portafolio",
+    };
+
+    const title = routeTitles[location.pathname] || "Andres Portafolio";
+    document.title = title;
+  }, [location]);
+
   return (
     <>
       <ScrollToTop />
