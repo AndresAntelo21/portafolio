@@ -4,6 +4,8 @@ import { ContactButton } from "@/components/button/contact-button";
 import Aurora from "@/components/ui/Aurora/Aurora";
 import TiltedCard from "@/components/ui/TiltedCard/TiltedCard";
 
+
+
 export const Hero = () => {
   return (
     <>
@@ -28,7 +30,7 @@ export const Hero = () => {
               <ContactButton className="items-start" />
             </div>
           </div>
-          <div className="flex w-full flex-col items-center gap-4 lg:w-[70%]">
+          <div className="flex w-full flex-col items-center gap-4 lg:w-[50%]">
             <TiltedCard
               imageSrc="/hero/me-background.png"
               altText="Andres Antelo - Front-End Developer"
