@@ -12,7 +12,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
       className={`font-poppins flex flex-col gap-10 pt-2 text-2xl lg:text-center ${className}`}
     >
       <div className="flex flex-col gap-2">
-        <h1 className="relative z-10 text-left text-4xl font-bold lg:text-3xl">
+        <h1 className="relative z-10 text-left text-3xl font-bold">
           EXPERIENCIA DE <span className="text-blue-primary">TRABAJO</span>
         </h1>
       </div>
