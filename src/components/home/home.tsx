@@ -11,8 +11,8 @@ import { About } from "@/components/home/sections/about/about";
 export const Home = () => {
   return (
     <>
-      <Hero />
       <main className="flex w-full flex-col gap-10">
+        <Hero />
         <About />
         <WorkExperience />
         <Tools />
