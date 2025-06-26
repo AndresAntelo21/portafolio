@@ -17,7 +17,7 @@ export const Tools = () => {
   ];
   return (
     <div className="font-poppins relative z-10 flex flex-col gap-5 text-center text-2xl lg:text-center">
-      <h1 className="relative z-10 text-left text-4xl font-bold lg:text-3xl">
+      <h1 className="relative z-10 text-left text-3xl font-bold">
         FRAMEWORKS & <span className="text-blue-primary">HERRAMIENTAS</span>
       </h1>
 
