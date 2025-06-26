@@ -7,7 +7,7 @@ import TiltedCard from "@/components/ui/TiltedCard/TiltedCard";
 export const Hero = () => {
   return (
     <>
-      <div className="absolute top-0 w-full">
+      <div className="absolute top-0 left-0 w-full">
         <Aurora
           colorStops={["#050a48", "#32012b", "#2d0bb1"]}
           blend={0.5}
