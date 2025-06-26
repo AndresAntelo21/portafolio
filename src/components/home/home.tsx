@@ -4,15 +4,15 @@ import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 import { About } from "@/components/home/sections/about/about";
 
-interface ProjectsProps {
-  className?: string;
-}
 
-export const Home: React.FC<ProjectsProps> = ({ className }) => {
+
+// interface ProjectsProps {
+//   className?: string;
+// }
+
+export const Home = () => {
   return (
-    <div
-      className={`flex w-full flex-col items-center justify-center gap-10 py-4 ${className}`}
-    >
+    <>
       <Hero />
       <main className="flex w-full flex-col gap-10">
         <About />
