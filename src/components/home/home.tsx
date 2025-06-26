@@ -4,8 +4,6 @@ import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 import { About } from "@/components/home/sections/about/about";
 
-
-
 // interface ProjectsProps {
 //   className?: string;
 // }
@@ -20,6 +18,6 @@ export const Home = () => {
         <Tools />
         <Projects />
       </main>
-    </div>
+    </>
   );
 };
