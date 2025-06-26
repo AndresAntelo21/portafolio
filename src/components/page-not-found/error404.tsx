@@ -1,32 +1,37 @@
+import { useNavigate } from "react-router-dom";
+import StarBorder from "../ui/StarBorder/StarBorder";
 export const Error404 = () => {
+  const navigate = useNavigate();
+
+  const handleRedirect = () => {
+    navigate("/");
+  };
   return (
-    <div className="flex h-[100svh] w-full flex-col gap-5 lg:flex-row">
-      <div className="lg:rounded-x1 flex justify-center rounded-xl pt-13 md:pt-2 lg:items-center lg:pt-0">
-        <img
-          src="/page-not-found/page-not-found.webp"
-          alt="Something went wrong"
-          className="overflow-hidden rounded-xl lg:h-90 lg:w-200"
-        />
-      </div>
-      <div className="flex flex-col items-center gap-20 lg:justify-center">
-        <div className="font-poppins flex flex-col gap-3 text-center">
-          <h1 className="font-poppins text-center text-3xl">
-            Something went <span className="text-blue-700">wrong</span>.
-          </h1>
-          <h2>
-            We couldn’t find what you were looking for.{" "}
-            <span className="text-blue-700">
-              Try going back to the homepage
-            </span>
-            .
-          </h2>
+    <div className="font-montserrat flex h-[100svh] w-full items-center justify-center overflow-hidden">
+      <div className="flex flex-col gap-4 text-center md:flex-row md:pb-17">
+        <div>
+          <img
+            src="/page-not-found/page-not-found.webp"
+            alt="Page not found"
+            className="w-150 rounded-2xl"
+          />
         </div>
-        <a
-          className="font-poppins flex w-max justify-center rounded-lg border-1 border-blue-600 bg-blue-950 px-20 py-2 text-xl md:py-1"
-          href="/"
-        >
-          HOME
-        </a>
+        <div className="flex flex-col items-center gap-2 md:justify-center">
+          <p className="text-2xl font-semibold">
+            <span className="text-blue-primary">Oops</span>... algo salió mal
+          </p>
+          <span>Esta página decidió tomarse un descanso.</span>
+          <StarBorder
+            as="button"
+            className="bg-blue-primary font-montserrat pointer mt-4 w-50 rounded-lg px-6 py-2 text-lg font-semibold text-white"
+            color="blue"
+            speed="4s"
+            thickness={2}
+            onClick={handleRedirect}
+          >
+            Volver al Inicio
+          </StarBorder>
+        </div>
       </div>
     </div>
   );

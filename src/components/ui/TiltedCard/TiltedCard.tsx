@@ -131,7 +131,7 @@ export default function TiltedCard({
         />
 
         {displayOverlayContent && overlayContent && (
-          <motion.div className="absolute top-7 left-10 z-[2] [transform:translateZ(30px)] rounded-lg bg-gray-800/60 p-2 will-change-transform">
+          <motion.div className="absolute top-7 left-17 z-[2] [transform:translateZ(30px)] rounded-lg bg-gray-800/60 p-2 will-change-transform">
             {overlayContent}
           </motion.div>
         )}

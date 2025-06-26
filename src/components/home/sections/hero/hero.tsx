@@ -44,7 +44,7 @@ export const Hero = () => {
               displayOverlayContent={true}
               overlayContent={
                 <p className="font-minecraft text-[10px] font-semibold">
-                  Andres - Front-End
+                  Andres Antelo
                 </p>
               }
             />
