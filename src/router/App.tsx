@@ -34,7 +34,7 @@ export default function App() {
       "/csipro": "CSI PRO | Andres Portafolio",
       "/legrafica": "Legrafica | Andres Portafolio",
       "/unison": "Universidad de Sonora | Andres Portafolio",
-      "*": "Error 404 | Andres Portafolio",
+      "*": "Error 404 | Andres PortafDDDolio",
     };
 
     const title = routeTitles[location.pathname] || "Andres Portafolio";
