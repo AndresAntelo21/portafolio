@@ -6,7 +6,7 @@
 // import { BiLogoTypescript } from "react-icons/bi";
 // import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
 
-import { Card } from "../work-experience/prueba";
+import { Card } from "../work-experience/experience";
 
 interface ProjectsProps {
   className?: string;
