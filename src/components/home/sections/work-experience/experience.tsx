@@ -51,7 +51,7 @@ export const Card: React.FC<CardProps> = ({
           )}
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
-          <div className="absolute w-full h-full top-0 left-0 bg-black/50 transition duration-300 group-hover/card:bg-black/20"></div>
+          <div className="absolute w-full h-full top-0 left-0 bg-black/70 transition duration-300 group-hover/card:bg-black/20"></div>
           <div className="flex flex-row items-center space-x-4 z-10">
             <img
               height="100"
