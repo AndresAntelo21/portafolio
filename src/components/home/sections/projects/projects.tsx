@@ -110,7 +110,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
               />
             </div>
           }
-          description="Glam N Glow by Ale Murillo es un estudio de belleza exclusivo que resalta la esencia única de cada persona. Ofrece maquillaje, peinados y tratamientos faciales con profesionalismo y calidad."
+          description="Glam N Glow by Ale Murillo es un estudio de belleza que ofrece maquillaje, peinados y tratamientos para resaltar la belleza natural con estilo y calidad."
           linkUrl="/gng-web"
         />
         <Card
