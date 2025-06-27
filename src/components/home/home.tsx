@@ -3,6 +3,7 @@ import { WorkExperience } from "./sections/work-experience/work-experience";
 import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 import { About } from "@/components/home/sections/about/about";
+// import CardDemo from "./sections/work-experience/prueba";
 
 // interface ProjectsProps {
 //   className?: string;
@@ -17,6 +18,7 @@ export const Home = () => {
         <WorkExperience />
         <Tools />
         <Projects />
+        {/* <CardDemo /> */}
       </main>
     </>
   );
