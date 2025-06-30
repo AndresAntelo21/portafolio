@@ -22,17 +22,17 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
         <ExperienceCard
           imageSrc="/work-experience/unison/unison-logo.png"
-          hoverImageSrc="/work-experience/unison/unison.png"
+          hoverImageSrc="/work-experience/unison/unison-hover.png"
           linkUrl="/unison"
         />
         <ExperienceCard
           imageSrc="/work-experience/csipro/csi-logo.png"
-          hoverImageSrc="/projects/csipro/csi-slide1.webp"
+          hoverImageSrc="/work-experience/csipro/csi-hover.png"
           linkUrl="/csipro"
         />
         <ExperienceCard
           imageSrc="/work-experience/legrafica/legrafica-logo.png"
-          hoverImageSrc="/work-experience/legrafica/image.png"
+          hoverImageSrc="/work-experience/legrafica/legrafica-hover.png"
           linkUrl="/legrafica"
         />
         <ExperienceCard

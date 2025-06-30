@@ -2,9 +2,9 @@ import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
 
 
 interface ExperienceCardProps {
-  imageSrc: string; // Imagen principal
-  hoverImageSrc: string; // Imagen que aparece al hacer hover
-  linkUrl: string; // URL de redirección
+  imageSrc: string;
+  hoverImageSrc: string;
+  linkUrl: string;
 }
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
