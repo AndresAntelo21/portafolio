@@ -45,7 +45,7 @@ export default function App() {
     <>
       <ScrollToTop />
       <Navigator />
-      <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250">
+      <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250 min-h-screen">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />
