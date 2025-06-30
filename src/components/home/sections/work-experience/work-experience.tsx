@@ -21,6 +21,11 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
         <ExperienceCard
+          imageSrc="/work-experience/unison/unison-logo.png"
+          hoverImageSrc="/work-experience/unison/unison.png"
+          linkUrl="/unison"
+        />
+        <ExperienceCard
           imageSrc="/work-experience/csipro/csi-logo.png"
           hoverImageSrc="/projects/csipro/csi-slide1.webp"
           linkUrl="/csipro"
@@ -29,11 +34,6 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           imageSrc="/work-experience/legrafica/legrafica-logo.png"
           hoverImageSrc="/work-experience/legrafica/image.png"
           linkUrl="/legrafica"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/unison/unison-logo.png"
-          hoverImageSrc="/work-experience/unison/unison.png"
-          linkUrl="/unison"
         />
         <ExperienceCard
           imageSrc="/work-experience/telsoluciones/telsoluciones-logo.svg"
