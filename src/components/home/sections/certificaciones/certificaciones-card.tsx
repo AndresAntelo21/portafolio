@@ -40,7 +40,7 @@ export const CertificacionesCard: React.FC<CertificacionesCardProps> = ({
                 threshold={0.1}
                 delay={0}
             >
-                <div className="group relative flex flex-col text-xl font-normal overflow-hidden border border-gray-700/50 bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:border-blue-500/50 md:flex-row">
+                <div className="group h-full relative flex flex-col text-xl font-normal overflow-hidden border border-gray-700/50 bg-gradient-to-br from-gray-900 to-black rounded-2xl shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:border-blue-500/50 md:flex-row">
                     <div className="relative w-full h-full bg-white rounded-t-2xl overflow-hidden md:w-80 md:rounded-l-2xl md:rounded-tr-none">
                         <img
                             src={imageSrc}
