@@ -11,8 +11,8 @@ export const Hero = () => {
         <Aurora
           colorStops={["#050a48", "#32012b", "#2d0bb1"]}
           blend={0.5}
-          amplitude={1.0}
-          speed={0.5}
+          amplitude={1}
+          speed={1}
         />
       </div>
       <div className="font-montserrat flex w-full flex-col text-4xl font-bold lg:flex-row lg:text-5xl">
