@@ -1,6 +1,6 @@
-// import { Button } from "@/components/ui/button";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import ShinyText from "@/components/ui/ShinyText/ShinyText";
+
 interface ContactButtonProps {
   className?: string;
 }
@@ -21,6 +21,7 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
           href="https://github.com/AndresAntelo21"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-transform duration-300 hover:scale-125 hover:text-white"
         >
           <FaGithub />
         </a>
@@ -28,10 +29,14 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
           href="https://linkedin.com/in/andresantel0"
           target="_blank"
           rel="noopener noreferrer"
+          className="transition-transform duration-300 hover:scale-125 hover:text-white"
         >
           <FaLinkedin />
         </a>
-        <a href="mailto:andresantelo12@gmail.com">
+        <a
+          href="mailto:andresantelo12@gmail.com"
+          className="transition-transform duration-300 hover:scale-125 hover:text-white"
+        >
           <FaEnvelope />
         </a>
       </div>
