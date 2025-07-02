@@ -35,9 +35,8 @@ export const Navigator = () => {
 
   return (
     <nav
-      className={`font-montserrat sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${
-        isScrolled ? "bg-black" : "bg-transparent"
-      }`}
+      className={`font-montserrat sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-transparent"
+        }`}
     >
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
         <div className="absolute right-0 block lg:hidden">
@@ -67,6 +66,9 @@ export const Navigator = () => {
                     </DrawerClose>
                     <DrawerClose asChild>
                       <Link to="/projects">Proyectos</Link>
+                    </DrawerClose>
+                    <DrawerClose asChild>
+                      <Link to="/certificados">Certificados</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
                       <a
@@ -120,6 +122,16 @@ export const Navigator = () => {
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
                     Proyectos
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/certificados"
+                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                  >
+                    Certificados
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

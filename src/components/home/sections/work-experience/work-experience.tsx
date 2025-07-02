@@ -31,14 +31,14 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           linkUrl="/csipro"
         />
         <ExperienceCard
-          imageSrc="/work-experience/legrafica/legrafica-logo.png"
-          hoverImageSrc="/work-experience/legrafica/legrafica-hover.png"
-          linkUrl="/legrafica"
-        />
-        <ExperienceCard
           imageSrc="/work-experience/telsoluciones/telsoluciones-logo.svg"
           hoverImageSrc="/work-experience/telsoluciones/image.png"
           linkUrl="/telsoluciones"
+        />
+        <ExperienceCard
+          imageSrc="/work-experience/legrafica/legrafica-logo.png"
+          hoverImageSrc="/work-experience/legrafica/legrafica-hover.png"
+          linkUrl="/legrafica"
         />
       </div>
     </div >

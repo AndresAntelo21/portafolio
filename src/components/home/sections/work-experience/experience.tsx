@@ -9,7 +9,7 @@ interface CardProps {
   title: React.ReactNode;
   description: string;
   className?: string;
-  linkUrl?: string; // Nueva propiedad para manejar la redirección
+  linkUrl?: string;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -24,7 +24,7 @@ export const Card: React.FC<CardProps> = ({
 }) => {
   const handleRedirect = () => {
     if (linkUrl) {
-      window.location.href = linkUrl; // Redirige a la URL especificada
+      window.location.href = linkUrl;
     }
   };
 
@@ -43,7 +43,7 @@ export const Card: React.FC<CardProps> = ({
     >
       <div
         className={cn("max-w-full w-full group/card cursor-pointer", className)}
-        onClick={handleRedirect} // Maneja el clic para redirigir
+        onClick={handleRedirect}
       >
         <div
           className={cn(
