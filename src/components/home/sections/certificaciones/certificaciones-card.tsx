@@ -1,6 +1,6 @@
 import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
 import { Button } from "@/components/ui/button";
-import { Building2, SquareArrowOutUpRight, Award, X } from "lucide-react";
+import { Building2, SquareArrowOutUpRight, X } from "lucide-react";
 import { useState } from "react";
 
 interface CertificacionesCardProps {
@@ -48,10 +48,10 @@ export const CertificacionesCard: React.FC<CertificacionesCardProps> = ({
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                         />
                         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300"></div>
-                        <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
+                        {/* <div className="absolute top-3 right-3 bg-emerald-500 text-white px-3 py-1 rounded-full text-sm font-medium flex items-center gap-1 shadow-lg">
                             <Award className="w-4 h-4" />
                             Verificado
-                        </div>
+                        </div> */}
                     </div>
                     <div className="flex flex-col justify-between bg-black/95 backdrop-blur-sm rounded-b-2xl md:rounded-r-2xl md:rounded-bl-none flex-1">
                         <div className="p-6 space-y-4">
