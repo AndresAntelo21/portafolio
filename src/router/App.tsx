@@ -17,6 +17,7 @@ import { Error404 } from "@/components/page-not-found/error404";
 import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export default function App() {
   const location = useLocation();
@@ -45,6 +46,7 @@ export default function App() {
 
   return (
     <>
+      <SpeedInsights />
       <ScrollToTop />
       <Navigator />
       <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250 min-h-screen">
