@@ -84,7 +84,7 @@ export const CertificacionesCard: React.FC<CertificacionesCardProps> = ({
                 </div>
             </AnimatedContent>
             {showPDFPreview && (
-                <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+                <div className="fixed inset-0  bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4 " onClick={() => setShowPDFPreview(false)} >
                     <div className="relative bg-white rounded-2xl shadow-2xl max-w-4xl w-full h-[90vh] overflow-hidden">
                         <div className="flex items-center justify-between p-4 border-b bg-fondo">
                             <h3 className="text-lg font-semibold text-white-900">{title} - {platform}</h3>
