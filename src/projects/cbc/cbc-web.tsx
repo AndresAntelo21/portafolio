@@ -5,8 +5,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiReactrouter, SiVite } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaLink } from "react-icons/fa6";
-// CODIGO SUCIO - PASAR TODO A UN COMPONENTE NO HAY TIEMPO, SOLO ES UNA DEMOSTRACION
-// QUIEN LEA ESTO ES UN METICHE MUEJEJEJE
+
 export const CbCWeb = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8">
@@ -16,13 +15,13 @@ export const CbCWeb = () => {
           Colegio Bicultural Cananea
         </h1>
       </div>
-      {/* cuadro de tecnologias */}
+      {/* cuadro de tecnologías */}
       <div className="flex flex-col gap-5 lg:flex-row-reverse">
         <div className="flex h-max w-full flex-col rounded-md border-1 border-blue-800 py-4 pr-4 lg:w-[40%]">
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Technologies
+                Tecnologías
               </span>
             </div>
           </div>
@@ -37,34 +36,24 @@ export const CbCWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Period
+                  Periodo
                 </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3 className="">February 2025 -</h3>
-              <span className="italic">Present</span>
+              <h3>Febrero 2025 -</h3>
+              <span className="italic">Presente</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Links
+                  Enlaces
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              {/* <a
-                href="https://github.com/Legrafica/cbc_front"
-                target="_blank"
-                className="flex justify-center rounded-lg bg-blue-800/70 py-1"
-              >
-                <span className="flex items-center gap-2 text-lg uppercase">
-                  <FaGithub />
-                  Github Repository
-                </span>
-              </a> */}
               <a
                 href="https://colegiobc.xyz/"
                 target="_blank"
@@ -72,7 +61,7 @@ export const CbCWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Link
+                  Enlace
                 </span>
               </a>
             </div>
@@ -80,91 +69,53 @@ export const CbCWeb = () => {
         </div>
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Project Description</span>
+            <span>Descripción del Proyecto</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Colegio Bicultural Cananea (CBC)</strong> is an
-              educational institution committed to the comprehensive development
-              of its students, offering a{" "}
-              <strong> bilingual learning model</strong> that fosters academic,
-              cultural, and personal growth. With an innovative approach, CBC
-              provides a dynamic and high-quality learning environment,
-              preparing students for future challenges.
+              <strong>Colegio Bicultural Cananea (CBC)</strong> es una institución educativa comprometida con el desarrollo integral de sus estudiantes, ofreciendo un <strong>modelo bilingüe de aprendizaje</strong> que fomenta el crecimiento académico, cultural y personal. Con un enfoque innovador, CBC proporciona un ambiente de aprendizaje dinámico y de alta calidad, preparando a los alumnos para los retos futuros.
             </p>
             <p>
-              The school’s website has been designed to offer{" "}
-              <strong> clear and accessible information</strong> about its
-              educational programs, institutional values, and admissions
-              process, making it easier for the school community to stay
-              connected.
+              El sitio web del colegio ha sido diseñado para ofrecer información <strong>clara y accesible</strong> sobre sus programas educativos, valores institucionales y proceso de admisiones, facilitando que la comunidad escolar se mantenga conectada.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Features</span>
+            <span>Características</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
               <li>
-                <strong>Institutional Information</strong>: Showcasing the
-                school's mission, vision, and core values.
+                <strong>Información Institucional</strong>: Presentación de la misión, visión y valores fundamentales del colegio.
               </li>
               <li>
-                <strong>Educational Programs</strong>: Details about the
-                academic levels and programs offered.
+                <strong>Programas Educativos</strong>: Detalles sobre los niveles académicos y programas ofrecidos.
               </li>
               <li>
-                <strong>Intuitive Navigation</strong>: Optimized design for a
-                smooth user experience.
+                <strong>Navegación Intuitiva</strong>: Diseño optimizado para una experiencia de usuario fluida.
               </li>
               <li>
-                <strong>Modern and Responsive Design</strong>: Ensuring a
-                seamless experience across all devices.
+                <strong>Diseño Moderno y Responsivo</strong>: Garantizando una experiencia sin problemas en todos los dispositivos.
               </li>
               <li>
-                <strong>Contact System</strong>: Facilitating direct
-                communication with the institution for inquiries or enrollment
-                processes.
+                <strong>Sistema de Contacto</strong>: Facilitando la comunicación directa con la institución para consultas o procesos de inscripción.
               </li>
             </ul>
           </div>
-
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span> How It Works?</span>
+            <span>¿Cómo funciona?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              The <strong>Colegio Bicultural Cananea</strong> website was
-              developed using modern technologies to ensure optimal performance
-              and efficient navigation.
+              El sitio web del <strong>Colegio Bicultural Cananea</strong> fue desarrollado usando tecnologías modernas para asegurar un rendimiento óptimo y una navegación eficiente.
             </p>
             <p>
-              The <strong>frontend</strong> is built with <strong>React</strong>
-              , one of the most popular JavaScript libraries, providing a fast
-              and interactive user interface. <strong>TypeScript</strong> was
-              used to enhance code scalability and security, ensuring a stable
-              experience for users.
+              El <strong>frontend</strong> está construido con <strong>React</strong>, una de las librerías de JavaScript más populares, que proporciona una interfaz rápida e interactiva. Se utilizó <strong>TypeScript</strong> para mejorar la escalabilidad y seguridad del código, asegurando una experiencia estable para los usuarios.
             </p>
             <p>
-              For seamless navigation between sections, the site implements{" "}
-              <strong> React Router</strong>, allowing smooth transitions
-              without page reloads. The interface design is crafted with{" "}
-              <strong>Tailwind CSS</strong>, a modern framework that enhances
-              layout flexibility while maintaining a clean and professional
-              aesthetic.
+              Para una navegación fluida entre secciones, el sitio implementa <strong>React Router</strong>, permitiendo transiciones suaves sin recargar la página. El diseño de la interfaz está elaborado con <strong>Tailwind CSS</strong>, un framework moderno que mejora la flexibilidad del diseño manteniendo una estética limpia y profesional.
             </p>
             <p>
-              Finally, the website was built using <strong> Vite</strong>, a
-              powerful development tool that improves performance and reduces
-              loading times, ensuring a fast and smooth browsing experience on
-              any device.
-            </p>
-            <p>
-              With this technology stack, the{" "}
-              <strong>Colegio Bicultural Cananea</strong> website provides an{" "}
-              <strong>informative</strong>, <strong>accessible</strong>,{" "}
-              <strong>and modern platform</strong>, making it easy for the
-              school community to stay informed and connected.
+              Finalmente, el sitio fue construido con <strong>Vite</strong>, una herramienta poderosa de desarrollo que mejora el rendimiento y reduce los tiempos de carga, garantizando una experiencia rápida y fluida en cualquier dispositivo.
             </p>
           </div>
         </div>
