@@ -67,9 +67,9 @@ export const Navigator = () => {
                     <DrawerClose asChild>
                       <Link to="/projects">Proyectos</Link>
                     </DrawerClose>
-                    <DrawerClose asChild>
+                    {/* <DrawerClose asChild>
                       <Link to="/certificados">Certificados</Link>
-                    </DrawerClose>
+                    </DrawerClose> */}
                     <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
@@ -125,7 +125,7 @@ export const Navigator = () => {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link
                     to="/certificados"
@@ -134,7 +134,7 @@ export const Navigator = () => {
                     Certificados
                   </Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <a

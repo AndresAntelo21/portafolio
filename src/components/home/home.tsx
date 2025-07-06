@@ -3,7 +3,7 @@ import { WorkExperience } from "./sections/work-experience/work-experience";
 import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 import { About } from "@/components/home/sections/about/about";
-import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
+// import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
 
 export const Home = () => {
   return (
@@ -14,7 +14,7 @@ export const Home = () => {
         <WorkExperience />
         <Tools />
         <Projects />
-        <Certificaciones />
+        {/* <Certificaciones /> */}
       </main>
     </>
   );
