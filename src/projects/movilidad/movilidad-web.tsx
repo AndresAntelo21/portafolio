@@ -21,7 +21,7 @@ export const MovilidadWeb = () => {
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Technologies
+                Tecnologías
               </span>
             </div>
           </div>
@@ -34,23 +34,21 @@ export const MovilidadWeb = () => {
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
-                <span className="font-poppins text-xl font-medium tracking-widest">
-                  Period
-                </span>
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">              <span className="font-poppins text-xl font-medium tracking-widest">
+                Período
+              </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3 className="">February 2024 -</h3>
-              <span className="italic">Present</span>
+              <h3 className="">Febrero 2024 -</h3>
+              <span className="italic">Presente</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
-                <span className="font-poppins text-xl font-medium tracking-widest">
-                  Links
-                </span>
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">              <span className="font-poppins text-xl font-medium tracking-widest">
+                Enlaces
+              </span>
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
@@ -71,7 +69,7 @@ export const MovilidadWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Link
+                  Ver Proyecto
                 </span>
               </a>
             </div>
@@ -79,73 +77,73 @@ export const MovilidadWeb = () => {
         </div>
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Project Description</span>
+            <span>Descripción del Proyecto</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Movilidad Urbana</strong> is a project designed to
-              analyze, visualize, and optimize traffic and urban mobility. By
-              leveraging technology, it provides valuable insights to aid in
-              transportation planning, route optimization, and traffic
-              congestion reduction.
+              <strong>Movilidad Urbana</strong> es un proyecto diseñado para
+              analizar, visualizar y optimizar el tráfico y la movilidad urbana. Mediante el uso de
+              tecnología avanzada, proporciona información valiosa para ayudar en la planificación del
+              transporte, optimización de rutas y reducción de la congestión vehicular.
             </p>
             <p>
-              The <strong>Movilidad Urbana</strong> website presents data,
-              analysis, and visualizations on traffic patterns and urban
-              movement, making key information accessible to researchers, urban
-              planners, and mobility authorities.
+              El sitio web de <strong>Movilidad Urbana</strong> presenta datos,
+              análisis y visualizaciones sobre patrones de tráfico y movimiento urbano, haciendo que la
+              información clave sea accesible para investigadores, planificadores urbanos y autoridades
+              de movilidad.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Features</span>
+            <span>Características</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
               <li>
-                <strong>Data Analysis</strong>: Displays relevant information
-                about traffic and urban mobility trends.
+                <strong>Análisis de Datos</strong>: Muestra información relevante
+                sobre tendencias de tráfico y movilidad urbana.
               </li>
               <li>
-                <strong> Interactive Visualization</strong>: Graphs and visual
-                representations to enhance data understanding.
+                <strong>Visualización Interactiva</strong>: Gráficos y representaciones
+                visuales para mejorar la comprensión de los datos.
               </li>
               <li>
-                <strong>Accessible Design</strong>: A clear and optimized
-                interface for easy information access.
+                <strong>Diseño Accesible</strong>: Una interfaz clara y optimizada
+                para un fácil acceso a la información.
               </li>
               <li>
-                <strong>Research-Oriented</strong>: A project focused on
-                exploring solutions to improve city mobility.
+                <strong>Orientado a la Investigación</strong>: Un proyecto enfocado en
+                explorar soluciones para mejorar la movilidad urbana.
               </li>
               <li>
-                <strong>Advanced Technology Implementation</strong>: Utilizes
-                cutting-edge tools for data collection and processing.
+                <strong>Implementación de Tecnología Avanzada</strong>: Utiliza
+                herramientas de vanguardia para la recopilación y procesamiento de datos.
               </li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span> How It Works?</span>
+            <span>¿Cómo Funciona?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              The development of the <strong>Movilidad Urbana</strong> website
-              integrates various technologies to ensure efficient data
-              processing and clear information presentation.
+              El desarrollo del sitio web de <strong>Movilidad Urbana</strong> integra
+              diversas tecnologías para garantizar un procesamiento eficiente de datos
+              y una presentación clara de la información.
             </p>
             <p>
-              The <strong>backend</strong> is built with <strong>Python</strong>
-              , a widely used programming language for data analysis and machine
-              learning. <strong>Jupyter Notebook</strong> is used for data
-              processing, modeling, and generating interactive visualizations.
+              El <strong>backend</strong> está construido con <strong>Python</strong>,
+              un lenguaje de programación ampliamente utilizado para análisis de datos
+              y aprendizaje automático. <strong>Jupyter Notebook</strong> se utiliza
+              para el procesamiento de datos, modelado y generación de visualizaciones
+              interactivas.
             </p>
             <p>
-              The <strong>frontend</strong> is developed with{" "}
-              <strong>pure HTML and CSS</strong>, providing a simple yet
-              functional design that makes data easy to access. This technology
-              stack ensures that the <strong>Movilidad Urbana</strong> project
-              delivers an efficient and user-friendly platform for analyzing and
-              improving urban mobility.
+              El <strong>frontend</strong> está desarrollado con{" "}
+              <strong>HTML y CSS puros</strong>, proporcionando un diseño simple
+              pero funcional que facilita el acceso a los datos. Este conjunto de
+              tecnologías asegura que el proyecto <strong>Movilidad Urbana</strong>{" "}
+              ofrezca una plataforma eficiente y fácil de usar para analizar y
+              mejorar la movilidad urbana.
             </p>
           </div>
         </div>
