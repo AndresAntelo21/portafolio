@@ -42,7 +42,7 @@ export const CbCWeb = () => {
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
               <h3>Febrero 2025 -</h3>
-              <span className="italic">Presente</span>
+              <span className="">Marzo 2025</span>
             </div>
           </div>
           <div>

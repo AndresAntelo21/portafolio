@@ -40,7 +40,7 @@ export const UmanaWeb = () => {
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
               <h3>Noviembre 2024 -</h3>
-              <span className="italic">Presente</span>
+              <span className="">Enero 2025</span>
             </div>
           </div>
 

@@ -38,7 +38,7 @@ export const RevoltWeb = () => {
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
               <h3>Diciembre 2024 -</h3>
-              <span className="italic">Presente</span>
+              <span className="">Febrero 2025</span>
             </div>
           </div>
           <div>

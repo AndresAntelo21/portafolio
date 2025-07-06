@@ -41,7 +41,7 @@ export const MovilidadWeb = () => {
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
               <h3 className="">Febrero 2024 -</h3>
-              <span className="italic">Presente</span>
+              <span className="">Noviembre 2024</span>
             </div>
           </div>
           <div>
