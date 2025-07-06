@@ -1,10 +1,8 @@
-import { ProjectsCard } from "@/components/home/sections/projects/projects-card";
-import { FaPython, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
-import { SiJupyter } from "react-icons/si";
+import { Card } from "@/components/home/sections/work-experience/experience";
 
 export const Unison = () => {
   return (
-    <div className="flex flex-col justify-center gap-10 pb-10">
+    <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <div className="flex flex-row items-center justify-center gap-4 text-xl lg:text-3xl">
         <img
           src="/projects/unison.svg"
@@ -13,7 +11,7 @@ export const Unison = () => {
         />
         <h1 className="font-poppins uppercase">Universidad de Sonora</h1>
       </div>
-      <div className="z-10 text-justify lg:text-center">
+      <div className="z-10 text-left lg:text-center">
         <p>
           The <span className="text-blue-600">Universidad de Sonora</span> is a
           leading institution in higher education and research in northwest{" "}
@@ -26,32 +24,40 @@ export const Unison = () => {
           region.
         </p>
       </div>
-
-      <ProjectsCard
-        imageSrc="/projects/movilidad/movilidad-cover.webp"
+      <div className="flex flex-wrap gap-4 ">
+        <h1 className="relative z-10 text-left text-3xl font-bold">
+          MIS <span className="text-blue-primary">PROYECTOS</span> DE LA
+        </h1>
+        <img src="/work-experience/unison/unison-white.svg" alt="logo de la unison" className="w-30" />
+      </div>
+      <Card
+        backgroundImage="/projects/movilidad/movilidad-slide1.webp"
+        avatarSrc="/work-experience/unison/unison-logo.png"
+        authorName={
+          <div className="flex items-center gap-2">
+            <img
+              src="/work-experience/unison/unison-white.svg"
+              alt="Logo de la Universidad de Sonora"
+              className="w-25"
+            />
+          </div>
+        }
+        readTime={
+          <p className=" text-gray-400">Febrero 2024 - <span className="">Noviembre 2024</span></p>
+        }
         title={
           <div className="flex items-center gap-2">
             <img
               src="/projects/movilidad/movilidad-logo.svg"
-              alt="Logo de movilidad urbana"
-              className="h-8 w-8"
+              alt="Logo de legrafica"
+              className="w-7"
             />
             <div className="font-normal">
               <span>MOVILIDAD URBANA</span>
             </div>
           </div>
         }
-        date="08/02/2024"
-        description="Movilidad Urbana is a project designed to
-              analyze, visualize, and optimize traffic and urban mobility. By
-              leveraging technology, it provides valuable insights to aid in
-              transportation planning, route optimization, and traffic
-              congestion reduction.
-              The Movilidad Urbana website presents data,
-              analysis, and visualizations on traffic patterns and urban
-              movement, making key information accessible to researchers, urban
-              planners, and mobility authorities."
-        icons={[FaPython, FaHtml5, FaCss3Alt, FaJs, SiJupyter]}
+        description="Movilidad Urbana analiza y visualiza el tráfico para mejorar la movilidad en la ciudad. Su sitio web ofrece datos y análisis accesibles para tomadores de decisiones."
         linkUrl="/movilidad-web"
       />
     </div>
