@@ -5,6 +5,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite, SiReactrouter } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { FaLink } from "react-icons/fa6";
+
 export const CsiproWeb = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-8">
@@ -19,13 +20,14 @@ export const CsiproWeb = () => {
           CSI PRO <span className="rounded-xl bg-violet-800 px-2">REBOOT</span>
         </h1>
       </div>
-      {/* cuadro de tecnologias */}
+
+      {/* cuadro de tecnologías */}
       <div className="flex flex-col gap-5 lg:flex-row-reverse">
         <div className="flex h-max w-full flex-col rounded-md border-1 border-blue-800 py-4 pr-4 lg:w-[40%]">
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Technologies
+                Tecnologías
               </span>
             </div>
           </div>
@@ -40,34 +42,24 @@ export const CsiproWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Period
+                  Periodo
                 </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3 className="">November 2023 -</h3>
-              <span className="italic">Present</span>
+              <h3>Noviembre 2023 -</h3>
+              <span className="italic">Presente</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Links
+                  Enlaces
                 </span>
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              {/* <a
-                href="https://github.com/CSIPro/csipro"
-                target="_blank"
-                className="flex justify-center rounded-lg bg-blue-800/70 py-1"
-              >
-                <span className="flex items-center gap-2 text-lg uppercase">
-                  <FaGithub />
-                  Front-end Repository
-                </span>
-              </a> */}
               <a
                 href="https://csipro.isi.unison.mx/"
                 target="_blank"
@@ -75,89 +67,55 @@ export const CsiproWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Link
+                  Enlace
                 </span>
               </a>
             </div>
           </div>
         </div>
+
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Project Description</span>
+            <span>Descripción del Proyecto</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>CSI PRO REBOOT</strong> is a platform created to showcase
-              the <strong>CSI PRO laboratory</strong> at the{" "}
-              <strong>Universidad de Sonora</strong>. The main goal of this
-              website is to highlight the lab's work, projects, and impact on
-              both students and professionals.
+              <strong>CSI PRO REBOOT</strong> es una plataforma creada para dar visibilidad al <strong>laboratorio CSI PRO</strong> de la <strong>Universidad de Sonora</strong>. El objetivo principal del sitio es destacar el trabajo, los proyectos y el impacto del laboratorio en estudiantes y profesionales.
             </p>
             <p>
-              The site was developed to address the lack of awareness about the
-              lab among students, providing them with valuable information and
-              opportunities to get involved in its activities.
+              Este sitio fue desarrollado para atender la falta de conocimiento que los estudiantes tienen sobre el laboratorio, brindándoles información valiosa y oportunidades para involucrarse en sus actividades.
             </p>
           </div>
+
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Features</span>
+            <span>Características</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
-              <li>
-                <strong>Lab Presentation</strong>: Detailed information about
-                CSI PRO’s mission and purpose.
-              </li>
-              <li>
-                <strong>Members Section</strong>: A dedicated area showcasing
-                the lab members and their roles in different projects.
-              </li>
-              <li>
-                <strong>Active Projects</strong>: A space to display ongoing
-                developments and technological advancements.
-              </li>
-              <li>
-                <strong>Events and Participation</strong>: A calendar featuring
-                events in which the lab collaborates within the university and
-                beyond.
-              </li>
-              <li>
-                <strong>Activity Registration</strong>: A feature allowing
-                students to sign up for events and projects.
-              </li>
-              <li>
-                <strong> Modern & Responsive Design</strong>: Optimized for
-                smooth navigation on both mobile devices and desktops.
-              </li>
+              <li><strong>Presentación del laboratorio</strong>: Información detallada sobre la misión y objetivos de CSI PRO.</li>
+              <li><strong>Sección de miembros</strong>: Área dedicada para mostrar a los miembros del laboratorio y su rol en distintos proyectos.</li>
+              <li><strong>Proyectos activos</strong>: Espacio para mostrar los desarrollos tecnológicos en curso.</li>
+              <li><strong>Eventos y participación</strong>: Calendario con los eventos donde participa el laboratorio dentro y fuera de la universidad.</li>
+              <li><strong>Registro de actividades</strong>: Funcionalidad para que los estudiantes se registren en eventos y proyectos.</li>
+              <li><strong>Diseño moderno y responsivo</strong>: Optimizado para una navegación fluida en móviles y computadoras.</li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span> How It Works?</span>
+            <span>¿Cómo funciona?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              The <strong>CSI PRO REBOOT</strong> website is built using modern
-              technologies that ensure fast performance, accessibility, and a
-              seamless user experience.
+              El sitio <strong>CSI PRO REBOOT</strong> está construido con tecnologías modernas que garantizan un rendimiento rápido, accesibilidad y una experiencia de usuario fluida.
             </p>
             <p>
-              The <strong>frontend</strong> is developed with{" "}
-              <strong>React and TypeScript</strong>, providing a scalable and
-              robust structure. <strong>React Router</strong> is used to manage
-              navigation between different sections without reloading the page.
+              El <strong>frontend</strong> fue desarrollado con <strong>React y TypeScript</strong>, lo que proporciona una estructura escalable y robusta. Se utiliza <strong>React Router</strong> para gestionar la navegación entre secciones sin recargar la página.
             </p>
             <p>
-              For the user interface and styling, <strong>Tailwind CSS</strong>{" "}
-              is implemented, ensuring a clean and responsive design. The
-              project runs on <strong>Vite</strong>, a powerful tool that
-              enhances performance and speeds up development.
+              Para la interfaz y estilos, se implementa <strong>Tailwind CSS</strong>, logrando un diseño limpio y adaptable. El proyecto se ejecuta con <strong>Vite</strong>, una herramienta potente que mejora el rendimiento y acelera el desarrollo.
             </p>
             <p>
-              With this technology stack, <strong>CSI PRO REBOOT</strong> not
-              only informs students about the lab but also encourages them to
-              become part of its community and actively participate in its
-              projects.
+              Con este stack tecnológico, <strong>CSI PRO REBOOT</strong> no solo informa a los estudiantes sobre el laboratorio, sino que también los motiva a formar parte de su comunidad y participar activamente en sus proyectos.
             </p>
           </div>
         </div>
