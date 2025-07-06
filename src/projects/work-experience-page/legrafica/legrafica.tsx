@@ -25,6 +25,12 @@ export const Legrafica = () => {
           auténticas con la audiencia.
         </p>
       </div>
+      <div className="flex flex-wrap gap-4 ">
+        <h1 className="relative z-10 text-left text-3xl font-bold">
+          MIS <span className="text-blue-primary">PROYECTOS</span> DE
+        </h1>
+        <img src="/projects/legrafica.svg" alt="logo de legrafica" className="w-35" />
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card
           backgroundImage="/projects/umana/umana-slide1.webp"

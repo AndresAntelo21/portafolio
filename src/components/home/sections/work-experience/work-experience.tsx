@@ -32,7 +32,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
         />
         <ExperienceCard
           imageSrc="/work-experience/telsoluciones/telsoluciones-logo.svg"
-          hoverImageSrc="/work-experience/telsoluciones/image.png"
+          hoverImageSrc="/work-experience/telsoluciones/bg-telsoluciones.png"
           linkUrl="/telsoluciones"
         />
         <ExperienceCard

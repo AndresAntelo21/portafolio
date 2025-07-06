@@ -17,6 +17,7 @@ import { Error404 } from "@/components/page-not-found/error404";
 import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
+import { Telsoluciones } from "@/projects/work-experience-page/telsoluciones/telsoluciones";
 
 export default function App() {
   const location = useLocation();
@@ -64,6 +65,7 @@ export default function App() {
           <Route path="/csipro" element={<Csipro />} />
           <Route path="/legrafica" element={<Legrafica />} />
           <Route path="/unison" element={<Unison />} />
+          <Route path="/telsoluciones" element={<Telsoluciones />} />
           {/* Page not found */}
           <Route path="*" element={<Error404 />} />
         </Routes>
