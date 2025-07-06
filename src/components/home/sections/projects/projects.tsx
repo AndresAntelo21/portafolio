@@ -1,11 +1,3 @@
-// import { ProjectsCard } from "./projects-card";
-// import { FaReact } from "react-icons/fa";
-// import { RiTailwindCssFill } from "react-icons/ri";
-// import { SiVite, SiJupyter, SiReactrouter } from "react-icons/si";
-// import { FaVuejs, FaJs, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa";
-// import { BiLogoTypescript } from "react-icons/bi";
-// import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
-
 import { Card } from "../work-experience/experience";
 
 interface ProjectsProps {
