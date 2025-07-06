@@ -4,7 +4,7 @@ export const Legrafica = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
       <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/legrafica/bg-legrafica.png" alt="imagen del CSI" className="object-cover w-full h-full object-center" />
+        <img src="/work-experience/legrafica/bg-legrafica.png" alt="imagen de legrafica" className="object-cover w-full h-full object-center" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
           <img

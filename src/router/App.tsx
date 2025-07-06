@@ -18,6 +18,7 @@ import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
 import { Telsoluciones } from "@/projects/work-experience-page/telsoluciones/telsoluciones";
+import { Vincco } from "@/projects/work-experience-page/vincco/vincco";
 
 export default function App() {
   const location = useLocation();
@@ -36,6 +37,8 @@ export default function App() {
       "/csipro": "CSI PRO | Andres Portafolio",
       "/legrafica": "Legrafica | Andres Portafolio",
       "/unison": "Universidad de Sonora | Andres Portafolio",
+      "/telsoluciones": "TelSoluciones | Andres Portafolio",
+      "/vincco": "Vincco | Andres Portafolio",
       "/certificados": "Certificados | Andres Portafolio",
       "*": "Error 404 | Andres Portafolio",
     };
@@ -66,6 +69,8 @@ export default function App() {
           <Route path="/legrafica" element={<Legrafica />} />
           <Route path="/unison" element={<Unison />} />
           <Route path="/telsoluciones" element={<Telsoluciones />} />
+          <Route path="/vincco" element={<Vincco />} />
+
           {/* Page not found */}
           <Route path="*" element={<Error404 />} />
         </Routes>

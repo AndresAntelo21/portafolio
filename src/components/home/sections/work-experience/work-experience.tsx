@@ -40,6 +40,11 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           hoverImageSrc="/work-experience/legrafica/legrafica-hover.png"
           linkUrl="/legrafica"
         />
+        <ExperienceCard
+          imageSrc="/work-experience/vincco/bg-vincco.png"
+          hoverImageSrc="/work-experience/vincco/bg-site.png"
+          linkUrl="/vincco"
+        />
       </div>
     </div >
   );
