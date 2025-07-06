@@ -1,151 +1,143 @@
-import { ProjectsCard } from "@/components/home/sections/projects/projects-card";
-import { FaReact } from "react-icons/fa";
-import { RiTailwindCssFill } from "react-icons/ri";
-import { SiVite } from "react-icons/si";
-import { BiLogoTypescript } from "react-icons/bi";
-import { FaVuejs, FaJs } from "react-icons/fa";
-import { SiReactrouter } from "react-icons/si";
+import { Card } from "@/components/home/sections/work-experience/experience";
 
 export const Legrafica = () => {
   return (
-    <div className="flex flex-col justify-center gap-10">
-      <div className="flex flex-row items-center justify-center gap-4 text-3xl">
-        <img
-          src="/projects/legrafica.svg"
-          alt="logo del Legrafica"
-          className="w-40"
-        />
+    <div className="flex flex-col justify-center md:items-start gap-10">
+      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
+        <img src="/work-experience/legrafica/bg-legrafica.png" alt="imagen del CSI" className="object-cover w-full h-full object-center" />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
+          <img
+            src="/projects/legrafica.svg"
+            alt="logo del legrafica"
+            className="w-40"
+          />
+        </div>
       </div>
-      <div className="z-10 text-justify lg:text-center">
+      <div className="">
         <p>
-          Legrafica is a <span className="text-blue-600">marketing</span> and{" "}
-          <span className="text-blue-600">digital development</span> agency
-          specializing in creating comprehensive experiences for brands and
-          their consumers. They combine{" "}
-          <span className="text-blue-600">creativity</span> and{" "}
-          <span className="text-blue-600">technology</span> to drive{" "}
-          <span className="text-blue-600">growth</span> and authentic audience
-          connections.
+          Legrafica es una agencia de <span className="text-blue-primary">marketing</span> y{" "}
+          <span className="text-blue-primary">desarrollo digital</span> especializada en
+          crear experiencias integrales para marcas y sus consumidores. Combinan{" "}
+          <span className="text-blue-primary">creatividad</span> y{" "}
+          <span className="text-blue-primary">tecnología</span> para impulsar el{" "}
+          <span className="text-blue-primary">crecimiento</span> y generar conexiones
+          auténticas con la audiencia.
         </p>
       </div>
-      <ProjectsCard
-        imageSrc="/projects/umana/umana-cover.webp"
-        title={
-          <div className="flex items-center pt-2">
-            <img
-              src="/projects/umana/umana-logo-text.svg"
-              alt="Logo de la pagina web de Umana"
-              className="h-8 w-40"
-            />
-          </div>
-        }
-        date="05/11/2024"
-        description="Umana is an online platform designed to improve
-            people’s health and well-being through
-            virtual workouts,
-            personalized nutrition,
-            and an active community. It provides access to
-            live and on-demand workout classes, along with a
-            wide selection of healthy recipes and
-            meal plans to help users maintain a balanced
-            lifestyle. Umana also features a membership system that unlocks
-            exclusive content, providing a more complete and personalized
-            experience. Additionally, its community allows users to share
-            progress, receive support, and stay motivated on their journey to a
-            healthier life."
-        icons={[FaVuejs, FaJs]}
-        linkUrl="/umana-web"
-      />
-
-      <ProjectsCard
-        imageSrc="/projects/gng/gng-cover.webp"
-        title={
-          <div className="flex items-center pt-2">
-            <img
-              src="/projects/gng/gng-logo.svg"
-              alt="Logo de Glam N Glow"
-              className="h-8 w-50"
-            />
-          </div>
-        }
-        date="15/02/2025"
-        description="Glam N Glow by Ale Murillo is an exclusive
-              beauty studio dedicated to enhancing the essence
-              and uniqueness of every individual through personalized services.
-              With a focus on professionalism,
-              innovation, and quality, the
-              studio delivers a unique experience that highlights natural
-              beauty, allowing each client to showcase their style and
-              confidence.
-              From professional makeup and facial treatments to hairstyling and
-              hair care, Glam N Glow is the perfect destination
-              for those seeking top-tier beauty services.
-            "
-        icons={[FaVuejs, FaJs]}
-        reverse={true}
-        linkUrl="/gng-web"
-      />
-
-      <ProjectsCard
-        imageSrc="/projects/cbc/cbc-cover.webp"
-        title={
-          <div className="flex items-center gap-2">
-            <div className="font-alegreya font-normal">
-              <span>Colegio Bicultural Cananea</span>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <Card
+          backgroundImage="/projects/umana/umana-slide1.webp"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          authorName={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/legrafica.svg"
+                alt="Logo del laboratorio CSI PRO"
+                className="w-25"
+              />
             </div>
-          </div>
-        }
-        date="24/02/2025"
-        description="Colegio Bicultural Cananea (CBC) is an
-              educational institution committed to the comprehensive development
-              of its students, offering a
-               bilingual learning model that fosters academic,
-              cultural, and personal growth. With an innovative approach, CBC
-              provides a dynamic and high-quality learning environment,
-              preparing students for future challenges.
-              The school’s website has been designed to offer
-               clear and accessible information about its
-              educational programs, institutional values, and admissions
-              process, making it easier for the school community to stay
-              connected.
-            "
-        icons={[
-          FaReact,
-          BiLogoTypescript,
-          SiReactrouter,
-          SiVite,
-          RiTailwindCssFill,
-        ]}
-        linkUrl="/cbc-web"
-      />
-
-      <ProjectsCard
-        imageSrc="/projects/revolt/revolt-cover.webp"
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/projects/revolt/revolt-logo.svg"
-              alt="Logo del revolt"
-              className="w-40"
-            />
-          </div>
-        }
-        date="26/12/2024"
-        description="Revolt is a company focused on
-              sustainable energy solutions, offering solar
-              panel systems that help homes and businesses reduce electricity
-              costs while minimizing their environmental impact. With a focus on
-              innovation and efficiency, Revolt aims to provide clean and
-              accessible technology to drive a more sustainable future.
-              The Revolt landing page is designed to showcase
-              the company, its values, and the benefits of adopting solar
-              energy, while also making it easy for potential customers to get
-              in touch.
-            "
-        icons={[FaVuejs, FaJs]}
-        reverse={true}
-        linkUrl="/revolt-web"
-      />
+          }
+          readTime={
+            <p className=" text-gray-400">Noviembre 2024 - <span className="">Febrero 2025</span></p>
+          }
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/umana/umana-logo-text.svg"
+                alt="Logo de legrafica"
+                className="w-50"
+              />
+            </div>
+          }
+          description="Umana es una plataforma en línea que ofrece rutinas, recetas y planes personalizados para mejorar la salud."
+          linkUrl="/umana-web"
+        />
+        <Card
+          backgroundImage="/projects/gng/gng-slide1.webp"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          authorName={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/legrafica.svg"
+                alt="Logo del legrafica"
+                className="w-25"
+              />
+            </div>
+          }
+          readTime={
+            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+          }
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/gng/gng-logo.svg"
+                alt="Logo de legrafica"
+                className="w-50"
+              />
+            </div>
+          }
+          description="Glam N Glow by Ale Murillo es un estudio de belleza que ofrece maquillaje, peinados y tratamientos para resaltar la belleza natural con estilo y calidad."
+          linkUrl="/gng-web"
+        />
+        <Card
+          backgroundImage="/projects/cbc/cbc-slide1.webp"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          authorName={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/legrafica.svg"
+                alt="Logo del legrafica"
+                className="w-25"
+              />
+            </div>
+          }
+          readTime={
+            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+          }
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/cbc/cbc-logo.svg"
+                alt="Logo de legrafica"
+                className="w-15"
+              />
+              <div className="font-alegreya font-normal">
+                <span>Colegio Bicultural Cananea</span>
+              </div>
+            </div>
+          }
+          description="El Colegio Bicultural Cananea ofrece educación bilingüe y formación integral. Su sitio web informa sobre programas, valores y proceso de admisión."
+          linkUrl="/cbc-web"
+        />
+        <Card
+          backgroundImage="/projects/revolt/revolt-slide1.webp"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          authorName={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/legrafica.svg"
+                alt="Logo del legrafica"
+                className="w-25"
+              />
+            </div>
+          }
+          readTime={
+            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+          }
+          title={
+            <div className="flex items-center gap-2">
+              <img
+                src="/projects/revolt/revolt-logo.svg"
+                alt="Logo de legrafica"
+                className="w-40"
+              />
+            </div>
+          }
+          description="Revolt ofrece soluciones de energía solar para reducir costos y cuidar el medio ambiente. Su página presenta la empresa, sus valores y facilita el contacto con clientes."
+          linkUrl="/revolt-web"
+        />
+      </div>
     </div>
   );
 };
