@@ -3,25 +3,30 @@ import { Card } from "@/components/home/sections/work-experience/experience";
 export const Unison = () => {
   return (
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
-      <div className="flex flex-row items-center justify-center gap-4 text-xl lg:text-3xl">
-        <img
-          src="/projects/unison.svg"
-          alt="Logo de la Universidad de Sonora"
-          className="w-15 lg:w-25"
-        />
-        <h1 className="font-poppins uppercase">Universidad de Sonora</h1>
+      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
+        <img src="/work-experience/unison/bg-unison.png" alt="" className="object-cover w-full h-full object-center" />
+        <div className="absolute inset-0 bg-black/50"></div>
+        <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
+          <img
+            src="/projects/unison.svg"
+            alt="Logo de la Universidad de Sonora"
+            className="w-15 lg:w-20"
+          />
+          <h1 className="font-poppins uppercase text-2xl lg:text-3xl ">
+            Universidad de Sonora
+          </h1>
+        </div>
       </div>
-      <div className="z-10 text-left lg:text-center">
+      <div className="">
         <p>
-          The <span className="text-blue-600">Universidad de Sonora</span> is a
-          leading institution in higher education and research in northwest{" "}
-          <span className="text-blue-600">Mexico</span>. With a wide range of
-          academic programs and a commitment to innovation, it prepares
-          professionals who contribute to the{" "}
-          <span className="text-blue-600"> social</span>,{" "}
-          <span className="text-blue-600"> economic</span>, and{" "}
-          <span className="text-blue-600">cultural</span> development of the
-          region.
+          La <span className="text-blue-primary">Universidad de Sonora</span> es una
+          institución líder en educación superior e investigación en el noroeste de{" "}
+          <span className="text-blue-primary">México</span>. Con una amplia oferta de
+          programas académicos y un compromiso con la innovación, forma profesionales
+          que contribuyen al desarrollo{" "}
+          <span className="text-blue-primary">social</span>,{" "}
+          <span className="text-blue-primary">económico</span> y{" "}
+          <span className="text-blue-primary">cultural</span> de la región.
         </p>
       </div>
       <div className="flex flex-wrap gap-4 ">
