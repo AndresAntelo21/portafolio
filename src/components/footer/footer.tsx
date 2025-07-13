@@ -44,7 +44,7 @@ export const Foooter = () => {
               Certificados
             </Link> */}
             <a
-              href="https://drive.google.com/file/d/185dgOBLNU1kapKmNW3OEcANvZMnRmch5/view?usp=sharing"
+              href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
