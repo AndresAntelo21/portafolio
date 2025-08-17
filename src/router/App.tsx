@@ -19,6 +19,7 @@ import { ScrollToTop } from "@/components/scroll-to-top";
 import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
 import { Telsoluciones } from "@/projects/work-experience-page/telsoluciones/telsoluciones";
 import { Vincco } from "@/projects/work-experience-page/vincco/vincco";
+import Aurora from "@/components/ui/Aurora/Aurora";
 
 export default function App() {
   const location = useLocation();
@@ -50,6 +51,14 @@ export default function App() {
   return (
     <>
       <ScrollToTop />
+      <div className="fixed top-0 left-0 w-full">
+        <Aurora
+          colorStops={["#050a48", "#32012b", "#2d0bb1"]}
+          blend={0.5}
+          amplitude={1}
+          speed={1}
+        />
+      </div>
       <Navigator />
       <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250 min-h-screen">
         <Routes>

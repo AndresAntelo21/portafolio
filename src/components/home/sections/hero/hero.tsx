@@ -1,20 +1,13 @@
 // import { ContactButton } from "@/components/button/contact-button";
 
 import { ContactButton } from "@/components/button/contact-button";
-import Aurora from "@/components/ui/Aurora/Aurora";
+// import Aurora from "@/components/ui/Aurora/Aurora";
 import TiltedCard from "@/components/ui/TiltedCard/TiltedCard";
 
 export const Hero = () => {
   return (
     <>
-      <div className="absolute top-0 left-0 w-full">
-        <Aurora
-          colorStops={["#050a48", "#32012b", "#2d0bb1"]}
-          blend={0.5}
-          amplitude={1}
-          speed={1}
-        />
-      </div>
+
       <div className="font-montserrat flex w-full flex-col text-4xl font-bold lg:flex-row lg:text-5xl">
         <div className="lg:flex lg:flex-row lg:items-center">
           <div className="flex w-full flex-col items-start gap-4 pb-4">
