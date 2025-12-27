@@ -2,12 +2,14 @@ import { CircleGrid } from "./frameworks-icons";
 
 export const Tools = () => {
   const images = [
+    "/tools/docker.svg",
     "/tools/react.svg",
     "/tools/vue.svg",
     "/tools/html.svg",
     "/tools/python.svg",
     "/tools/nodejs-white.svg",
     "/tools/typescript.svg",
+    "/tools/Nest.js.svg",
     "/tools/js.svg",
     "/tools/git.svg",
     "/tools/css.svg",

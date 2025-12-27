@@ -3,8 +3,8 @@ interface CircleGridProps {
 }
 
 export const CircleGrid: React.FC<CircleGridProps> = ({ images }) => {
-  const firstRowImages = images.slice(0, 6);
-  const secondRowImages = images.slice(6);
+  const firstRowImages = images.slice(0, 7);
+  const secondRowImages = images.slice(7);
 
   return (
     <div className="flex flex-col items-center gap-2">

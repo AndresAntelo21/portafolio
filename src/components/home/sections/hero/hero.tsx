@@ -14,7 +14,7 @@ export const Hero = () => {
             <p>
               ¡Hola! Me llamo{" "}
               <span className="text-blue-primary">Andrés Antelo</span> y soy{" "}
-              <span className="text-blue-primary">desarrollador Front-End</span>
+              <span className="text-blue-primary">desarrollador Full Stack</span>
               .
             </p>
             <div className="hidden lg:block">
@@ -24,7 +24,7 @@ export const Hero = () => {
           <div className="flex w-full flex-col items-center gap-4 lg:w-[50%]">
             <TiltedCard
               imageSrc="/hero/me-background.png"
-              altText="Front-End Developer"
+              altText="Full Stack Developer"
               containerHeight="300px"
               containerWidth="300px"
               imageHeight="300px"
