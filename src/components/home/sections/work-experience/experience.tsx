@@ -10,7 +10,6 @@ interface CardProps {
   description: string;
   className?: string;
   linkUrl?: string;
-  index?: number;
 }
 
 export const Card: React.FC<CardProps> = ({
@@ -22,7 +21,6 @@ export const Card: React.FC<CardProps> = ({
   description,
   className,
   linkUrl,
-  index = 0,
 }) => {
   const handleRedirect = () => {
     if (linkUrl) {
@@ -30,23 +28,18 @@ export const Card: React.FC<CardProps> = ({
     }
   };
 
-  // Alternar direcciones diagonales para crear un efecto más dinámico
-  const directions: Array<"diagonal" | "diagonal-reverse"> = ["diagonal", "diagonal-reverse"];
-  const direction = directions[index % 2];
-  const delay = index * 0.12; // Delay escalonado
-
   return (
     <AnimatedContent
-      distance={120}
-      direction={direction}
+      distance={100}
+      direction="vertical"
       reverse={false}
-      duration={0.9}
+      duration={0.8}
       ease="power3.out"
       initialOpacity={0}
       animateOpacity
-      scale={0.9}
+      scale={1}
       threshold={0.1}
-      delay={delay}
+      delay={0}
     >
       <div
         className={cn("max-w-full w-full group/card cursor-pointer", className)}
