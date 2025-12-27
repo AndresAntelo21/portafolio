@@ -41,7 +41,7 @@ const InfiniteCarousel = ({
           animation: scroll-right 30s linear infinite;
         }
       `}</style>
-      <div className="w-screen overflow-hidden -mx-4 lg:mx-0 lg:w-full">
+      <div className="w-screen overflow-hidden lg:w-full" style={{ marginLeft: 'calc(-50vw + 50%)', marginRight: 'calc(-50vw + 50%)' }}>
         <div
           className={`flex gap-2 ${direction === "left" ? "infinite-scroll-left" : "infinite-scroll-right"}`}
           style={{ display: "inline-flex", width: "fit-content" }}
