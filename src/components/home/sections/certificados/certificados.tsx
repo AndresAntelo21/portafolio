@@ -31,6 +31,28 @@ export const Certificados = () => {
             logo: "/certificados/certificados-company/Udemy.svg",
             badges: ["UX Writing", "Content Design", "User Experience"],
         },
+        {
+            title: "Aspectos básicos: Datos, datos, en todas partes",
+            platform: "GOOGLE",
+            url: "https://www.coursera.org/account/accomplishments/verify/6LKLH47ESP8Z",
+            logo: "/certificados/certificados-company/google.svg",
+            badges: [
+                "SQL",
+                "Data Analytics",
+                "Data Visualization"
+            ],
+        },
+        {
+            title: "Fundamentos de la ciberseguridad",
+            platform: "GOOGLE",
+            url: "https://www.coursera.org/account/accomplishments/verify/HLK69M355WRH",
+            logo: "/certificados/certificados-company/google.svg",
+            badges: [
+                "Cybersecurity",
+                "Cyber Attacks",
+                "Threat Management"
+            ],
+        },
     ];
 
     return (
