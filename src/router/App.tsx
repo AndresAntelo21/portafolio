@@ -16,7 +16,7 @@ import { Unison } from "@/projects/work-experience-page/unison/unison";
 import { Error404 } from "@/components/page-not-found/error404";
 import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { Certificaciones } from "@/components/home/sections/certificaciones/certificaciones";
+import { Certificados } from "@/components/home/sections/certificados/certificados";
 import { Telsoluciones } from "@/projects/work-experience-page/telsoluciones/telsoluciones";
 import { Vincco } from "@/projects/work-experience-page/vincco/vincco";
 import Aurora from "@/components/ui/Aurora/Aurora";
@@ -65,7 +65,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/work-experience" element={<WorkExperience />} />
           <Route path="/projects" element={<Projects />} />
-          <Route path="/certificados" element={<Certificaciones />} />
+          <Route path="/certificados" element={<Certificados />} />
           {/* Projects */}
           <Route path="/csipro-web" element={<CsiproWeb />} />
           <Route path="/movilidad-web" element={<MovilidadWeb />} />
