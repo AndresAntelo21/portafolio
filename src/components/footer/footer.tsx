@@ -11,37 +11,37 @@ export const Foooter = () => {
       <div className="mx-auto flex flex-col gap-10 pt-10 text-center md:w-150 md:flex-row md:items-start md:justify-between md:pt-10 lg:w-250">
         <div className="flex flex-col gap-5 md:text-left">
           <div className="font-montserrat w-full text-2xl">
-            <h1 className="">ANDRES PORTAFOLIO</h1>
+            <h1 className="">ANDRES PORTFOLIO</h1>
           </div>
           <div className="font-montserrat flex flex-col gap-5 text-lg">
-            <span className="text-xl text-zinc-400">Navegación</span>
+            <span className="text-xl text-zinc-400">Navigation</span>
             <Link
               to="/"
               onClick={handleLinkClick}
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
             >
-              Inicio
+              Home
             </Link>
             <Link
               to="/work-experience"
               onClick={handleLinkClick}
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
             >
-              Experiencia de Trabajo
+              Work Experience
             </Link>
             <Link
               to="/projects"
               onClick={handleLinkClick}
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
             >
-              Proyectos
+              Projects
             </Link>
             <Link
               to="/certificados"
               onClick={handleLinkClick}
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
             >
-              Certificados
+              Certificates
             </Link>
             <a
               href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"

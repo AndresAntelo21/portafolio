@@ -4,19 +4,19 @@ export const Certificaciones = () => {
     return (
         <div className="font-montserrat text-3xl font-bold">
             <section className="flex gap-4 flex-col">
-                <h1>MIS <span className="text-blue-primary">CERTIFICACIONES</span></h1>
+                <h1>MY <span className="text-blue-primary">CERTIFICATIONS</span></h1>
                 <div className="grid grid-cols-1 gap-4">
                     <CertificacionesCard
-                        title="Fundamentos de la ciberseguridad"
+                        title="Foundations of Cybersecurity"
                         platform="COURSERA"
-                        description="Certificación en fundamentos de ciberseguridad que abarca conceptos esenciales de protección digital."
+                        description="Certification in cybersecurity fundamentals covering essential concepts of digital protection."
                         imageSrc="/certificados/certificados-img/FundamentosCiberseguridad.jpg"
                         pdfUrl="/certificados/FundamentosCiberseguridad.pdf"
                     />
                     <CertificacionesCard
-                        title="Aspectos básicos: Datos, datos, en todas partes"
+                        title="Foundations: Data, Data, Everywhere"
                         platform="COURSERA"
-                        description="Certificación en análisis de datos que introduce los conceptos clave sobre el uso y procesamiento de datos para la toma de decisiones."
+                        description="Certification in data analysis introducing key concepts on data use and processing for decision-making."
                         imageSrc="/certificados/certificados-img/DatosTodasPartes.jpg"
                         pdfUrl="/certificados/DatosTodasPartes.pdf"
                     />

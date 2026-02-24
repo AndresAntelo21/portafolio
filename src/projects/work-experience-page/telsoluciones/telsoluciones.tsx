@@ -11,27 +11,27 @@ export const Telsoluciones = () => {
     return (
         <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
             <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-                <img src="/work-experience/telsoluciones/bg-telsoluciones.png" alt="centro de contacto TelSoluciones" className="object-cover w-full h-full object-center" />
+                <img src="/work-experience/telsoluciones/bg-telsoluciones.png" alt="TelSoluciones contact center" className="object-cover w-full h-full object-center" />
                 <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
                     <img
                         src="/work-experience/telsoluciones/telsol-logo-text.svg"
-                        alt="Logo de Telsoluciones"
+                        alt="TelSoluciones logo"
                         className="w-60"
                     />
                 </div>
             </div>
             <div className="">
                 <p>
-                    <span className="text-blue-primary">Telsoluciones</span> es un centro de contacto que brinda soporte telefónico a clientes de <span className="text-blue-primary">Telcel</span>. Ahí reforcé mis habilidades de comunicación y trabajo en equipo.
+                    <span className="text-blue-primary">Telsoluciones</span> is a contact center that provides phone support to <span className="text-blue-primary">Telcel</span> customers. There I strengthened my communication and teamwork skills.
                 </p>
             </div>
             <ExperienceSection
                 companyName="TELSOLUCIONES"
                 experiences={[
                     {
-                        title: "Soporte Técnico",
-                        description: "Reparación y mantenimiento de equipos de cómputo, resolución de problemas técnicos y optimización del rendimiento de los sistemas.",
+                        title: "Technical Support",
+                        description: "Repair and maintenance of computer equipment, troubleshooting, and optimization of system performance.",
                         borderColor: "border-blue-500/20",
                         bgColor: "bg-blue-600/20",
                         icon: (
@@ -41,8 +41,8 @@ export const Telsoluciones = () => {
                         )
                     },
                     {
-                        title: "Mantenimiento",
-                        description: "Mantenimiento preventivo y correctivo de infraestructura tecnológica, limpieza de equipos y actualización de software.",
+                        title: "Maintenance",
+                        description: "Preventive and corrective maintenance of technology infrastructure, equipment cleaning, and software updates.",
                         borderColor: "border-green-500/20",
                         bgColor: "bg-green-600/20",
                         icon: (
@@ -53,8 +53,8 @@ export const Telsoluciones = () => {
                         )
                     },
                     {
-                        title: "Administración del Site",
-                        description: "Gestión y supervisión de las operaciones del centro de contacto, monitoreo de sistemas y coordinación técnica.",
+                        title: "Site Administration",
+                        description: "Management and supervision of contact center operations, system monitoring, and technical coordination.",
                         borderColor: "border-purple-500/20",
                         bgColor: "bg-purple-600/20",
                         icon: (
@@ -66,39 +66,39 @@ export const Telsoluciones = () => {
                 ]}
             />
 
-            <Section title="LOGROS Y" highlightedWord="RESULTADOS">
+            <Section title="ACHIEVEMENTS &" highlightedWord="RESULTS">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
                         <AchievementItem
-                            highlight="Optimización total"
-                            text="de más de 60 equipos mejorando su rendimiento y vida útil."
+                            highlight="Full optimization"
+                            text="of over 60 devices improving their performance and lifespan."
                             colorClass="bg-blue-500"
                         />
                         <AchievementItem
-                            highlight="Implementación"
-                            text="de protocolos de mantenimiento que mejoraron la eficiencia operacional."
+                            highlight="Implementation"
+                            text="of maintenance protocols that improved operational efficiency."
                             colorClass="bg-purple-500"
                         />
                         <AchievementItem
-                            highlight="Resolución rápida"
-                            text="de problemas técnicos críticos minimizando tiempos de inactividad."
+                            highlight="Rapid resolution"
+                            text="of critical technical issues minimizing downtime."
                             colorClass="bg-green-500"
                         />
                     </div>
                     <div className="space-y-4">
                         <AchievementItem
-                            highlight="Soporte 6hrs diarias"
-                            text="garantizando la continuidad de las operaciones del call center."
+                            highlight="6hrs daily support"
+                            text="ensuring continuity of call center operations."
                             colorClass="bg-indigo-500"
                         />
                         <AchievementItem
-                            highlight="Gestión eficiente"
-                            text="de recursos tecnológicos e inventario de equipos."
+                            highlight="Efficient management"
+                            text="of technology resources and equipment inventory."
                             colorClass="bg-teal-500"
                         />
                         <AchievementItem
-                            highlight="Documentación completa"
-                            text="del inventario de equipos y procedimientos de mantenimiento."
+                            highlight="Complete documentation"
+                            text="of equipment inventory and maintenance procedures."
                             colorClass="bg-cyan-500"
                         />
                     </div>
@@ -109,7 +109,7 @@ export const Telsoluciones = () => {
                 technologies={[
                     { name: "Windows Server", IconComponent: Monitor },
                     { name: "Active Directory", IconComponent: FolderOpen },
-                    { name: "Redes LAN/WAN", IconComponent: Globe },
+                    { name: "LAN/WAN Networks", IconComponent: Globe },
                     { name: "Hardware PC", IconComponent: Laptop },
                     { name: "Sistemas VoIP", IconComponent: Phone },
                     { name: "Monitoreo", IconComponent: BarChart3 }
@@ -119,7 +119,7 @@ export const Telsoluciones = () => {
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
                 <StatisticCard
                     value="60+"
-                    label="Equipos Mantenidos"
+                    label="Devices Maintained"
                     gradientFrom="from-blue-600/20"
                     gradientTo="to-blue-800/20"
                     borderColor="border-blue-500/30"
@@ -135,7 +135,7 @@ export const Telsoluciones = () => {
                 />
                 <StatisticCard
                     value="0"
-                    label="Fallos Críticos"
+                    label="Critical Failures"
                     gradientFrom="from-purple-600/20"
                     gradientTo="to-purple-800/20"
                     borderColor="border-purple-500/30"

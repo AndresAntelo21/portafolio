@@ -1,5 +1,4 @@
-import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
-
+import { motion } from "motion/react";
 
 interface ExperienceCardProps {
   imageSrc: string;
@@ -9,12 +8,19 @@ interface ExperienceCardProps {
   constructionMessage?: string;
 }
 
+const cardMotion = {
+  initial: { opacity: 0, y: 60 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5, ease: "easeOut" as const },
+};
+
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   imageSrc,
   hoverImageSrc,
   linkUrl,
   isUnderConstruction = false,
-  constructionMessage = "Portafolio en construcción",
+  constructionMessage = "Portfolio under construction",
 }) => {
   const handleRedirect = () => {
     if (linkUrl && !isUnderConstruction) {
@@ -23,18 +29,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   };
 
   return (
-    <AnimatedContent
-      distance={100}
-      direction="vertical"
-      reverse={false}
-      duration={0.8}
-      ease="power3.out"
-      initialOpacity={0}
-      animateOpacity
-      scale={1}
-      threshold={0.1}
-      delay={0}
-    >
+    <motion.div {...cardMotion}>
       <div
         className={`transform transition-transform duration-300 hover:scale-105 ${linkUrl && !isUnderConstruction ? 'cursor-pointer' : 'cursor-not-allowed'}`}
         onClick={handleRedirect}
@@ -74,6 +69,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
           )}
         </div>
       </div>
-    </AnimatedContent>
+    </motion.div>
   );
 };

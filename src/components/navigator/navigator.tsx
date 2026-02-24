@@ -48,7 +48,7 @@ export const Navigator = () => {
               <DrawerHeader>
                 <DrawerTitle>
                   <h1 className="font-montserrat text-left text-2xl font-bold">
-                    Andres Portafolio
+                    Andres Portfolio
                   </h1>
                 </DrawerTitle>
                 <DrawerClose asChild>
@@ -59,16 +59,16 @@ export const Navigator = () => {
                 <DrawerDescription>
                   <div className="font-montserrat flex flex-col gap-8 pt-4 text-left text-2xl text-white">
                     <DrawerClose asChild>
-                      <Link to="/">Inicio</Link>
+                      <Link to="/">Home</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/work-experience">Experiencia</Link>
+                      <Link to="/work-experience">Experience</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/projects">Proyectos</Link>
+                      <Link to="/projects">Projects</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
-                      <Link to="/certificados">Certificados</Link>
+                      <Link to="/certificados">Certificates</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
                       <a
@@ -88,7 +88,7 @@ export const Navigator = () => {
 
         <div className="flex-grow text-left font-semibold lg:text-left">
           <Link to="/">
-            <h1 className="inline-block">Andres Portafolio</h1>
+            <h1 className="inline-block">Andres Portfolio</h1>
           </Link>
         </div>
 
@@ -101,7 +101,7 @@ export const Navigator = () => {
                     to="/"
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
-                    Inicio
+                    Home
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -111,7 +111,7 @@ export const Navigator = () => {
                     to="/work-experience"
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
-                    Experiencia
+                    Experience
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -121,7 +121,7 @@ export const Navigator = () => {
                     to="/projects"
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
-                    Proyectos
+                    Projects
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
@@ -131,7 +131,7 @@ export const Navigator = () => {
                     to="/certificados"
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
-                    Certificados
+                    Certificates
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

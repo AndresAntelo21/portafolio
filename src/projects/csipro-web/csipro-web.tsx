@@ -27,7 +27,7 @@ export const CsiproWeb = () => {
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Tecnologías
+                Technologies
               </span>
             </div>
           </div>
@@ -42,12 +42,12 @@ export const CsiproWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Periodo
+                  Period
                 </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3>Noviembre 2023 -</h3>
+              <h3>November 2023 -</h3>
               <span className="italic">Presente</span>
             </div>
           </div>
@@ -55,7 +55,7 @@ export const CsiproWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Enlaces
+                  Links
                 </span>
               </div>
             </div>
@@ -67,7 +67,7 @@ export const CsiproWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Enlace
+                  Link
                 </span>
               </a>
             </div>
@@ -76,46 +76,46 @@ export const CsiproWeb = () => {
 
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Descripción del Proyecto</span>
+            <span>Project Description</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>CSI PRO REBOOT</strong> es una plataforma creada para dar visibilidad al <strong>laboratorio CSI PRO</strong> de la <strong>Universidad de Sonora</strong>. El objetivo principal del sitio es destacar el trabajo, los proyectos y el impacto del laboratorio en estudiantes y profesionales.
+              <strong>CSI PRO REBOOT</strong> is a platform created to give visibility to the <strong>CSI PRO lab</strong> at the <strong>University of Sonora</strong>. The site's main goal is to highlight the lab's work, projects, and impact on students and professionals.
             </p>
             <p>
-              Este sitio fue desarrollado para atender la falta de conocimiento que los estudiantes tienen sobre el laboratorio, brindándoles información valiosa y oportunidades para involucrarse en sus actividades.
+              This site was developed to address the lack of awareness students have about the lab, providing them with valuable information and opportunities to get involved in its activities.
             </p>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Características</span>
+            <span>Features</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
-              <li><strong>Presentación del laboratorio</strong>: Información detallada sobre la misión y objetivos de CSI PRO.</li>
-              <li><strong>Sección de miembros</strong>: Área dedicada para mostrar a los miembros del laboratorio y su rol en distintos proyectos.</li>
-              <li><strong>Proyectos activos</strong>: Espacio para mostrar los desarrollos tecnológicos en curso.</li>
-              <li><strong>Eventos y participación</strong>: Calendario con los eventos donde participa el laboratorio dentro y fuera de la universidad.</li>
-              <li><strong>Registro de actividades</strong>: Funcionalidad para que los estudiantes se registren en eventos y proyectos.</li>
-              <li><strong>Diseño moderno y responsivo</strong>: Optimizado para una navegación fluida en móviles y computadoras.</li>
+              <li><strong>Lab presentation</strong>: Detailed information on CSI PRO's mission and objectives.</li>
+              <li><strong>Members section</strong>: Dedicated area to showcase lab members and their roles in different projects.</li>
+              <li><strong>Active projects</strong>: Space to showcase ongoing technology developments.</li>
+              <li><strong>Events and participation</strong>: Calendar of events where the lab participates inside and outside the university.</li>
+              <li><strong>Activity registration</strong>: Functionality for students to register for events and projects.</li>
+              <li><strong>Modern, responsive design</strong>: Optimized for smooth navigation on mobile and desktop.</li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>¿Cómo funciona?</span>
+            <span>How does it work?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              El sitio <strong>CSI PRO REBOOT</strong> está construido con tecnologías modernas que garantizan un rendimiento rápido, accesibilidad y una experiencia de usuario fluida.
+              The <strong>CSI PRO REBOOT</strong> site is built with modern technologies that ensure fast performance, accessibility, and a smooth user experience.
             </p>
             <p>
-              El <strong>frontend</strong> fue desarrollado con <strong>React y TypeScript</strong>, lo que proporciona una estructura escalable y robusta. Se utiliza <strong>React Router</strong> para gestionar la navegación entre secciones sin recargar la página.
+              The <strong>frontend</strong> was developed with <strong>React and TypeScript</strong>, providing a scalable and robust structure. <strong>React Router</strong> is used to manage navigation between sections without reloading the page.
             </p>
             <p>
-              Para la interfaz y estilos, se implementa <strong>Tailwind CSS</strong>, logrando un diseño limpio y adaptable. El proyecto se ejecuta con <strong>Vite</strong>, una herramienta potente que mejora el rendimiento y acelera el desarrollo.
+              For the interface and styles, <strong>Tailwind CSS</strong> is used, achieving a clean and adaptable design. The project runs with <strong>Vite</strong>, a powerful tool that improves performance and speeds up development.
             </p>
             <p>
-              Con este stack tecnológico, <strong>CSI PRO REBOOT</strong> no solo informa a los estudiantes sobre el laboratorio, sino que también los motiva a formar parte de su comunidad y participar activamente en sus proyectos.
+              With this tech stack, <strong>CSI PRO REBOOT</strong> not only informs students about the lab but also encourages them to join its community and participate actively in its projects.
             </p>
           </div>
         </div>

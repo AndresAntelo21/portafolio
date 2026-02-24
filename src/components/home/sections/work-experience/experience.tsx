@@ -1,4 +1,4 @@
-import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface CardProps {
@@ -11,6 +11,13 @@ interface CardProps {
   className?: string;
   linkUrl?: string;
 }
+
+const cardMotion = {
+  initial: { opacity: 0, y: 60 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5, ease: "easeOut" as const },
+};
 
 export const Card: React.FC<CardProps> = ({
   backgroundImage,
@@ -29,18 +36,7 @@ export const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <AnimatedContent
-      distance={100}
-      direction="vertical"
-      reverse={false}
-      duration={0.8}
-      ease="power3.out"
-      initialOpacity={0}
-      animateOpacity
-      scale={1}
-      threshold={0.1}
-      delay={0}
-    >
+    <motion.div {...cardMotion}>
       <div
         className={cn("max-w-full w-full group/card cursor-pointer", className)}
         onClick={handleRedirect}
@@ -93,7 +89,7 @@ export const Card: React.FC<CardProps> = ({
             
             {/* Indicador de "click" sutil */}
             <div className="flex items-center gap-2 opacity-0 group-hover/card:opacity-100 transition-all duration-300 transform translate-y-2 group-hover/card:translate-y-0">
-              <span className="text-xs font-medium text-blue-300 uppercase tracking-wider">Ver proyecto</span>
+              <span className="text-xs font-medium text-blue-300 uppercase tracking-wider">View project</span>
               <svg 
                 className="w-4 h-4 text-blue-300 transform transition-transform duration-300 group-hover/card:translate-x-1" 
                 fill="none" 
@@ -106,6 +102,6 @@ export const Card: React.FC<CardProps> = ({
           </div>
         </div>
       </div>
-    </AnimatedContent>
+    </motion.div>
   );
 };

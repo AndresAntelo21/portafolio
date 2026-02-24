@@ -16,7 +16,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
     >
       <div className="flex flex-col gap-2">
         <h1 className="relative z-10 text-left text-3xl font-bold">
-          EXPERIENCIA DE <span className="text-blue-primary">TRABAJO</span>
+          WORK <span className="text-blue-primary">EXPERIENCE</span>
         </h1>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
@@ -49,7 +49,7 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           imageSrc="/work-experience/vado/vado.png"
           hoverImageSrc="/work-experience/vado/vado.png"
           isUnderConstruction={true}
-          constructionMessage="Portafolio en construcción"
+          constructionMessage="Portfolio under construction"
         />
       </div>
     </div >

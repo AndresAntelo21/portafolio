@@ -11,12 +11,12 @@ export const Vincco = () => {
     return (
         <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
             <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-                <img src="/work-experience/vincco/bg-vincco-oficinas.png" alt="Oficinas de Vincco" className="object-cover w-full h-full object-center" />
+                <img src="/work-experience/vincco/bg-vincco-oficinas.png" alt="Vincco offices" className="object-cover w-full h-full object-center" />
                 <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
                     <img
                         src="/work-experience/vincco/vincco-logo-text.svg"
-                        alt="Logo de Telsoluciones"
+                        alt="Vincco logo"
                         className="w-40"
                     />
                 </div>
@@ -37,8 +37,8 @@ export const Vincco = () => {
                 companyName="VINCCO"
                 experiences={[
                     {
-                        title: "Soporte Técnico Especializado",
-                        description: "Mantenimiento y reparación de más de 200 equipos de cómputo, resolución de incidencias técnicas complejas y optimización de rendimiento a gran escala.",
+                        title: "Specialized Technical Support",
+                        description: "Maintenance and repair of over 200 computer devices, resolution of complex technical issues, and large-scale performance optimization.",
                         borderColor: "border-blue-500/20",
                         bgColor: "bg-blue-600/20",
                         icon: (
@@ -59,8 +59,8 @@ export const Vincco = () => {
                         )
                     },
                     {
-                        title: "Soporte Multi-Cliente",
-                        description: "Coordinación y gestión técnica para 4 empresas clientes, asegurando servicios personalizados y mantenimiento de estándares de calidad.",
+                        title: "Multi-Client Support",
+                        description: "Technical coordination and management for 4 client companies, ensuring customized services and maintenance of quality standards.",
                         borderColor: "border-indigo-500/20",
                         bgColor: "bg-indigo-600/20",
                         icon: (
@@ -72,39 +72,39 @@ export const Vincco = () => {
                 ]}
             />
 
-            <Section title="LOGROS Y" highlightedWord="RESULTADOS">
+            <Section title="ACHIEVEMENTS &" highlightedWord="RESULTS">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="space-y-4">
                         <AchievementItem
-                            highlight="Gestión completa"
-                            text="de más de 200 equipos distribuidos en múltiples áreas operativas."
+                            highlight="Full management"
+                            text="of over 200 devices distributed across multiple operational areas."
                             colorClass="bg-blue-500"
                         />
                         <AchievementItem
-                            highlight="Soporte multi-cliente"
-                            text="para 4 empresas con requerimientos técnicos específicos y diferenciados."
+                            highlight="Multi-client support"
+                            text="for 4 companies with specific and differentiated technical requirements."
                             colorClass="bg-purple-500"
                         />
                         <AchievementItem
-                            highlight="Optimización masiva"
-                            text="de infraestructura tecnológica mejorando la eficiencia operacional."
+                            highlight="Mass optimization"
+                            text="of technology infrastructure improving operational efficiency."
                             colorClass="bg-green-500"
                         />
                     </div>
                     <div className="space-y-4">
                         <AchievementItem
-                            highlight="Instalación completa"
-                            text="de mamparas y reorganización del espacio físico del centro."
+                            highlight="Full installation"
+                            text="of partitions and physical space reorganization of the center."
                             colorClass="bg-indigo-500"
                         />
                         <AchievementItem
-                            highlight="Administración integral"
-                            text="del site coordinando operaciones técnicas y logísticas."
+                            highlight="Full site administration"
+                            text="coordinating technical and logistical operations."
                             colorClass="bg-teal-500"
                         />
                         <AchievementItem
-                            highlight="Mantenimiento preventivo"
-                            text="implementado para garantizar la continuidad operacional 24/7."
+                            highlight="Preventive maintenance"
+                            text="implemented to ensure 24/7 operational continuity."
                             colorClass="bg-cyan-500"
                         />
                     </div>
@@ -127,7 +127,7 @@ export const Vincco = () => {
             <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-6">
                 <StatisticCard
                     value="200+"
-                    label="Equipos Gestionados"
+                    label="Devices Managed"
                     gradientFrom="from-blue-600/20"
                     gradientTo="to-blue-800/20"
                     borderColor="border-blue-500/30"
@@ -143,7 +143,7 @@ export const Vincco = () => {
                 />
                 <StatisticCard
                     value="2min"
-                    label="Tiempo Respuesta"
+                    label="Response Time"
                     gradientFrom="from-green-600/20"
                     gradientTo="to-green-800/20"
                     borderColor="border-green-500/30"

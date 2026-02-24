@@ -11,7 +11,7 @@ interface Certificado {
 export const Certificados = () => {
     const certificados: Certificado[] = [
         {
-            title: "Diseño UX: experiencia de usuario UX/UI + Figma 2025",
+            title: "UX Design: User Experience UX/UI + Figma 2025",
             platform: "UDEMY",
             url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-b9453ad2-328e-4c48-bfc4-38db7ac1dc9f.pdf",
             logo: "/certificados/certificados-company/Udemy.svg",
@@ -25,7 +25,7 @@ export const Certificados = () => {
             badges: ["UI Design", "Visual Design", "Figma"],
         },
         {
-            title: "UX Writing: diseño de contenido y experiencia de usuario",
+            title: "UX Writing: Content Design and User Experience",
             platform: "UDEMY",
             url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-a6ca9509-6d66-435f-a475-59300866a0ef.pdf",
             logo: "/certificados/certificados-company/Udemy.svg",
@@ -43,7 +43,7 @@ export const Certificados = () => {
             ],
         },
         {
-            title: "Fundamentos de la ciberseguridad",
+            title: "Foundations of Cybersecurity",
             platform: "GOOGLE",
             url: "https://www.coursera.org/account/accomplishments/verify/HLK69M355WRH",
             logo: "/certificados/certificados-company/google.svg",
@@ -58,7 +58,7 @@ export const Certificados = () => {
     return (
         <div className="font-poppins relative z-10 flex flex-col gap-5">
             <h1 className="relative z-10 text-left text-3xl font-bold">
-                MIS <span className="text-blue-primary">CERTIFICADOS</span>
+                MY <span className="text-blue-primary">CERTIFICATES</span>
             </h1>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full justify-items-center">

@@ -9,7 +9,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
 
     <div className={`font-poppins flex flex-col gap-4 py-10 ${className}`}>
       <h1 className="relative z-10 text-left text-3xl font-bold">
-        MIS <span className="text-blue-primary">PROYECTOS</span>
+        MY <span className="text-blue-primary">PROJECTS</span>
       </h1>
       <div className="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
         <Card
@@ -19,7 +19,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/projects/csipro.svg"
-                alt="Logo del laboratorio CSI PRO"
+                alt="CSI PRO Lab logo"
                 className="h-8 w-8"
               />
               <div className="font-normal">
@@ -31,13 +31,13 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Noviembre 2023 - <span className="italic">presente</span></p>
+            <p className=" text-gray-400">November 2023 - <span className="italic">present</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/csipro.svg"
-                alt="Logo del laboratorio CSI PRO"
+                alt="CSI PRO Lab logo"
                 className="h-8 w-8"
               />
               <div className="font-normal">
@@ -48,7 +48,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
               </div>
             </div>
           }
-          description="CSI PRO REBOOT es una plataforma que muestra el trabajo, proyectos e impacto del laboratorio CSI PRO de la Universidad de Sonora."
+          description="CSI PRO REBOOT is a platform that showcases the work, projects, and impact of the CSI PRO lab at the University of Sonora."
           linkUrl="/csipro-web"
         />
         <Card
@@ -58,24 +58,24 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/projects/legrafica.svg"
-                alt="Logo del laboratorio CSI PRO"
+                alt="CSI PRO Lab logo"
                 className="w-25"
               />
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Noviembre 2024 - <span className="">Febrero 2025</span></p>
+            <p className=" text-gray-400">November 2024 - <span className="">February 2025</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/umana/umana-logo-text.svg"
-                alt="Logo de legrafica"
+                alt="Legrafica logo"
                 className="w-50"
               />
             </div>
           }
-          description="Umana es una plataforma en línea que ofrece rutinas, recetas y planes personalizados para mejorar la salud."
+          description="Umana is an online platform that offers routines, recipes, and personalized plans to improve health."
           linkUrl="/umana-web"
         />
         <Card
@@ -85,24 +85,24 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/projects/legrafica.svg"
-                alt="Logo del legrafica"
+                alt="Legrafica logo"
                 className="w-25"
               />
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/gng/gng-logo.svg"
-                alt="Logo de legrafica"
+                alt="Legrafica logo"
                 className="w-50"
               />
             </div>
           }
-          description="Glam N Glow by Ale Murillo es un estudio de belleza que ofrece maquillaje, peinados y tratamientos para resaltar la belleza natural con estilo y calidad."
+          description="Glam N Glow by Ale Murillo is a beauty studio offering makeup, hairstyling, and treatments to enhance natural beauty with style and quality."
           linkUrl="/gng-web"
         />
         <Card
@@ -112,19 +112,19 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/projects/legrafica.svg"
-                alt="Logo del legrafica"
+                alt="Legrafica logo"
                 className="w-25"
               />
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/cbc/cbc-logo.svg"
-                alt="Logo de legrafica"
+                alt="Legrafica logo"
                 className="w-15"
               />
               <div className="font-alegreya font-normal">
@@ -132,7 +132,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
               </div>
             </div>
           }
-          description="El Colegio Bicultural Cananea ofrece educación bilingüe y formación integral. Su sitio web informa sobre programas, valores y proceso de admisión."
+          description="Colegio Bicultural Cananea offers bilingual education and holistic development. Its website provides information on programs, values, and the admissions process."
           linkUrl="/cbc-web"
         />
         <Card
@@ -142,24 +142,24 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/projects/legrafica.svg"
-                alt="Logo del legrafica"
+                alt="Legrafica logo"
                 className="w-25"
               />
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Febrero 2025 - <span className="">Marzo 2025</span></p>
+            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/revolt/revolt-logo.svg"
-                alt="Logo de legrafica"
+                alt="Legrafica logo"
                 className="w-40"
               />
             </div>
           }
-          description="Revolt ofrece soluciones de energía solar para reducir costos y cuidar el medio ambiente. Su página presenta la empresa, sus valores y facilita el contacto con clientes."
+          description="Revolt offers solar energy solutions to reduce costs and protect the environment. Their page presents the company, its values, and makes it easy for customers to get in touch."
           linkUrl="/revolt-web"
         />
         <Card
@@ -169,19 +169,19 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
             <div className="flex items-center gap-2">
               <img
                 src="/work-experience/unison/unison-white.svg"
-                alt="Logo de la Universidad de Sonora"
+                alt="University of Sonora logo"
                 className="w-25"
               />
             </div>
           }
           readTime={
-            <p className=" text-gray-400">Febrero 2024 - <span className="">Noviembre 2024</span></p>
+            <p className=" text-gray-400">February 2024 - <span className="">November 2024</span></p>
           }
           title={
             <div className="flex items-center gap-2">
               <img
                 src="/projects/movilidad/movilidad-logo.svg"
-                alt="Logo de legrafica"
+                alt="Legrafica logo"
                 className="w-7"
               />
               <div className="font-normal">
@@ -189,7 +189,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
               </div>
             </div>
           }
-          description="Movilidad Urbana analiza y visualiza el tráfico para mejorar la movilidad en la ciudad. Su sitio web ofrece datos y análisis accesibles para tomadores de decisiones."
+          description="Urban Mobility analyzes and visualizes traffic to improve mobility in the city. Its website offers accessible data and analysis for decision-makers."
           linkUrl="/movilidad-web"
         />
       </div>

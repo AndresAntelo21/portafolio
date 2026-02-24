@@ -10,7 +10,7 @@ export const UmanaWeb = () => {
       <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
         <img
           src="/projects/umana/umana-logo-text.svg"
-          alt="Logo de la página de Umana"
+          alt="Umana page logo"
           className="w-50"
         />
       </div>
@@ -21,7 +21,7 @@ export const UmanaWeb = () => {
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Tecnologías
+                Technologies
               </span>
             </div>
           </div>
@@ -34,12 +34,12 @@ export const UmanaWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Periodo
+                  Period
                 </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3>Noviembre 2024 -</h3>
+              <h3>November 2024 -</h3>
               <span className="">Enero 2025</span>
             </div>
           </div>
@@ -48,7 +48,7 @@ export const UmanaWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Enlaces
+                  Links
                 </span>
               </div>
             </div>
@@ -60,7 +60,7 @@ export const UmanaWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Enlace
+                  Link
                 </span>
               </a>
             </div>
@@ -69,39 +69,39 @@ export const UmanaWeb = () => {
 
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Descripción del Proyecto</span>
+            <span>Project Description</span>
           </div>
           <p>
-            <strong>Umana</strong> es una plataforma en línea diseñada para mejorar la salud y el bienestar de las personas a través de <strong>entrenamientos virtuales</strong>, <strong>nutrición personalizada</strong> y una <strong>comunidad activa</strong>. Ofrece acceso a <strong>clases de ejercicio en vivo y bajo demanda</strong>, junto con una amplia selección de <strong>recetas saludables</strong> y <strong>planes alimenticios</strong> para mantener un estilo de vida equilibrado.
-            También cuenta con un sistema de membresías que desbloquea contenido exclusivo, brindando una experiencia más completa y personalizada. Además, su comunidad permite a los usuarios compartir su progreso, recibir apoyo y mantenerse motivados en su camino hacia una vida más saludable.
+            <strong>Umana</strong> is an online platform designed to improve people's health and wellness through <strong>virtual workouts</strong>, <strong>personalized nutrition</strong>, and an <strong>active community</strong>. It offers access to <strong>live and on-demand exercise classes</strong>, along with a wide selection of <strong>healthy recipes</strong> and <strong>meal plans</strong> to maintain a balanced lifestyle.
+            It also features a membership system that unlocks exclusive content, providing a more complete and personalized experience. In addition, its community allows users to share their progress, receive support, and stay motivated on their journey to a healthier life.
           </p>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Características</span>
+            <span>Features</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
-              <li><strong>Entrenamientos en línea</strong>: Sesiones grabadas disponibles en cualquier momento.</li>
-              <li><strong>Clases en vivo</strong>: Sesiones en tiempo real con entrenadores expertos.</li>
-              <li><strong>Recetas saludables</strong>: Opciones de comida nutritivas y deliciosas para mejorar la alimentación.</li>
-              <li><strong>Planes de alimentación personalizados</strong>: Diseñados para complementar los entrenamientos y necesidades dietéticas.</li>
-              <li><strong>Sistema de membresía</strong>: Acceso a contenido exclusivo y beneficios adicionales.</li>
-              <li><strong>Comunidad</strong>: Espacio para compartir experiencias y mantenerse motivado.</li>
+              <li><strong>Online workouts</strong>: Recorded sessions available anytime.</li>
+              <li><strong>Live classes</strong>: Real-time sessions with expert trainers.</li>
+              <li><strong>Healthy recipes</strong>: Nutritious and delicious food options to improve nutrition.</li>
+              <li><strong>Personalized meal plans</strong>: Designed to complement workouts and dietary needs.</li>
+              <li><strong>Membership system</strong>: Access to exclusive content and additional benefits.</li>
+              <li><strong>Community</strong>: Space to share experiences and stay motivated.</li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>¿Cómo funciona?</span>
+            <span>How does it work?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              La plataforma <strong>Umana</strong> está construida con un enfoque moderno y dinámico. El <strong>frontend</strong> está desarrollado con <strong>Vue.js</strong>, un framework de JavaScript que proporciona una experiencia de usuario fluida e interactiva. Para manejar la navegación entre secciones se utiliza <strong>Vue Router</strong>, asegurando transiciones rápidas y sin interrupciones.
+              The <strong>Umana</strong> platform is built with a modern and dynamic approach. The <strong>frontend</strong> is developed with <strong>Vue.js</strong>, a JavaScript framework that provides a smooth and interactive user experience. <strong>Vue Router</strong> is used to handle navigation between sections, ensuring fast, seamless transitions.
             </p>
             <p>
-              Para la comunicación con el backend y la actualización de datos en tiempo real, se utiliza <strong>Axios</strong>, lo que facilita el acceso a la información de entrenamientos, recetas y planes alimenticios. La interfaz de usuario está diseñada con <strong>HTML y CSS puro</strong>, garantizando una estructura limpia, responsiva y amigable para cualquier dispositivo.
+              <strong>Axios</strong> is used for backend communication and real-time data updates, making it easy to access workout, recipe, and meal plan information. The user interface is designed with <strong>plain HTML and CSS</strong>, ensuring a clean, responsive, and device-friendly structure.
             </p>
             <p>
-              Con estas tecnologías, Umana ofrece un entorno intuitivo y accesible donde los usuarios pueden enfocarse en su bienestar sin complicaciones.
+              With these technologies, Umana offers an intuitive and accessible environment where users can focus on their wellness without complications.
             </p>
           </div>
         </div>

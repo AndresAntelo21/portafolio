@@ -18,9 +18,9 @@ export const Error404 = () => {
         </div>
         <div className="flex flex-col items-center gap-2 md:justify-center">
           <p className="text-2xl font-semibold">
-            <span className="text-blue-primary">Oops</span>... algo salió mal
+            <span className="text-blue-primary">Oops</span>... something went wrong
           </p>
-          <span>Esta página decidió tomarse un descanso.</span>
+          <span>This page decided to take a break.</span>
           <StarBorder
             as="button"
             className="bg-blue-primary font-montserrat pointer mt-4 w-50 rounded-lg px-6 py-2 text-lg font-semibold text-white"
@@ -29,7 +29,7 @@ export const Error404 = () => {
             thickness={2}
             onClick={handleRedirect}
           >
-            Volver al Inicio
+            Back to Home
           </StarBorder>
         </div>
       </div>

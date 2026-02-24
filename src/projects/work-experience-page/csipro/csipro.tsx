@@ -3,12 +3,12 @@ export const Csipro = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
       <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/csipro/reales.png" alt="imagen del CSI" className="object-cover w-full h-full object-center" />
+        <img src="/work-experience/csipro/reales.png" alt="CSI PRO image" className="object-cover w-full h-full object-center" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
           <img
             src="/projects/csipro.svg"
-            alt="logo del laboratorio CSI PRO"
+            alt="CSI PRO Lab logo"
             className="w-12"
           />
           <h1 className="text-2xl">
@@ -18,18 +18,16 @@ export const Csipro = () => {
       </div>
       <div className="font-poppins">
         <p>
-          En CSI <span className="rounded-md bg-violet-800 px-1">PRO</span>, un
-          laboratorio de la{" "}
-          <span className="text-blue-primary">Universidad de Sonora</span>, desarrollamos
-          proyectos de{" "}
-          <span className="text-blue-primary">software</span> aplicando creatividad,
-          tecnología y trabajo en equipo. Es nuestro espacio para crecer como futuros
-          profesionales.
+          At CSI <span className="rounded-md bg-violet-800 px-1">PRO</span>, a
+          lab at the{" "}
+          <span className="text-blue-primary">University of Sonora</span>, we develop
+          <span className="text-blue-primary"> software</span> projects applying creativity,
+          technology, and teamwork. It's our space to grow as future professionals.
         </p>
       </div>
       <div className="flex gap-2">
 
-        <div className=" flex  gap-2 flex-wrap relative z-10 text-left text-3xl font-bold">MIS <span className="text-blue-primary">PROYECTOS</span> DEL
+        <div className=" flex  gap-2 flex-wrap relative z-10 text-left text-3xl font-bold">MY <span className="text-blue-primary">PROJECTS</span> AT
           <div className="flex items-start gap-2 font-normal">
             <img src="/projects/csipro.svg" alt="" className="size-11" />
             CSI
@@ -56,7 +54,7 @@ export const Csipro = () => {
           </div>
         }
         readTime={
-          <p className=" text-gray-400">Noviembre 2023 - <span className="italic">presente</span></p>
+          <p className=" text-gray-400">November 2023 - <span className="italic">present</span></p>
         }
         title={
           <div className="flex items-center gap-2">
@@ -73,7 +71,7 @@ export const Csipro = () => {
             </div>
           </div>
         }
-        description="CSI PRO REBOOT es una plataforma que muestra el trabajo, proyectos e impacto del laboratorio CSI PRO de la Universidad de Sonora."
+        description="CSI PRO REBOOT is a platform that showcases the work, projects, and impact of the CSI PRO lab at the University of Sonora."
         linkUrl="/csipro-web"
       />
     </div>

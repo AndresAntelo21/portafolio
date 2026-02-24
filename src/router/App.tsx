@@ -26,25 +26,25 @@ export default function App() {
 
   useEffect(() => {
     const routeTitles: Record<string, string> = {
-      "/": "Inicio | Andres Portafolio",
-      "/work-experience": "Experiencia | Andres Portafolio",
-      "/projects": "Proyectos | Andres Portafolio",
-      "/csipro-web": "CSI PRO REBOOT | Andres Portafolio",
-      "/movilidad-web": "Movilidad Urbana | Andres Portafolio",
-      "/umana-web": "Umana | Andres Portafolio",
-      "/gng-web": "Glam N Glow | Andres Portafolio",
-      "/cbc-web": "Colegio Bicultural Cananea | Andres Portafolio",
-      "/revolt-web": "Revolt | Andres Portafolio",
-      "/csipro": "CSI PRO | Andres Portafolio",
-      "/legrafica": "Legrafica | Andres Portafolio",
-      "/unison": "Universidad de Sonora | Andres Portafolio",
-      "/telsoluciones": "TelSoluciones | Andres Portafolio",
-      "/vincco": "Vincco | Andres Portafolio",
-      "/certificados": "Certificados | Andres Portafolio",
-      "*": "Error 404 | Andres Portafolio",
+      "/": "Home | Andres Portfolio",
+      "/work-experience": "Experience | Andres Portfolio",
+      "/projects": "Projects | Andres Portfolio",
+      "/csipro-web": "CSI PRO REBOOT | Andres Portfolio",
+      "/movilidad-web": "Urban Mobility | Andres Portfolio",
+      "/umana-web": "Umana | Andres Portfolio",
+      "/gng-web": "Glam N Glow | Andres Portfolio",
+      "/cbc-web": "Colegio Bicultural Cananea | Andres Portfolio",
+      "/revolt-web": "Revolt | Andres Portfolio",
+      "/csipro": "CSI PRO | Andres Portfolio",
+      "/legrafica": "Legrafica | Andres Portfolio",
+      "/unison": "University of Sonora | Andres Portfolio",
+      "/telsoluciones": "TelSoluciones | Andres Portfolio",
+      "/vincco": "Vincco | Andres Portfolio",
+      "/certificados": "Certificates | Andres Portfolio",
+      "*": "Error 404 | Andres Portfolio",
     };
 
-    const title = routeTitles[location.pathname] || "Andres Portafolio";
+    const title = routeTitles[location.pathname] || "Andres Portfolio";
     document.title = title;
   }, [location]);
 

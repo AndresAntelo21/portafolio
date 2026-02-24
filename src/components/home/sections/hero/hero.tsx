@@ -12,10 +12,9 @@ export const Hero = () => {
         <div className="lg:flex lg:flex-row lg:items-center">
           <div className="flex w-full flex-col items-start gap-4 pb-4">
             <p>
-              ¡Hola! Me llamo{" "}
-              <span className="text-blue-primary">Andrés Antelo</span> y soy{" "}
-              <span className="text-blue-primary">desarrollador Full Stack</span>
-              .
+              Hi! I'm{" "}
+              <span className="text-blue-primary">Andrés Antelo</span> and I'm a{" "}
+              <span className="text-blue-primary">Full Stack developer</span>.
             </p>
             <div className="hidden lg:block">
               <ContactButton className="items-start" />

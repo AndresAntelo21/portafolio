@@ -11,7 +11,7 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
       className={`font-montserrat flex flex-col gap-2 text-center text-3xl text-white/70 ${className}`}
     >
       <ShinyText
-        text="Contactame"
+        text="Contact me"
         disabled={false}
         speed={3}
         className="custom-class"

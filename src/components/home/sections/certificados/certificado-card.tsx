@@ -1,5 +1,5 @@
 import { ExternalLink } from "lucide-react";
-import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
+import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
 interface CertificadoCardProps {
@@ -9,6 +9,13 @@ interface CertificadoCardProps {
     logo?: string;
     badges?: string[];
 }
+
+const cardMotion = {
+    initial: { opacity: 0, y: 60 },
+    whileInView: { opacity: 1, y: 0 },
+    viewport: { once: true, amount: 0.2 },
+    transition: { duration: 0.5, ease: "easeOut" as const },
+};
 
 // Array de colores para los badges (cada badge tendrá un color diferente)
 const badgeColors = [
@@ -30,18 +37,7 @@ export const CertificadoCard: React.FC<CertificadoCardProps> = ({
     badges = [],
 }) => {
     return (
-        <AnimatedContent
-            distance={100}
-            direction="vertical"
-            reverse={false}
-            duration={0.8}
-            ease="power3.out"
-            initialOpacity={0}
-            animateOpacity
-            scale={1}
-            threshold={0.1}
-            delay={0}
-        >
+        <motion.div {...cardMotion}>
             <div className="group relative h-full flex flex-col gap-5 p-6 rounded-2xl border border-gray-800/50 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-black/90 backdrop-blur-sm hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
                 {/* Logo de la plataforma */}
                 {logo && (
@@ -93,7 +89,7 @@ export const CertificadoCard: React.FC<CertificadoCardProps> = ({
                 {/* Efecto de brillo sutil en hover */}
                 <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5"></div>
             </div>
-        </AnimatedContent>
+        </motion.div>
     );
 };
 

@@ -21,7 +21,7 @@ export const GnGWeb = () => {
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Tecnologías
+                Technologies
               </span>
             </div>
           </div>
@@ -38,15 +38,15 @@ export const GnGWeb = () => {
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3>Febrero 2025 -</h3>
-              <span className="">Marzo 2025</span>
+              <h3>February 2025 -</h3>
+              <span className="">March 2025</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Enlaces
+                  Links
                 </span>
               </div>
             </div>
@@ -58,7 +58,7 @@ export const GnGWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Enlace
+                  Link
                 </span>
               </a>
             </div>
@@ -67,7 +67,7 @@ export const GnGWeb = () => {
 
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Descripción del Proyecto</span>
+            <span>Project Description</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
@@ -79,33 +79,33 @@ export const GnGWeb = () => {
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Características</span>
+            <span>Features</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
-              <li><strong>Página de aterrizaje moderna y funcional</strong>: Diseñada para una experiencia atractiva y fácil de navegar.</li>
-              <li><strong>Exhibición de servicios</strong>: Menú interactivo con paginación que muestra todos los tratamientos y servicios disponibles.</li>
-              <li><strong>Sistema optimizado de citas</strong>: Proceso ágil para agendar citas rápida y fácilmente.</li>
-              <li><strong>Diseño responsivo</strong>: Navegación fluida en cualquier dispositivo, ya sea móvil, tablet o escritorio.</li>
-              <li><strong>Conexión directa con clientes</strong>: Opciones rápidas de contacto para consultas y reservaciones.</li>
+              <li><strong>Modern, functional landing page</strong>: Designed for an attractive and easy-to-navigate experience.</li>
+              <li><strong>Service showcase</strong>: Interactive menu with pagination showing all available treatments and services.</li>
+              <li><strong>Optimized booking system</strong>: Streamlined process to schedule appointments quickly and easily.</li>
+              <li><strong>Responsive design</strong>: Smooth navigation on any device, whether mobile, tablet, or desktop.</li>
+              <li><strong>Direct client connection</strong>: Quick contact options for inquiries and reservations.</li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>¿Cómo funciona?</span>
+            <span>How does it work?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              La página de aterrizaje de <strong>Glam N Glow</strong> está construida con tecnologías modernas para garantizar una navegación fluida y una interacción intuitiva con el usuario.
+              The <strong>Glam N Glow</strong> landing page is built with modern technologies to ensure smooth navigation and intuitive user interaction.
             </p>
             <p>
-              El <strong>frontend</strong> está desarrollado con <strong>Vue.js</strong>, un framework de JavaScript que permite una interfaz altamente interactiva y dinámica. Para manejar la navegación y la paginación del catálogo de servicios eficientemente, usamos <strong>Vue Router</strong>, lo que permite a los usuarios explorar los servicios sin recargar la página innecesariamente.
+              The <strong>frontend</strong> is developed with <strong>Vue.js</strong>, a JavaScript framework that enables a highly interactive and dynamic interface. <strong>Vue Router</strong> is used to handle navigation and service catalog pagination efficiently, allowing users to explore services without unnecessary page reloads.
             </p>
             <p>
-              Para mejorar la experiencia del usuario y facilitar la reserva de citas, el sitio está diseñado con <strong>HTML y CSS puros</strong>, asegurando una estética elegante y profesional. Además, se integra <strong>Axios</strong> para una comunicación eficiente con el backend, manteniendo la información y disponibilidad de servicios siempre actualizada.
+              To improve the user experience and simplify appointment booking, the site is designed with <strong>plain HTML and CSS</strong>, ensuring an elegant and professional look. In addition, <strong>Axios</strong> is integrated for efficient backend communication, keeping service information and availability always up to date.
             </p>
             <p>
-              Con esta combinación de tecnologías, el sitio web de <strong>Glam N Glow</strong> ofrece una plataforma <strong>moderna</strong>, <strong>rápida</strong> y <strong>accesible</strong> donde los clientes pueden explorar servicios y reservar citas fácilmente y sin complicaciones.
+              With this technology stack, the <strong>Glam N Glow</strong> website offers a <strong>modern</strong>, <strong>fast</strong>, and <strong>accessible</strong> platform where clients can explore services and book appointments easily and without hassle.
             </p>
           </div>
         </div>

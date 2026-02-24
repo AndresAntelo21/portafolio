@@ -32,20 +32,20 @@ export const RevoltWeb = () => {
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Periodo
+                  Period
                 </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
               <h3>Diciembre 2024 -</h3>
-              <span className="">Febrero 2025</span>
+              <span className="">February 2025</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Enlaces
+                  Links
                 </span>
               </div>
             </div>
@@ -57,7 +57,7 @@ export const RevoltWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Enlace
+                  Link
                 </span>
               </a>
             </div>
@@ -65,51 +65,51 @@ export const RevoltWeb = () => {
         </div>
         <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Descripción del Proyecto</span>
+            <span>Project Description</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Revolt</strong> es una empresa enfocada en{" "}
-              <strong>soluciones de energía sostenible</strong>, que ofrece sistemas de paneles solares para ayudar a hogares y negocios a reducir costos de electricidad mientras minimizan su impacto ambiental. Con un enfoque en innovación y eficiencia, Revolt busca proveer tecnología limpia y accesible para impulsar un futuro más sostenible.
+              <strong>Revolt</strong> is a company focused on{" "}
+              <strong>sustainable energy solutions</strong>, offering solar panel systems to help homes and businesses reduce electricity costs while minimizing their environmental impact. With a focus on innovation and efficiency, Revolt aims to provide clean, accessible technology to drive a more sustainable future.
             </p>
             <p>
-              La página de aterrizaje de <strong>Revolt</strong> está diseñada para mostrar la empresa, sus valores y los beneficios de adoptar energía solar, facilitando también que clientes potenciales puedan contactarlos.
+              The <strong>Revolt</strong> landing page is designed to showcase the company, its values, and the benefits of adopting solar energy, while making it easy for potential customers to get in touch.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Características</span>
+            <span>Features</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
               <li>
-                <strong>Diseño moderno y atractivo</strong>: Una interfaz visualmente atractiva que refuerza la identidad de la marca.
+                <strong>Modern, attractive design</strong>: A visually appealing interface that reinforces the brand identity.
               </li>
               <li>
-                <strong>Información clara y estructurada</strong>: Explica las ventajas de la energía solar y cómo Revolt puede ayudar a sus clientes en la transición.
+                <strong>Clear, structured information</strong>: Explains the advantages of solar energy and how Revolt can help customers make the transition.
               </li>
               <li>
-                <strong>Diseño optimizado para conversión</strong>: Secciones estratégicamente diseñadas para guiar a los usuarios a solicitar información o cotización.
+                <strong>Conversion-optimized design</strong>: Strategically designed sections to guide users to request information or a quote.
               </li>
               <li>
-                <strong>Diseño responsivo</strong>: Garantiza una navegación fluida en cualquier dispositivo, incluyendo móvil, tablet y escritorio.
+                <strong>Responsive design</strong>: Ensures smooth navigation on any device, including mobile, tablet, and desktop.
               </li>
               <li>
-                <strong>Opciones rápidas de contacto</strong>: Formularios integrados y enlaces directos para una comunicación sencilla con la empresa.
+                <strong>Quick contact options</strong>: Integrated forms and direct links for easy communication with the company.
               </li>
             </ul>
           </div>
 
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>¿Cómo funciona?</span>
+            <span>How does it work?</span>
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              La página de <strong>Revolt</strong> está desarrollada usando{" "}
-              <strong>Vue.js</strong>, un framework de JavaScript que permite interfaces rápidas y dinámicas. Para manejar la navegación fluida entre secciones sin recargar la página, se usa <strong>Vue Router</strong>, asegurando una experiencia de navegación continua.
+              The <strong>Revolt</strong> page is built with{" "}
+              <strong>Vue.js</strong>, a JavaScript framework that enables fast, dynamic interfaces. <strong>Vue Router</strong> is used for smooth navigation between sections without reloading the page, ensuring a continuous browsing experience.
             </p>
             <p>
-              El diseño de la interfaz está construido con{" "}
-              <strong>HTML y CSS puros</strong>, manteniendo un aspecto limpio y profesional. Además, <strong>JavaScript</strong> mejora la interactividad y optimiza la experiencia del usuario, haciendo la información fácilmente accesible y atractiva.
+              The interface is built with{" "}
+              <strong>plain HTML and CSS</strong>, keeping a clean and professional look. In addition, <strong>JavaScript</strong> enhances interactivity and optimizes the user experience, making information easily accessible and engaging.
             </p>
           </div>
         </div>

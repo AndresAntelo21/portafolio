@@ -1,6 +1,6 @@
 import { FaCalendar } from "react-icons/fa";
 import { IconType } from "react-icons";
-import AnimatedContent from "@/components/ui/AnimatedContent/AnimatedContent";
+import { motion } from "motion/react";
 
 interface ProjectsCardProps {
   imageSrc: string;
@@ -12,6 +12,13 @@ interface ProjectsCardProps {
   reverse?: boolean;
   linkUrl?: string;
 }
+
+const cardMotion = {
+  initial: { opacity: 0, y: 60 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5, ease: "easeOut" as const },
+};
 
 export const ProjectsCard: React.FC<ProjectsCardProps> = ({
   imageSrc,
@@ -30,18 +37,7 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
   };
 
   return (
-    <AnimatedContent
-      distance={100}
-      direction="vertical"
-      reverse={false}
-      duration={0.8}
-      ease="power3.out"
-      initialOpacity={0}
-      animateOpacity
-      scale={1}
-      threshold={0.1}
-      delay={0}
-    >
+    <motion.div {...cardMotion}>
       <div
         className={`relative flex cursor-pointer flex-col gap-4 ${
           reverse ? "lg:flex-row" : "lg:flex-row-reverse"
@@ -98,6 +94,6 @@ export const ProjectsCard: React.FC<ProjectsCardProps> = ({
           </div>
         </div>
       </div>
-    </AnimatedContent>
+    </motion.div>
   );
 };

@@ -19,7 +19,7 @@ interface ExperienceSectionProps {
 export const ExperienceSection = ({
     experiences,
     title = "MI",
-    highlightedWord = "EXPERIENCIA",
+    highlightedWord = "EXPERIENCE",
     companyName = ""
 }: ExperienceSectionProps) => {
     return (

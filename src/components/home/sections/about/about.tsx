@@ -2,14 +2,14 @@ export const About = () => {
   return (
     <div className="font-montserrat text-xl">
       <p>
-        <span className="text-blue-primary">Curioso</span>,{" "}
-        <span className="text-blue-primary">creativo</span> y en constante{" "}
-        <span className="text-blue-primary">aprendizaje</span>, disfruto dar
-        vida a ideas a través del{" "}
-        <span className="text-blue-primary">diseño</span> y el{" "}
-        <span className="text-blue-primary">desarrollo</span>. Cada proyecto
-        representa para mí una oportunidad para crecer, mejorar mis habilidades
-        y explorar nuevas formas de crear.
+        <span className="text-blue-primary">Curious</span>,{" "}
+        <span className="text-blue-primary">creative</span>, and constantly{" "}
+        <span className="text-blue-primary">learning</span>, I enjoy bringing
+        ideas to life through{" "}
+        <span className="text-blue-primary">design</span> and{" "}
+        <span className="text-blue-primary">development</span>. Each project
+        is an opportunity for me to grow, improve my skills, and explore new
+        ways to create.
       </p>
     </div>
   );

@@ -21,7 +21,7 @@ export const CbCWeb = () => {
           <div className="w-full">
             <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
               <span className="font-poppins text-xl font-medium tracking-widest">
-                Tecnologías
+                Technologies
               </span>
             </div>
           </div>
@@ -41,15 +41,15 @@ export const CbCWeb = () => {
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3>Febrero 2025 -</h3>
-              <span className="">Marzo 2025</span>
+              <h3>February 2025 -</h3>
+              <span className="">March 2025</span>
             </div>
           </div>
           <div>
             <div className="w-full pt-10">
               <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
                 <span className="font-poppins text-xl font-medium tracking-widest">
-                  Enlaces
+                  Links
                 </span>
               </div>
             </div>
@@ -61,7 +61,7 @@ export const CbCWeb = () => {
               >
                 <span className="flex items-center gap-2 text-lg uppercase">
                   <FaLink />
-                  Enlace
+                  Link
                 </span>
               </a>
             </div>
@@ -73,31 +73,31 @@ export const CbCWeb = () => {
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Colegio Bicultural Cananea (CBC)</strong> es una institución educativa comprometida con el desarrollo integral de sus estudiantes, ofreciendo un <strong>modelo bilingüe de aprendizaje</strong> que fomenta el crecimiento académico, cultural y personal. Con un enfoque innovador, CBC proporciona un ambiente de aprendizaje dinámico y de alta calidad, preparando a los alumnos para los retos futuros.
+              <strong>Colegio Bicultural Cananea (CBC)</strong> is an educational institution committed to the holistic development of its students, offering a <strong>bilingual learning model</strong> that fosters academic, cultural, and personal growth. With an innovative approach, CBC provides a dynamic, high-quality learning environment, preparing students for future challenges.
             </p>
             <p>
-              El sitio web del colegio ha sido diseñado para ofrecer información <strong>clara y accesible</strong> sobre sus programas educativos, valores institucionales y proceso de admisiones, facilitando que la comunidad escolar se mantenga conectada.
+              The school's website has been designed to provide <strong>clear and accessible</strong> information about its educational programs, institutional values, and admissions process, keeping the school community connected.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Características</span>
+            <span>Features</span>
           </div>
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
               <li>
-                <strong>Información Institucional</strong>: Presentación de la misión, visión y valores fundamentales del colegio.
+                <strong>Institutional Information</strong>: Presentation of the school's mission, vision, and core values.
               </li>
               <li>
-                <strong>Programas Educativos</strong>: Detalles sobre los niveles académicos y programas ofrecidos.
+                <strong>Educational Programs</strong>: Details on academic levels and programs offered.
               </li>
               <li>
-                <strong>Navegación Intuitiva</strong>: Diseño optimizado para una experiencia de usuario fluida.
+                <strong>Intuitive Navigation</strong>: Design optimized for a smooth user experience.
               </li>
               <li>
-                <strong>Diseño Moderno y Responsivo</strong>: Garantizando una experiencia sin problemas en todos los dispositivos.
+                <strong>Modern and Responsive Design</strong>: Ensuring a seamless experience across all devices.
               </li>
               <li>
-                <strong>Sistema de Contacto</strong>: Facilitando la comunicación directa con la institución para consultas o procesos de inscripción.
+                <strong>Contact System</strong>: Facilitating direct communication with the institution for inquiries or enrollment.
               </li>
             </ul>
           </div>
@@ -106,16 +106,16 @@ export const CbCWeb = () => {
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              El sitio web del <strong>Colegio Bicultural Cananea</strong> fue desarrollado usando tecnologías modernas para asegurar un rendimiento óptimo y una navegación eficiente.
+              The <strong>Colegio Bicultural Cananea</strong> website was developed using modern technologies to ensure optimal performance and efficient navigation.
             </p>
             <p>
-              El <strong>frontend</strong> está construido con <strong>React</strong>, una de las librerías de JavaScript más populares, que proporciona una interfaz rápida e interactiva. Se utilizó <strong>TypeScript</strong> para mejorar la escalabilidad y seguridad del código, asegurando una experiencia estable para los usuarios.
+              The <strong>frontend</strong> is built with <strong>React</strong>, one of the most popular JavaScript libraries, providing a fast and interactive interface. <strong>TypeScript</strong> was used to improve code scalability and safety, ensuring a stable experience for users.
             </p>
             <p>
-              Para una navegación fluida entre secciones, el sitio implementa <strong>React Router</strong>, permitiendo transiciones suaves sin recargar la página. El diseño de la interfaz está elaborado con <strong>Tailwind CSS</strong>, un framework moderno que mejora la flexibilidad del diseño manteniendo una estética limpia y profesional.
+              For smooth navigation between sections, the site implements <strong>React Router</strong>, enabling smooth transitions without reloading the page. The interface design is built with <strong>Tailwind CSS</strong>, a modern framework that improves design flexibility while maintaining a clean, professional look.
             </p>
             <p>
-              Finalmente, el sitio fue construido con <strong>Vite</strong>, una herramienta poderosa de desarrollo que mejora el rendimiento y reduce los tiempos de carga, garantizando una experiencia rápida y fluida en cualquier dispositivo.
+              Finally, the site was built with <strong>Vite</strong>, a powerful development tool that improves performance and reduces load times, ensuring a fast and smooth experience on any device.
             </p>
           </div>
         </div>
