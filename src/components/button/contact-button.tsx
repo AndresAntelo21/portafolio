@@ -16,7 +16,7 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
         speed={3}
         className="custom-class"
       />
-      <div className="flex justify-center gap-6" role="list">
+      <div className="flex justify-center gap-6">
         <a
           href="https://github.com/AndresAntelo21"
           target="_blank"
