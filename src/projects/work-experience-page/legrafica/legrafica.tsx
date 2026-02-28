@@ -4,7 +4,7 @@ export const Legrafica = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
       <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/legrafica/bg-legrafica.png" alt="Legrafica image" className="object-cover w-full h-full object-center" />
+        <img src="/work-experience/legrafica/bg-legrafica.webp" alt="Legrafica image" className="object-cover w-full h-full object-center" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
           <img
@@ -34,7 +34,7 @@ export const Legrafica = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <Card
           backgroundImage="/projects/umana/umana-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -61,7 +61,7 @@ export const Legrafica = () => {
         />
         <Card
           backgroundImage="/projects/gng/gng-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -88,7 +88,7 @@ export const Legrafica = () => {
         />
         <Card
           backgroundImage="/projects/cbc/cbc-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -118,7 +118,7 @@ export const Legrafica = () => {
         />
         <Card
           backgroundImage="/projects/revolt/revolt-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img

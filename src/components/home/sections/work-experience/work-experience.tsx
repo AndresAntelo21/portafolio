@@ -25,33 +25,33 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
         <ExperienceCard
-          imageSrc="/work-experience/unison/unison-logo.png"
-          hoverImageSrc="/work-experience/unison/unison-hover.png"
+          imageSrc="/work-experience/unison/unison-logo.webp"
+          hoverImageSrc="/work-experience/unison/unison-hover.webp"
           linkUrl="/unison"
         />
         <ExperienceCard
-          imageSrc="/work-experience/csipro/csi-logo.png"
-          hoverImageSrc="/work-experience/csipro/csi-hover.png"
+          imageSrc="/work-experience/csipro/csi-logo.webp"
+          hoverImageSrc="/work-experience/csipro/csi-hover.webp"
           linkUrl="/csipro"
         />
         <ExperienceCard
           imageSrc="/work-experience/telsoluciones/telsoluciones-logo.svg"
-          hoverImageSrc="/work-experience/telsoluciones/bg-telsoluciones.png"
+          hoverImageSrc="/work-experience/telsoluciones/bg-telsoluciones.webp"
           linkUrl="/telsoluciones"
         />
         <ExperienceCard
-          imageSrc="/work-experience/legrafica/legrafica-logo.png"
-          hoverImageSrc="/work-experience/legrafica/legrafica-hover.png"
+          imageSrc="/work-experience/legrafica/legrafica-logo.webp"
+          hoverImageSrc="/work-experience/legrafica/legrafica-hover.webp"
           linkUrl="/legrafica"
         />
         <ExperienceCard
-          imageSrc="/work-experience/vincco/bg-vincco.png"
-          hoverImageSrc="/work-experience/vincco/bg-site.png"
+          imageSrc="/work-experience/vincco/bg-vincco.webp"
+          hoverImageSrc="/work-experience/vincco/bg-site.webp"
           linkUrl="/vincco"
         />
         <ExperienceCard
-          imageSrc="/work-experience/vado/vado.png"
-          hoverImageSrc="/work-experience/vado/vado.png"
+          imageSrc="/work-experience/vado/vado.webp"
+          hoverImageSrc="/work-experience/vado/vado.webp"
           isUnderConstruction={true}
           constructionMessage="Portfolio under construction"
         />

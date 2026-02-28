@@ -3,7 +3,7 @@ export const Csipro = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
       <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/csipro/reales.png" alt="CSI PRO image" className="object-cover w-full h-full object-center" />
+        <img src="/work-experience/csipro/reales.webp" alt="CSI PRO image" className="object-cover w-full h-full object-center" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
           <img
@@ -37,7 +37,7 @@ export const Csipro = () => {
       </div>
       <Card
         backgroundImage="/projects/csipro/csi-slide4.webp"
-        avatarSrc="/work-experience/csipro/csi-logo.png"
+        avatarSrc="/work-experience/csipro/csi-logo.webp"
         authorName={
           <div className="flex items-center gap-2">
             <img

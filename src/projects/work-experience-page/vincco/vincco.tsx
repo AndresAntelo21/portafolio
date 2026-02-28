@@ -11,7 +11,7 @@ export const Vincco = () => {
     return (
         <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
             <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-                <img src="/work-experience/vincco/bg-vincco-oficinas.png" alt="Vincco offices" className="object-cover w-full h-full object-center" />
+                <img src="/work-experience/vincco/bg-vincco-oficinas.webp" alt="Vincco offices" className="object-cover w-full h-full object-center" />
                 <div className="absolute inset-0 bg-black/50"></div>
                 <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
                     <img

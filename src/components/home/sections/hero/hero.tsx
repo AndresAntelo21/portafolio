@@ -22,7 +22,7 @@ export const Hero = () => {
           </div>
           <div className="flex w-full flex-col items-center gap-4 lg:w-[50%]">
             <TiltedCard
-              imageSrc="/hero/me-background.png"
+              imageSrc="/hero/me-background.webp"
               altText="Full Stack Developer"
               containerHeight="300px"
               containerWidth="300px"

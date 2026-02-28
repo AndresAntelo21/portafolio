@@ -4,7 +4,7 @@ export const Unison = () => {
   return (
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/unison/bg-unison.png" alt="Universidad de Sonora campus Hermosillo" className="object-cover w-full h-full object-center" />
+        <img src="/work-experience/unison/bg-unison.webp" alt="Universidad de Sonora campus Hermosillo" className="object-cover w-full h-full object-center" />
         <div className="absolute inset-0 bg-black/50"></div>
         <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
           <img
@@ -37,7 +37,7 @@ export const Unison = () => {
       </div>
       <Card
         backgroundImage="/projects/movilidad/movilidad-slide1.webp"
-        avatarSrc="/work-experience/unison/unison-logo.png"
+        avatarSrc="/work-experience/unison/unison-logo.webp"
         authorName={
           <div className="flex items-center gap-2">
             <img

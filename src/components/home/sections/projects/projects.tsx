@@ -18,7 +18,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
       <div className="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
         <Card
           backgroundImage="/projects/csipro/csi-slide4.webp"
-          avatarSrc="/work-experience/csipro/csi-logo.png"
+          avatarSrc="/work-experience/csipro/csi-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -57,7 +57,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         />
         <Card
           backgroundImage="/projects/umana/umana-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -84,7 +84,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         />
         <Card
           backgroundImage="/projects/gng/gng-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -111,7 +111,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         />
         <Card
           backgroundImage="/projects/cbc/cbc-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -141,7 +141,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         />
         <Card
           backgroundImage="/projects/revolt/revolt-slide1.webp"
-          avatarSrc="/work-experience/legrafica/legrafica-logo.png"
+          avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
@@ -168,7 +168,7 @@ export const Projects: React.FC<ProjectsProps> = ({ className }) => {
         />
         <Card
           backgroundImage="/projects/movilidad/movilidad-slide1.webp"
-          avatarSrc="/work-experience/unison/unison-logo.png"
+          avatarSrc="/work-experience/unison/unison-logo.webp"
           authorName={
             <div className="flex items-center gap-2">
               <img
