@@ -91,8 +91,9 @@ export const CertificacionesCard: React.FC<CertificacionesCardProps> = ({
                             <button
                                 onClick={() => setShowPDFPreview(false)}
                                 className="p-2 hover:bg-gray-200 rounded-lg transition-colors"
+                                aria-label="Close certificate preview"
                             >
-                                <X className="w-5 h-5 text-gray-600" />
+                                <X className="w-5 h-5 text-gray-600" aria-hidden="true" />
                             </button>
                         </div>
 

@@ -31,6 +31,10 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   return (
     <motion.div {...cardMotion}>
       <div
+        role={linkUrl && !isUnderConstruction ? "link" : undefined}
+        tabIndex={linkUrl && !isUnderConstruction ? 0 : undefined}
+        onKeyDown={linkUrl && !isUnderConstruction ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); handleRedirect(); } } : undefined}
+        aria-label={linkUrl && !isUnderConstruction ? "View work experience details" : "Portfolio under construction"}
         className={`transform transition-transform duration-300 hover:scale-105 ${linkUrl && !isUnderConstruction ? 'cursor-pointer' : 'cursor-not-allowed'}`}
         onClick={handleRedirect}
       >

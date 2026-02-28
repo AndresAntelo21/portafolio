@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { CertificadoCard } from "./certificado-card";
 
 interface Certificado {
@@ -9,6 +10,9 @@ interface Certificado {
 }
 
 export const Certificados = () => {
+    const location = useLocation();
+    const isStandalonePage = location.pathname === "/certificados";
+    const SectionHeading = isStandalonePage ? "h1" : "h2";
     const certificados: Certificado[] = [
         {
             title: "UX Design: User Experience UX/UI + Figma 2025",
@@ -57,9 +61,9 @@ export const Certificados = () => {
 
     return (
         <div className="font-poppins relative z-10 flex flex-col gap-5">
-            <h1 className="relative z-10 text-left text-3xl font-bold">
+            <SectionHeading className="relative z-10 text-left text-3xl font-bold">
                 MY <span className="text-blue-primary">CERTIFICATES</span>
-            </h1>
+            </SectionHeading>
 
             <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full justify-items-center">
                 {certificados.map((certificado, index) => (

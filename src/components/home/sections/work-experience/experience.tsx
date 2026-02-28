@@ -38,6 +38,10 @@ export const Card: React.FC<CardProps> = ({
   return (
     <motion.div {...cardMotion}>
       <div
+        role={linkUrl ? "link" : undefined}
+        tabIndex={linkUrl ? 0 : undefined}
+        onKeyDown={linkUrl ? (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); handleRedirect(); } } : undefined}
+        aria-label={linkUrl ? "View project details" : undefined}
         className={cn("max-w-full w-full group/card cursor-pointer", className)}
         onClick={handleRedirect}
       >

@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import { Card } from "../work-experience/experience";
 
 interface ProjectsProps {
@@ -5,12 +6,15 @@ interface ProjectsProps {
 }
 
 export const Projects: React.FC<ProjectsProps> = ({ className }) => {
-  return (
+  const location = useLocation();
+  const isStandalonePage = location.pathname === "/projects";
+  const SectionHeading = isStandalonePage ? "h1" : "h2";
 
+  return (
     <div className={`font-poppins flex flex-col gap-4 py-10 ${className}`}>
-      <h1 className="relative z-10 text-left text-3xl font-bold">
+      <SectionHeading className="relative z-10 text-left text-3xl font-bold">
         MY <span className="text-blue-primary">PROJECTS</span>
-      </h1>
+      </SectionHeading>
       <div className="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
         <Card
           backgroundImage="/projects/csipro/csi-slide4.webp"

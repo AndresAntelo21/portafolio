@@ -28,6 +28,7 @@ export const Error404 = () => {
             speed="4s"
             thickness={2}
             onClick={handleRedirect}
+            aria-label="Back to home page"
           >
             Back to Home
           </StarBorder>

@@ -11,11 +11,11 @@ export const Hero = () => {
       <div className="font-montserrat flex w-full flex-col text-4xl font-bold lg:flex-row lg:text-5xl">
         <div className="lg:flex lg:flex-row lg:items-center">
           <div className="flex w-full flex-col items-start gap-4 pb-4">
-            <p>
+            <h1 className="text-4xl font-bold lg:text-5xl">
               Hi! I'm{" "}
               <span className="text-blue-primary">Andrés Antelo</span> and I'm a{" "}
               <span className="text-blue-primary">Full Stack developer</span>.
-            </p>
+            </h1>
             <div className="hidden lg:block">
               <ContactButton className="items-start" />
             </div>

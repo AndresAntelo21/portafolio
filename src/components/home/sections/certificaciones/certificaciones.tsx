@@ -4,7 +4,7 @@ export const Certificaciones = () => {
     return (
         <div className="font-montserrat text-3xl font-bold">
             <section className="flex gap-4 flex-col">
-                <h1>MY <span className="text-blue-primary">CERTIFICATIONS</span></h1>
+                <h2>MY <span className="text-blue-primary">CERTIFICATIONS</span></h2>
                 <div className="grid grid-cols-1 gap-4">
                     <CertificacionesCard
                         title="Foundations of Cybersecurity"

@@ -41,19 +41,19 @@ export const Navigator = () => {
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
         <div className="absolute right-0 block lg:hidden">
           <Drawer direction="right">
-            <DrawerTrigger className="flex items-center">
-              <RxHamburgerMenu />
+            <DrawerTrigger className="flex items-center" aria-label="Open menu">
+              <RxHamburgerMenu aria-hidden="true" />
             </DrawerTrigger>
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>
-                  <h1 className="font-montserrat text-left text-2xl font-bold">
+                  <span className="font-montserrat text-left text-2xl font-bold block">
                     Andres Portfolio
-                  </h1>
+                  </span>
                 </DrawerTitle>
                 <DrawerClose asChild>
-                  <button className="absolute top-4 right-4">
-                    <IoIosClose size={36} />
+                  <button className="absolute top-4 right-4" aria-label="Close menu">
+                    <IoIosClose size={36} aria-hidden="true" />
                   </button>
                 </DrawerClose>
                 <DrawerDescription>
@@ -87,8 +87,8 @@ export const Navigator = () => {
         </div>
 
         <div className="flex-grow text-left font-semibold lg:text-left">
-          <Link to="/">
-            <h1 className="inline-block">Andres Portfolio</h1>
+          <Link to="/" className="inline-block" aria-label="Andres Portfolio - Go to home">
+            <span className="text-inherit">Andres Portfolio</span>
           </Link>
         </div>
 
@@ -137,14 +137,15 @@ export const Navigator = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <a
-                    href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
-                  >
-                    CV
-                  </a>
+<a
+                href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                aria-label="Download CV (opens in new tab)"
+              >
+                CV
+              </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>

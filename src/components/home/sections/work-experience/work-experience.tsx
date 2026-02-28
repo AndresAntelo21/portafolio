@@ -1,5 +1,5 @@
 
-
+import { useLocation } from "react-router-dom";
 import { ExperienceCard } from "../projects/experience-card";
 
 
@@ -10,14 +10,18 @@ interface WorkExperienceProps {
 export const WorkExperience: React.FC<WorkExperienceProps> = ({
   className,
 }) => {
+  const location = useLocation();
+  const isStandalonePage = location.pathname === "/work-experience";
+  const SectionHeading = isStandalonePage ? "h1" : "h2";
+
   return (
     <div
       className={`font-poppins flex flex-col gap-10 pt-2 text-2xl lg:text-center ${className}`}
     >
       <div className="flex flex-col gap-2">
-        <h1 className="relative z-10 text-left text-3xl font-bold">
+        <SectionHeading className="relative z-10 text-left text-3xl font-bold">
           WORK <span className="text-blue-primary">EXPERIENCE</span>
-        </h1>
+        </SectionHeading>
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
         <ExperienceCard

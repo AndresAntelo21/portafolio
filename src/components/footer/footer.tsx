@@ -11,7 +11,7 @@ export const Foooter = () => {
       <div className="mx-auto flex flex-col gap-10 pt-10 text-center md:w-150 md:flex-row md:items-start md:justify-between md:pt-10 lg:w-250">
         <div className="flex flex-col gap-5 md:text-left">
           <div className="font-montserrat w-full text-2xl">
-            <h1 className="">ANDRES PORTFOLIO</h1>
+            <p className="font-bold uppercase">Andres Portfolio</p>
           </div>
           <div className="font-montserrat flex flex-col gap-5 text-lg">
             <span className="text-xl text-zinc-400">Navigation</span>
@@ -48,6 +48,7 @@ export const Foooter = () => {
               target="_blank"
               rel="noopener noreferrer"
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
+              aria-label="Download CV (opens in new tab)"
             >
               CV
             </a>

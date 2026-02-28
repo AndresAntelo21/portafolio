@@ -16,28 +16,31 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
         speed={3}
         className="custom-class"
       />
-      <div className="flex justify-center gap-6">
+      <div className="flex justify-center gap-6" role="list">
         <a
           href="https://github.com/AndresAntelo21"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-transform duration-300 hover:scale-125 hover:text-white"
+          aria-label="GitHub profile of Andrés Antelo"
         >
-          <FaGithub />
+          <FaGithub aria-hidden="true" />
         </a>
         <a
           href="https://linkedin.com/in/andresantel0"
           target="_blank"
           rel="noopener noreferrer"
           className="transition-transform duration-300 hover:scale-125 hover:text-white"
+          aria-label="LinkedIn profile of Andrés Antelo"
         >
-          <FaLinkedin />
+          <FaLinkedin aria-hidden="true" />
         </a>
         <a
           href="mailto:andresantelo12@gmail.com"
           className="transition-transform duration-300 hover:scale-125 hover:text-white"
+          aria-label="Send email to Andrés Antelo"
         >
-          <FaEnvelope />
+          <FaEnvelope aria-hidden="true" />
         </a>
       </div>
     </div>

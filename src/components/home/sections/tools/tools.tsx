@@ -19,9 +19,9 @@ export const Tools = () => {
   ];
   return (
     <div className="font-poppins relative z-10 flex flex-col gap-5 text-center text-2xl lg:text-center">
-      <h1 className="relative z-10 text-left text-3xl font-bold">
+      <h2 className="relative z-10 text-left text-3xl font-bold">
         FRAMEWORKS & <span className="text-blue-primary">TOOLS</span>
-      </h1>
+      </h2>
 
       <div className="flex flex-col gap-1">
         <CircleGrid images={images} />
