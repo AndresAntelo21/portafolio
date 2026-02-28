@@ -1,5 +1,5 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
 
 import { useEffect, useRef } from "react";
@@ -168,6 +168,10 @@ export default function Aurora(props: AuroraProps) {
       return [c.r, c.g, c.b];
     });
 
+    // Get initial dimensions
+    let width = ctn.offsetWidth;
+    let height = ctn.offsetHeight;
+
     program = new Program(gl, {
       vertex: VERT,
       fragment: FRAG,
@@ -175,7 +179,7 @@ export default function Aurora(props: AuroraProps) {
         uTime: { value: 0 },
         uAmplitude: { value: amplitude },
         uColorStops: { value: colorStopsArray },
-        uResolution: { value: [ctn.offsetWidth, ctn.offsetHeight] },
+        uResolution: { value: [width, height] },
         uBlend: { value: blend },
       },
     });

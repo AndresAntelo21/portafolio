@@ -1,25 +1,28 @@
 import { Routes, Route, useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, Suspense, lazy } from "react";
 import { Home } from "@/components/home/home";
 import { Navigator } from "@/components/navigator/navigator";
-import { WorkExperience } from "@/components/home/sections/work-experience/work-experience";
-import { Projects } from "@/components/home/sections/projects/projects";
 import { Foooter } from "@/components/footer/footer";
-import { CsiproWeb } from "@/projects/csipro-web/csipro-web";
-import { MovilidadWeb } from "@/projects/movilidad/movilidad-web";
-import { UmanaWeb } from "@/projects/umana/umana-web";
-import { GnGWeb } from "@/projects/gng/gng-web";
-import { CbCWeb } from "@/projects/cbc/cbc-web";
-import { Csipro } from "@/projects/work-experience-page/csipro/csipro";
-import { Legrafica } from "@/projects/work-experience-page/legrafica/legrafica";
-import { Unison } from "@/projects/work-experience-page/unison/unison";
-import { Error404 } from "@/components/page-not-found/error404";
-import { RevoltWeb } from "@/projects/revolt/revolt-web";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { Certificados } from "@/components/home/sections/certificados/certificados";
-import { Telsoluciones } from "@/projects/work-experience-page/telsoluciones/telsoluciones";
-import { Vincco } from "@/projects/work-experience-page/vincco/vincco";
+import { LoadingSpinner } from "@/components/loading/loading";
 import Aurora from "@/components/ui/Aurora/Aurora";
+
+// Lazy load all project pages
+const WorkExperience = lazy(() => import("@/components/home/sections/work-experience/work-experience").then(m => ({ default: m.WorkExperience })));
+const Projects = lazy(() => import("@/components/home/sections/projects/projects").then(m => ({ default: m.Projects })));
+const CsiproWeb = lazy(() => import("@/projects/csipro-web/csipro-web").then(m => ({ default: m.CsiproWeb })));
+const MovilidadWeb = lazy(() => import("@/projects/movilidad/movilidad-web").then(m => ({ default: m.MovilidadWeb })));
+const UmanaWeb = lazy(() => import("@/projects/umana/umana-web").then(m => ({ default: m.UmanaWeb })));
+const GnGWeb = lazy(() => import("@/projects/gng/gng-web").then(m => ({ default: m.GnGWeb })));
+const CbCWeb = lazy(() => import("@/projects/cbc/cbc-web").then(m => ({ default: m.CbCWeb })));
+const RevoltWeb = lazy(() => import("@/projects/revolt/revolt-web").then(m => ({ default: m.RevoltWeb })));
+const Csipro = lazy(() => import("@/projects/work-experience-page/csipro/csipro").then(m => ({ default: m.Csipro })));
+const Legrafica = lazy(() => import("@/projects/work-experience-page/legrafica/legrafica").then(m => ({ default: m.Legrafica })));
+const Unison = lazy(() => import("@/projects/work-experience-page/unison/unison").then(m => ({ default: m.Unison })));
+const Telsoluciones = lazy(() => import("@/projects/work-experience-page/telsoluciones/telsoluciones").then(m => ({ default: m.Telsoluciones })));
+const Vincco = lazy(() => import("@/projects/work-experience-page/vincco/vincco").then(m => ({ default: m.Vincco })));
+const Certificados = lazy(() => import("@/components/home/sections/certificados/certificados").then(m => ({ default: m.Certificados })));
+const Error404 = lazy(() => import("@/components/page-not-found/error404").then(m => ({ default: m.Error404 })));
 
 const BASE_URL = typeof import.meta.env.VITE_SITE_URL === "string"
   ? import.meta.env.VITE_SITE_URL.replace(/\/$/, "")
@@ -171,28 +174,30 @@ export default function App() {
       </div>
       <Navigator />
       <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250 min-h-screen">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/work-experience" element={<WorkExperience />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/certificados" element={<Certificados />} />
-          {/* Projects */}
-          <Route path="/csipro-web" element={<CsiproWeb />} />
-          <Route path="/movilidad-web" element={<MovilidadWeb />} />
-          <Route path="/umana-web" element={<UmanaWeb />} />
-          <Route path="/gng-web" element={<GnGWeb />} />
-          <Route path="/cbc-web" element={<CbCWeb />} />
-          <Route path="/revolt-web" element={<RevoltWeb />} />
-          {/* Work Experience */}
-          <Route path="/csipro" element={<Csipro />} />
-          <Route path="/legrafica" element={<Legrafica />} />
-          <Route path="/unison" element={<Unison />} />
-          <Route path="/telsoluciones" element={<Telsoluciones />} />
-          <Route path="/vincco" element={<Vincco />} />
+        <Suspense fallback={<LoadingSpinner />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/work-experience" element={<WorkExperience />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/certificados" element={<Certificados />} />
+            {/* Projects */}
+            <Route path="/csipro-web" element={<CsiproWeb />} />
+            <Route path="/movilidad-web" element={<MovilidadWeb />} />
+            <Route path="/umana-web" element={<UmanaWeb />} />
+            <Route path="/gng-web" element={<GnGWeb />} />
+            <Route path="/cbc-web" element={<CbCWeb />} />
+            <Route path="/revolt-web" element={<RevoltWeb />} />
+            {/* Work Experience */}
+            <Route path="/csipro" element={<Csipro />} />
+            <Route path="/legrafica" element={<Legrafica />} />
+            <Route path="/unison" element={<Unison />} />
+            <Route path="/telsoluciones" element={<Telsoluciones />} />
+            <Route path="/vincco" element={<Vincco />} />
 
-          {/* Page not found */}
-          <Route path="*" element={<Error404 />} />
-        </Routes>
+            {/* Page not found */}
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </Suspense>
       </main>
       <Foooter />
     </>

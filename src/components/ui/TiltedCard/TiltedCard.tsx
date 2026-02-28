@@ -1,9 +1,9 @@
 /*
-	Installed from https://reactbits.dev/ts/tailwind/
+  Installed from https://reactbits.dev/ts/tailwind/
 */
 
 import type { SpringOptions } from "framer-motion";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 
 interface TiltedCardProps {
@@ -28,6 +28,13 @@ const springValues: SpringOptions = {
   mass: 2,
 };
 
+interface RectCache {
+  left: number;
+  top: number;
+  width: number;
+  height: number;
+}
+
 export default function TiltedCard({
   imageSrc,
   altText = "Tilted card image",
@@ -43,6 +50,7 @@ export default function TiltedCard({
   displayOverlayContent = false,
 }: TiltedCardProps) {
   const ref = useRef<HTMLElement>(null);
+  const rectCacheRef = useRef<RectCache | null>(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useSpring(useMotionValue(0), springValues);
@@ -57,10 +65,28 @@ export default function TiltedCard({
 
   const [lastY, setLastY] = useState(0);
 
-  function handleMouse(e: React.MouseEvent<HTMLElement>) {
+  // Update cached rect on mount, resize, and mouse enter
+  const updateRectCache = () => {
     if (!ref.current) return;
-
     const rect = ref.current.getBoundingClientRect();
+    rectCacheRef.current = {
+      left: rect.left,
+      top: rect.top,
+      width: rect.width,
+      height: rect.height,
+    };
+  };
+
+  useEffect(() => {
+    updateRectCache();
+    window.addEventListener("resize", updateRectCache);
+    return () => window.removeEventListener("resize", updateRectCache);
+  }, []);
+
+  function handleMouse(e: React.MouseEvent<HTMLElement>) {
+    if (!rectCacheRef.current) return;
+
+    const rect = rectCacheRef.current;
     const offsetX = e.clientX - rect.left - rect.width / 2;
     const offsetY = e.clientY - rect.top - rect.height / 2;
 
@@ -79,6 +105,7 @@ export default function TiltedCard({
   }
 
   function handleMouseEnter() {
+    updateRectCache();
     scale.set(scaleOnHover);
     opacity.set(1);
   }
@@ -127,6 +154,7 @@ export default function TiltedCard({
             width: imageWidth,
             height: imageHeight,
           }}
+          fetchPriority="high"
         />
 
         {displayOverlayContent && overlayContent && (

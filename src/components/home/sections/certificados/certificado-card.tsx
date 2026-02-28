@@ -46,6 +46,9 @@ export const CertificadoCard: React.FC<CertificadoCardProps> = ({
                             src={logo}
                             alt={platform}
                             className="h-8 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
+                            width="32"
+                            height="32"
+                            loading="lazy"
                         />
                     </div>
                 )}
