@@ -49,12 +49,6 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           hoverImageSrc="/work-experience/vincco/bg-site.webp"
           linkUrl="/vincco"
         />
-        <ExperienceCard
-          imageSrc="/work-experience/vado/vado.webp"
-          hoverImageSrc="/work-experience/vado/vado.webp"
-          isUnderConstruction={true}
-          constructionMessage="Portfolio under construction"
-        />
       </div>
     </div >
   );
