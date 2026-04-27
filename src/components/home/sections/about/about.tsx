@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="font-montserrat text-xl">
+    <div className="font-poppins text-xl">
       <p>
         <span className="text-blue-primary">Curious</span>,{" "}
         <span className="text-blue-primary">creative</span>, and constantly{" "}

@@ -35,7 +35,7 @@ export const Navigator = () => {
 
   return (
     <nav
-      className={`font-montserrat sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-transparent"
+      className={`font-poppins sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-transparent"
         }`}
     >
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
@@ -47,7 +47,7 @@ export const Navigator = () => {
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>
-                  <span className="font-montserrat text-left text-2xl font-bold block">
+                  <span className="font-poppins text-left text-2xl font-bold block">
                     Andres Portfolio
                   </span>
                 </DrawerTitle>
@@ -57,7 +57,7 @@ export const Navigator = () => {
                   </button>
                 </DrawerClose>
                 <DrawerDescription>
-                  <div className="font-montserrat flex flex-col gap-8 pt-4 text-left text-2xl text-white">
+                  <div className="font-poppins flex flex-col gap-8 pt-4 text-left text-2xl text-white">
                     <DrawerClose asChild>
                       <Link to="/">Home</Link>
                     </DrawerClose>

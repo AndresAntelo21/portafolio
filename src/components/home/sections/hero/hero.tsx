@@ -8,7 +8,7 @@ export const Hero = () => {
   return (
     <>
 
-      <div className="font-montserrat flex w-full flex-col text-4xl font-bold lg:flex-row lg:text-5xl">
+      <div className="font-poppins flex w-full flex-col text-4xl font-bold lg:flex-row lg:text-5xl">
         <div className="lg:flex lg:flex-row lg:items-center">
           <div className="flex w-full flex-col items-start gap-4 pb-4">
             <h1 className="text-4xl font-bold lg:text-5xl">

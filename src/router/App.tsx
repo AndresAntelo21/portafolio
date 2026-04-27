@@ -4,7 +4,6 @@ import { Home } from "@/components/home/home";
 import { Navigator } from "@/components/navigator/navigator";
 import { Foooter } from "@/components/footer/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { LoadingSpinner } from "@/components/loading/loading";
 import Aurora from "@/components/ui/Aurora/Aurora";
 
 // Lazy load all project pages
@@ -174,7 +173,7 @@ export default function App() {
       </div>
       <Navigator />
       <main className="m-auto px-4 py-4 md:w-150 md:px-0 lg:w-250 min-h-screen">
-        <Suspense fallback={<LoadingSpinner />}>
+        <Suspense fallback={null}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work-experience" element={<WorkExperience />} />

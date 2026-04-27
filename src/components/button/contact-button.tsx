@@ -8,7 +8,7 @@ interface ContactButtonProps {
 export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
   return (
     <div
-      className={`font-montserrat flex flex-col gap-2 text-center text-3xl text-white/70 ${className}`}
+      className={`font-poppins flex flex-col gap-2 text-center text-3xl text-white/70 ${className}`}
     >
       <ShinyText
         text="Contact me"
