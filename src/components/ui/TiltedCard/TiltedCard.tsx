@@ -20,6 +20,8 @@ interface TiltedCardProps {
   showTooltip?: boolean;
   overlayContent?: React.ReactNode;
   displayOverlayContent?: boolean;
+  /** Rendered above the image, below the overlay (e.g. 3D / interactive content). */
+  foregroundContent?: React.ReactNode;
 }
 
 const springValues: SpringOptions = {
@@ -48,6 +50,7 @@ export default function TiltedCard({
   showMobileWarning = true,
   overlayContent = null,
   displayOverlayContent = false,
+  foregroundContent = null,
 }: TiltedCardProps) {
   const ref = useRef<HTMLElement>(null);
   const rectCacheRef = useRef<RectCache | null>(null);
@@ -137,7 +140,7 @@ export default function TiltedCard({
       )}
 
       <motion.div
-        className="relative [transform-style:preserve-3d]"
+        className="relative overflow-hidden rounded-[15px] [transform-style:preserve-3d]"
         style={{
           width: imageWidth,
           height: imageHeight,
@@ -157,8 +160,16 @@ export default function TiltedCard({
           fetchPriority="high"
         />
 
+        {foregroundContent && (
+          <div className="pointer-events-none absolute inset-0 z-[1] [transform:translateZ(20px)] overflow-hidden rounded-[15px]">
+            <div className="pointer-events-auto h-full w-full overflow-hidden">
+              {foregroundContent}
+            </div>
+          </div>
+        )}
+
         {displayOverlayContent && overlayContent && (
-          <motion.div className="absolute top-7 left-17 z-[2] [transform:translateZ(30px)] rounded-lg bg-gray-800/60 p-2 will-change-transform">
+          <motion.div className="absolute top-8 left-1/2 z-[2] inline-flex max-w-[calc(100%-1rem)] [transform:translate3d(-50%,0,30px)] items-center justify-center rounded-sm bg-gray-800/60 px-1.5 py-2 leading-none will-change-transform [&>*]:shrink-0">
             {overlayContent}
           </motion.div>
         )}
