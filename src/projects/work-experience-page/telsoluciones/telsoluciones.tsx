@@ -1,5 +1,6 @@
 import { Monitor, FolderOpen, Globe, Laptop, Phone, BarChart3 } from "lucide-react";
 import {
+    ExperienceHero,
     ExperienceSection,
     TechnologiesSection,
     AchievementItem,
@@ -10,22 +11,28 @@ import {
 export const Telsoluciones = () => {
     return (
         <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
-            <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-                <img src="/work-experience/telsoluciones/bg-telsoluciones.webp" alt="TelSoluciones contact center" className="object-cover w-full h-full object-center" />
-                <div className="absolute inset-0 bg-black/50"></div>
-                <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
+            <ExperienceHero
+                accentColor="var(--blue-primary)"
+                backgroundImage="/work-experience/telsoluciones/telsoluciones-banner.png"
+                badgeIcon={
                     <img
                         src="/work-experience/telsoluciones/telsol-logo-text.svg"
-                        alt="TelSoluciones logo"
-                        className="w-60"
+                        alt=""
+                        className="h-4 w-auto max-w-[200px] object-contain sm:h-5"
                     />
-                </div>
-            </div>
-            <div className="">
-                <p>
-                    <span className="text-blue-primary">Telsoluciones</span> is a contact center that provides phone support to <span className="text-blue-primary">Telcel</span> customers. There I strengthened my communication and teamwork skills.
-                </p>
-            </div>
+                }
+                badgeLabel="Contact center · Telcel"
+                titleLine1="Phone support at scale &"
+                titleLine2="Real-world teamwork"
+                description={
+                    <>
+                        <span className="experience-hero-accent">Telsoluciones</span> is a contact center
+                        that provides phone support to{" "}
+                        <span className="experience-hero-accent">Telcel</span> customers. There I
+                        strengthened my communication and teamwork skills.
+                    </>
+                }
+            />
             <ExperienceSection
                 companyName="TELSOLUCIONES"
                 experiences={[

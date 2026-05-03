@@ -137,15 +137,15 @@ export const Navigator = () => {
               </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-<a
-                href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
-                aria-label="Download CV (opens in new tab)"
-              >
-                CV
-              </a>
+                  <a
+                    href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                    aria-label="Download CV (opens in new tab)"
+                  >
+                    CV
+                  </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>

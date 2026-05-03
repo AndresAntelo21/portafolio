@@ -1,30 +1,30 @@
 import { Card } from "@/components/home/sections/work-experience/experience";
+import { ExperienceHero } from "@/components/work-experience";
 
 export const Legrafica = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
-      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/legrafica/bg-legrafica.webp" alt="Legrafica image" className="object-cover w-full h-full object-center" />
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
-          <img
-            src="/projects/legrafica.svg"
-            alt="Legrafica logo"
-            className="w-40"
-          />
-        </div>
-      </div>
-      <div className="">
-        <p>
-          Legrafica is a <span className="text-blue-primary">marketing</span> and{" "}
-          <span className="text-blue-primary">digital development</span> agency specialized in
-          creating integrated experiences for brands and their consumers. They combine{" "}
-          <span className="text-blue-primary">creativity</span> and{" "}
-          <span className="text-blue-primary">technology</span> to drive{" "}
-          <span className="text-blue-primary">growth</span> and create authentic
-          connections with the audience.
-        </p>
-      </div>
+      <ExperienceHero
+        accentColor="var(--blue-primary)"
+        backgroundImage="/work-experience/legrafica/legrafica-banner.png"
+        badgeIcon={
+          <img src="/projects/legrafica.svg" alt="" className="size-5 md:size-6" />
+        }
+        badgeLabel="Agency · Marketing & dev"
+        titleLine1="Creativity &"
+        titleLine2="Technology for brands"
+        description={
+          <>
+            Legrafica is a <span className="experience-hero-accent">marketing</span> and{" "}
+            <span className="experience-hero-accent">digital development</span> agency specialized in
+            integrated experiences for brands and consumers. They combine{" "}
+            <span className="experience-hero-accent">creativity</span> and{" "}
+            <span className="experience-hero-accent">technology</span> to drive{" "}
+            <span className="experience-hero-accent">growth</span> and authentic connections with the
+            audience.
+          </>
+        }
+      />
       <div className="flex flex-wrap gap-4 ">
         <h1 className="relative z-10 text-left text-3xl font-bold">
           MY <span className="text-blue-primary">PROJECTS</span> AT

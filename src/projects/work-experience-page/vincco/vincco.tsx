@@ -1,5 +1,6 @@
 import { Monitor, FolderOpen, Globe, Laptop, Phone, BarChart3, Settings, Shield } from "lucide-react";
 import {
+    ExperienceHero,
     ExperienceSection,
     TechnologiesSection,
     AchievementItem,
@@ -10,28 +11,32 @@ import {
 export const Vincco = () => {
     return (
         <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
-            <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-                <img src="/work-experience/vincco/bg-vincco-oficinas.webp" alt="Vincco offices" className="object-cover w-full h-full object-center" />
-                <div className="absolute inset-0 bg-black/50"></div>
-                <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
+            <ExperienceHero
+                accentColor="var(--blue-primary)"
+                backgroundImage="/work-experience/vincco/vincco-banner.png"
+                badgeIcon={
                     <img
                         src="/work-experience/vincco/vincco-logo-text.svg"
-                        alt="Vincco logo"
-                        className="w-40"
+                        alt=""
+                        className="h-4 w-auto max-w-[140px] object-contain sm:h-5"
                     />
-                </div>
-            </div>
-            <div className="">
-                <p>
-                    <span className="text-blue-primary">Vincco</span> es un{" "}
-                    <span className="text-blue-primary">centro de contacto</span> que renta su{" "}
-                    infraestructura a distintas <span className="text-blue-primary">empresas</span> para operar sus áreas de{" "}
-                    <span className="text-blue-primary">servicio</span> y{" "}
-                    <span className="text-blue-primary">atención telefónica</span>. Actualmente
-                    alberga a cuatro compañías, cada una con diferentes enfoques y procesos según
-                    sus necesidades.
-                </p>
-            </div>
+                }
+                badgeLabel="Contact center"
+                titleLine1="Shared infrastructure &"
+                titleLine2="Operations at scale"
+                description={
+                    <>
+                        <span className="experience-hero-accent">Vincco</span> is a{" "}
+                        <span className="experience-hero-accent">contact center</span> that leases its
+                        infrastructure to different{" "}
+                        <span className="experience-hero-accent">companies</span> to run their{" "}
+                        <span className="experience-hero-accent">service</span> and{" "}
+                        <span className="experience-hero-accent">phone support</span> operations. It
+                        currently hosts four companies, each with its own focus and processes according
+                        to their needs.
+                    </>
+                }
+            />
 
             <ExperienceSection
                 companyName="VINCCO"
@@ -48,8 +53,8 @@ export const Vincco = () => {
                         )
                     },
                     {
-                        title: "Administración del Site",
-                        description: "Gestión integral de las operaciones del centro de contacto, supervisión de sistemas críticos y coordinación de servicios para múltiples clientes empresariales.",
+                        title: "Site administration",
+                        description: "End-to-end management of contact center operations, supervision of critical systems, and coordination of services for multiple enterprise clients.",
                         borderColor: "border-purple-500/20",
                         bgColor: "bg-purple-600/20",
                         icon: (
@@ -115,11 +120,11 @@ export const Vincco = () => {
                 technologies={[
                     { name: "Windows Server", IconComponent: Monitor },
                     { name: "Active Directory", IconComponent: FolderOpen },
-                    { name: "Redes Empresariales", IconComponent: Globe },
-                    { name: "Hardware Masivo", IconComponent: Laptop },
-                    { name: "Sistemas VoIP", IconComponent: Phone },
-                    { name: "Monitoreo Avanzado", IconComponent: BarChart3 },
-                    { name: "Gestión de Sites", IconComponent: Settings },
+                    { name: "Enterprise networks", IconComponent: Globe },
+                    { name: "Large-scale hardware", IconComponent: Laptop },
+                    { name: "VoIP systems", IconComponent: Phone },
+                    { name: "Advanced monitoring", IconComponent: BarChart3 },
+                    { name: "Site management", IconComponent: Settings },
                     { name: "Seguridad IT", IconComponent: Shield }
                 ]}
             />
@@ -135,7 +140,7 @@ export const Vincco = () => {
                 />
                 <StatisticCard
                     value="98%"
-                    label="Tiempo Operativo"
+                    label="Uptime"
                     gradientFrom="from-purple-600/20"
                     gradientTo="to-purple-800/20"
                     borderColor="border-purple-500/30"

@@ -1,30 +1,25 @@
 import { Card } from "@/components/home/sections/work-experience/experience";
+import { ExperienceHero } from "@/components/work-experience";
+
 export const Csipro = () => {
   return (
     <div className="flex flex-col justify-center md:items-start gap-10">
-      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/csipro/reales.webp" alt="CSI PRO image" className="object-cover w-full h-full object-center" />
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
-          <img
-            src="/projects/csipro.svg"
-            alt="CSI PRO Lab logo"
-            className="w-12"
-          />
-          <h1 className="text-2xl">
-            CSI <span className="rounded-lg bg-violet-700 px-2">PRO</span>
-          </h1>
-        </div>
-      </div>
-      <div className="font-poppins">
-        <p>
-          At CSI <span className="rounded-md bg-violet-800 px-1">PRO</span>, a
-          lab at the{" "}
-          <span className="text-blue-primary">University of Sonora</span>, we develop
-          <span className="text-blue-primary"> software</span> projects applying creativity,
-          technology, and teamwork. It's our space to grow as future professionals.
-        </p>
-      </div>
+      <ExperienceHero
+        accentColor="#7c3aed"
+        backgroundImage="/work-experience/csipro/csipro-banner.png"
+        badgeIcon={<img src="/projects/csipro.svg" alt="" className="size-5 md:size-6" />}
+        badgeLabel="Laboratorio · Universidad de Sonora"
+        titleLine1="University lab &"
+        titleLine2="Software that ships"
+        description={
+          <>
+            At CSI <span className="experience-hero-accent">PRO</span>, a lab at the{" "}
+            <span className="experience-hero-accent">University of Sonora</span>, we develop{" "}
+            <span className="experience-hero-accent">software</span> projects applying creativity,
+            technology, and teamwork. It&apos;s our space to grow as future professionals.
+          </>
+        }
+      />
       <div className="flex gap-2">
 
         <div className=" flex  gap-2 flex-wrap relative z-10 text-left text-3xl font-bold">MY <span className="text-blue-primary">PROJECTS</span> AT
