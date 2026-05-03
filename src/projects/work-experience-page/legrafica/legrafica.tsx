@@ -1,37 +1,48 @@
 import { Card } from "@/components/home/sections/work-experience/experience";
+import { ExperienceHero } from "@/components/work-experience";
 
 export const Legrafica = () => {
   return (
-    <div className="flex flex-col justify-center md:items-start gap-10">
-      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/legrafica/bg-legrafica.webp" alt="Legrafica image" className="object-cover w-full h-full object-center" />
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute left-2 bottom-1 flex items-center gap-2  text-white">
+    <div className="flex flex-col justify-center gap-10 md:items-start">
+      <ExperienceHero
+        accentColor="var(--color-legrafica)"
+        backgroundImage="/work-experience/legrafica/legrafica-banner.png"
+        badgeIcon={
           <img
             src="/projects/legrafica.svg"
-            alt="Legrafica logo"
-            className="w-40"
+            alt="Legrafica"
+            className="h-12 w-auto max-w-[min(200px,85vw)] object-contain [filter:drop-shadow(0_2px_12px_rgba(0,0,0,0.5))]"
           />
-        </div>
-      </div>
-      <div className="">
-        <p>
-          Legrafica is a <span className="text-blue-primary">marketing</span> and{" "}
-          <span className="text-blue-primary">digital development</span> agency specialized in
-          creating integrated experiences for brands and their consumers. They combine{" "}
-          <span className="text-blue-primary">creativity</span> and{" "}
-          <span className="text-blue-primary">technology</span> to drive{" "}
-          <span className="text-blue-primary">growth</span> and create authentic
-          connections with the audience.
-        </p>
-      </div>
-      <div className="flex flex-wrap gap-4 ">
+        }
+        titleLine1="Creativity &"
+        titleLine2="Technology for brands"
+        description={
+          <>
+            Legrafica is a{" "}
+            <span className="text-legrafica font-bold">marketing</span> and{" "}
+            <span className="text-legrafica font-bold">
+              digital development
+            </span>{" "}
+            agency specialized in integrated experiences for brands and
+            consumers. They combine{" "}
+            <span className="text-legrafica font-bold">creativity</span> and{" "}
+            <span className="text-legrafica font-bold">technology</span> to
+            drive <span className="text-legrafica font-bold">growth</span> and
+            authentic connections with the audience.
+          </>
+        }
+      />
+      <div className="flex flex-wrap gap-4">
         <h1 className="relative z-10 text-left text-3xl font-bold">
-          MY <span className="text-blue-primary">PROJECTS</span> AT
+          MY <span className="text-legrafica">PROJECTS</span> AT
         </h1>
-        <img src="/projects/legrafica.svg" alt="Legrafica logo" className="w-35" />
+        <img
+          src="/projects/legrafica.svg"
+          alt="Legrafica logo"
+          className="w-35"
+        />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card
           backgroundImage="/projects/umana/umana-slide1.webp"
           avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
@@ -45,7 +56,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">November 2024 - <span className="">February 2025</span></p>
+            <p className="text-gray-400">
+              November 2024 - <span className="">February 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -72,7 +85,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -99,7 +114,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -129,7 +146,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">

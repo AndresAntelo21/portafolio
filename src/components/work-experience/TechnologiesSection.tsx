@@ -14,8 +14,8 @@ interface TechnologiesSectionProps {
 
 export const TechnologiesSection = ({
     technologies,
-    title = "TECNOLOGÍAS Y",
-    highlightedWord = "HERRAMIENTAS"
+    title = "TECHNOLOGIES &",
+    highlightedWord = "TOOLS",
 }: TechnologiesSectionProps) => {
     return (
         <div className="">

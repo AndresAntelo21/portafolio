@@ -1,37 +1,42 @@
 import { Card } from "@/components/home/sections/work-experience/experience";
+import { ExperienceHero } from "@/components/work-experience";
+
 export const Csipro = () => {
   return (
-    <div className="flex flex-col justify-center md:items-start gap-10">
-      <div className="w-full h-50 overflow-hidden rounded-lg relative lg:h-75">
-        <img src="/work-experience/csipro/reales.webp" alt="CSI PRO image" className="object-cover w-full h-full object-center" />
-        <div className="absolute inset-0 bg-black/50"></div>
-        <div className="absolute left-1 bottom-1 flex items-center gap-2  text-white">
+    <div className="flex flex-col justify-center gap-10 md:items-start">
+      <ExperienceHero
+        accentColor="#7c3aed"
+        backgroundImage="/work-experience/csipro/csipro-banner.png"
+        badgeIcon={
           <img
             src="/projects/csipro.svg"
-            alt="CSI PRO Lab logo"
-            className="w-12"
+            alt="CSI PRO"
+            className="size-14 drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)] md:size-16"
           />
-          <h1 className="text-2xl">
-            CSI <span className="rounded-lg bg-violet-700 px-2">PRO</span>
-          </h1>
-        </div>
-      </div>
-      <div className="font-poppins">
-        <p>
-          At CSI <span className="rounded-md bg-violet-800 px-1">PRO</span>, a
-          lab at the{" "}
-          <span className="text-blue-primary">University of Sonora</span>, we develop
-          <span className="text-blue-primary"> software</span> projects applying creativity,
-          technology, and teamwork. It's our space to grow as future professionals.
-        </p>
-      </div>
+        }
+        titleLine1="University lab &"
+        titleLine2="Software that ships"
+        description={
+          <>
+            At CSI <span className="text-csipro font-bold">PRO</span>, a lab at
+            the{" "}
+            <span className="text-csipro font-bold">University of Sonora</span>,
+            we develop <span className="text-csipro font-bold">software</span>{" "}
+            projects applying creativity, technology, and teamwork. It&apos;s
+            our space to grow as future professionals.
+          </>
+        }
+      />
       <div className="flex gap-2">
-
-        <div className=" flex  gap-2 flex-wrap relative z-10 text-left text-3xl font-bold">MY <span className="text-blue-primary">PROJECTS</span> AT
+        <div className="relative z-10 flex flex-wrap gap-2 text-left text-3xl font-bold">
+          MY <span className="text-csipro">PROJECTS</span> AT
           <div className="flex items-start gap-2 font-normal">
             <img src="/projects/csipro.svg" alt="" className="size-11" />
             CSI
-            <span className="rounded-md bg-violet-700 px-2 font-base text-white"> PRO</span>
+            <span className="font-base rounded-md bg-violet-700 px-2 text-white">
+              {" "}
+              PRO
+            </span>
           </div>
         </div>
       </div>
@@ -46,7 +51,7 @@ export const Csipro = () => {
               className="h-8 w-8"
             />
             <div className="font-normal">
-              CSI  {""}
+              CSI {""}
               <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
                 PRO
               </span>
@@ -54,7 +59,9 @@ export const Csipro = () => {
           </div>
         }
         readTime={
-          <p className=" text-gray-400">November 2023 - <span className="italic">present</span></p>
+          <p className="text-gray-400">
+            November 2023 - <span className="italic">present</span>
+          </p>
         }
         title={
           <div className="flex items-center gap-2">

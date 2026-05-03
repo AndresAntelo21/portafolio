@@ -5,3 +5,5 @@ export { TechnologiesSection } from './TechnologiesSection';
 export { AchievementItem } from './AchievementItem';
 export { StatisticCard } from './StatisticCard';
 export { Section } from './Section';
+export { ExperienceHero } from './ExperienceHero';
+export type { ExperienceHeroProps } from './ExperienceHero';
