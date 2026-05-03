@@ -1,12 +1,9 @@
 import type { CSSProperties, ReactNode } from "react";
 
-import { cn } from "@/lib/utils";
-
 export type ExperienceHeroProps = {
   backgroundImage: string;
+  /** Brand mark above the title — rendered alone, no pill or caption. */
   badgeIcon?: ReactNode;
-  /** Omit or leave empty to show only `badgeIcon` (no text beside the logo). */
-  badgeLabel?: string;
   titleLine1: string;
   titleLine2: string;
   description: ReactNode;
@@ -32,7 +29,6 @@ const IMAGE_FADE_MASK =
 export function ExperienceHero({
   backgroundImage,
   badgeIcon,
-  badgeLabel,
   titleLine1,
   titleLine2,
   description,
@@ -42,9 +38,6 @@ export function ExperienceHero({
   backgroundPosition = "center center",
 }: ExperienceHeroProps) {
   const bandHeight = `${viewportHeightSvh}svh`;
-  const badgeText = badgeLabel?.trim() ?? "";
-  const logoOnlyBadge = Boolean(badgeIcon) && !badgeText;
-  const showBadgeRow = Boolean(badgeIcon) || Boolean(badgeText);
 
   const sectionStyle = {
     width: "100vw",
@@ -93,24 +86,7 @@ export function ExperienceHero({
         />
 
         <div className="relative z-10 flex w-full flex-col items-center gap-4 md:gap-5">
-          {showBadgeRow ? (
-            logoOnlyBadge ? (
-              badgeIcon
-            ) : (
-              <div
-                className={cn(
-                  "inline-flex max-w-full items-center gap-2 rounded-full border border-white/20 bg-black/40 px-3 py-1.5 text-[10px] font-semibold tracking-[0.12em] text-white/95 uppercase backdrop-blur-md sm:gap-2.5 sm:px-3.5 sm:py-2 sm:text-[11px]",
-                )}
-              >
-                {badgeIcon ? (
-                  <span className="flex shrink-0 items-center [&_img]:size-4 sm:[&_img]:size-5">
-                    {badgeIcon}
-                  </span>
-                ) : null}
-                {badgeText ? <span>{badgeText}</span> : null}
-              </div>
-            )
-          ) : null}
+          {badgeIcon}
 
           <h1 className="flex max-w-2xl flex-col gap-1 text-3xl leading-[1.1] font-bold tracking-tight text-balance md:text-4xl lg:text-5xl">
             <span className="text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.45)]">

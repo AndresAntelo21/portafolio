@@ -18,7 +18,7 @@ interface ExperienceSectionProps {
 
 export const ExperienceSection = ({
     experiences,
-    title = "MI",
+    title = "MY",
     highlightedWord = "EXPERIENCE",
     companyName = ""
 }: ExperienceSectionProps) => {
@@ -26,7 +26,12 @@ export const ExperienceSection = ({
         <div className="flex flex-col gap-4">
             <h2 className="text-2xl font-bold">
                 {title} <span className="text-blue-primary">{highlightedWord}</span>
-                {companyName && ` EN ${companyName.toUpperCase()}`}
+                {companyName ? (
+                    <>
+                        {" "}
+                        AT {companyName.toUpperCase()}
+                    </>
+                ) : null}
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {experiences.map((exp, index) => (

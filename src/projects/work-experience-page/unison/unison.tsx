@@ -8,17 +8,20 @@ export const Unison = () => {
         accentColor="var(--color-unison)"
         backgroundImage="/work-experience/unison/unison-banner.png"
         badgeIcon={
-          <img src="/projects/unison.svg" alt="" className="size-5 md:size-6" />
+          <img
+            src="/projects/unison.svg"
+            alt="University of Sonora"
+            className="size-14 drop-shadow-[0_2px_16px_rgba(0,0,0,0.45)] md:size-20"
+          />
         }
-        badgeLabel="Universidad de Sonora"
         titleLine1="Engineering excellence &"
         titleLine2="Academic innovation"
         description={
           <>
             The{" "}
-            <span className="experience-hero-accent">University of Sonora</span>{" "}
+            <span className="text-unison font-bold">University of Sonora</span>{" "}
             is a leading institution in higher education and research in
-            northwestern <span className="experience-hero-accent">Mexico</span>.
+            northwestern <span className="text-unison font-bold">Mexico</span>.
           </>
         }
       />

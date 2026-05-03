@@ -3,35 +3,46 @@ import { ExperienceHero } from "@/components/work-experience";
 
 export const Legrafica = () => {
   return (
-    <div className="flex flex-col justify-center md:items-start gap-10">
+    <div className="flex flex-col justify-center gap-10 md:items-start">
       <ExperienceHero
-        accentColor="var(--blue-primary)"
+        accentColor="var(--color-legrafica)"
         backgroundImage="/work-experience/legrafica/legrafica-banner.png"
         badgeIcon={
-          <img src="/projects/legrafica.svg" alt="" className="size-5 md:size-6" />
+          <img
+            src="/projects/legrafica.svg"
+            alt="Legrafica"
+            className="h-12 w-auto max-w-[min(200px,85vw)] object-contain [filter:drop-shadow(0_2px_12px_rgba(0,0,0,0.5))]"
+          />
         }
-        badgeLabel="Agency · Marketing & dev"
         titleLine1="Creativity &"
         titleLine2="Technology for brands"
         description={
           <>
-            Legrafica is a <span className="experience-hero-accent">marketing</span> and{" "}
-            <span className="experience-hero-accent">digital development</span> agency specialized in
-            integrated experiences for brands and consumers. They combine{" "}
-            <span className="experience-hero-accent">creativity</span> and{" "}
-            <span className="experience-hero-accent">technology</span> to drive{" "}
-            <span className="experience-hero-accent">growth</span> and authentic connections with the
-            audience.
+            Legrafica is a{" "}
+            <span className="text-legrafica font-bold">marketing</span> and{" "}
+            <span className="text-legrafica font-bold">
+              digital development
+            </span>{" "}
+            agency specialized in integrated experiences for brands and
+            consumers. They combine{" "}
+            <span className="text-legrafica font-bold">creativity</span> and{" "}
+            <span className="text-legrafica font-bold">technology</span> to
+            drive <span className="text-legrafica font-bold">growth</span> and
+            authentic connections with the audience.
           </>
         }
       />
-      <div className="flex flex-wrap gap-4 ">
+      <div className="flex flex-wrap gap-4">
         <h1 className="relative z-10 text-left text-3xl font-bold">
           MY <span className="text-blue-primary">PROJECTS</span> AT
         </h1>
-        <img src="/projects/legrafica.svg" alt="Legrafica logo" className="w-35" />
+        <img
+          src="/projects/legrafica.svg"
+          alt="Legrafica logo"
+          className="w-35"
+        />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
         <Card
           backgroundImage="/projects/umana/umana-slide1.webp"
           avatarSrc="/work-experience/legrafica/legrafica-logo.webp"
@@ -45,7 +56,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">November 2024 - <span className="">February 2025</span></p>
+            <p className="text-gray-400">
+              November 2024 - <span className="">February 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -72,7 +85,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -99,7 +114,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">
@@ -129,7 +146,9 @@ export const Legrafica = () => {
             </div>
           }
           readTime={
-            <p className=" text-gray-400">February 2025 - <span className="">March 2025</span></p>
+            <p className="text-gray-400">
+              February 2025 - <span className="">March 2025</span>
+            </p>
           }
           title={
             <div className="flex items-center gap-2">

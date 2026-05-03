@@ -69,6 +69,11 @@ html {
 
   --blue-primary: hsl(204 100% 42%);
   --unison: #2d56a4;
+  --csipro: #7c3aed;
+  --telsoluciones: #f39121;
+  --vincco: #15b5cd;
+  --vado: #3390ff;
+  --legrafica: #4700d5;
   --fondo: hsl(240 7% 6%);
 }
 
@@ -151,11 +156,14 @@ html {
 --font-montserrat: "Montserrat", sans-serif;
 --font-minecraft: "Mojangles", sans-serif;
 
-
-
 --color-opaque: var(--opaque);
 --color-blue-primary: var(--blue-primary);
 --color-unison: var(--unison);
+--color-csipro: var(--csipro);
+--color-telsoluciones: var(--telsoluciones);
+--color-vincco: var(--vincco);
+--color-vado: var(--vado);
+--color-legrafica: var(--legrafica);
 --color-fondo: var(--fondo);
 
  --animate-move: move 5s linear infinite;
