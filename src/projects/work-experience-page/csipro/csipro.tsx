@@ -29,7 +29,7 @@ export const Csipro = () => {
       />
       <div className="flex gap-2">
         <div className="relative z-10 flex flex-wrap gap-2 text-left text-3xl font-bold">
-          MY <span className="text-blue-primary">PROJECTS</span> AT
+          MY <span className="text-csipro">PROJECTS</span> AT
           <div className="flex items-start gap-2 font-normal">
             <img src="/projects/csipro.svg" alt="" className="size-11" />
             CSI

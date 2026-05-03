@@ -41,7 +41,10 @@ export const Telsoluciones = () => {
         }
       />
       <ExperienceSection
-        companyName="TELSOLUCIONES"
+        companyFont="inter"
+        companyName="TEL Soluciones"
+        companyNameClassName="font-medium tracking-tight"
+        highlightedWordClassName="text-telsoluciones"
         experiences={[
           {
             title: "Technical Support",

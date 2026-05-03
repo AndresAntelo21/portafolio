@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Montserrat:wght@600;700&display=swap");
 @import "tailwindcss";
 
 /* Avoid horizontal scrollbar when full-bleed sections use 100vw inside a max-width main. */
@@ -65,6 +66,8 @@ html {
   --sidebar-ring: oklch(0.708 0 0);
   --poppins: "Poppins";
   --alegreya: "Alegreya";
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-inter: "Inter", system-ui, sans-serif;
   --opaque:hsl(266 27%, 15%);
 
   --blue-primary: hsl(204 100% 42%);
@@ -154,6 +157,7 @@ html {
 --font-poppins: "Poppins", sans-serif;
 --font-alegreya: "Alegreya", sans-serif;
 --font-montserrat: "Montserrat", sans-serif;
+--font-inter: "Inter", system-ui, sans-serif;
 --font-minecraft: "Mojangles", sans-serif;
 
 --color-opaque: var(--opaque);

@@ -35,7 +35,6 @@ export const Hero = () => {
               containerWidth="300px"
               imageHeight="300px"
               imageWidth="300px"
-              walk={true}
               rotateAmplitude={12}
               scaleOnHover={1.05}
               showMobileWarning={false}

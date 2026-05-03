@@ -47,7 +47,10 @@ export const Vincco = () => {
       />
 
       <ExperienceSection
+        companyFont="montserrat"
         companyName="VINCCO"
+        companyNameClassName="font-semibold tracking-tight"
+        highlightedWordClassName="text-vincco"
         experiences={[
           {
             title: "Specialized Technical Support",

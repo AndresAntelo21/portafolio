@@ -34,7 +34,7 @@ export const Legrafica = () => {
       />
       <div className="flex flex-wrap gap-4">
         <h1 className="relative z-10 text-left text-3xl font-bold">
-          MY <span className="text-blue-primary">PROJECTS</span> AT
+          MY <span className="text-legrafica">PROJECTS</span> AT
         </h1>
         <img
           src="/projects/legrafica.svg"
