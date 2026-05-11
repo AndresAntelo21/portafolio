@@ -164,7 +164,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/legrafica/umana/umana-cover.png",
       category: "Página web",
       categoryClassName: "text-csipro lg:text-csipro/85",
-      title: <UmanaLogo className="h-9 w-auto sm:h-10 lg:h-11" title="Umana" />,
+      title: <UmanaLogo className="h-7 w-auto" title="Umana" />,
       description:
         "Rediseño completo del sitio web de Umana, una plataforma en línea enfocada en salud y rutinas.",
       technologies: csiproTechnologies,
@@ -177,13 +177,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/legrafica/glamnglow/glamnglow-cover.png",
       category: "Página web",
       categoryClassName: "text-csipro lg:text-csipro/85",
-      title: (
-        <GngLogo
-          white
-          className="h-9 w-auto sm:h-10 lg:h-11"
-          title="Glam N Glow"
-        />
-      ),
+      title: <GngLogo white className="h-7 w-auto" title="Glam N Glow" />,
       description:
         "Rediseño completo del sitio web de CSI PRO, una empresa de tecnología. El proyecto incluyó la creación de una nueva identidad visual, diseño de interfaz de usuario y desarrollo frontend utilizando React, Tailwind CSS y Vite.",
       technologies: csiproTechnologies,
@@ -200,7 +194,7 @@ function buildProjectEntries(): ProjectEntry[] {
       title: (
         <CbcLogo
           white
-          className="h-9 w-auto sm:h-10 lg:h-11"
+          className="h-7 w-auto"
           title="Colegio Bicultural Cananea"
         />
       ),
@@ -216,9 +210,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/legrafica/revolt/revolt-cover.png",
       category: "Página web",
       categoryClassName: "text-csipro lg:text-csipro/85",
-      title: (
-        <RevoltLogo className="h-9 w-auto sm:h-10 lg:h-11" title="Revolt" />
-      ),
+      title: <RevoltLogo className="h-7 w-auto" title="Revolt" />,
       description:
         "Rediseño completo del sitio web de CSI PRO, una empresa de tecnología. El proyecto incluyó la creación de una nueva identidad visual, diseño de interfaz de usuario y desarrollo frontend utilizando React, Tailwind CSS y Vite.",
       technologies: csiproTechnologies,
@@ -235,7 +227,7 @@ function buildProjectEntries(): ProjectEntry[] {
       title: (
         <VadoDevsLogo
           variant="white"
-          className="h-9 w-auto"
+          className="h-7 w-auto"
           title="Vado landing"
         />
       ),
@@ -251,7 +243,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/vadodevs/sendero/sendero-cover.png",
       category: "Página web",
       categoryClassName: "text-vado lg:text-vado/85",
-      title: <SenderoLogo title="Sendero" className="h-8 w-auto" />,
+      title: <SenderoLogo title="Sendero" className="h-7 w-auto" />,
       description:
         "Experiencia web para Sendero con foco en narrativa de marca, navegación fluida y contenido presentado de forma ordenada y accesible.",
       technologies: csiproTechnologies,
@@ -265,7 +257,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/vadodevs/easysales/easysales-cover.png",
       category: "Página web",
       categoryClassName: "text-vado lg:text-vado/85",
-      title: <EasySalesLogo className="h-12 w-auto" />,
+      title: <EasySalesLogo className="h-10 w-auto" />,
       description:
         "Propuesta digital para Easysales para comunicar beneficios del producto, reducir fricción en la lectura y apoyar el embudo comercial.",
       technologies: csiproTechnologies,
@@ -278,9 +270,7 @@ function buildProjectEntries(): ProjectEntry[] {
       coverSrc: "/projects/vadodevs/maggiore/maggiore-cover.png",
       category: "Página web",
       categoryClassName: "text-vado lg:text-vado/85",
-      title: (
-        <MaggloreLogo variant="white" className="h-9 w-auto sm:h-10 lg:h-11" />
-      ),
+      title: <MaggloreLogo variant="white" className="h-7 w-auto" />,
       description:
         "Desarrollo web para Maggiore: interfaz clara y rendimiento sólido, alineado con la identidad del cliente y objetivos de negocio.",
       technologies: csiproTechnologies,
@@ -295,7 +285,7 @@ function buildProjectEntries(): ProjectEntry[] {
       category: "Página web",
       categoryClassName: "text-vado lg:text-vado/85",
       title: (
-        <WashAutLogo variant="white" className="h-9 w-auto" title="Washaut" />
+        <WashAutLogo variant="white" className="h-7 w-auto" title="Washaut" />
       ),
       description:
         "Sitio y presencia digital para Washaut, enfocado en comunicar el servicio de forma directa y generar confianza desde el primer vistazo.",
