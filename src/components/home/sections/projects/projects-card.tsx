@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 
 export interface ProjectCardProps {
   to: string;
-  /** Accesible name for the cover link (e.g. project name). */
+  /** Accessible name for the cover link (e.g. project name). */
   previewAriaLabel: string;
   coverSrc: string;
   /** Use `""` when the cover is decorative and `previewAriaLabel` carries the meaning. */
@@ -35,8 +35,8 @@ export function ProjectCard({
   title,
   description,
   technologies,
-  technologiesAriaLabel = "Tecnologías usadas en el proyecto",
-  previewCtaLabel = "Ver proyecto",
+  technologiesAriaLabel = "Technologies used in the project",
+  previewCtaLabel = "View project",
   reverse = false,
   previewFocusRingClassName = "focus-visible:ring-blue-primary",
   className,
@@ -45,14 +45,16 @@ export function ProjectCard({
     <article
       className={cn(
         "group flex flex-col gap-5",
-        "lg:h-full lg:flex-col lg:gap-0 lg:overflow-hidden lg:rounded-2xl lg:border lg:border-white/[0.08] lg:bg-gradient-to-b lg:from-white/[0.06] lg:to-zinc-950/90 lg:shadow-xl lg:shadow-black/40 lg:ring-1 lg:ring-white/[0.05] lg:transition-all lg:duration-300 lg:hover:-translate-y-1.5 lg:hover:border-white/[0.14] lg:hover:shadow-2xl lg:hover:shadow-black/55",
+        "lg:h-full lg:flex-col lg:gap-0 lg:overflow-hidden lg:rounded-2xl lg:border lg:border-white/[0.08] lg:bg-gradient-to-b lg:from-white/[0.06] lg:to-zinc-950/90 lg:ring-1 lg:shadow-xl lg:shadow-black/40 lg:ring-white/[0.05] lg:transition-all lg:duration-300 lg:hover:-translate-y-1.5 lg:hover:border-white/[0.14] lg:hover:shadow-2xl lg:hover:shadow-black/55",
         className,
       )}
     >
       <div
         className={cn(
           "relative aspect-[16/10] min-h-[200px] w-full lg:flex lg:aspect-[16/11] lg:min-h-0 lg:w-full lg:max-w-none lg:shrink-0 lg:items-center lg:justify-center lg:overflow-hidden lg:p-0",
-          reverse ? "z-0 lg:isolate lg:justify-start" : "z-0 lg:isolate lg:justify-end",
+          reverse
+            ? "z-0 lg:isolate lg:justify-start"
+            : "z-0 lg:isolate lg:justify-end",
         )}
       >
         <Link
@@ -94,7 +96,7 @@ export function ProjectCard({
           className={cn(
             "relative flex w-full min-w-0 flex-col gap-5 overflow-visible",
             reverse ? "lg:items-stretch" : "items-start",
-            "lg:min-h-0 lg:flex-1 lg:flex-col lg:gap-3 lg:items-start",
+            "lg:min-h-0 lg:flex-1 lg:flex-col lg:items-start lg:gap-3",
           )}
         >
           <header className="flex min-w-0 flex-col gap-2 lg:gap-1.5">
@@ -132,7 +134,7 @@ export function ProjectCard({
         <ul
           className={cn(
             "flex flex-wrap items-center gap-4 gap-y-3 text-2xl text-white/90",
-            "lg:mt-auto lg:justify-start lg:gap-2.5 lg:gap-y-2 lg:text-xl lg:pt-2",
+            "lg:mt-auto lg:justify-start lg:gap-2.5 lg:gap-y-2 lg:pt-2 lg:text-xl",
           )}
           aria-label={technologiesAriaLabel}
         >

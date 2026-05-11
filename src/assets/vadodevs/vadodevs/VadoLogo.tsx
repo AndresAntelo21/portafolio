@@ -1,5 +1,3 @@
-import React from "react";
-
 type VadoDevsLogoVariant = "default" | "white" | "darkness";
 
 type VadoDevsLogoProps = {
