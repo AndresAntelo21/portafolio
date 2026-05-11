@@ -108,7 +108,7 @@ const ROUTE_META: Record<string, RouteMeta> = {
   "/projects": {
     title: "Projects | Andrés Antelo Portfolio",
     description:
-      "Web projects: CSI PRO REBOOT, Umana, Glam N Glow, CBC, Revolt, Urban Mobility. React, Vue, TypeScript.",
+      "Web projects: CSI PRO REBOOT, Legrafica clients, Vado Devs (Maggiore, Washaut, Easysales, etc.), Movilidad Urbana. React, Vue, Python.",
   },
   "/certificados": {
     title: "Certificates | Andrés Antelo Portfolio",
