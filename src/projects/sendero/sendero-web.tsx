@@ -34,6 +34,7 @@ const SENDERO_SLIDES = [
 export const SenderoWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="sendero"
       carousel={
         <ProjectImageCarousel
           slides={SENDERO_SLIDES}

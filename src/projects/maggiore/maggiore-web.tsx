@@ -34,6 +34,7 @@ const MAGGIORE_SLIDES = [
 export const MaggioreWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="maggiore"
       carousel={
         <ProjectImageCarousel
           slides={MAGGIORE_SLIDES}

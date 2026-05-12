@@ -16,6 +16,7 @@ const CBC_TECHNOLOGIES = getProjectDetailTechnologies("cbc");
 export const CbCWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="cbc"
       carousel={
         <div className="overflow-hidden rounded-2xl border border-[#014D9C]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
           <CbCCarousel />

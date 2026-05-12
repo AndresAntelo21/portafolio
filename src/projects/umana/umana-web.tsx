@@ -16,6 +16,7 @@ const UMANA_TECHNOLOGIES = getProjectDetailTechnologies("umana");
 export const UmanaWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="umana"
       carousel={
         <div className="overflow-hidden rounded-2xl border border-[#6A2BE4]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
           <UmanaCarousel />

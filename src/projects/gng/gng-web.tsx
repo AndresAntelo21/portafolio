@@ -16,6 +16,7 @@ const GNG_TECHNOLOGIES = getProjectDetailTechnologies("gng");
 export const GnGWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="gng"
       carousel={
         <div className="overflow-hidden rounded-2xl border border-[#E9E8E4]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
           <GnGCarousel />

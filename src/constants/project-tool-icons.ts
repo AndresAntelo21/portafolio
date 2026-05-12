@@ -10,6 +10,7 @@ export const PROJECT_TOOL_ICON_BY_TITLE: Record<string, string> = {
   "Vue.js": "/tools/vue.svg",
   JavaScript: "/tools/js.svg",
   Python: "/tools/python.svg",
+  "Jupyter Notebook": "/tools/jupyter.svg",
   HTML: "/tools/html.svg",
   CSS: "/tools/css.svg",
   Docker: "/tools/docker.svg",

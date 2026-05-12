@@ -16,6 +16,7 @@ const CSI_TECHNOLOGIES = getProjectDetailTechnologies("csipro");
 export const CsiproWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="csipro"
       carousel={<CsiCarousel />}
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">

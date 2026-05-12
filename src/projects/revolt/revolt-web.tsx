@@ -16,6 +16,7 @@ const REVOLT_TECHNOLOGIES = getProjectDetailTechnologies("revolt");
 export const RevoltWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="revolt"
       carousel={
         <div className="overflow-hidden rounded-2xl border border-[#11CCC1]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
           <RevoltCarousel />

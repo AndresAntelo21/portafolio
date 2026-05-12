@@ -34,6 +34,7 @@ const VADO_SLIDES = [
 export const VadoWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="vado-landing"
       carousel={
         <ProjectImageCarousel
           slides={VADO_SLIDES}

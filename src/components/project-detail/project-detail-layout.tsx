@@ -7,6 +7,7 @@ import {
   ProjectDetailSidebarBlock,
 } from "@/components/project-detail/project-detail-sidebar";
 import { cn } from "@/lib/utils";
+import { RelatedProjects } from "@/components/project-detail/related-projects";
 
 export type ProjectDetailLinkItem = {
   href: string;
@@ -29,6 +30,7 @@ type ProjectDetailLayoutProps = {
   sidebarClassName?: string;
   chipClassName?: string;
   linkClassName?: string;
+  projectId: string;
 };
 
 export function ProjectDetailLayout({
@@ -42,6 +44,7 @@ export function ProjectDetailLayout({
   sidebarClassName = "border-csipro/25 bg-csipro/[0.08]",
   chipClassName = "border-csipro/35 bg-csipro/10",
   linkClassName = "border-csipro/30 bg-csipro/15 hover:border-csipro/50 hover:bg-csipro/25 focus-visible:ring-csipro/60",
+  projectId,
 }: ProjectDetailLayoutProps) {
   return (
     <div className="flex flex-col gap-10 pb-8">
@@ -105,6 +108,11 @@ export function ProjectDetailLayout({
           </div>
         </ProjectDetailSidebar>
       </div>
+
+      <RelatedProjects
+        projectId={projectId}
+        accentClassName={accentTextClassName}
+      />
     </div>
   );
 }

@@ -34,6 +34,7 @@ const WASHAUT_SLIDES = [
 export const WashautWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="washaut"
       carousel={
         <ProjectImageCarousel
           slides={WASHAUT_SLIDES}

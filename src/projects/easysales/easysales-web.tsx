@@ -34,6 +34,7 @@ const EASYSALES_SLIDES = [
 export const EasysalesWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="easysales"
       carousel={
         <ProjectImageCarousel
           slides={EASYSALES_SLIDES}

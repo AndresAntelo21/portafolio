@@ -16,6 +16,7 @@ const MOVILIDAD_TECHNOLOGIES = getProjectDetailTechnologies("movilidad");
 export const MovilidadWeb = () => {
   return (
     <ProjectDetailLayout
+      projectId="movilidad"
       carousel={
         <div className="overflow-hidden rounded-2xl border border-[#5381B2]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
           <MovilidadCarousel />
