@@ -3,13 +3,13 @@ import {
   useMemo,
   useRef,
   useState,
-  useSyncExternalStore,
 } from "react";
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import ProjectCard from "./projects-card";
 import { HOME_PROJECT_ENTRIES } from "@/constants/home-project-entries";
+import { usePaginatedPageSize } from "@/hooks/use-paginated-page-size";
 import {
   Pagination,
   PaginationContent,
@@ -28,37 +28,11 @@ const paginationLinkBase =
 const paginationLinkActive =
   "!border-blue-primary !bg-blue-primary !text-white hover:!bg-blue-primary/90 hover:!text-white";
 
-const PAGE_SIZE_LG = 6;
-const PAGE_SIZE_SM = 3;
-
-function subscribeMinWidthLg(onStoreChange: () => void) {
-  const mq = window.matchMedia("(min-width: 1024px)");
-  mq.addEventListener("change", onStoreChange);
-  return () => mq.removeEventListener("change", onStoreChange);
-}
-
-function getMinWidthLgSnapshot() {
-  return window.matchMedia("(min-width: 1024px)").matches;
-}
-
-function getMinWidthLgServerSnapshot() {
-  return false;
-}
-
-function useIsDesktopGrid() {
-  return useSyncExternalStore(
-    subscribeMinWidthLg,
-    getMinWidthLgSnapshot,
-    getMinWidthLgServerSnapshot,
-  );
-}
-
 export const Projects: React.FC<ProjectsProps> = ({ className }) => {
   const location = useLocation();
   const isStandalonePage = location.pathname === "/projects";
   const SectionHeading = isStandalonePage ? "h1" : "h2";
-  const isLg = useIsDesktopGrid();
-  const pageSize = isLg ? PAGE_SIZE_LG : PAGE_SIZE_SM;
+  const pageSize = usePaginatedPageSize();
   const [page, setPage] = useState(1);
 
   const totalPages = Math.max(

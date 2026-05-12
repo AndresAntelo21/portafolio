@@ -2,29 +2,30 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { SectionPagination } from "@/components/ui/section-pagination";
 import { CERTIFICATE_ITEMS } from "@/constants/certificates";
+import { usePaginatedPageSize } from "@/hooks/use-paginated-page-size";
 import { CertificadoCard } from "./certificado-card";
-
-const PAGE_SIZE = 6;
 
 export const Certificados = () => {
   const location = useLocation();
   const isStandalonePage = location.pathname === "/certificados";
   const SectionHeading = isStandalonePage ? "h1" : "h2";
+  const pageSize = usePaginatedPageSize();
   const [page, setPage] = useState(1);
   const cardsTopRef = useRef<HTMLDivElement>(null);
 
-  const totalPages = Math.max(1, Math.ceil(CERTIFICATE_ITEMS.length / PAGE_SIZE));
+  const totalPages = Math.max(
+    1,
+    Math.ceil(CERTIFICATE_ITEMS.length / pageSize),
+  );
 
   const visibleCertificates = useMemo(() => {
-    const start = (page - 1) * PAGE_SIZE;
-    return CERTIFICATE_ITEMS.slice(start, start + PAGE_SIZE);
-  }, [page]);
+    const start = (page - 1) * pageSize;
+    return CERTIFICATE_ITEMS.slice(start, start + pageSize);
+  }, [page, pageSize]);
 
   useEffect(() => {
-    if (page > totalPages) {
-      setPage(totalPages);
-    }
-  }, [page, totalPages]);
+    setPage((currentPage) => Math.min(currentPage, totalPages));
+  }, [totalPages]);
 
   const scrollToCardsFromPagination = () => {
     requestAnimationFrame(() => {

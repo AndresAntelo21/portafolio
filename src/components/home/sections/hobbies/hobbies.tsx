@@ -2,29 +2,27 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { SectionPagination } from "@/components/ui/section-pagination";
 import { HOBBY_ITEMS } from "@/constants/hobbies";
+import { usePaginatedPageSize } from "@/hooks/use-paginated-page-size";
 import { HobbyCard } from "./hobby-card";
-
-const PAGE_SIZE = 6;
 
 export const Hobbies = () => {
   const location = useLocation();
   const isStandalonePage = location.pathname === "/hobbies";
   const SectionHeading = isStandalonePage ? "h1" : "h2";
+  const pageSize = usePaginatedPageSize();
   const [page, setPage] = useState(1);
   const cardsTopRef = useRef<HTMLDivElement>(null);
 
-  const totalPages = Math.max(1, Math.ceil(HOBBY_ITEMS.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(HOBBY_ITEMS.length / pageSize));
 
   const visibleHobbies = useMemo(() => {
-    const start = (page - 1) * PAGE_SIZE;
-    return HOBBY_ITEMS.slice(start, start + PAGE_SIZE);
-  }, [page]);
+    const start = (page - 1) * pageSize;
+    return HOBBY_ITEMS.slice(start, start + pageSize);
+  }, [page, pageSize]);
 
   useEffect(() => {
-    if (page > totalPages) {
-      setPage(totalPages);
-    }
-  }, [page, totalPages]);
+    setPage((currentPage) => Math.min(currentPage, totalPages));
+  }, [totalPages]);
 
   const scrollToCardsFromPagination = () => {
     requestAnimationFrame(() => {
