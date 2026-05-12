@@ -30,7 +30,7 @@ type ProjectDetailLayoutProps = {
   sidebarClassName?: string;
   chipClassName?: string;
   linkClassName?: string;
-  projectId: string;
+  projectId?: string;
 };
 
 export function ProjectDetailLayout({
@@ -109,10 +109,12 @@ export function ProjectDetailLayout({
         </ProjectDetailSidebar>
       </div>
 
-      <RelatedProjects
-        projectId={projectId}
-        accentClassName={accentTextClassName}
-      />
+      {projectId ? (
+        <RelatedProjects
+          projectId={projectId}
+          accentClassName={accentTextClassName}
+        />
+      ) : null}
     </div>
   );
 }

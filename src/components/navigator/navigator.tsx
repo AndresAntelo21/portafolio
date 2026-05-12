@@ -72,6 +72,12 @@ export const Navigator = () => {
                       <Link to="/projects">Projects</Link>
                     </DrawerClose>
                     <DrawerClose asChild>
+                      <Link to="/certificados">Certificates</Link>
+                    </DrawerClose>
+                    <DrawerClose asChild>
+                      <Link to="/hobbies">Hobbies</Link>
+                    </DrawerClose>
+                    <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
                         target="_blank"
@@ -127,6 +133,26 @@ export const Navigator = () => {
                     className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
                   >
                     Projects
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/certificados"
+                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                  >
+                    Certificates
+                  </Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+              <NavigationMenuItem>
+                <NavigationMenuLink asChild>
+                  <Link
+                    to="/hobbies"
+                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                  >
+                    Hobbies
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>

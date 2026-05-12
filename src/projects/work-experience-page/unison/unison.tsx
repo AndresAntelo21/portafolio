@@ -1,7 +1,15 @@
-import { Card } from "@/components/home/sections/work-experience/experience";
 import { ExperienceHero } from "@/components/work-experience";
+import { ProjectCardsGrid } from "@/components/home/sections/projects/project-cards-grid";
+import {
+  WORK_EXPERIENCE_PROJECT_IDS,
+  getHomeProjectEntriesByIds,
+} from "@/constants/home-project-entries";
 
 export const Unison = () => {
+  const projectEntries = getHomeProjectEntriesByIds(
+    WORK_EXPERIENCE_PROJECT_IDS.unison,
+  );
+
   return (
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
@@ -35,38 +43,7 @@ export const Unison = () => {
           className="w-30"
         />
       </div>
-      <Card
-        backgroundImage="/projects/movilidad/movilidad-slide1.webp"
-        avatarSrc="/work-experience/unison/unison-logo.webp"
-        authorName={
-          <div className="flex items-center gap-2">
-            <img
-              src="/work-experience/unison/unison-white.svg"
-              alt="University of Sonora logo"
-              className="w-25"
-            />
-          </div>
-        }
-        readTime={
-          <p className="text-gray-400">
-            February 2024 - <span className="">November 2024</span>
-          </p>
-        }
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/projects/movilidad/movilidad-logo.svg"
-              alt="Logo de legrafica"
-              className="w-7"
-            />
-            <div className="font-normal">
-              <span>MOVILIDAD URBANA</span>
-            </div>
-          </div>
-        }
-        description="Urban Mobility analyzes and visualizes traffic to improve mobility in the city. Its website offers accessible data and analysis for decision-makers."
-        linkUrl="/movilidad-web"
-      />
+      <ProjectCardsGrid entries={projectEntries} />
     </div>
   );
 };

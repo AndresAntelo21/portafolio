@@ -5,6 +5,39 @@ interface WorkExperienceProps {
   className?: string;
 }
 
+const EXPERIENCE_CARDS = [
+  {
+    imageSrc: "/work-experience/unison/unisonv2.png",
+    hoverImageSrc: "/work-experience/unison/unisonv2-hover.png",
+    linkUrl: "/unison",
+  },
+  {
+    imageSrc: "/work-experience/csipro/csiprov2.png",
+    hoverImageSrc: "/work-experience/csipro/csiprov2-hover.png",
+    linkUrl: "/csipro",
+  },
+  {
+    imageSrc: "/work-experience/telsoluciones/telsolucionesv2.png",
+    hoverImageSrc: "/work-experience/telsoluciones/telsolucionesv2-hover.png",
+    linkUrl: "/telsoluciones",
+  },
+  {
+    imageSrc: "/work-experience/legrafica/legraficav2.png",
+    hoverImageSrc: "/work-experience/legrafica/legraficav2-hover.png",
+    linkUrl: "/legrafica",
+  },
+  {
+    imageSrc: "/work-experience/vincco/vinccov2.png",
+    hoverImageSrc: "/work-experience/vincco/vinccov2-hover.png",
+    linkUrl: "/vincco",
+  },
+  {
+    imageSrc: "/work-experience/vado/vado.png",
+    hoverImageSrc: "/work-experience/vado/vado-hover.png",
+    linkUrl: "/vado",
+  },
+] as const;
+
 export const WorkExperience: React.FC<WorkExperienceProps> = ({
   className,
 }) => {
@@ -22,36 +55,15 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
         </SectionHeading>
       </div>
       <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        <ExperienceCard
-          imageSrc="/work-experience/unison/unisonv2.png"
-          hoverImageSrc="/work-experience/unison/unisonv2-hover.png"
-          linkUrl="/unison"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/csipro/csiprov2.png"
-          hoverImageSrc="/work-experience/csipro/csiprov2-hover.png"
-          linkUrl="/csipro"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/telsoluciones/telsolucionesv2.png"
-          hoverImageSrc="/work-experience/telsoluciones/telsolucionesv2-hover.png"
-          linkUrl="/telsoluciones"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/legrafica/legraficav2.png"
-          hoverImageSrc="/work-experience/legrafica/legraficav2-hover.png"
-          linkUrl="/legrafica"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/vincco/vinccov2.png"
-          hoverImageSrc="/work-experience/vincco/vinccov2-hover.png"
-          linkUrl="/vincco"
-        />
-        <ExperienceCard
-          imageSrc="/work-experience/vado/vado.png"
-          hoverImageSrc="/work-experience/vado/vado-hover.png"
-          linkUrl="/vado"
-        />
+        {EXPERIENCE_CARDS.map((card, index) => (
+          <ExperienceCard
+            key={card.linkUrl}
+            imageSrc={card.imageSrc}
+            hoverImageSrc={card.hoverImageSrc}
+            linkUrl={card.linkUrl}
+            animationIndex={index}
+          />
+        ))}
       </div>
     </div>
   );

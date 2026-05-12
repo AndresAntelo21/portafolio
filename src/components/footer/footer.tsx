@@ -36,6 +36,20 @@ export const Foooter = () => {
             >
               Projects
             </Link>
+            <Link
+              to="/certificados"
+              onClick={handleLinkClick}
+              className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
+            >
+              Certificates
+            </Link>
+            <Link
+              to="/hobbies"
+              onClick={handleLinkClick}
+              className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
+            >
+              Hobbies
+            </Link>
             <a
               href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
               target="_blank"

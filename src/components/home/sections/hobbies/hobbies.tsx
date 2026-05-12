@@ -1,23 +1,23 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { SectionPagination } from "@/components/ui/section-pagination";
-import { CERTIFICATE_ITEMS } from "@/constants/certificates";
-import { CertificadoCard } from "./certificado-card";
+import { HOBBY_ITEMS } from "@/constants/hobbies";
+import { HobbyCard } from "./hobby-card";
 
 const PAGE_SIZE = 6;
 
-export const Certificados = () => {
+export const Hobbies = () => {
   const location = useLocation();
-  const isStandalonePage = location.pathname === "/certificados";
+  const isStandalonePage = location.pathname === "/hobbies";
   const SectionHeading = isStandalonePage ? "h1" : "h2";
   const [page, setPage] = useState(1);
   const cardsTopRef = useRef<HTMLDivElement>(null);
 
-  const totalPages = Math.max(1, Math.ceil(CERTIFICATE_ITEMS.length / PAGE_SIZE));
+  const totalPages = Math.max(1, Math.ceil(HOBBY_ITEMS.length / PAGE_SIZE));
 
-  const visibleCertificates = useMemo(() => {
+  const visibleHobbies = useMemo(() => {
     const start = (page - 1) * PAGE_SIZE;
-    return CERTIFICATE_ITEMS.slice(start, start + PAGE_SIZE);
+    return HOBBY_ITEMS.slice(start, start + PAGE_SIZE);
   }, [page]);
 
   useEffect(() => {
@@ -44,11 +44,10 @@ export const Certificados = () => {
     <div className="font-poppins relative z-10 flex flex-col gap-5 py-10 lg:gap-8">
       <div className="flex flex-col gap-2">
         <SectionHeading className="relative z-10 text-left text-3xl font-bold">
-          MY <span className="text-blue-primary">CERTIFICATES</span>
+          MY <span className="text-blue-primary">HOBBIES</span>
         </SectionHeading>
         <p className="max-w-3xl text-sm text-zinc-400 sm:text-base">
-          Verified learning from Udemy and Google, with quick access to each
-          credential.
+          Personal projects and side experiments built outside client work.
         </p>
       </div>
 
@@ -57,16 +56,8 @@ export const Certificados = () => {
         className="scroll-mt-[calc(5rem+env(safe-area-inset-top,0px))] lg:scroll-mt-[calc(6rem+env(safe-area-inset-top,0px))]"
       >
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
-          {visibleCertificates.map((certificate, index) => (
-            <CertificadoCard
-              key={certificate.id}
-              title={certificate.title}
-              platform={certificate.platform}
-              url={certificate.url}
-              logo={certificate.logo}
-              badges={certificate.badges}
-              animationIndex={index}
-            />
+          {visibleHobbies.map((hobby, index) => (
+            <HobbyCard key={hobby.id} {...hobby} animationIndex={index} />
           ))}
         </div>
       </div>
@@ -75,7 +66,7 @@ export const Certificados = () => {
         page={page}
         totalPages={totalPages}
         onPageChange={handlePageChange}
-        ariaLabel="Certificates pagination"
+        ariaLabel="Hobbies pagination"
       />
     </div>
   );

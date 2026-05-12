@@ -1,98 +1,127 @@
 import { ExternalLink } from "lucide-react";
 import { motion } from "motion/react";
 import { cn } from "@/lib/utils";
+import type { CertificatePlatform } from "@/constants/certificates";
 
-interface CertificadoCardProps {
-    title: string;
-    platform: string;
-    url: string;
-    logo?: string;
-    badges?: string[];
-}
-
-const cardMotion = {
-    initial: { opacity: 0, y: 60 },
-    whileInView: { opacity: 1, y: 0 },
-    viewport: { once: true, amount: 0.2 },
-    transition: { duration: 0.5, ease: "easeOut" as const },
+type CertificadoCardProps = {
+  title: string;
+  platform: CertificatePlatform;
+  url: string;
+  logo?: string;
+  badges?: string[];
+  animationIndex?: number;
 };
 
-// Array de colores para los badges (cada badge tendrá un color diferente)
-const badgeColors = [
-    { bg: "bg-blue-500/20", text: "text-blue-300", border: "border-blue-500/30" },
-    { bg: "bg-purple-500/20", text: "text-purple-300", border: "border-purple-500/30" },
-    { bg: "bg-pink-500/20", text: "text-pink-300", border: "border-pink-500/30" },
-    { bg: "bg-green-500/20", text: "text-green-300", border: "border-green-500/30" },
-    { bg: "bg-yellow-500/20", text: "text-yellow-300", border: "border-yellow-500/30" },
-    { bg: "bg-cyan-500/20", text: "text-cyan-300", border: "border-cyan-500/30" },
-    { bg: "bg-indigo-500/20", text: "text-indigo-300", border: "border-indigo-500/30" },
-    { bg: "bg-orange-500/20", text: "text-orange-300", border: "border-orange-500/30" },
-];
+const platformStyles: Record<
+  CertificatePlatform,
+  { label: string; categoryClassName: string; headerClassName: string }
+> = {
+  UDEMY: {
+    label: "Udemy certificate",
+    categoryClassName: "text-[#A435F0]",
+    headerClassName:
+      "from-[#A435F0]/20 via-[#7c1fd6]/10 to-zinc-950/80 border-[#A435F0]/20",
+  },
+  GOOGLE: {
+    label: "Google certificate",
+    categoryClassName: "text-[#4285F4]",
+    headerClassName:
+      "from-[#4285F4]/20 via-[#34A853]/10 to-zinc-950/80 border-[#4285F4]/20",
+  },
+};
 
-export const CertificadoCard: React.FC<CertificadoCardProps> = ({
-    title,
-    platform,
-    url,
-    logo,
-    badges = [],
-}) => {
-    return (
-        <motion.div {...cardMotion}>
-            <div className="group relative h-full flex flex-col gap-5 p-6 rounded-2xl border border-gray-800/50 bg-gradient-to-br from-gray-900/90 via-gray-900/80 to-black/90 backdrop-blur-sm hover:border-blue-500/50 hover:shadow-2xl hover:shadow-blue-500/20 transition-all duration-300 hover:-translate-y-1 overflow-hidden">
-                {/* Logo de la plataforma */}
-                {logo && (
-                    <div className="flex items-center justify-start">
-                        <img
-                            src={logo}
-                            alt={platform}
-                            className="h-8 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity duration-300"
-                            width="32"
-                            height="32"
-                            loading="lazy"
-                        />
-                    </div>
-                )}
+export const CertificadoCard = ({
+  title,
+  platform,
+  url,
+  logo,
+  badges = [],
+  animationIndex = 0,
+}: CertificadoCardProps) => {
+  const platformStyle = platformStyles[platform];
 
-                {/* Título con enlace */}
-                <a
-                    href={url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1"
+  return (
+    <motion.article
+      className="h-full w-full"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.45,
+        delay: animationIndex * 0.06,
+        ease: "easeOut",
+      }}
+    >
+      <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.06] to-zinc-950/90 shadow-xl shadow-black/40 ring-1 ring-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.14] hover:shadow-2xl hover:shadow-black/55">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={`Open certificate: ${title}`}
+          className="group/preview relative isolate block aspect-[16/10] overflow-hidden outline-none ring-inset focus-visible:ring-2 focus-visible:ring-blue-primary focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+        >
+          <div
+            className={cn(
+              "flex h-full w-full items-center justify-center border-b bg-gradient-to-br px-8",
+              platformStyle.headerClassName,
+            )}
+          >
+            {logo ? (
+              <img
+                src={logo}
+                alt={platform}
+                className="h-12 w-auto object-contain opacity-95 transition-transform duration-500 group-hover/preview:scale-105 md:h-14"
+                loading="lazy"
+              />
+            ) : (
+              <span className="font-poppins text-sm font-semibold tracking-[0.24em] text-white/80 uppercase">
+                {platform}
+              </span>
+            )}
+          </div>
+          <div
+            className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 backdrop-blur-[1px] transition-opacity duration-300 group-hover/preview:opacity-100 group-focus-visible/preview:opacity-100"
+            aria-hidden
+          >
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-sm">
+              View credential
+              <ExternalLink className="size-4" />
+            </span>
+          </div>
+        </a>
+
+        <div className="flex min-h-0 flex-1 flex-col gap-4 p-5">
+          <header className="flex min-w-0 flex-col gap-1.5">
+            <p
+              className={cn(
+                "text-sm font-medium",
+                platformStyle.categoryClassName,
+              )}
+            >
+              {platformStyle.label}
+            </p>
+            <h3 className="font-poppins text-lg leading-tight font-bold text-white md:text-xl">
+              {title}
+            </h3>
+          </header>
+
+          {badges.length > 0 ? (
+            <ul
+              className="mt-auto flex flex-wrap gap-2 pt-1"
+              aria-label="Skills covered by this certificate"
+            >
+              {badges.map((badge) => (
+                <li
+                  key={badge}
+                  className="rounded-full border border-white/10 bg-white/[0.04] px-3 py-1 text-xs font-medium text-white/80"
                 >
-                    <h3 className="text-lg md:text-xl font-bold text-white hover:text-blue-400 transition-colors duration-300 flex items-start gap-2 group/link leading-tight">
-                        {title}
-                        <ExternalLink className="w-4 h-4 md:w-5 md:h-5 opacity-0 group-hover/link:opacity-100 transition-opacity duration-300 flex-shrink-0 mt-1" />
-                    </h3>
-                </a>
-
-                {/* Badges con habilidades aprendidas - cada uno con color diferente */}
-                {badges.length > 0 && (
-                    <div className="flex flex-wrap gap-2 mt-auto pt-2">
-                        {badges.map((badge, index) => {
-                            const colorIndex = index % badgeColors.length;
-                            const colors = badgeColors[colorIndex];
-                            return (
-                                <span
-                                    key={index}
-                                    className={cn(
-                                        "px-3 py-1.5 text-xs font-semibold rounded-full border transition-all duration-200 hover:scale-105",
-                                        colors.bg,
-                                        colors.text,
-                                        colors.border
-                                    )}
-                                >
-                                    {badge}
-                                </span>
-                            );
-                        })}
-                    </div>
-                )}
-
-                {/* Efecto de brillo sutil en hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none rounded-2xl bg-gradient-to-br from-blue-500/5 via-transparent to-purple-500/5"></div>
-            </div>
-        </motion.div>
-    );
+                  {badge}
+                </li>
+              ))}
+            </ul>
+          ) : null}
+        </div>
+      </div>
+    </motion.article>
+  );
 };
-

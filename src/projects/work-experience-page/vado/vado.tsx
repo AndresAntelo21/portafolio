@@ -1,6 +1,15 @@
 import { ExperienceHero } from "@/components/work-experience";
+import { ProjectCardsGrid } from "@/components/home/sections/projects/project-cards-grid";
+import {
+  WORK_EXPERIENCE_PROJECT_IDS,
+  getHomeProjectEntriesByIds,
+} from "@/constants/home-project-entries";
 
 export const Vado = () => {
+  const projectEntries = getHomeProjectEntriesByIds(
+    WORK_EXPERIENCE_PROJECT_IDS.vado,
+  );
+
   return (
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
@@ -30,6 +39,17 @@ export const Vado = () => {
           </>
         }
       />
+      <div className="flex flex-wrap gap-4">
+        <h1 className="relative z-10 text-left text-3xl font-bold">
+          MY <span className="text-vado">PROJECTS</span> AT
+        </h1>
+        <img
+          src="/work-experience/vado/vadodevs.svg"
+          alt="Vado Devs logo"
+          className="h-10 w-auto"
+        />
+      </div>
+      <ProjectCardsGrid entries={projectEntries} />
     </div>
   );
 };

@@ -101,6 +101,16 @@ const Certificados = lazy(() =>
     default: m.Certificados,
   })),
 );
+const Hobbies = lazy(() =>
+  import("@/components/home/sections/hobbies/hobbies").then((m) => ({
+    default: m.Hobbies,
+  })),
+);
+const HobbyDetailPage = lazy(() =>
+  import("@/components/hobby-detail/hobby-detail-page").then((m) => ({
+    default: m.HobbyDetailPage,
+  })),
+);
 const Error404 = lazy(() =>
   import("@/components/page-not-found/error404").then((m) => ({
     default: m.Error404,
@@ -139,6 +149,11 @@ const ROUTE_META: Record<string, RouteMeta> = {
     title: "Certificates | Andrés Antelo Portfolio",
     description:
       "Certifications in UX/UI design, data analytics, and cybersecurity from Udemy and Google.",
+  },
+  "/hobbies": {
+    title: "Hobbies | Andrés Antelo Portfolio",
+    description:
+      "Personal projects and side experiments outside client work, from creative coding to prototyping.",
   },
   "/csipro-web": {
     title: "CSI PRO REBOOT | Andrés Antelo Portfolio",
@@ -317,6 +332,8 @@ export default function App() {
             <Route path="/work-experience" element={<WorkExperience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/certificados" element={<Certificados />} />
+            <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/hobbies/:hobbyId" element={<HobbyDetailPage />} />
             {/* Projects */}
             <Route path="/csipro-web" element={<CsiproWeb />} />
             <Route path="/movilidad-web" element={<MovilidadWeb />} />
