@@ -41,6 +41,31 @@ const RevoltWeb = lazy(() =>
     default: m.RevoltWeb,
   })),
 );
+const VadoWeb = lazy(() =>
+  import("@/projects/vado-landing/vado-web").then((m) => ({
+    default: m.VadoWeb,
+  })),
+);
+const SenderoWeb = lazy(() =>
+  import("@/projects/sendero/sendero-web").then((m) => ({
+    default: m.SenderoWeb,
+  })),
+);
+const EasysalesWeb = lazy(() =>
+  import("@/projects/easysales/easysales-web").then((m) => ({
+    default: m.EasysalesWeb,
+  })),
+);
+const MaggioreWeb = lazy(() =>
+  import("@/projects/maggiore/maggiore-web").then((m) => ({
+    default: m.MaggioreWeb,
+  })),
+);
+const WashautWeb = lazy(() =>
+  import("@/projects/washaut/washaut-web").then((m) => ({
+    default: m.WashautWeb,
+  })),
+);
 const Csipro = lazy(() =>
   import("@/projects/work-experience-page/csipro/csipro").then((m) => ({
     default: m.Csipro,
@@ -144,6 +169,31 @@ const ROUTE_META: Record<string, RouteMeta> = {
     title: "Revolt | Andrés Antelo Portfolio",
     description:
       "Solar energy company landing page. Vue.js. Sustainable solutions for homes and businesses.",
+  },
+  "/vado-web": {
+    title: "Vado Devs Landing | Andrés Antelo Portfolio",
+    description:
+      "Conversion-focused landing page for Vado Devs custom software development.",
+  },
+  "/sendero-web": {
+    title: "Sendero | Andrés Antelo Portfolio",
+    description:
+      "Sendero web platform focused on brand storytelling, navigation, and accessible content.",
+  },
+  "/easysales-web": {
+    title: "Easysales | Andrés Antelo Portfolio",
+    description:
+      "Easysales digital product concept for communicating benefits and supporting the sales funnel.",
+  },
+  "/maggiore-web": {
+    title: "Maggiore | Andrés Antelo Portfolio",
+    description:
+      "Maggiore web platform with a clear interface, performance, and client-aligned identity.",
+  },
+  "/washaut-web": {
+    title: "Washaut | Andrés Antelo Portfolio",
+    description:
+      "Washaut website and digital presence focused on service communication and trust.",
   },
   "/csipro": {
     title: "CSI PRO | Andrés Antelo Portfolio",
@@ -274,6 +324,11 @@ export default function App() {
             <Route path="/gng-web" element={<GnGWeb />} />
             <Route path="/cbc-web" element={<CbCWeb />} />
             <Route path="/revolt-web" element={<RevoltWeb />} />
+            <Route path="/vado-web" element={<VadoWeb />} />
+            <Route path="/sendero-web" element={<SenderoWeb />} />
+            <Route path="/easysales-web" element={<EasysalesWeb />} />
+            <Route path="/maggiore-web" element={<MaggioreWeb />} />
+            <Route path="/washaut-web" element={<WashautWeb />} />
             {/* Work Experience */}
             <Route path="/csipro" element={<Csipro />} />
             <Route path="/legrafica" element={<Legrafica />} />

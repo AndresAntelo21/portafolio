@@ -8,31 +8,8 @@ import {
 import { useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { IoLogoVue } from "react-icons/io5";
-import {
-  FaCss3Alt,
-  FaHtml5,
-  FaJs,
-  FaNodeJs,
-  FaPython,
-  FaReact,
-} from "react-icons/fa";
-import { RiVercelFill } from "react-icons/ri";
-import {
-  SiJupyter,
-  SiMysql,
-  SiNestjs,
-  SiNextdotjs,
-  SiOpenai,
-  SiPayloadcms,
-  SiReactrouter,
-  SiTailwindcss,
-  SiTypescript,
-  SiVite,
-} from "react-icons/si";
-import Tooltip from "@/components/ui/tooltip/tooltip";
+import { ProjectTechnologyCardRow } from "@/components/project-technology/project-technology-card-row";
 import ProjectCard from "./projects-card";
-import { DiAndroid, DiSqllite, DiSwift } from "react-icons/di";
 
 import type { ProjectCardProps } from "./projects-card";
 import UmanaLogo from "@/assets/legrafica/umana/UmanaLogo";
@@ -51,8 +28,6 @@ import VadoDevsLogo from "@/assets/vadodevs/vadodevs/VadoLogo";
 import EasySalesLogo from "@/assets/vadodevs/easysales/EasySalesLogo";
 import MaggloreLogo from "@/assets/vadodevs/maggiore/MaggioreLogo";
 import WashAutLogo from "@/assets/vadodevs/washaut/WashAutLogo";
-import { FaDartLang, FaFlutter } from "react-icons/fa6";
-import { BiLogoPostgresql } from "react-icons/bi";
 
 interface ProjectsProps {
   className?: string;
@@ -90,451 +65,6 @@ function useIsDesktopGrid() {
   );
 }
 
-const movilidadTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Python">
-        <FaPython aria-label="Python" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="HTML">
-        <FaHtml5 aria-label="HTML" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="CSS">
-        <FaCss3Alt aria-label="CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Jupyter Notebook">
-        <SiJupyter aria-label="Jupyter Notebook" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const csiproTechnologies = (
-  <>
-    <li>
-      <Tooltip content="React">
-        <FaReact aria-label="React" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Tailwind CSS">
-        <SiTailwindcss aria-label="Tailwind CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vite">
-        <SiVite aria-label="Vite" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="React Router">
-        <SiReactrouter aria-label="React Router" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Payload CMS">
-        <SiPayloadcms aria-label="Payload CMS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Next.js">
-        <SiNextdotjs aria-label="Next.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vercel">
-        <RiVercelFill aria-label="Vercel" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const umanaTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Vue.js">
-        <IoLogoVue aria-label="Vue.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Flutter">
-        <FaFlutter aria-label="Flutter" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Dart">
-        <FaDartLang aria-label="Dart" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Swift">
-        <DiSwift aria-label="Swift" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Android Studio">
-        <DiAndroid aria-label="Android Studio" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="MySQL">
-        <SiMysql aria-label="MySQL" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="SQLite">
-        <DiSqllite aria-label="SQLite" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const gngTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Vue.js">
-        <IoLogoVue aria-label="Vue.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="MySQL">
-        <SiMysql aria-label="MySQL" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="SQLite">
-        <DiSqllite aria-label="SQLite" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const cbcTechnologies = (
-  <>
-    <li>
-      <Tooltip content="React">
-        <FaReact aria-label="React" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Tailwind CSS">
-        <SiTailwindcss aria-label="Tailwind CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vite">
-        <SiVite aria-label="Vite" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="React Router">
-        <SiReactrouter aria-label="React Router" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const revoltTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Vue.js">
-        <IoLogoVue aria-label="Vue.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="MySQL">
-        <SiMysql aria-label="MySQL" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="SQLite">
-        <DiSqllite aria-label="SQLite" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const vadoTechnologies = (
-  <>
-    <li>
-      <Tooltip content="React">
-        <FaReact aria-label="React" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Tailwind CSS">
-        <SiTailwindcss aria-label="Tailwind CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vite">
-        <SiVite aria-label="Vite" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="React Router">
-        <SiReactrouter aria-label="React Router" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Nest.js">
-        <SiNestjs aria-label="Nest.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="PostgreSQL">
-        <BiLogoPostgresql aria-label="PostgreSQL" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const senderoTechnologies = (
-  <>
-    <li>
-      <Tooltip content="React">
-        <FaReact aria-label="React" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Tailwind CSS">
-        <SiTailwindcss aria-label="Tailwind CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vite">
-        <SiVite aria-label="Vite" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="React Router">
-        <SiReactrouter aria-label="React Router" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Nest.js">
-        <SiNestjs aria-label="Nest.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="PostgreSQL">
-        <BiLogoPostgresql aria-label="PostgreSQL" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="OpenAI API">
-        <SiOpenai aria-label="OpenAI API" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const easysalesTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Vue.js">
-        <IoLogoVue aria-label="Vue.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Nest.js">
-        <SiNestjs aria-label="Nest.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="PostgreSQL">
-        <BiLogoPostgresql aria-label="PostgreSQL" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const maggioreTechnologies = (
-  <>
-    <li>
-      <Tooltip content="React">
-        <FaReact aria-label="React" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Tailwind CSS">
-        <SiTailwindcss aria-label="Tailwind CSS" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Vite">
-        <SiVite aria-label="Vite" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="React Router">
-        <SiReactrouter aria-label="React Router" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Nest.js">
-        <SiNestjs aria-label="Nest.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="PostgreSQL">
-        <BiLogoPostgresql aria-label="PostgreSQL" />
-      </Tooltip>
-    </li>
-  </>
-);
-
-const washautTechnologies = (
-  <>
-    <li>
-      <Tooltip content="Vue.js">
-        <IoLogoVue aria-label="Vue.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="JavaScript">
-        <FaJs aria-label="JavaScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Swift">
-        <DiSwift aria-label="Swift" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Android Studio">
-        <DiAndroid aria-label="Android Studio" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="TypeScript">
-        <SiTypescript aria-label="TypeScript" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Node.js">
-        <FaNodeJs aria-label="Node.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="Nest.js">
-        <SiNestjs aria-label="Nest.js" />
-      </Tooltip>
-    </li>
-    <li>
-      <Tooltip content="PostgreSQL">
-        <BiLogoPostgresql aria-label="PostgreSQL" />
-      </Tooltip>
-    </li>
-  </>
-);
-
 type ProjectEntry = ProjectCardProps & { id: string };
 
 function buildProjectEntries(): ProjectEntry[] {
@@ -555,7 +85,7 @@ function buildProjectEntries(): ProjectEntry[] {
       ),
       description:
         "Full redesign of the CSI PRO website, a technology company. The project included a new visual identity, UI design, and frontend development using React, Tailwind CSS and Vite.",
-      technologies: csiproTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="csipro" />,
       previewFocusRingClassName: "focus-visible:ring-csipro",
     },
     {
@@ -569,7 +99,7 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <UmanaLogo className="h-7 w-auto" title="Umana" />,
       description:
         "Redesign of the Umana website, an online platform focused on health and routines.",
-      technologies: umanaTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="umana" />,
       previewFocusRingClassName: "focus-visible:ring-csipro",
     },
     {
@@ -582,7 +112,7 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <GngLogo white className="h-7 w-auto" title="Glam N Glow" />,
       description:
         "Website redesign and frontend implementation with a focus on visual identity and responsive UI.",
-      technologies: gngTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="gng" />,
       previewFocusRingClassName: "focus-visible:ring-csipro",
     },
     {
@@ -607,7 +137,7 @@ function buildProjectEntries(): ProjectEntry[] {
       ),
       description:
         "Website redesign and frontend development aligned with the client's brand and goals.",
-      technologies: cbcTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="cbc" />,
       previewFocusRingClassName: "focus-visible:ring-csipro",
     },
     {
@@ -620,12 +150,12 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <RevoltLogo className="h-7 w-auto" title="Revolt" />,
       description:
         "Website redesign and UX improvements with emphasis on performance and accessibility.",
-      technologies: revoltTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="revolt" />,
       previewFocusRingClassName: "focus-visible:ring-csipro",
     },
     {
       id: "vado-landing",
-      to: "/vado",
+      to: "/vado-web",
       reverse: true,
       previewAriaLabel: "View Vado Devs experience — Vado landing",
       coverSrc: "/projects/vadodevs/vado-landing/vado-cover.png",
@@ -640,12 +170,12 @@ function buildProjectEntries(): ProjectEntry[] {
       ),
       description:
         "Landing oriented towards conversion to present Vado Devs' value proposition with clear messaging, visual hierarchy, and effective calls to action.",
-      technologies: vadoTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="vado" />,
       previewFocusRingClassName: "focus-visible:ring-vado",
     },
     {
       id: "sendero",
-      to: "/vado",
+      to: "/sendero-web",
       previewAriaLabel: "View Vado Devs experience — Sendero",
       coverSrc: "/projects/vadodevs/sendero/sendero-cover.png",
       category: "Platform",
@@ -653,12 +183,12 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <SenderoLogo title="Sendero" className="h-7 w-auto" />,
       description:
         "Web experience for Sendero focused on brand storytelling, smooth navigation and accessible content presentation.",
-      technologies: senderoTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="sendero" />,
       previewFocusRingClassName: "focus-visible:ring-vado",
     },
     {
       id: "easysales",
-      to: "/vado",
+      to: "/easysales-web",
       reverse: true,
       previewAriaLabel: "View Vado Devs experience — Easysales",
       coverSrc: "/projects/vadodevs/easysales/easysales-cover.png",
@@ -667,12 +197,12 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <EasySalesLogo className="h-10 w-auto" />,
       description:
         "Digital concept for Easysales to communicate product benefits, reduce reading friction and support the sales funnel.",
-      technologies: easysalesTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="easysales" />,
       previewFocusRingClassName: "focus-visible:ring-vado",
     },
     {
       id: "maggiore",
-      to: "/vado",
+      to: "/maggiore-web",
       previewAriaLabel: "View Vado Devs experience — Maggiore",
       coverSrc: "/projects/vadodevs/maggiore/maggiore-cover.png",
       category: "Platform",
@@ -680,12 +210,12 @@ function buildProjectEntries(): ProjectEntry[] {
       title: <MaggloreLogo variant="white" className="h-7 w-auto" />,
       description:
         "Web development for Maggiore: clear interface and solid performance, aligned with the client's identity and business goals.",
-      technologies: maggioreTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="maggiore" />,
       previewFocusRingClassName: "focus-visible:ring-vado",
     },
     {
       id: "washaut",
-      to: "/vado",
+      to: "/washaut-web",
       reverse: true,
       previewAriaLabel: "View Vado Devs experience — Washaut",
       coverSrc: "/projects/vadodevs/washaut/washaut-cover.png",
@@ -696,7 +226,7 @@ function buildProjectEntries(): ProjectEntry[] {
       ),
       description:
         "Website and digital presence for Washaut, focused on clear service communication and building trust at first glance.",
-      technologies: washautTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="washaut" />,
       previewFocusRingClassName: "focus-visible:ring-vado",
     },
     {
@@ -718,7 +248,7 @@ function buildProjectEntries(): ProjectEntry[] {
       ),
       description:
         "Traffic and urban mobility analysis and visualization project at the University of Sonora: data, maps and interface for research and planning.",
-      technologies: movilidadTechnologies,
+      technologies: <ProjectTechnologyCardRow stackId="movilidad" />,
       previewFocusRingClassName: "focus-visible:ring-blue-primary",
     },
   ];

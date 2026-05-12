@@ -3,54 +3,54 @@ import "swiper/swiper-bundle.css";
 import { Pagination, Autoplay } from "swiper/modules";
 import "@/index.css";
 
+const CSI_REBOOT_SLIDES = [
+  {
+    src: "/projects/csipro/csipro-reboot/csiproreboot-cover.png",
+    alt: "CSI PRO REBOOT landing page preview",
+  },
+  {
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide2.png",
+    alt: "CSI PRO REBOOT members section preview",
+  },
+  {
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide3.png",
+    alt: "CSI PRO REBOOT projects section preview",
+  },
+  {
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide4.png",
+    alt: "CSI PRO REBOOT events section preview",
+  },
+] as const;
+
 export const CsiCarousel = () => {
   return (
-    <Swiper
-      spaceBetween={20}
-      slidesPerView={1}
-      centeredSlides={true}
-      pagination={{ clickable: true }}
-      autoplay={{ delay: 10000, disableOnInteraction: false }}
-      modules={[Pagination, Autoplay]}
-      loop={true}
-      className="h-60 w-full lg:h-90"
-    >
-      <SwiperSlide>
-        <div className="flex h-full w-full">
-          <img
-            src="/projects/csipro/csi-slide1.webp"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="flex h-full w-full">
-          <img
-            src="/projects/csipro/csi-slide2.webp"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="flex h-full w-full">
-          <img
-            src="/projects/csipro/csi-slide3.webp"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </SwiperSlide>
-      <SwiperSlide>
-        <div className="flex h-full w-full">
-          <img
-            src="/projects/csipro/csi-slide4.webp"
-            alt=""
-            className="h-full w-full object-cover"
-          />
-        </div>
-      </SwiperSlide>
-    </Swiper>
+    <div className="csipro-project-carousel relative w-full overflow-hidden rounded-2xl border border-csipro/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
+      <div
+        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-csipro/10"
+        aria-hidden
+      />
+      <Swiper
+        spaceBetween={20}
+        slidesPerView={1}
+        centeredSlides
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 10000, disableOnInteraction: false }}
+        modules={[Pagination, Autoplay]}
+        loop
+        className="h-60 w-full lg:h-[28rem]"
+      >
+        {CSI_REBOOT_SLIDES.map((slide) => (
+          <SwiperSlide key={slide.src}>
+            <div className="flex h-full w-full">
+              <img
+                src={slide.src}
+                alt={slide.alt}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
