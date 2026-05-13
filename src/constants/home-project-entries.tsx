@@ -178,7 +178,7 @@ export function buildHomeProjectEntries(): HomeProjectEntry[] {
       id: "movilidad",
       to: "/movilidad-web",
       previewAriaLabel: "View project Movilidad Urbana",
-      coverSrc: "/projects/unison/movilidad-urbana/movilidad-cover.png",
+      coverSrc: "/projects/unison/movilidad-urbana/movilidad-cover.webp",
       category: "Research & Data",
       categoryClassName: "font-semibold text-movilidad",
       title: (

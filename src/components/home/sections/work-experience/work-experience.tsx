@@ -7,8 +7,8 @@ interface WorkExperienceProps {
 
 const EXPERIENCE_CARDS = [
   {
-    imageSrc: "/work-experience/unison/unisonv2.png",
-    hoverImageSrc: "/work-experience/unison/unisonv2-hover.png",
+    imageSrc: "/work-experience/unison/unison-cover.webp",
+    hoverImageSrc: "/work-experience/unison/unison-hover.webp",
     linkUrl: "/unison",
   },
   {

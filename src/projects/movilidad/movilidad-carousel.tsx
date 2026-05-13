@@ -18,7 +18,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/projects/unison/movilidad-urbana/movilidad-slide1.png"
+            src="/projects/unison/movilidad-urbana/movilidad-cover.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -27,7 +27,7 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/projects/unison/movilidad-urbana/movilidad-slide2.png"
+            src="/projects/unison/movilidad-urbana/movilidad-slide1.webp"
             alt=""
             className="h-full w-full object-cover"
           />
@@ -36,7 +36,16 @@ export const MovilidadCarousel = () => {
       <SwiperSlide>
         <div className="flex h-full w-full">
           <img
-            src="/projects/unison/movilidad-urbana/movilidad-slide3.png"
+            src="/projects/unison/movilidad-urbana/movilidad-slide2.webp"
+            alt=""
+            className="h-full w-full object-cover"
+          />
+        </div>
+      </SwiperSlide>
+      <SwiperSlide>
+        <div className="flex h-full w-full">
+          <img
+            src="/projects/unison/movilidad-urbana/movilidad-slide3.webp"
             alt=""
             className="h-full w-full object-cover"
           />

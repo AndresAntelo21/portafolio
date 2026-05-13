@@ -14,7 +14,7 @@ export const Unison = () => {
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
         accentColor="var(--color-unison)"
-        backgroundImage="/work-experience/unison/unison-banner.png"
+        backgroundImage="/work-experience/unison/unison-banner.webp"
         badgeIcon={
           <img
             src="/projects/unison.svg"
