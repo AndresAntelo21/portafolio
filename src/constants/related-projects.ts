@@ -20,7 +20,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "CSI PRO REBOOT",
     description:
       "Full redesign of the CSI PRO website with a new visual identity, UI design, and frontend development.",
-    coverSrc: "/projects/csipro/csipro-reboot/csiproreboot-cover.png",
+    coverSrc: "/projects/csipro/csipro-reboot/csiproreboot-cover.webp",
     coverAlt: "CSI PRO REBOOT project cover",
     category: "Website",
     categoryClassName: "font-semibold text-csipro",
@@ -33,7 +33,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Umana",
     description:
       "Redesign of the Umana website, an online platform focused on health and routines.",
-    coverSrc: "/projects/legrafica/umana/umana-cover.png",
+    coverSrc: "/projects/legrafica/umana/umana-cover.webp",
     coverAlt: "Umana project cover",
     category: "Web App & Mobile App",
     categoryClassName: "font-semibold text-umana-gradient",
@@ -46,7 +46,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Glam N Glow",
     description:
       "Website redesign and frontend implementation with a focus on visual identity and responsive UI.",
-    coverSrc: "/projects/legrafica/glamnglow/glamnglow-cover.png",
+    coverSrc: "/projects/legrafica/glamnglow/glamnglow-cover.webp",
     coverAlt: "Glam N Glow project cover",
     category: "Website",
     categoryClassName: "font-semibold text-gng",
@@ -59,7 +59,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Colegio Bicultural Cananea",
     description:
       "Website redesign and frontend development aligned with the client's brand and goals.",
-    coverSrc: "/projects/legrafica/cbc/cbc-cover.png",
+    coverSrc: "/projects/legrafica/cbc/cbc-cover.webp",
     coverAlt: "Colegio Bicultural Cananea project cover",
     category: "Website",
     categoryClassName: "font-semibold text-cbc",
@@ -72,7 +72,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Revolt",
     description:
       "Website redesign and UX improvements with emphasis on performance and accessibility.",
-    coverSrc: "/projects/legrafica/revolt/revolt-cover.png",
+    coverSrc: "/projects/legrafica/revolt/revolt-cover.webp",
     coverAlt: "Revolt project cover",
     category: "Website",
     categoryClassName: "font-semibold text-revolt",
@@ -85,7 +85,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Vado Devs Landing",
     description:
       "Conversion-focused landing page presenting Vado Devs' value proposition with clear messaging and calls to action.",
-    coverSrc: "/projects/vadodevs/vado-landing/vado-cover.png",
+    coverSrc: "/projects/vadodevs/vado-landing/vado-cover.webp",
     coverAlt: "Vado Devs landing project cover",
     category: "Website",
     categoryClassName: "font-semibold text-vado",
@@ -98,7 +98,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Sendero",
     description:
       "Web experience focused on brand storytelling, smooth navigation, and accessible content presentation.",
-    coverSrc: "/projects/vadodevs/sendero/sendero-cover.png",
+    coverSrc: "/projects/vadodevs/sendero/sendero-cover.webp",
     coverAlt: "Sendero project cover",
     category: "Platform",
     categoryClassName: "font-semibold text-sendero",
@@ -111,7 +111,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Easysales",
     description:
       "Digital concept to communicate product benefits, reduce reading friction, and support the sales funnel.",
-    coverSrc: "/projects/vadodevs/easysales/easysales-cover.png",
+    coverSrc: "/projects/vadodevs/easysales/easysales-cover.webp",
     coverAlt: "Easysales project cover",
     category: "Platform",
     categoryClassName: "font-semibold text-easysales",
@@ -124,7 +124,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Maggiore",
     description:
       "Web development with a clear interface and solid performance, aligned with the client's identity and goals.",
-    coverSrc: "/projects/vadodevs/maggiore/maggiore-cover.png",
+    coverSrc: "/projects/vadodevs/maggiore/maggiore-cover.webp",
     coverAlt: "Maggiore project cover",
     category: "Platform",
     categoryClassName: "font-semibold text-maggiore",
@@ -137,7 +137,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Washaut",
     description:
       "Website and digital presence focused on clear service communication and building trust at first glance.",
-    coverSrc: "/projects/vadodevs/washaut/washaut-cover.png",
+    coverSrc: "/projects/vadodevs/washaut/washaut-cover.webp",
     coverAlt: "Washaut project cover",
     category: "Mobile app",
     categoryClassName: "font-semibold text-washaut",
@@ -150,7 +150,7 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
     name: "Movilidad Urbana",
     description:
       "Traffic and urban mobility analysis and visualization project with data, maps, and interface for research and planning.",
-    coverSrc: "/projects/unison/movilidad-urbana/movilidad-cover.png",
+    coverSrc: "/projects/unison/movilidad-urbana/movilidad-cover.webp",
     coverAlt: "Movilidad Urbana project cover",
     category: "Research & Data",
     categoryClassName: "font-semibold text-movilidad",
@@ -165,10 +165,9 @@ export function getRelatedProjects(projectId: string, limit = 3) {
   );
 
   if (currentIndex === -1) {
-    return RELATED_PROJECT_CATALOG.filter((project) => project.id !== projectId).slice(
-      0,
-      limit,
-    );
+    return RELATED_PROJECT_CATALOG.filter(
+      (project) => project.id !== projectId,
+    ).slice(0, limit);
   }
 
   const related: RelatedProjectItem[] = [];
