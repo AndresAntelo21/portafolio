@@ -14,19 +14,19 @@ const EASYSALES_ACCENT = {
 
 const EASYSALES_SLIDES = [
   {
-    src: "/projects/vadodevs/easysales/easysales-cover.png",
+    src: "/projects/vadodevs/easysales/easysales-cover.webp",
     alt: "Easysales platform cover",
   },
   {
-    src: "/projects/vadodevs/easysales/easysales-slide1.png",
+    src: "/projects/vadodevs/easysales/easysales-slide1.webp",
     alt: "Easysales platform overview",
   },
   {
-    src: "/projects/vadodevs/easysales/easysales-slide2.png",
+    src: "/projects/vadodevs/easysales/easysales-slide2.webp",
     alt: "Easysales platform product section",
   },
   {
-    src: "/projects/vadodevs/easysales/easysales-slide3.png",
+    src: "/projects/vadodevs/easysales/easysales-slide3.webp",
     alt: "Easysales platform conversion section",
   },
 ] as const;
@@ -44,7 +44,7 @@ export const EasysalesWeb = () => {
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <EasySalesLogo className="h-10 w-auto" />
-          <p className="font-poppins text-sm tracking-[0.24em] text-easysales/80 uppercase">
+          <p className="font-poppins text-easysales/80 text-sm tracking-[0.24em] uppercase">
             Sales-focused digital product
           </p>
         </header>
@@ -77,7 +77,7 @@ export const EasysalesWeb = () => {
         title="Features"
         accentClassName={EASYSALES_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-easysales">
+        <ul className="marker:text-easysales ml-5 list-disc space-y-3">
           <li>
             <strong>Benefit-led messaging</strong>: Sections designed to explain
             value quickly and reduce cognitive load.
@@ -103,9 +103,9 @@ export const EasysalesWeb = () => {
       >
         <p>
           The frontend is built with <strong>Vue.js</strong>,{" "}
-          <strong>JavaScript</strong>, and <strong>TypeScript</strong>, while the
-          backend uses <strong>Node.js</strong>, <strong>Nest.js</strong>, and{" "}
-          <strong>PostgreSQL</strong>.
+          <strong>JavaScript</strong>, and <strong>TypeScript</strong>, while
+          the backend uses <strong>Node.js</strong>, <strong>Nest.js</strong>,
+          and <strong>PostgreSQL</strong>.
         </p>
         <p>
           This combination supports a dynamic interface with reliable data

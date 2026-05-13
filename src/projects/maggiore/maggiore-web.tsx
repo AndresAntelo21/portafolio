@@ -14,19 +14,19 @@ const MAGGIORE_ACCENT = {
 
 const MAGGIORE_SLIDES = [
   {
-    src: "/projects/vadodevs/maggiore/maggiore-cover.png",
+    src: "/projects/vadodevs/maggiore/maggiore-cover.webp",
     alt: "Maggiore platform cover",
   },
   {
-    src: "/projects/vadodevs/maggiore/maggiore-slide1.png",
+    src: "/projects/vadodevs/maggiore/maggiore-slide1.webp",
     alt: "Maggiore platform home section",
   },
   {
-    src: "/projects/vadodevs/maggiore/maggiore-slide2.png",
+    src: "/projects/vadodevs/maggiore/maggiore-slide2.webp",
     alt: "Maggiore platform services section",
   },
   {
-    src: "/projects/vadodevs/maggiore/maggiore-slide3.png",
+    src: "/projects/vadodevs/maggiore/maggiore-slide3.webp",
     alt: "Maggiore platform detail section",
   },
 ] as const;
@@ -44,7 +44,7 @@ export const MaggioreWeb = () => {
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <MaggloreLogo variant="white" className="h-7 w-auto" />
-          <p className="font-poppins text-sm tracking-[0.24em] text-maggiore/80 uppercase">
+          <p className="font-poppins text-maggiore/80 text-sm tracking-[0.24em] uppercase">
             Client web platform
           </p>
         </header>
@@ -78,22 +78,22 @@ export const MaggioreWeb = () => {
         title="Features"
         accentClassName={MAGGIORE_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-maggiore">
+        <ul className="marker:text-maggiore ml-5 list-disc space-y-3">
           <li>
             <strong>Brand-aligned interface</strong>: Visual design aligned with
             the client&apos;s identity and tone.
           </li>
           <li>
-            <strong>Performance-focused frontend</strong>: Fast-loading structure
-            with a modern React stack.
+            <strong>Performance-focused frontend</strong>: Fast-loading
+            structure with a modern React stack.
           </li>
           <li>
             <strong>Responsive layout</strong>: Adapted for desktop, tablet, and
             mobile use.
           </li>
           <li>
-            <strong>Scalable architecture</strong>: Backend-ready foundation with
-            Node.js, Nest.js, and PostgreSQL.
+            <strong>Scalable architecture</strong>: Backend-ready foundation
+            with Node.js, Nest.js, and PostgreSQL.
           </li>
         </ul>
       </ProjectDetailSection>

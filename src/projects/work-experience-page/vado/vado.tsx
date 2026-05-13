@@ -14,8 +14,8 @@ export const Vado = () => {
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
         accentColor="var(--color-vado)"
-        backgroundImage="/work-experience/vado/vado-banner.png"
-        backgroundPosition="center 50%"
+        backgroundImage="/work-experience/vado/vado-banner.webp"
+        backgroundPosition="center 100%"
         badgeIcon={
           <img
             src="/work-experience/vado/vadodevs.svg"

@@ -14,19 +14,19 @@ const VADO_ACCENT = {
 
 const VADO_SLIDES = [
   {
-    src: "/projects/vadodevs/vado-landing/vado-cover.png",
+    src: "/projects/vadodevs/vado-landing/vado-cover.webp",
     alt: "Vado Devs landing page cover",
   },
   {
-    src: "/projects/vadodevs/vado-landing/vado-slide1.png",
+    src: "/projects/vadodevs/vado-landing/vado-slide1.webp",
     alt: "Vado Devs landing page hero section",
   },
   {
-    src: "/projects/vadodevs/vado-landing/vado-slide2.png",
+    src: "/projects/vadodevs/vado-landing/vado-slide2.webp",
     alt: "Vado Devs landing page services section",
   },
   {
-    src: "/projects/vadodevs/vado-landing/vado-slide3.png",
+    src: "/projects/vadodevs/vado-landing/vado-slide3.webp",
     alt: "Vado Devs landing page contact section",
   },
 ] as const;
@@ -44,7 +44,7 @@ export const VadoWeb = () => {
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <VadoDevsLogo variant="white" className="h-7 w-auto" title="Vado" />
-          <p className="font-poppins text-sm tracking-[0.24em] text-vado/80 uppercase">
+          <p className="font-poppins text-vado/80 text-sm tracking-[0.24em] uppercase">
             Conversion-focused landing page
           </p>
         </header>
@@ -65,8 +65,8 @@ export const VadoWeb = () => {
         <p>
           This landing page was designed to present the{" "}
           <strong>Vado Devs</strong> value proposition with clear messaging,
-          strong visual hierarchy, and calls to action that guide visitors toward
-          contact and conversion.
+          strong visual hierarchy, and calls to action that guide visitors
+          toward contact and conversion.
         </p>
         <p>
           The experience highlights the company&apos;s custom software
@@ -79,7 +79,7 @@ export const VadoWeb = () => {
         title="Features"
         accentClassName={VADO_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-vado">
+        <ul className="marker:text-vado ml-5 list-disc space-y-3">
           <li>
             <strong>Conversion-oriented layout</strong>: Sections structured to
             explain the offer and move users toward contact.
@@ -106,8 +106,8 @@ export const VadoWeb = () => {
         <p>
           The frontend was built with <strong>React</strong>,{" "}
           <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, using{" "}
-          <strong>Vite</strong> for fast development and <strong>React Router</strong>{" "}
-          for client-side navigation.
+          <strong>Vite</strong> for fast development and{" "}
+          <strong>React Router</strong> for client-side navigation.
         </p>
         <p>
           The stack also includes <strong>Node.js</strong>,{" "}

@@ -27,13 +27,13 @@ const EXPERIENCE_CARDS = [
     linkUrl: "/legrafica",
   },
   {
-    imageSrc: "/work-experience/vincco/vinccov2.png",
-    hoverImageSrc: "/work-experience/vincco/vinccov2-hover.png",
+    imageSrc: "/work-experience/vincco/vincco-cover.webp",
+    hoverImageSrc: "/work-experience/vincco/vincco-hover.webp",
     linkUrl: "/vincco",
   },
   {
-    imageSrc: "/work-experience/vado/vado.png",
-    hoverImageSrc: "/work-experience/vado/vado-hover.png",
+    imageSrc: "/work-experience/vado/vado-cover.webp",
+    hoverImageSrc: "/work-experience/vado/vado-hover.webp",
     linkUrl: "/vado",
   },
 ] as const;

@@ -14,19 +14,19 @@ const SENDERO_ACCENT = {
 
 const SENDERO_SLIDES = [
   {
-    src: "/projects/vadodevs/sendero/sendero-cover.png",
+    src: "/projects/vadodevs/sendero/sendero-cover.webp",
     alt: "Sendero platform cover",
   },
   {
-    src: "/projects/vadodevs/sendero/sendero-slide1.png",
+    src: "/projects/vadodevs/sendero/sendero-slide1.webp",
     alt: "Sendero platform home section",
   },
   {
-    src: "/projects/vadodevs/sendero/sendero-slide2.png",
+    src: "/projects/vadodevs/sendero/sendero-slide2.webp",
     alt: "Sendero platform content section",
   },
   {
-    src: "/projects/vadodevs/sendero/sendero-slide3.png",
+    src: "/projects/vadodevs/sendero/sendero-slide3.webp",
     alt: "Sendero platform detail section",
   },
 ] as const;
@@ -44,7 +44,7 @@ export const SenderoWeb = () => {
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <SenderoLogo title="Sendero" className="h-7 w-auto" />
-          <p className="font-poppins text-sm tracking-[0.24em] text-sendero/80 uppercase">
+          <p className="font-poppins text-sendero/80 text-sm tracking-[0.24em] uppercase">
             Brand storytelling platform
           </p>
         </header>
@@ -77,7 +77,7 @@ export const SenderoWeb = () => {
         title="Features"
         accentClassName={SENDERO_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-sendero">
+        <ul className="marker:text-sendero ml-5 list-disc space-y-3">
           <li>
             <strong>Story-driven sections</strong>: Content blocks arranged to
             guide users through the product story.

@@ -14,19 +14,19 @@ const WASHAUT_ACCENT = {
 
 const WASHAUT_SLIDES = [
   {
-    src: "/projects/vadodevs/washaut/washaut-cover.png",
+    src: "/projects/vadodevs/washaut/washaut-cover.webp",
     alt: "Washaut digital presence cover",
   },
   {
-    src: "/projects/vadodevs/washaut/washaut-slide1.png",
+    src: "/projects/vadodevs/washaut/washaut-slide1.webp",
     alt: "Washaut website overview",
   },
   {
-    src: "/projects/vadodevs/washaut/washaut-slide2.png",
+    src: "/projects/vadodevs/washaut/washaut-slide2.webp",
     alt: "Washaut website services section",
   },
   {
-    src: "/projects/vadodevs/washaut/washaut-slide3.png",
+    src: "/projects/vadodevs/washaut/washaut-slide3.webp",
     alt: "Washaut website contact section",
   },
 ] as const;
@@ -44,7 +44,7 @@ export const WashautWeb = () => {
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <WashAutLogo variant="white" className="h-7 w-auto" title="Washaut" />
-          <p className="font-poppins text-sm tracking-[0.24em] text-washaut/80 uppercase">
+          <p className="font-poppins text-washaut/80 text-sm tracking-[0.24em] uppercase">
             Website and mobile presence
           </p>
         </header>
@@ -68,8 +68,8 @@ export const WashautWeb = () => {
           glance.
         </p>
         <p>
-          The project also reflects a mobile-oriented stack, with native
-          tooling for iOS and Android alongside the web experience.
+          The project also reflects a mobile-oriented stack, with native tooling
+          for iOS and Android alongside the web experience.
         </p>
       </ProjectDetailSection>
 
@@ -77,7 +77,7 @@ export const WashautWeb = () => {
         title="Features"
         accentClassName={WASHAUT_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-washaut">
+        <ul className="marker:text-washaut ml-5 list-disc space-y-3">
           <li>
             <strong>Service-first messaging</strong>: Content structured to
             explain offerings clearly and build confidence.
@@ -102,9 +102,10 @@ export const WashautWeb = () => {
         accentClassName={WASHAUT_ACCENT.accentTextClassName}
       >
         <p>
-          The web layer uses <strong>Vue.js</strong>, <strong>JavaScript</strong>,
-          and <strong>TypeScript</strong>, while mobile development involves{" "}
-          <strong>Swift</strong> and <strong>Android Studio</strong>.
+          The web layer uses <strong>Vue.js</strong>,{" "}
+          <strong>JavaScript</strong>, and <strong>TypeScript</strong>, while
+          mobile development involves <strong>Swift</strong> and{" "}
+          <strong>Android Studio</strong>.
         </p>
         <p>
           Backend services are handled with <strong>Node.js</strong>,{" "}
