@@ -17,8 +17,8 @@ const EXPERIENCE_CARDS = [
     linkUrl: "/csipro",
   },
   {
-    imageSrc: "/work-experience/telsoluciones/telsolucionesv2.png",
-    hoverImageSrc: "/work-experience/telsoluciones/telsolucionesv2-hover.png",
+    imageSrc: "/work-experience/telsoluciones/telsoluciones-cover.webp",
+    hoverImageSrc: "/work-experience/telsoluciones/telsoluciones-hover.webp",
     linkUrl: "/telsoluciones",
   },
   {

@@ -20,7 +20,7 @@ export const Telsoluciones = () => {
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
         accentColor="var(--color-telsoluciones)"
-        backgroundImage="/work-experience/telsoluciones/telsoluciones-banner.png"
+        backgroundImage="/work-experience/telsoluciones/telsoluciones-banner.webp"
         badgeIcon={
           <img
             src="/work-experience/telsoluciones/telsolucionesico.svg"
