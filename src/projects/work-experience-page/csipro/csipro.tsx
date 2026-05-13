@@ -14,7 +14,7 @@ export const Csipro = () => {
     <div className="flex flex-col justify-center gap-10 md:items-start">
       <ExperienceHero
         accentColor="#7c3aed"
-        backgroundImage="/work-experience/csipro/csipro-banner.png"
+        backgroundImage="/work-experience/csipro/csipro-banner.webp"
         badgeIcon={
           <img
             src="/projects/csipro.svg"

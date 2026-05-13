@@ -101,16 +101,16 @@ const Certificados = lazy(() =>
     default: m.Certificados,
   })),
 );
-const Hobbies = lazy(() =>
-  import("@/components/home/sections/hobbies/hobbies").then((m) => ({
-    default: m.Hobbies,
-  })),
-);
-const HobbyDetailPage = lazy(() =>
-  import("@/components/hobby-detail/hobby-detail-page").then((m) => ({
-    default: m.HobbyDetailPage,
-  })),
-);
+// const Hobbies = lazy(() =>
+//   import("@/components/home/sections/hobbies/hobbies").then((m) => ({
+//     default: m.Hobbies,
+//   })),
+// );
+// const HobbyDetailPage = lazy(() =>
+//   import("@/components/hobby-detail/hobby-detail-page").then((m) => ({
+//     default: m.HobbyDetailPage,
+//   })),
+// );
 const Error404 = lazy(() =>
   import("@/components/page-not-found/error404").then((m) => ({
     default: m.Error404,
@@ -332,8 +332,8 @@ export default function App() {
             <Route path="/work-experience" element={<WorkExperience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/certificados" element={<Certificados />} />
-            <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/hobbies/:hobbyId" element={<HobbyDetailPage />} />
+            {/* <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/hobbies/:hobbyId" element={<HobbyDetailPage />} /> */}
             {/* Projects */}
             <Route path="/csipro-web" element={<CsiproWeb />} />
             <Route path="/movilidad-web" element={<MovilidadWeb />} />

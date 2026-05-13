@@ -47,10 +47,6 @@ export const Certificados = () => {
         <SectionHeading className="relative z-10 text-left text-3xl font-bold">
           MY <span className="text-blue-primary">CERTIFICATES</span>
         </SectionHeading>
-        <p className="max-w-3xl text-sm text-zinc-400 sm:text-base">
-          Verified learning from Udemy and Google, with quick access to each
-          credential.
-        </p>
       </div>
 
       <div

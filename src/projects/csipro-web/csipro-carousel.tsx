@@ -5,28 +5,28 @@ import "@/index.css";
 
 const CSI_REBOOT_SLIDES = [
   {
-    src: "/projects/csipro/csipro-reboot/csiproreboot-cover.png",
+    src: "/projects/csipro/csipro-reboot/csiproreboot-cover.webp",
     alt: "CSI PRO REBOOT landing page preview",
   },
   {
-    src: "/projects/csipro/csipro-reboot/csiproreboot-slide2.png",
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide2.webp",
     alt: "CSI PRO REBOOT members section preview",
   },
   {
-    src: "/projects/csipro/csipro-reboot/csiproreboot-slide3.png",
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide3.webp",
     alt: "CSI PRO REBOOT projects section preview",
   },
   {
-    src: "/projects/csipro/csipro-reboot/csiproreboot-slide4.png",
+    src: "/projects/csipro/csipro-reboot/csiproreboot-slide4.webp",
     alt: "CSI PRO REBOOT events section preview",
   },
 ] as const;
 
 export const CsiCarousel = () => {
   return (
-    <div className="csipro-project-carousel relative w-full overflow-hidden rounded-2xl border border-csipro/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
+    <div className="csipro-project-carousel border-csipro/20 relative w-full overflow-hidden rounded-2xl border bg-black/40 ring-1 shadow-2xl shadow-black/50 ring-white/[0.06]">
       <div
-        className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-csipro/10"
+        className="to-csipro/10 pointer-events-none absolute inset-0 bg-gradient-to-t from-black/35 via-transparent"
         aria-hidden
       />
       <Swiper

@@ -12,8 +12,8 @@ const EXPERIENCE_CARDS = [
     linkUrl: "/unison",
   },
   {
-    imageSrc: "/work-experience/csipro/csiprov2.png",
-    hoverImageSrc: "/work-experience/csipro/csiprov2-hover.png",
+    imageSrc: "/work-experience/csipro/csipro-cover.webp",
+    hoverImageSrc: "/work-experience/csipro/csipro-hover.webp",
     linkUrl: "/csipro",
   },
   {

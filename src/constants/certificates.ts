@@ -20,7 +20,7 @@ export const CERTIFICATE_ITEMS: CertificateItem[] = [
   },
   {
     id: "udemy-ui-design",
-    title: "Diseño UI: diseño visual y diseño de interfaz con Figma 2025",
+    title: "UI Design: Visual design and interface design with Figma 2025",
     platform: "UDEMY",
     url: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-e9a6f2f9-7f11-4b1f-b2bd-e7b520ce1029.pdf",
     logo: "/certificados/certificados-company/Udemy.svg",
@@ -36,7 +36,7 @@ export const CERTIFICATE_ITEMS: CertificateItem[] = [
   },
   {
     id: "google-data-basics",
-    title: "Aspectos básicos: Datos, datos, en todas partes",
+    title: "Basic concepts: Data, data everywhere.",
     platform: "GOOGLE",
     url: "https://www.coursera.org/account/accomplishments/verify/6LKLH47ESP8Z",
     logo: "/certificados/certificados-company/google.svg",
