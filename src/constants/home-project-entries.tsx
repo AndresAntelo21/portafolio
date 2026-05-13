@@ -18,7 +18,7 @@ export function buildHomeProjectEntries(): HomeProjectEntry[] {
       id: "csipro",
       to: "/csipro-web",
       previewAriaLabel: "View project CSI PRO REBOOT",
-      coverSrc: "/projects/csipro/csipro-reboot/csiproreboot-cover.png",
+      coverSrc: "/projects/csipro/csipro-reboot/csiproreboot-cover.webp",
       category: "Website",
       categoryClassName: "font-semibold text-csipro lg:text-csipro/85",
       title: (

@@ -22,8 +22,8 @@ const EXPERIENCE_CARDS = [
     linkUrl: "/telsoluciones",
   },
   {
-    imageSrc: "/work-experience/legrafica/legraficav2.png",
-    hoverImageSrc: "/work-experience/legrafica/legraficav2-hover.png",
+    imageSrc: "/work-experience/legrafica/legrafica-cover.webp",
+    hoverImageSrc: "/work-experience/legrafica/legrafica-hover.webp",
     linkUrl: "/legrafica",
   },
   {

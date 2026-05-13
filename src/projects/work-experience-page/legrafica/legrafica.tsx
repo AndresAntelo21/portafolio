@@ -14,7 +14,7 @@ export const Legrafica = () => {
     <div className="flex flex-col justify-center gap-10 md:items-start">
       <ExperienceHero
         accentColor="var(--color-legrafica)"
-        backgroundImage="/work-experience/legrafica/legrafica-banner.png"
+        backgroundImage="/work-experience/legrafica/legrafica-banner.webp"
         badgeIcon={
           <img
             src="/projects/legrafica.svg"
