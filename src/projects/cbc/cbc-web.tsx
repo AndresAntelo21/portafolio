@@ -18,7 +18,7 @@ export const CbCWeb = () => {
     <ProjectDetailLayout
       projectId="cbc"
       carousel={
-        <div className="overflow-hidden rounded-2xl border border-[#014D9C]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
+        <div className="overflow-hidden rounded-2xl border border-[#014D9C]/20 bg-black/40 ring-1 shadow-2xl shadow-black/50 ring-white/[0.06]">
           <CbCCarousel />
         </div>
       }
@@ -27,7 +27,7 @@ export const CbCWeb = () => {
           <h1 className="font-alegreya text-3xl font-normal">
             Colegio Bicultural Cananea
           </h1>
-          <p className="font-poppins text-sm tracking-[0.24em] text-cbc/80 uppercase">
+          <p className="font-poppins text-cbc/80 text-sm tracking-[0.24em] uppercase">
             Institutional website
           </p>
         </header>
@@ -38,7 +38,12 @@ export const CbCWeb = () => {
           February 2025 - <span className="text-cbc">March 2025</span>
         </>
       }
-      links={[{ href: "https://colegiobc.xyz/", label: "Visit site" }]}
+      links={[
+        {
+          href: "https://www.colegiobiculturalcananea.com",
+          label: "Visit site",
+        },
+      ]}
       {...CBC_ACCENT}
     >
       <ProjectDetailSection
@@ -55,9 +60,9 @@ export const CbCWeb = () => {
         </p>
         <p>
           The school&apos;s website has been designed to provide{" "}
-          <strong>clear and accessible</strong> information about its educational
-          programs, institutional values, and admissions process, keeping the
-          school community connected.
+          <strong>clear and accessible</strong> information about its
+          educational programs, institutional values, and admissions process,
+          keeping the school community connected.
         </p>
       </ProjectDetailSection>
 
@@ -65,14 +70,14 @@ export const CbCWeb = () => {
         title="Features"
         accentClassName={CBC_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-cbc">
+        <ul className="marker:text-cbc ml-5 list-disc space-y-3">
           <li>
             <strong>Institutional Information</strong>: Presentation of the
             school&apos;s mission, vision, and core values.
           </li>
           <li>
-            <strong>Educational Programs</strong>: Details on academic levels and
-            programs offered.
+            <strong>Educational Programs</strong>: Details on academic levels
+            and programs offered.
           </li>
           <li>
             <strong>Intuitive Navigation</strong>: Design optimized for a smooth
@@ -99,8 +104,8 @@ export const CbCWeb = () => {
           navigation.
         </p>
         <p>
-          The <strong>frontend</strong> is built with <strong>React</strong>, one
-          of the most popular JavaScript libraries, providing a fast and
+          The <strong>frontend</strong> is built with <strong>React</strong>,
+          one of the most popular JavaScript libraries, providing a fast and
           interactive interface. <strong>TypeScript</strong> was used to improve
           code scalability and safety, ensuring a stable experience for users.
         </p>
