@@ -34,9 +34,11 @@ export const MovilidadWeb = () => {
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">              <span className="font-poppins text-xl font-medium tracking-widest">
-                Período
-              </span>
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
+                {" "}
+                <span className="font-poppins text-xl font-medium tracking-widest">
+                  Período
+                </span>
               </div>
             </div>
             <div className="flex gap-2 pt-4 pl-2 text-xl">
@@ -46,9 +48,11 @@ export const MovilidadWeb = () => {
           </div>
           <div>
             <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">              <span className="font-poppins text-xl font-medium tracking-widest">
-                Links
-              </span>
+              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
+                {" "}
+                <span className="font-poppins text-xl font-medium tracking-widest">
+                  Links
+                </span>
               </div>
             </div>
             <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
@@ -81,16 +85,18 @@ export const MovilidadWeb = () => {
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Movilidad Urbana</strong> es un proyecto diseñado para
-              analizar, visualizar y optimizar el tráfico y la movilidad urbana. Mediante el uso de
-              tecnología avanzada, proporciona información valiosa para ayudar en la planificación del
-              transporte, optimización de rutas y reducción de la congestión vehicular.
+              <strong>Urban Mobility</strong> is a project designed to analyze,
+              visualize, and optimize traffic flow and urban movement within
+              cities. By using advanced technology and data-driven tools, the
+              platform provides valuable insights to support transportation
+              planning, route optimization, and the reduction of traffic
+              congestion.
             </p>
             <p>
-              El sitio web de <strong>Movilidad Urbana</strong> presenta datos,
-              análisis y visualizaciones sobre patrones de tráfico y movimiento urbano, haciendo que la
-              información clave sea accesible para investigadores, planificadores urbanos y autoridades
-              de movilidad.
+              The <strong>Urban Mobility</strong> website presents data,
+              analysis, and visualizations related to traffic patterns and city
+              movement, making important mobility information accessible to
+              researchers, urban planners, and transportation authorities.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
@@ -99,8 +105,8 @@ export const MovilidadWeb = () => {
           <div>
             <ul className="ml-5 flex list-disc flex-col gap-2">
               <li>
-                <strong>Data analysis</strong>: Displays relevant information
-                on traffic and urban mobility trends.
+                <strong>Data analysis</strong>: Displays relevant information on
+                traffic and urban mobility trends.
               </li>
               <li>
                 <strong>Interactive visualization</strong>: Charts and visual
@@ -127,23 +133,22 @@ export const MovilidadWeb = () => {
           <div className="flex flex-col gap-2">
             <p>
               The <strong>Urban Mobility</strong> website development integrates
-              various technologies to ensure efficient data processing
-              and clear presentation of information.
+              various technologies to ensure efficient data processing and clear
+              presentation of information.
             </p>
             <p>
-              The <strong>backend</strong> is built with <strong>Python</strong>,
-              a widely used programming language for data analysis
-              and machine learning. <strong>Jupyter Notebook</strong> is used
-              for data processing, modeling, and generating interactive
-              visualizations.
+              The <strong>backend</strong> is built with <strong>Python</strong>
+              , a widely used programming language for data analysis and machine
+              learning. <strong>Jupyter Notebook</strong> is used for data
+              processing, modeling, and generating interactive visualizations.
             </p>
             <p>
               The <strong>frontend</strong> is developed with{" "}
-              <strong>plain HTML and CSS</strong>, providing a simple
-              yet functional design that makes data easy to access. This
-              technology stack ensures the <strong>Urban Mobility</strong>{" "}
-              project offers an efficient and user-friendly platform to analyze and
-              improve urban mobility.
+              <strong>plain HTML and CSS</strong>, providing a simple yet
+              functional design that makes data easy to access. This technology
+              stack ensures the <strong>Urban Mobility</strong> project offers
+              an efficient and user-friendly platform to analyze and improve
+              urban mobility.
             </p>
           </div>
         </div>
