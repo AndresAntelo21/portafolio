@@ -78,7 +78,36 @@ html {
   --vado: #3390ff;
   --legrafica: #4700d5;
   --fondo: hsl(240 7% 6%);
+  /* Project text / accent colors */
+  --project-umana-gradient: linear-gradient(90deg, #6A2BE4, #FF00B7);
+  --project-gng: #E9E8E4;
+  --project-cbc: #014D9C;
+  --project-revolt: #11CCC1;
+  --project-movilidad: #5381B2;
+  --project-vado: #3390FF;
+  --project-easysales: #FF8801;
+  --project-washaut: #1F3D7C;
+  --project-maggiore: #2B647D;
+  --project-sendero: #32C2B1;
 }
+
+/* Project utility text classes */
+.text-umana-gradient {
+  background: var(--project-umana-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-weight: 600;
+}
+.text-gng { color: var(--project-gng); }
+.text-cbc { color: var(--project-cbc); }
+.text-revolt { color: var(--project-revolt); }
+.text-movilidad { color: var(--project-movilidad); }
+.text-vado { color: var(--project-vado); }
+.text-easysales { color: var(--project-easysales); }
+.text-washaut { color: var(--project-washaut); }
+.text-maggiore { color: var(--project-maggiore); }
+.text-sendero { color: var(--project-sendero); }
 
 .dark {
   --background: oklch(0.145 0 0);
@@ -113,6 +142,17 @@ html {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(0.269 0 0);
   --sidebar-ring: oklch(0.439 0 0);
+  /* Project text / accent colors (dark mode mirrors light mode) */
+  --project-umana-gradient: linear-gradient(90deg, #6A2BE4, #FF00B7);
+  --project-gng: #E9E8E4;
+  --project-cbc: #014D9C;
+  --project-revolt: #11CCC1;
+  --project-movilidad: #5381B2;
+  --project-vado: #3390FF;
+  --project-easysales: #FF8801;
+  --project-washaut: #1F3D7C;
+  --project-maggiore: #2B647D;
+  --project-sendero: #32C2B1;
 }
 
 @theme inline {
@@ -247,6 +287,14 @@ html {
     width: 2rem !important;
     height: 0.8rem !important;
   }
+}
+
+.csipro-project-carousel .swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+.csipro-project-carousel .swiper-pagination-bullet-active {
+  background-color: var(--csipro) !important;
 }
 
 .shiny-text {

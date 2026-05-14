@@ -1,12 +1,20 @@
-import { Card } from "@/components/home/sections/work-experience/experience";
 import { ExperienceHero } from "@/components/work-experience";
+import { ProjectCardsGrid } from "@/components/home/sections/projects/project-cards-grid";
+import {
+  WORK_EXPERIENCE_PROJECT_IDS,
+  getHomeProjectEntriesByIds,
+} from "@/constants/home-project-entries";
 
 export const Csipro = () => {
+  const projectEntries = getHomeProjectEntriesByIds(
+    WORK_EXPERIENCE_PROJECT_IDS.csipro,
+  );
+
   return (
     <div className="flex flex-col justify-center gap-10 md:items-start">
       <ExperienceHero
         accentColor="#7c3aed"
-        backgroundImage="/work-experience/csipro/csipro-banner.png"
+        backgroundImage="/work-experience/csipro/csipro-banner.webp"
         badgeIcon={
           <img
             src="/projects/csipro.svg"
@@ -40,47 +48,7 @@ export const Csipro = () => {
           </div>
         </div>
       </div>
-      <Card
-        backgroundImage="/projects/csipro/csi-slide4.webp"
-        avatarSrc="/work-experience/csipro/csi-logo.webp"
-        authorName={
-          <div className="flex items-center gap-2">
-            <img
-              src="/projects/csipro.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              CSI {""}
-              <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                PRO
-              </span>
-            </div>
-          </div>
-        }
-        readTime={
-          <p className="text-gray-400">
-            November 2023 - <span className="italic">present</span>
-          </p>
-        }
-        title={
-          <div className="flex items-center gap-2">
-            <img
-              src="/projects/csipro.svg"
-              alt="Logo del laboratorio CSI PRO"
-              className="h-8 w-8"
-            />
-            <div className="font-normal">
-              CSI PRO {""}
-              <span className="rounded-md bg-violet-700 px-2 font-medium text-white">
-                REBOOT
-              </span>
-            </div>
-          </div>
-        }
-        description="CSI PRO REBOOT is a platform that showcases the work, projects, and impact of the CSI PRO lab at the University of Sonora."
-        linkUrl="/csipro-web"
-      />
+      <ProjectCardsGrid entries={projectEntries} />
     </div>
   );
 };

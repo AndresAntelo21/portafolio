@@ -22,7 +22,7 @@ export const Vincco = () => {
     <div className="flex flex-col justify-center gap-10 pb-10 md:items-start">
       <ExperienceHero
         accentColor="var(--color-vincco)"
-        backgroundImage="/work-experience/vincco/vincco-banner.png"
+        backgroundImage="/work-experience/vincco/vincco-banner.webp"
         badgeIcon={
           <img
             src="/work-experience/vincco/vincco.svg"
