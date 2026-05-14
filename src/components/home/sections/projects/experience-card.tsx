@@ -6,19 +6,14 @@ interface ExperienceCardProps {
   linkUrl?: string;
   isUnderConstruction?: boolean;
   constructionMessage?: string;
-  animationIndex?: number;
 }
 
-const getCardMotion = (animationIndex: number) => ({
-  initial: { opacity: 0, y: 24 },
+const cardMotion = {
+  initial: { opacity: 0, y: 60 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true, amount: 0.15 },
-  transition: {
-    duration: 0.45,
-    delay: animationIndex * 0.06,
-    ease: "easeOut" as const,
-  },
-});
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5, ease: "easeOut" as const },
+};
 
 export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   imageSrc,
@@ -26,7 +21,6 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   linkUrl,
   isUnderConstruction = false,
   constructionMessage = "Portfolio under construction",
-  animationIndex = 0,
 }) => {
   const handleRedirect = () => {
     if (linkUrl && !isUnderConstruction) {
@@ -35,7 +29,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
   };
 
   return (
-    <motion.div {...getCardMotion(animationIndex)}>
+    <motion.div {...cardMotion}>
       <div
         role={linkUrl && !isUnderConstruction ? "link" : undefined}
         tabIndex={linkUrl && !isUnderConstruction ? 0 : undefined}

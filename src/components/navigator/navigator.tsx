@@ -35,9 +35,8 @@ export const Navigator = () => {
 
   return (
     <nav
-      className={`font-poppins sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${
-        isScrolled ? "bg-black" : "bg-transparent"
-      }`}
+      className={`font-poppins sticky top-0 z-50 w-full py-4 text-2xl transition-colors duration-300 ${isScrolled ? "bg-black" : "bg-transparent"
+        }`}
     >
       <div className="relative mx-auto flex w-[90%] max-w-screen-xl items-center justify-between lg:w-250">
         <div className="absolute right-0 block lg:hidden">
@@ -48,15 +47,12 @@ export const Navigator = () => {
             <DrawerContent>
               <DrawerHeader>
                 <DrawerTitle>
-                  <span className="font-poppins block text-left text-2xl font-bold">
+                  <span className="font-poppins text-left text-2xl font-bold block">
                     Andres Portfolio
                   </span>
                 </DrawerTitle>
                 <DrawerClose asChild>
-                  <button
-                    className="absolute top-4 right-4"
-                    aria-label="Close menu"
-                  >
+                  <button className="absolute top-4 right-4" aria-label="Close menu">
                     <IoIosClose size={36} aria-hidden="true" />
                   </button>
                 </DrawerClose>
@@ -74,9 +70,6 @@ export const Navigator = () => {
                     <DrawerClose asChild>
                       <Link to="/certificados">Certificates</Link>
                     </DrawerClose>
-                    {/* <DrawerClose asChild>
-                      <Link to="/hobbies">Hobbies</Link>
-                    </DrawerClose> */}
                     <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
@@ -94,11 +87,7 @@ export const Navigator = () => {
         </div>
 
         <div className="flex-grow text-left font-semibold lg:text-left">
-          <Link
-            to="/"
-            className="inline-block"
-            aria-label="Andres Portfolio - Go to home"
-          >
+          <Link to="/" className="inline-block" aria-label="Andres Portfolio - Go to home">
             <span className="text-inherit">Andres Portfolio</span>
           </Link>
         </div>
@@ -146,27 +135,17 @@ export const Navigator = () => {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              {/* <NavigationMenuItem>
-                <NavigationMenuLink asChild>
-                  <Link
-                    to="/hobbies"
-                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
-                  >
-                    Hobbies
-                  </Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem> */}
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
-                  <a
-                    href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
-                    aria-label="Download CV (opens in new tab)"
-                  >
-                    CV
-                  </a>
+<a
+                href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block rounded-md px-4 py-2 transition-colors hover:text-blue-400"
+                aria-label="Download CV (opens in new tab)"
+              >
+                CV
+              </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>

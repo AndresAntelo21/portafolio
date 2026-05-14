@@ -85,17 +85,18 @@ export const MovilidadWeb = () => {
           </div>
           <div className="flex flex-col gap-2">
             <p>
-              <strong>Movilidad Urbana</strong> es un proyecto diseñado para
-              analizar, visualizar y optimizar el tráfico y la movilidad urbana.
-              Mediante el uso de tecnología avanzada, proporciona información
-              valiosa para ayudar en la planificación del transporte,
-              optimización de rutas y reducción de la congestión vehicular.
+              <strong>Urban Mobility</strong> is a project designed to analyze,
+              visualize, and optimize traffic flow and urban movement within
+              cities. By using advanced technology and data-driven tools, the
+              platform provides valuable insights to support transportation
+              planning, route optimization, and the reduction of traffic
+              congestion.
             </p>
             <p>
-              El sitio web de <strong>Movilidad Urbana</strong> presenta datos,
-              análisis y visualizaciones sobre patrones de tráfico y movimiento
-              urbano, haciendo que la información clave sea accesible para
-              investigadores, planificadores urbanos y autoridades de movilidad.
+              The <strong>Urban Mobility</strong> website presents data,
+              analysis, and visualizations related to traffic patterns and city
+              movement, making important mobility information accessible to
+              researchers, urban planners, and transportation authorities.
             </p>
           </div>
           <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">

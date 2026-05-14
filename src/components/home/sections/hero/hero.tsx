@@ -27,7 +27,7 @@ export const Hero = () => {
             <TiltedCard
               imageSrc={
                 minecraftCard
-                  ? "/minecraft-skin/background-skin.webp"
+                  ? "/minecraft-skin/background-skin.png"
                   : "/hero/me-background.webp"
               }
               altText="Full Stack Developer"

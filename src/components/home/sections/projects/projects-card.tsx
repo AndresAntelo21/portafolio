@@ -1,148 +1,99 @@
-import { Link } from "react-router-dom";
-import { cn } from "@/lib/utils";
+import { FaCalendar } from "react-icons/fa";
+import { IconType } from "react-icons";
+import { motion } from "motion/react";
 
-export interface ProjectCardProps {
-  to: string;
-  /** Accessible name for the cover link (e.g. project name). */
-  previewAriaLabel: string;
-  coverSrc: string;
-  /** Use `""` when the cover is decorative and `previewAriaLabel` carries the meaning. */
-  coverAlt?: string;
-  category: string;
-  /** Tailwind classes for the category line (e.g. `text-csipro lg:text-csipro/85`). */
-  categoryClassName?: string;
-  /** Logo image, plain text, or any React node. */
+interface ProjectsCardProps {
+  imageSrc: string;
+  date: string;
   title: React.ReactNode;
-  description: React.ReactNode;
-  /** Fragment or list of `<li>` nodes for the tech row. */
-  technologies: React.ReactNode;
-  technologiesAriaLabel?: string;
-  previewCtaLabel?: string;
-  /** Legacy prop (column side); neutralized at `lg` in favor of the card layout. */
-  reverse?: boolean;
-  /** Extra classes for the preview `Link` focus ring, e.g. `focus-visible:ring-csipro`. */
-  previewFocusRingClassName?: string;
+  description: string;
+  icons: IconType[];
   className?: string;
+  reverse?: boolean;
+  linkUrl?: string;
 }
 
-export function ProjectCard({
-  to,
-  previewAriaLabel,
-  coverSrc,
-  coverAlt = "",
-  category,
-  categoryClassName = "text-white/70",
+const cardMotion = {
+  initial: { opacity: 0, y: 60 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.2 },
+  transition: { duration: 0.5, ease: "easeOut" as const },
+};
+
+export const ProjectsCard: React.FC<ProjectsCardProps> = ({
+  imageSrc,
   title,
   description,
-  technologies,
-  technologiesAriaLabel = "Technologies used in the project",
-  previewCtaLabel = "View project",
-  reverse = false,
-  previewFocusRingClassName = "focus-visible:ring-blue-primary",
+  date,
+  icons,
   className,
-}: ProjectCardProps) {
+  reverse = false,
+  linkUrl,
+}) => {
+  const handleRedirect = () => {
+    if (linkUrl) {
+      window.location.href = linkUrl;
+    }
+  };
+
   return (
-    <article
-      className={cn(
-        "group flex flex-col gap-5",
-        "lg:h-full lg:flex-col lg:gap-0 lg:overflow-hidden lg:rounded-2xl lg:border lg:border-white/[0.08] lg:bg-gradient-to-b lg:from-white/[0.06] lg:to-zinc-950/90 lg:ring-1 lg:shadow-xl lg:shadow-black/40 lg:ring-white/[0.05] lg:transition-all lg:duration-300 lg:hover:-translate-y-1.5 lg:hover:border-white/[0.14] lg:hover:shadow-2xl lg:hover:shadow-black/55",
-        className,
-      )}
-    >
+    <motion.div {...cardMotion}>
       <div
-        className={cn(
-          "relative aspect-[16/10] min-h-[200px] w-full lg:flex lg:aspect-[16/11] lg:min-h-0 lg:w-full lg:max-w-none lg:shrink-0 lg:items-center lg:justify-center lg:overflow-hidden lg:p-0",
-          reverse
-            ? "z-0 lg:isolate lg:justify-start"
-            : "z-0 lg:isolate lg:justify-end",
-        )}
+        className={`relative flex cursor-pointer flex-col gap-4 ${
+          reverse ? "lg:flex-row" : "lg:flex-row-reverse"
+        } ${className} `}
+        onClick={handleRedirect}
       >
-        <Link
-          to={to}
-          aria-label={previewAriaLabel}
-          className={cn(
-            "group/preview relative isolate z-0 block h-full w-full overflow-hidden rounded-2xl outline-none ring-inset focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950",
-            "lg:min-h-0 lg:w-full lg:max-w-none lg:rounded-t-2xl lg:rounded-b-none lg:ring-0 lg:shadow-none",
-            previewFocusRingClassName,
-          )}
-        >
+        <div className="absolute top-20 left-1/2 z-0 h-60 w-60 -translate-x-1/2 -translate-y-1/2 transform rounded-full bg-blue-950 blur-2xl md:h-90 md:w-90 lg:hidden"></div>
+        <div className="relative h-50 w-full overflow-hidden rounded-2xl bg-blue-900 lg:h-75 lg:w-[60%]">
           <img
-            src={coverSrc}
-            alt={coverAlt}
-            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover/preview:scale-[1.02]"
+            src={imageSrc}
+            alt=""
+            className="h-full w-full object-cover object-center"
           />
+        </div>
+        <div
+          className={`flex w-full flex-col gap-4 lg:absolute lg:flex-col-reverse`}
+        >
           <div
-            className="pointer-events-none absolute inset-0 z-[1] flex items-center justify-center rounded-2xl bg-black/50 opacity-0 backdrop-blur-[1px] transition-opacity duration-300 group-hover/preview:opacity-100 group-focus-visible/preview:opacity-100 lg:rounded-t-2xl lg:rounded-b-none"
-            aria-hidden
+            className={`flex flex-row items-center justify-between ${reverse ? "lg:justify-end" : "lg:justify-start"}`}
           >
-            <span className="rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-sm">
-              {previewCtaLabel}
-            </span>
+            <div className="flex items-center gap-4 lg:hidden">
+              <FaCalendar className="text-blue-500" />
+              <span className="text-sm text-blue-500">{date}</span>
+            </div>
+            <div
+              className={`flex flex-row-reverse gap-4 text-2xl text-gray-300 lg:text-3xl ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"} `}
+            >
+              {icons.map((Icon, index) => (
+                <Icon key={index} />
+              ))}
+            </div>
           </div>
           <div
-            className="pointer-events-none absolute inset-0 z-[2] rounded-2xl ring-1 ring-white/10 ring-inset lg:rounded-t-2xl lg:rounded-b-none"
-            aria-hidden
-          />
-        </Link>
-      </div>
-
-      <div
-        className={cn(
-          "flex w-full min-w-0 flex-col-reverse gap-4 overflow-visible",
-          "lg:relative lg:z-10 lg:min-h-0 lg:min-w-0 lg:flex-1 lg:flex-col lg:justify-between lg:gap-4 lg:overflow-hidden lg:p-5 lg:pt-4",
-        )}
-      >
-        <div
-          className={cn(
-            "relative flex w-full min-w-0 flex-col gap-5 overflow-visible",
-            reverse ? "lg:items-stretch" : "items-start",
-            "lg:min-h-0 lg:flex-1 lg:flex-col lg:items-start lg:gap-3",
-          )}
-        >
-          <header className="flex min-w-0 flex-col gap-2 lg:gap-1.5">
-            <p className={cn("text-sm font-medium", categoryClassName)}>
-              {category}
-            </p>
-            <div className="min-w-0 lg:[&_img]:max-h-8 lg:[&_img]:w-auto lg:[&_span]:text-xl">
-              {title}
-            </div>
-          </header>
-
-          <div
-            className={cn(
-              "relative w-full overflow-hidden rounded-xl border border-white/[0.08] bg-gradient-to-br from-black/[0.4] to-black/[0.02] p-4 shadow-inner shadow-black/20 backdrop-blur-sm",
-              "lg:rounded-lg lg:border-white/[0.06] lg:p-3.5 lg:shadow-none",
-            )}
+            className={`${reverse ? "lg:items-end" : "lg:items-start"} flex flex-col gap-2`}
           >
-            <div
-              className={cn(
-                "absolute inset-y-4 left-0 w-px lg:inset-y-5",
-                reverse && "right-0 left-auto",
-              )}
-              aria-hidden
-            />
-            <div
-              className={cn(
-                "text-sm leading-relaxed text-white/90 sm:text-[0.9375rem] sm:leading-relaxed lg:text-[0.9375rem] lg:leading-relaxed",
-                "lg:line-clamp-4 lg:text-[0.8125rem]",
-              )}
-            >
-              {description}
+            <div className="hidden lg:block">
+              <div
+                className={`flex items-center gap-2 text-sm ${reverse ? "lg:flex-row-reverse" : "lg:flex-row"}`}
+              >
+                <FaCalendar className="text-blue-500" />
+                <span className="text-sm text-blue-500">{date}</span>
+              </div>
+            </div>
+            <h1 className="font-poppins text-medium text-2xl lg:text-3xl">
+              {title}
+            </h1>
+            <div className="bg-secondary lg:bg-secondary/70 lg:rounded-x h-25 w-full rounded-md p-2 lg:mt-5 lg:h-40 lg:w-2/3 lg:p-4">
+              <p
+                className={`line-clamp-4 text-start text-sm lg:line-clamp-5 lg:text-base ${reverse ? "lg:text-right" : "lg:text-left"}`}
+              >
+                {description}
+              </p>
             </div>
           </div>
         </div>
-        <ul
-          className={cn(
-            "flex flex-wrap items-center gap-4 gap-y-3 text-2xl text-white/90",
-            "lg:mt-auto lg:justify-start lg:gap-2.5 lg:gap-y-2 lg:pt-2 lg:text-xl",
-          )}
-          aria-label={technologiesAriaLabel}
-        >
-          {technologies}
-        </ul>
       </div>
-    </article>
+    </motion.div>
   );
-}
-
-export default ProjectCard;
+};
