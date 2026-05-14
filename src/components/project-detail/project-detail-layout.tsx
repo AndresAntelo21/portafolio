@@ -12,6 +12,7 @@ import { RelatedProjects } from "@/components/project-detail/related-projects";
 export type ProjectDetailLinkItem = {
   href: string;
   label: string;
+  iconSrc?: string;
 };
 
 export type ProjectDetailTechnology = {
@@ -98,7 +99,16 @@ export function ProjectDetailLayout({
                         linkClassName,
                       )}
                     >
-                      <FaLink aria-hidden="true" />
+                      {link.iconSrc ? (
+                        <img
+                          src={link.iconSrc}
+                          alt=""
+                          className="size-5 object-contain"
+                          aria-hidden="true"
+                        />
+                      ) : (
+                        <FaLink aria-hidden="true" />
+                      )}
                       {link.label}
                     </a>
                   ))}

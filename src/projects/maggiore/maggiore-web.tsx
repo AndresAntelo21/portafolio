@@ -52,10 +52,10 @@ export const MaggioreWeb = () => {
       technologies={getProjectDetailTechnologies("maggiore")}
       period={
         <>
-          Delivered at <span className="text-maggiore">Vado Devs</span>
+          October 2025 - <span className="text-maggiore">February 2026</span>
         </>
       }
-      links={[]}
+      links={[{ href: "https://maggiore.app", label: "Visit site" }]}
       {...MAGGIORE_ACCENT}
     >
       <ProjectDetailSection

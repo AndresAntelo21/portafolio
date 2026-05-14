@@ -40,7 +40,19 @@ export const UmanaWeb = () => {
           November 2024 - <span className="text-umana-gradient">Enero 2025</span>
         </>
       }
-      links={[{ href: "https://umana.com.mx/", label: "Visit site" }]}
+      links={[
+        { href: "https://umana.com.mx/", label: "Visit site" },
+        {
+          href: "https://apps.apple.com/us/app/umana/id1550976756",
+          label: "App Store",
+          iconSrc: "/icons/apple.svg",
+        },
+        {
+          href: "https://play.google.com/store/apps/details?id=com.umana.umanaapp2&pcampaignid=web_share",
+          label: "Play Store",
+          iconSrc: "/icons/playstore.svg",
+        },
+      ]}
       {...UMANA_ACCENT}
     >
       <ProjectDetailSection

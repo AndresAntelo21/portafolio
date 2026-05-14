@@ -61,6 +61,8 @@ export const Certificados = () => {
               platform={certificate.platform}
               url={certificate.url}
               logo={certificate.logo}
+              imageSrc={certificate.imageSrc}
+              imageAlt={certificate.imageAlt}
               badges={certificate.badges}
               animationIndex={index}
             />

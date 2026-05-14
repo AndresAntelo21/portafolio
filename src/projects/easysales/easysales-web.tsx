@@ -52,7 +52,7 @@ export const EasysalesWeb = () => {
       technologies={getProjectDetailTechnologies("easysales")}
       period={
         <>
-          Delivered at <span className="text-easysales">Vado Devs</span>
+          August 2025 - <span className="text-easysales">October 2025</span>
         </>
       }
       links={[]}

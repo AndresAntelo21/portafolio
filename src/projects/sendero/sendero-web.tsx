@@ -52,10 +52,10 @@ export const SenderoWeb = () => {
       technologies={getProjectDetailTechnologies("sendero")}
       period={
         <>
-          Delivered at <span className="text-sendero">Vado Devs</span>
+          August 2025 - <span className="text-sendero">Present</span>
         </>
       }
-      links={[]}
+      links={[{ href: "https://sendero-crm.com", label: "Visit site" }]}
       {...SENDERO_ACCENT}
     >
       <ProjectDetailSection

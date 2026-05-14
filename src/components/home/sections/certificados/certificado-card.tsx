@@ -8,6 +8,8 @@ type CertificadoCardProps = {
   platform: CertificatePlatform;
   url: string;
   logo?: string;
+  imageSrc?: string;
+  imageAlt?: string;
   badges?: string[];
   animationIndex?: number;
 };
@@ -35,6 +37,8 @@ export const CertificadoCard = ({
   platform,
   url,
   logo,
+  imageSrc,
+  imageAlt,
   badges = [],
   animationIndex = 0,
 }: CertificadoCardProps) => {
@@ -60,27 +64,52 @@ export const CertificadoCard = ({
           aria-label={`Open certificate: ${title}`}
           className="group/preview relative isolate block aspect-[16/10] overflow-hidden outline-none ring-inset focus-visible:ring-2 focus-visible:ring-blue-primary focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
         >
-          <div
-            className={cn(
-              "flex h-full w-full items-center justify-center border-b bg-gradient-to-br px-8",
-              platformStyle.headerClassName,
-            )}
-          >
-            {logo ? (
+          {imageSrc ? (
+            <>
               <img
-                src={logo}
-                alt={platform}
-                className="h-12 w-auto object-contain opacity-95 transition-transform duration-500 group-hover/preview:scale-105 md:h-14"
+                src={imageSrc}
+                alt={imageAlt ?? title}
+                className="h-full w-full object-cover transition-transform duration-500 group-hover/preview:scale-105"
                 loading="lazy"
               />
-            ) : (
-              <span className="font-poppins text-sm font-semibold tracking-[0.24em] text-white/80 uppercase">
-                {platform}
-              </span>
-            )}
-          </div>
+              <div
+                className="pointer-events-none absolute inset-0 bg-gradient-to-t from-zinc-950/75 via-transparent to-black/10"
+                aria-hidden
+              />
+              {logo ? (
+                <div className="pointer-events-none absolute right-3 bottom-3 z-10 rounded-xl border border-white/15 bg-zinc-950/80 px-3 py-2 shadow-lg backdrop-blur-md">
+                  <img
+                    src={logo}
+                    alt={platform}
+                    className="h-5 w-auto object-contain"
+                    loading="lazy"
+                  />
+                </div>
+              ) : null}
+            </>
+          ) : (
+            <div
+              className={cn(
+                "flex h-full w-full items-center justify-center border-b bg-gradient-to-br px-8",
+                platformStyle.headerClassName,
+              )}
+            >
+              {logo ? (
+                <img
+                  src={logo}
+                  alt={platform}
+                  className="h-12 w-auto object-contain opacity-95 transition-transform duration-500 group-hover/preview:scale-105 md:h-14"
+                  loading="lazy"
+                />
+              ) : (
+                <span className="font-poppins text-sm font-semibold tracking-[0.24em] text-white/80 uppercase">
+                  {platform}
+                </span>
+              )}
+            </div>
+          )}
           <div
-            className="pointer-events-none absolute inset-0 flex items-center justify-center bg-black/50 opacity-0 backdrop-blur-[1px] transition-opacity duration-300 group-hover/preview:opacity-100 group-focus-visible/preview:opacity-100"
+            className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center bg-black/50 opacity-0 backdrop-blur-[1px] transition-opacity duration-300 group-hover/preview:opacity-100 group-focus-visible/preview:opacity-100"
             aria-hidden
           >
             <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-4 py-2 text-sm font-medium text-white shadow-lg backdrop-blur-sm">

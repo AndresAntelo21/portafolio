@@ -52,10 +52,10 @@ export const VadoWeb = () => {
       technologies={getProjectDetailTechnologies("vado")}
       period={
         <>
-          Delivered at <span className="text-vado">Vado Devs</span>
+          December 2025 - <span className="text-vado">January 2026</span>
         </>
       }
-      links={[]}
+      links={[{ href: "https://vadodevs.com/en", label: "Visit site" }]}
       {...VADO_ACCENT}
     >
       <ProjectDetailSection

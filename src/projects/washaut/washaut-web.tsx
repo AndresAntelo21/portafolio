@@ -52,7 +52,7 @@ export const WashautWeb = () => {
       technologies={getProjectDetailTechnologies("washaut")}
       period={
         <>
-          Delivered at <span className="text-washaut">Vado Devs</span>
+          September 2025 - <span className="text-washaut">May 2026</span>
         </>
       }
       links={[]}
