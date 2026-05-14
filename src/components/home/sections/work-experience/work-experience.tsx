@@ -1,42 +1,11 @@
+
 import { useLocation } from "react-router-dom";
 import { ExperienceCard } from "../projects/experience-card";
+
 
 interface WorkExperienceProps {
   className?: string;
 }
-
-const EXPERIENCE_CARDS = [
-  {
-    imageSrc: "/work-experience/unison/unison-cover.webp",
-    hoverImageSrc: "/work-experience/unison/unison-hover.webp",
-    linkUrl: "/unison",
-  },
-  {
-    imageSrc: "/work-experience/csipro/csipro-cover.webp",
-    hoverImageSrc: "/work-experience/csipro/csipro-hover.webp",
-    linkUrl: "/csipro",
-  },
-  {
-    imageSrc: "/work-experience/telsoluciones/telsoluciones-cover.webp",
-    hoverImageSrc: "/work-experience/telsoluciones/telsoluciones-hover.webp",
-    linkUrl: "/telsoluciones",
-  },
-  {
-    imageSrc: "/work-experience/legrafica/legrafica-cover.webp",
-    hoverImageSrc: "/work-experience/legrafica/legrafica-hover.webp",
-    linkUrl: "/legrafica",
-  },
-  {
-    imageSrc: "/work-experience/vincco/vincco-cover.webp",
-    hoverImageSrc: "/work-experience/vincco/vincco-hover.webp",
-    linkUrl: "/vincco",
-  },
-  {
-    imageSrc: "/work-experience/vado/vado-cover.webp",
-    hoverImageSrc: "/work-experience/vado/vado-hover.webp",
-    linkUrl: "/vado",
-  },
-] as const;
 
 export const WorkExperience: React.FC<WorkExperienceProps> = ({
   className,
@@ -54,17 +23,33 @@ export const WorkExperience: React.FC<WorkExperienceProps> = ({
           WORK <span className="text-blue-primary">EXPERIENCE</span>
         </SectionHeading>
       </div>
-      <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-        {EXPERIENCE_CARDS.map((card, index) => (
-          <ExperienceCard
-            key={card.linkUrl}
-            imageSrc={card.imageSrc}
-            hoverImageSrc={card.hoverImageSrc}
-            linkUrl={card.linkUrl}
-            animationIndex={index}
-          />
-        ))}
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 w-full">
+        <ExperienceCard
+          imageSrc="/work-experience/unison/unison-logo.webp"
+          hoverImageSrc="/work-experience/unison/unison-hover.webp"
+          linkUrl="/unison"
+        />
+        <ExperienceCard
+          imageSrc="/work-experience/csipro/csi-logo.webp"
+          hoverImageSrc="/work-experience/csipro/csi-hover.webp"
+          linkUrl="/csipro"
+        />
+        <ExperienceCard
+          imageSrc="/work-experience/telsoluciones/telsoluciones-logo.webp"
+          hoverImageSrc="/work-experience/telsoluciones/bg-telsoluciones.webp"
+          linkUrl="/telsoluciones"
+        />
+        <ExperienceCard
+          imageSrc="/work-experience/legrafica/legrafica-logo.webp"
+          hoverImageSrc="/work-experience/legrafica/legrafica-hover.webp"
+          linkUrl="/legrafica"
+        />
+        <ExperienceCard
+          imageSrc="/work-experience/vincco/bg-vincco.webp"
+          hoverImageSrc="/work-experience/vincco/bg-site.webp"
+          linkUrl="/vincco"
+        />
       </div>
-    </div>
+    </div >
   );
 };
