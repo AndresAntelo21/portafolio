@@ -18,7 +18,7 @@ export const MovilidadWeb = () => {
     <ProjectDetailLayout
       projectId="movilidad"
       carousel={
-        <div className="overflow-hidden rounded-2xl border border-[#5381B2]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
+        <div className="overflow-hidden rounded-2xl border border-[#5381B2]/20 bg-black/40 ring-1 shadow-2xl shadow-black/50 ring-white/[0.06]">
           <MovilidadCarousel />
         </div>
       }
@@ -32,7 +32,7 @@ export const MovilidadWeb = () => {
             />
             <h1 className="font-poppins text-3xl">MOVILIDAD URBANA</h1>
           </div>
-          <p className="font-poppins text-sm tracking-[0.24em] text-movilidad/80 uppercase">
+          <p className="font-poppins text-movilidad/80 text-sm tracking-[0.24em] uppercase">
             Urban mobility research
           </p>
         </header>
@@ -53,17 +53,17 @@ export const MovilidadWeb = () => {
         accentClassName={MOVILIDAD_ACCENT.accentTextClassName}
       >
         <p>
-          <strong>Movilidad Urbana</strong> es un proyecto diseñado para
-          analizar, visualizar y optimizar el tráfico y la movilidad urbana.
-          Mediante el uso de tecnología avanzada, proporciona información valiosa
-          para ayudar en la planificación del transporte, optimización de rutas y
-          reducción de la congestión vehicular.
+          <strong>Urban Mobility</strong> eis a project designed to analyze,
+          visualize, and optimize traffic flow and urban movement within cities.
+          By using advanced technology and data-driven tools, the platform
+          provides valuable insights to support transportation planning, route
+          optimization, and the reduction of traffic congestion.
         </p>
         <p>
-          El sitio web de <strong>Movilidad Urbana</strong> presenta datos,
-          análisis y visualizaciones sobre patrones de tráfico y movimiento
-          urbano, haciendo que la información clave sea accesible para
-          investigadores, planificadores urbanos y autoridades de movilidad.
+          The <strong>Urban Mobility</strong> website presents data, analysis,
+          and visualizations related to traffic patterns and city movement,
+          making important mobility information accessible to researchers, urban
+          planners, and transportation authorities.
         </p>
       </ProjectDetailSection>
 
@@ -71,7 +71,7 @@ export const MovilidadWeb = () => {
         title="Features"
         accentClassName={MOVILIDAD_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-movilidad">
+        <ul className="marker:text-movilidad ml-5 list-disc space-y-3">
           <li>
             <strong>Data analysis</strong>: Displays relevant information on
             traffic and urban mobility trends.
@@ -107,8 +107,8 @@ export const MovilidadWeb = () => {
         <p>
           The <strong>backend</strong> is built with <strong>Python</strong>, a
           widely used programming language for data analysis and machine
-          learning. <strong>Jupyter Notebook</strong> is used for data processing,
-          modeling, and generating interactive visualizations.
+          learning. <strong>Jupyter Notebook</strong> is used for data
+          processing, modeling, and generating interactive visualizations.
         </p>
         <p>
           The <strong>frontend</strong> is developed with{" "}
