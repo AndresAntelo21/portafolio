@@ -43,9 +43,9 @@ export const MaggioreWeb = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <MaggloreLogo variant="white" className="h-7 w-auto" />
+          <MaggloreLogo variant="white" className="h-15 w-auto" />
           <p className="font-poppins text-maggiore/80 text-sm tracking-[0.24em] uppercase">
-            Client web platform
+            Token-based management system
           </p>
         </header>
       }
@@ -63,14 +63,22 @@ export const MaggioreWeb = () => {
         accentClassName={MAGGIORE_ACCENT.accentTextClassName}
       >
         <p>
-          <strong>Maggiore</strong> is a web development project focused on a
-          clear interface, solid performance, and a presentation aligned with
-          the client&apos;s identity and business goals.
+          <strong>Maggiore</strong> is a token-based creative management system
+          designed to help teams manage digital transactions, creative
+          workflows, and internal operations with greater visibility and
+          control.
         </p>
         <p>
-          The experience was structured to communicate services and brand value
-          while keeping navigation intuitive and the interface consistent across
-          devices.
+          The project was developed to provide a structured platform where users
+          can organize token-based processes, track activity, and manage
+          transactions through a clear and efficient interface. Its main goal is
+          to simplify digital management by giving teams a centralized system
+          that supports transparency, organization, and operational control.
+        </p>
+        <p>
+          Maggiore focuses on combining usability with a robust architecture,
+          allowing businesses to manage their creative or transactional
+          workflows in a more scalable and reliable way.
         </p>
       </ProjectDetailSection>
 
@@ -80,20 +88,32 @@ export const MaggioreWeb = () => {
       >
         <ul className="marker:text-maggiore ml-5 list-disc space-y-3">
           <li>
-            <strong>Brand-aligned interface</strong>: Visual design aligned with
-            the client&apos;s identity and tone.
+            <strong>Token-based management</strong>: System designed to manage
+            processes and transactions using a token-based structure.
           </li>
           <li>
-            <strong>Performance-focused frontend</strong>: Fast-loading
-            structure with a modern React stack.
+            <strong>Digital transaction control</strong>: Tools to track and
+            manage activity with better visibility and organization.
           </li>
           <li>
-            <strong>Responsive layout</strong>: Adapted for desktop, tablet, and
-            mobile use.
+            <strong>Creative workflow management</strong>: Platform created to
+            support creative operations and internal management processes.
           </li>
           <li>
-            <strong>Scalable architecture</strong>: Backend-ready foundation
-            with Node.js, Nest.js, and PostgreSQL.
+            <strong>Clear user interface</strong>: Simple and organized
+            interface focused on usability and efficiency.
+          </li>
+          <li>
+            <strong>Centralized platform</strong>: All key information and
+            operations are managed from one digital system.
+          </li>
+          <li>
+            <strong>Operational visibility</strong>: Allows teams to monitor
+            activity, transactions, and workflow status in a structured way.
+          </li>
+          <li>
+            <strong>Robust architecture</strong>: Built with a scalable
+            foundation to support secure and reliable digital operations.
           </li>
         </ul>
       </ProjectDetailSection>
@@ -103,14 +123,24 @@ export const MaggioreWeb = () => {
         accentClassName={MAGGIORE_ACCENT.accentTextClassName}
       >
         <p>
-          The frontend uses <strong>React</strong>, <strong>TypeScript</strong>,{" "}
-          <strong>Tailwind CSS</strong>, <strong>Vite</strong>, and{" "}
-          <strong>React Router</strong> to deliver a fast and maintainable user
-          interface.
+          Maggiore works as a centralized digital management platform where
+          users can manage token-based transactions and creative workflows from
+          a single system.
         </p>
         <p>
-          Data and service layers are supported by <strong>Node.js</strong>,{" "}
-          <strong>Nest.js</strong>, and <strong>PostgreSQL</strong>.
+          The platform organizes key operations into a clear interface, allowing
+          teams to track activity, control transactions, and maintain visibility
+          over their internal processes.
+        </p>
+        <p>
+          Its architecture was designed to support reliability, scalability, and
+          control, making it suitable for teams that need a structured system to
+          manage digital operations efficiently.
+        </p>
+        <p>
+          By combining a token-based model with an intuitive management
+          interface, Maggiore helps simplify complex workflows and provides
+          better control over creative and transactional processes.
         </p>
       </ProjectDetailSection>
     </ProjectDetailLayout>

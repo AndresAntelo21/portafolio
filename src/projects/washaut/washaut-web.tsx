@@ -43,9 +43,13 @@ export const WashautWeb = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <WashAutLogo variant="white" className="h-7 w-auto" title="Washaut" />
+          <WashAutLogo
+            variant="white"
+            className="h-10 w-auto"
+            title="Washaut"
+          />
           <p className="font-poppins text-washaut/80 text-sm tracking-[0.24em] uppercase">
-            Website and mobile presence
+            Mobile car wash platform
           </p>
         </header>
       }
@@ -63,13 +67,22 @@ export const WashautWeb = () => {
         accentClassName={WASHAUT_ACCENT.accentTextClassName}
       >
         <p>
-          <strong>Washaut</strong> combines a website and digital presence
-          focused on clear service communication and building trust at first
-          glance.
+          <strong>WashAut</strong> is a mobile application designed to make car
+          wash services easier, faster, and more accessible for customers.
         </p>
         <p>
-          The project also reflects a mobile-oriented stack, with native tooling
-          for iOS and Android alongside the web experience.
+          The project was developed to help users request car wash services
+          directly from their device, simplifying the process of finding,
+          scheduling, and managing vehicle cleaning services. Its main goal is
+          to improve the customer experience by offering a digital solution that
+          connects users with car wash services in a more convenient and
+          organized way.
+        </p>
+        <p>
+          WashAut focuses on bringing efficiency to the car wash industry by
+          reducing manual coordination, improving service visibility, and
+          providing users with a simple platform to request vehicle cleaning
+          whenever they need it.
         </p>
       </ProjectDetailSection>
 
@@ -79,20 +92,32 @@ export const WashautWeb = () => {
       >
         <ul className="marker:text-washaut ml-5 list-disc space-y-3">
           <li>
-            <strong>Service-first messaging</strong>: Content structured to
-            explain offerings clearly and build confidence.
+            <strong>Car wash service request</strong>: Allows users to request
+            vehicle cleaning services directly from the application.
           </li>
           <li>
-            <strong>Cross-platform stack</strong>: Web, mobile, and backend
-            technologies working together.
+            <strong>Service scheduling</strong>: Functionality to help customers
+            choose when they want their car wash service.
           </li>
           <li>
-            <strong>Responsive website</strong>: Consistent presentation across
-            devices.
+            <strong>User-friendly interface</strong>: Simple and intuitive
+            design focused on making the booking process easy.
           </li>
           <li>
-            <strong>Backend integration</strong>: Node.js, Nest.js, and
-            PostgreSQL for product data and services.
+            <strong>Service management</strong>: Tools to organize requests,
+            track service details, and manage customer needs.
+          </li>
+          <li>
+            <strong>Mobile-first experience</strong>: Designed for users who
+            want to access car wash services quickly from their phone.
+          </li>
+          <li>
+            <strong>Customer convenience</strong>: Reduces the need for manual
+            communication by centralizing the request process.
+          </li>
+          <li>
+            <strong>Modern digital solution</strong>: Brings a more professional
+            and scalable experience to traditional car wash services.
           </li>
         </ul>
       </ProjectDetailSection>
@@ -102,15 +127,24 @@ export const WashautWeb = () => {
         accentClassName={WASHAUT_ACCENT.accentTextClassName}
       >
         <p>
-          The web layer uses <strong>Vue.js</strong>,{" "}
-          <strong>JavaScript</strong>, and <strong>TypeScript</strong>, while
-          mobile development involves <strong>Swift</strong> and{" "}
-          <strong>Android Studio</strong>.
+          WashAut works as a digital platform where users can request and manage
+          car wash services from their mobile device.
         </p>
         <p>
-          Backend services are handled with <strong>Node.js</strong>,{" "}
-          <strong>Nest.js</strong>, and <strong>PostgreSQL</strong> to support
-          the broader product ecosystem.
+          The application simplifies the customer journey by allowing users to
+          select the service they need, schedule it, and manage the request
+          through a clear and organized interface.
+        </p>
+        <p>
+          Instead of relying on manual messages or phone calls, WashAut
+          centralizes the car wash process into a mobile experience, helping
+          users save time while giving service providers a better way to receive
+          and manage requests.
+        </p>
+        <p>
+          The platform was built with a focus on usability, convenience, and
+          operational efficiency, making car wash services easier to access for
+          customers and easier to manage for businesses.
         </p>
       </ProjectDetailSection>
     </ProjectDetailLayout>

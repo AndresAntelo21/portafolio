@@ -18,7 +18,7 @@ export const RevoltWeb = () => {
     <ProjectDetailLayout
       projectId="revolt"
       carousel={
-        <div className="overflow-hidden rounded-2xl border border-[#11CCC1]/20 bg-black/40 shadow-2xl shadow-black/50 ring-1 ring-white/[0.06]">
+        <div className="overflow-hidden rounded-2xl border border-[#11CCC1]/20 bg-black/40 ring-1 shadow-2xl shadow-black/50 ring-white/[0.06]">
           <RevoltCarousel />
         </div>
       }
@@ -27,9 +27,9 @@ export const RevoltWeb = () => {
           <img
             src="/projects/revolt/revolt-logo.svg"
             alt="Logo de Revolt"
-            className="w-full max-w-xs"
+            className="w-50"
           />
-          <p className="font-poppins text-sm tracking-[0.24em] text-revolt/80 uppercase">
+          <p className="font-poppins text-revolt/80 text-sm tracking-[0.24em] uppercase">
             Sustainable energy landing page
           </p>
         </header>
@@ -52,8 +52,8 @@ export const RevoltWeb = () => {
           <strong>sustainable energy solutions</strong>, offering solar panel
           systems to help homes and businesses reduce electricity costs while
           minimizing their environmental impact. With a focus on innovation and
-          efficiency, Revolt aims to provide clean, accessible technology to drive
-          a more sustainable future.
+          efficiency, Revolt aims to provide clean, accessible technology to
+          drive a more sustainable future.
         </p>
         <p>
           The <strong>Revolt</strong> landing page is designed to showcase the
@@ -66,15 +66,15 @@ export const RevoltWeb = () => {
         title="Features"
         accentClassName={REVOLT_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-revolt">
+        <ul className="marker:text-revolt ml-5 list-disc space-y-3">
           <li>
             <strong>Modern, attractive design</strong>: A visually appealing
             interface that reinforces the brand identity.
           </li>
           <li>
             <strong>Clear, structured information</strong>: Explains the
-            advantages of solar energy and how Revolt can help customers make the
-            transition.
+            advantages of solar energy and how Revolt can help customers make
+            the transition.
           </li>
           <li>
             <strong>Conversion-optimized design</strong>: Strategically designed
@@ -96,8 +96,8 @@ export const RevoltWeb = () => {
         accentClassName={REVOLT_ACCENT.accentTextClassName}
       >
         <p>
-          The <strong>Revolt</strong> page is built with <strong>Vue.js</strong>,
-          a JavaScript framework that enables fast, dynamic interfaces.{" "}
+          The <strong>Revolt</strong> page is built with <strong>Vue.js</strong>
+          , a JavaScript framework that enables fast, dynamic interfaces.{" "}
           <strong>Vue Router</strong> is used for smooth navigation between
           sections without reloading the page, ensuring a continuous browsing
           experience.

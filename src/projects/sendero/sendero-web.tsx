@@ -43,9 +43,9 @@ export const SenderoWeb = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <SenderoLogo title="Sendero" className="h-7 w-auto" />
+          <SenderoLogo title="Sendero" className="h-12 w-auto" />
           <p className="font-poppins text-sendero/80 text-sm tracking-[0.24em] uppercase">
-            Brand storytelling platform
+            AI-powered CRM platform
           </p>
         </header>
       }
@@ -63,13 +63,22 @@ export const SenderoWeb = () => {
         accentClassName={SENDERO_ACCENT.accentTextClassName}
       >
         <p>
-          <strong>Sendero</strong> is a web experience focused on brand
-          storytelling, smooth navigation, and accessible presentation of
-          content for users exploring the product narrative.
+          <strong>Sendero</strong> is an AI-powered CRM platform designed to
+          help businesses manage their commercial operations and customer
+          conversations across multiple channels from one centralized system.
         </p>
         <p>
-          The interface was designed to communicate value clearly while keeping
-          reading friction low and supporting a polished, product-led feel.
+          The project was developed to improve the way companies handle leads,
+          client communication, follow-ups, and sales processes. Its main goal
+          is to provide a smarter and more organized workflow for sales teams,
+          allowing them to respond faster, automate repetitive tasks, and keep
+          better control of their customer pipeline.
+        </p>
+        <p>
+          Sendero focuses on combining CRM tools with artificial intelligence to
+          support commercial teams in their daily operations, helping businesses
+          save time, improve customer attention, and manage their sales
+          opportunities more efficiently.
         </p>
       </ProjectDetailSection>
 
@@ -79,20 +88,35 @@ export const SenderoWeb = () => {
       >
         <ul className="marker:text-sendero ml-5 list-disc space-y-3">
           <li>
-            <strong>Story-driven sections</strong>: Content blocks arranged to
-            guide users through the product story.
+            <strong>Multichannel conversation management</strong>: Centralized
+            system to manage customer interactions from different communication
+            channels.
           </li>
           <li>
-            <strong>Accessible content layout</strong>: Typography and spacing
-            tuned for readability across devices.
+            <strong>AI-powered assistance</strong>: Artificial intelligence
+            support to improve response handling, automate workflows, and assist
+            with customer communication.
           </li>
           <li>
-            <strong>Smooth navigation</strong>: Clear structure between key
-            sections without unnecessary page reloads.
+            <strong>Lead management</strong>: Tools to organize potential
+            customers and track their progress through the sales process.
           </li>
           <li>
-            <strong>AI-assisted capabilities</strong>: Integration points for
-            OpenAI-powered experiences where relevant.
+            <strong>Customer follow-up</strong>: Functionality to monitor
+            conversations, pending actions, and commercial opportunities.
+          </li>
+          <li>
+            <strong>Sales pipeline organization</strong>: Structured workflow to
+            help teams manage clients, prospects, and business opportunities.
+          </li>
+          <li>
+            <strong>CRM dashboard</strong>: Interface designed to give teams
+            visibility over their operations, conversations, and customer
+            activity.
+          </li>
+          <li>
+            <strong>Modern and responsive design</strong>: Optimized experience
+            for users working from desktop or mobile devices.
           </li>
         </ul>
       </ProjectDetailSection>
@@ -102,14 +126,25 @@ export const SenderoWeb = () => {
         accentClassName={SENDERO_ACCENT.accentTextClassName}
       >
         <p>
-          The platform uses <strong>React</strong>, <strong>TypeScript</strong>,
-          <strong> Tailwind CSS</strong>, and <strong>Vite</strong>, with{" "}
-          <strong>React Router</strong> handling in-app navigation.
+          Sendero works as a centralized CRM platform where businesses can
+          manage their sales communication and customer relationships in one
+          place.
         </p>
         <p>
-          Backend services are supported by <strong>Node.js</strong>,{" "}
-          <strong>Nest.js</strong>, and <strong>PostgreSQL</strong>, with{" "}
-          <strong>OpenAI API</strong> integration for intelligent features.
+          The system connects different communication channels into a single
+          workflow, allowing users to track conversations, organize leads, and
+          manage follow-ups without switching between multiple tools.
+        </p>
+        <p>
+          Artificial intelligence is integrated into the platform to support
+          commercial processes, helping users automate certain tasks, improve
+          response times, and maintain better control over customer
+          interactions.
+        </p>
+        <p>
+          The platform was built with a modern digital product approach,
+          focusing on usability, scalability, and efficiency for teams that need
+          a complete solution to manage sales and client communication.
         </p>
       </ProjectDetailSection>
     </ProjectDetailLayout>

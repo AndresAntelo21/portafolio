@@ -43,9 +43,9 @@ export const VadoWeb = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <VadoDevsLogo variant="white" className="h-7 w-auto" title="Vado" />
+          <VadoDevsLogo variant="white" className="h-12 w-auto" title="Vado" />
           <p className="font-poppins text-vado/80 text-sm tracking-[0.24em] uppercase">
-            Conversion-focused landing page
+            Corporate website
           </p>
         </header>
       }
@@ -63,15 +63,22 @@ export const VadoWeb = () => {
         accentClassName={VADO_ACCENT.accentTextClassName}
       >
         <p>
-          This landing page was designed to present the{" "}
-          <strong>Vado Devs</strong> value proposition with clear messaging,
-          strong visual hierarchy, and calls to action that guide visitors
-          toward contact and conversion.
+          <strong>Vado Devs Website</strong> is the main corporate website
+          created to present the company&apos;s identity, services, projects,
+          and contact channels in one centralized digital platform.
         </p>
         <p>
-          The experience highlights the company&apos;s custom software
-          development services while keeping navigation simple and the content
-          easy to scan on desktop and mobile.
+          The project was developed to give Vado Devs a professional online
+          presence where visitors can learn about the company, explore the
+          solutions it offers, and review the projects it has worked on. The
+          site also helps potential clients contact the company to start a
+          project and allows people interested in joining the team to apply for
+          work opportunities.
+        </p>
+        <p>
+          Its main goal is to communicate who Vado Devs is, what it does, and
+          how it can help businesses build custom software and digital
+          solutions.
         </p>
       </ProjectDetailSection>
 
@@ -81,20 +88,35 @@ export const VadoWeb = () => {
       >
         <ul className="marker:text-vado ml-5 list-disc space-y-3">
           <li>
-            <strong>Conversion-oriented layout</strong>: Sections structured to
-            explain the offer and move users toward contact.
+            <strong>Company presentation</strong>: Section focused on explaining
+            who Vado Devs is, its mission, and the value it provides as a
+            software development company.
           </li>
           <li>
-            <strong>Clear service positioning</strong>: Messaging focused on
-            custom software, design, and business outcomes.
+            <strong>Services overview</strong>: Dedicated areas to present the
+            digital solutions and development services offered by the company.
           </li>
           <li>
-            <strong>Responsive presentation</strong>: Layout adapted for mobile,
-            tablet, and desktop breakpoints.
+            <strong>Projects showcase</strong>: Portfolio section where visitors
+            can explore the projects Vado Devs has worked on.
           </li>
           <li>
-            <strong>Brand-aligned UI</strong>: Visual system aligned with Vado
-            Devs identity and product tone.
+            <strong>Client contact system</strong>: Contact flow designed for
+            potential clients who want to reach out and start a project with the
+            company.
+          </li>
+          <li>
+            <strong>Job application system</strong>: Functionality that allows
+            people to apply or get in touch with the company for work
+            opportunities.
+          </li>
+          <li>
+            <strong>Professional brand presence</strong>: Clean and modern
+            design created to strengthen the company&apos;s digital identity.
+          </li>
+          <li>
+            <strong>Responsive design</strong>: Optimized experience for users
+            visiting the website from desktop, tablet, or mobile devices.
           </li>
         </ul>
       </ProjectDetailSection>
@@ -104,15 +126,27 @@ export const VadoWeb = () => {
         accentClassName={VADO_ACCENT.accentTextClassName}
       >
         <p>
-          The frontend was built with <strong>React</strong>,{" "}
-          <strong>TypeScript</strong>, and <strong>Tailwind CSS</strong>, using{" "}
-          <strong>Vite</strong> for fast development and{" "}
-          <strong>React Router</strong> for client-side navigation.
+          The Vado Devs Website works as the main digital entry point for the
+          company.
         </p>
         <p>
-          The stack also includes <strong>Node.js</strong>,{" "}
-          <strong>Nest.js</strong>, and <strong>PostgreSQL</strong> to support
-          dynamic content and backend integration when needed.
+          Visitors can navigate through the site to learn about Vado Devs,
+          understand the services it provides, and explore real projects
+          developed by the team. The website organizes the company&apos;s
+          information in a clear structure, making it easy for users to
+          understand its experience, capabilities, and work process.
+        </p>
+        <p>
+          The platform also includes contact flows for different types of users.
+          Potential clients can use the website to reach out and request
+          information about a project, while people interested in working with
+          the company can use it as a channel to apply or connect with the team.
+        </p>
+        <p>
+          The website was built with a modern, responsive approach, focused on
+          usability, brand presentation, and clear communication. It helps Vado
+          Devs present itself professionally while connecting with both future
+          clients and potential collaborators.
         </p>
       </ProjectDetailSection>
     </ProjectDetailLayout>

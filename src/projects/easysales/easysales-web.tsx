@@ -43,7 +43,7 @@ export const EasysalesWeb = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <EasySalesLogo className="h-10 w-auto" />
+          <EasySalesLogo className="h-20 w-auto" />
           <p className="font-poppins text-easysales/80 text-sm tracking-[0.24em] uppercase">
             Sales-focused digital product
           </p>
@@ -63,13 +63,21 @@ export const EasysalesWeb = () => {
         accentClassName={EASYSALES_ACCENT.accentTextClassName}
       >
         <p>
-          <strong>Easysales</strong> is a digital concept built to communicate
-          product benefits clearly, reduce reading friction, and support the
-          sales funnel with a focused, persuasive interface.
+          <strong>EasySales</strong> is a digital platform focused on helping
+          businesses improve their sales operations, internal workflows, and
+          commercial processes through technology.
         </p>
         <p>
-          The experience prioritizes clarity around the offer, trust-building
-          content, and a structure that helps users move toward conversion.
+          The project was developed to support a growing team that needed to
+          move faster without spending months searching for and hiring
+          developers. The main goal was to help the product continue evolving by
+          integrating technical talent that could adapt to the team, contribute
+          to the development process, and support the platform&apos;s growth.
+        </p>
+        <p>
+          EasySales focuses on improving business efficiency by supporting
+          sales-related operations, streamlining digital processes, and helping
+          teams work with better structure and speed.
         </p>
       </ProjectDetailSection>
 
@@ -79,20 +87,32 @@ export const EasysalesWeb = () => {
       >
         <ul className="marker:text-easysales ml-5 list-disc space-y-3">
           <li>
-            <strong>Benefit-led messaging</strong>: Sections designed to explain
-            value quickly and reduce cognitive load.
+            <strong>Sales process support</strong>: Platform focused on
+            improving commercial operations and sales-related workflows.
           </li>
           <li>
-            <strong>Sales funnel support</strong>: Layout and CTAs aligned with
-            lead generation and product discovery.
+            <strong>Workflow optimization</strong>: Helps organize internal
+            processes and reduce operational friction.
           </li>
           <li>
-            <strong>Responsive UI</strong>: Consistent presentation across
-            screen sizes.
+            <strong>Scalable product development</strong>: Built and improved
+            with a technical approach that supports product growth.
           </li>
           <li>
-            <strong>Backend-ready architecture</strong>: Stack prepared for
-            product data and service integration.
+            <strong>Team collaboration</strong>: Development support integrated
+            into the existing team to maintain a smooth workflow.
+          </li>
+          <li>
+            <strong>Digital operations management</strong>: Tools and structure
+            designed to help businesses manage sales activity more efficiently.
+          </li>
+          <li>
+            <strong>User-focused experience</strong>: Interface and
+            functionality designed to make sales operations easier to manage.
+          </li>
+          <li>
+            <strong>Growth-oriented architecture</strong>: Technical foundation
+            created to support future improvements and product scalability.
           </li>
         </ul>
       </ProjectDetailSection>
@@ -102,14 +122,24 @@ export const EasysalesWeb = () => {
         accentClassName={EASYSALES_ACCENT.accentTextClassName}
       >
         <p>
-          The frontend is built with <strong>Vue.js</strong>,{" "}
-          <strong>JavaScript</strong>, and <strong>TypeScript</strong>, while
-          the backend uses <strong>Node.js</strong>, <strong>Nest.js</strong>,
-          and <strong>PostgreSQL</strong>.
+          EasySales works as a digital solution that helps businesses manage and
+          improve their sales-related processes through a structured platform.
         </p>
         <p>
-          This combination supports a dynamic interface with reliable data
-          handling and room to extend the product experience over time.
+          The project involved supporting the product&apos;s development by
+          integrating technical talent into the existing team, allowing the
+          company to continue building features, improving workflows, and moving
+          faster without slowing down its product roadmap.
+        </p>
+        <p>
+          The platform is designed to organize commercial operations, improve
+          efficiency, and provide a better digital experience for teams that
+          need to manage sales activity in a more scalable way.
+        </p>
+        <p>
+          By combining product development support with a focus on sales process
+          optimization, EasySales helps businesses operate with more control,
+          speed, and flexibility.
         </p>
       </ProjectDetailSection>
     </ProjectDetailLayout>
