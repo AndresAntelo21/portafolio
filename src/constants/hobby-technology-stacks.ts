@@ -3,7 +3,9 @@ import { FaReact } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiVite } from "react-icons/si";
 import { getProjectToolIconSrc } from "@/constants/project-tool-icons";
 
-export type HobbyTechnologyStackId = "url-shortening-api-landing";
+export type HobbyTechnologyStackId =
+  | "url-shortening-api-landing"
+  | "age-calculator-app";
 
 export type HobbyTechnologyDefinition = {
   title: string;
@@ -25,6 +27,12 @@ export const HOBBY_TECHNOLOGY_STACKS: Record<
   HobbyTechnologyDefinition[]
 > = {
   "url-shortening-api-landing": [
+    defineTechnology("React", FaReact),
+    defineTechnology("TypeScript", SiTypescript),
+    defineTechnology("Tailwind CSS", SiTailwindcss),
+    defineTechnology("Vite", SiVite),
+  ],
+  "age-calculator-app": [
     defineTechnology("React", FaReact),
     defineTechnology("TypeScript", SiTypescript),
     defineTechnology("Tailwind CSS", SiTailwindcss),
