@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import ProjectCard from "@/components/home/sections/projects/projects-card";
+import { HobbyLevelBadge } from "@/components/home/sections/hobbies/hobby-level-badge";
 import { HobbyTechnologyCardRow } from "@/components/hobby-technology/hobby-technology-card-row";
 import type { HobbyItem } from "@/constants/hobbies";
 
@@ -15,6 +16,7 @@ export const HobbyCard = ({
   coverSrc,
   coverAlt,
   technologyStackId,
+  level,
   animationIndex = 0,
 }: HobbyCardProps) => {
   return (
@@ -36,6 +38,7 @@ export const HobbyCard = ({
         coverAlt={coverAlt}
         category={category}
         categoryClassName="font-semibold text-blue-primary"
+        level={<HobbyLevelBadge level={level} />}
         title={<span className="font-poppins text-xl font-bold">{title}</span>}
         description={cardDescription}
         technologies={<HobbyTechnologyCardRow stackId={technologyStackId} />}

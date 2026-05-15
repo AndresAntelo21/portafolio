@@ -11,7 +11,7 @@ export const Foooter = () => {
       <div className="mx-auto flex flex-col gap-10 pt-10 text-center md:w-150 md:flex-row md:items-start md:justify-between md:pt-10 lg:w-250">
         <div className="flex flex-col gap-5 md:text-left">
           <div className="font-montserrat w-full text-2xl">
-            <p className="font-bold uppercase">Andres Portfolio</p>
+            <p className="font-bold uppercase">Andrés Antelo</p>
           </div>
           <div className="font-montserrat flex flex-col gap-5 text-lg">
             <span className="text-xl text-zinc-400">Navigation</span>
@@ -43,13 +43,13 @@ export const Foooter = () => {
             >
               Certificates
             </Link>
-            {/* <Link
+            <Link
               to="/hobbies"
               onClick={handleLinkClick}
               className="tracking-normal transition-all duration-300 hover:tracking-widest hover:text-blue-500 focus:text-blue-500 focus:outline-none"
             >
               Hobbies
-            </Link> */}
+            </Link>
             <a
               href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
               target="_blank"

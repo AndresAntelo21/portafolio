@@ -13,6 +13,8 @@ export interface ProjectCardProps {
   categoryClassName?: string;
   /** Logo image, plain text, or any React node. */
   title: React.ReactNode;
+  /** Optional row under the category (e.g. hobby project level). */
+  level?: React.ReactNode;
   description: React.ReactNode;
   /** Fragment or list of `<li>` nodes for the tech row. */
   technologies: React.ReactNode;
@@ -33,6 +35,7 @@ export function ProjectCard({
   category,
   categoryClassName = "text-white/70",
   title,
+  level,
   description,
   technologies,
   technologiesAriaLabel = "Technologies used in the project",
@@ -103,6 +106,7 @@ export function ProjectCard({
             <p className={cn("text-sm font-medium", categoryClassName)}>
               {category}
             </p>
+            {level ? <div className="min-w-0">{level}</div> : null}
             <div className="min-w-0 lg:[&_img]:max-h-8 lg:[&_img]:w-auto lg:[&_span]:text-xl">
               {title}
             </div>

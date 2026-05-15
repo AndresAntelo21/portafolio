@@ -49,7 +49,7 @@ export const Navigator = () => {
               <DrawerHeader>
                 <DrawerTitle>
                   <span className="font-poppins block text-left text-2xl font-bold">
-                    Andres Portfolio
+                    Andrés Antelo
                   </span>
                 </DrawerTitle>
                 <DrawerClose asChild>
@@ -74,9 +74,9 @@ export const Navigator = () => {
                     <DrawerClose asChild>
                       <Link to="/certificados">Certificates</Link>
                     </DrawerClose>
-                    {/* <DrawerClose asChild>
+                    <DrawerClose asChild>
                       <Link to="/hobbies">Hobbies</Link>
-                    </DrawerClose> */}
+                    </DrawerClose>
                     <DrawerClose asChild>
                       <a
                         href="https://drive.google.com/file/d/1z2iQB9ih5Lqjm-_SjNyOSb0fNIULJoBQ/view?usp=sharing"
@@ -97,9 +97,9 @@ export const Navigator = () => {
           <Link
             to="/"
             className="inline-block"
-            aria-label="Andres Portfolio - Go to home"
+            aria-label="Andrés Antelo - Go to home"
           >
-            <span className="text-inherit">Andres Portfolio</span>
+            <span className="text-inherit">Andrés Antelo</span>
           </Link>
         </div>
 
@@ -146,7 +146,7 @@ export const Navigator = () => {
                   </Link>
                 </NavigationMenuLink>
               </NavigationMenuItem>
-              {/* <NavigationMenuItem>
+              <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <Link
                     to="/hobbies"
@@ -155,7 +155,7 @@ export const Navigator = () => {
                     Hobbies
                   </Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem> */}
+              </NavigationMenuItem>
               <NavigationMenuItem>
                 <NavigationMenuLink asChild>
                   <a

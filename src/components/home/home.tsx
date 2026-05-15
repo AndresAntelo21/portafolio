@@ -4,7 +4,7 @@ import { Tools } from "./sections/tools/tools";
 import { Projects } from "./sections/projects/projects";
 import { About } from "@/components/home/sections/about/about";
 import { Certificados } from "@/components/home/sections/certificados/certificados";
-// import { Hobbies } from "@/components/home/sections/hobbies/hobbies";
+import { Hobbies } from "@/components/home/sections/hobbies/hobbies";
 
 export const Home = () => {
   return (
@@ -16,7 +16,7 @@ export const Home = () => {
         <Tools />
         <Projects />
         <Certificados />
-        {/* <Hobbies /> */}
+        <Hobbies />
       </main>
     </>
   );
