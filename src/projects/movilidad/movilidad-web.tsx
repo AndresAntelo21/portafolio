@@ -1,157 +1,143 @@
-import { ToolsText } from "@/components/home/sections/tools/tools-text";
-import { MovilidadCarousel } from "@/projects/movilidad/movilidad-carousel";
-import { FaPython, FaHtml5, FaCss3Alt, FaJs } from "react-icons/fa";
-import { SiJupyter } from "react-icons/si";
-import { FaLink } from "react-icons/fa6";
+import { ProjectImageCarousel } from "@/components/project-detail/project-image-carousel";
+import { ProjectDetailLayout } from "@/components/project-detail/project-detail-layout";
+import { ProjectDetailSection } from "@/components/project-detail/project-detail-section";
+import { getProjectDetailTechnologies } from "@/constants/project-technology-stacks";
+
+const MOVILIDAD_ACCENT = {
+  accentTextClassName: "text-movilidad",
+  sidebarClassName: "border-[#5381B2]/25 bg-[#5381B2]/[0.08]",
+  chipClassName: "border-[#5381B2]/35 bg-[#5381B2]/10",
+  linkClassName:
+    "border-[#5381B2]/30 bg-[#5381B2]/15 hover:border-[#5381B2]/50 hover:bg-[#5381B2]/25 focus-visible:ring-[#5381B2]/60",
+} as const;
+
+const MOVILIDAD_SLIDES = [
+  {
+    src: "/projects/unison/movilidad-urbana/movilidad-cover.webp",
+    alt: "Urban Mobility platform cover",
+  },
+  {
+    src: "/projects/unison/movilidad-urbana/movilidad-slide1.webp",
+    alt: "Urban Mobility data overview",
+  },
+  {
+    src: "/projects/unison/movilidad-urbana/movilidad-slide2.webp",
+    alt: "Urban Mobility visualization",
+  },
+  {
+    src: "/projects/unison/movilidad-urbana/movilidad-slide3.webp",
+    alt: "Urban Mobility interface detail",
+  },
+] as const;
+
 export const MovilidadWeb = () => {
   return (
-    <div className="flex flex-col items-center justify-center gap-8">
-      <MovilidadCarousel />
-      <div className="flex items-center justify-center gap-2 md:w-full md:justify-start">
-        <img
-          src="/projects/movilidad/movilidad-logo.svg"
-          alt="Urban Mobility logo"
-          className="h-10 w-10"
+    <ProjectDetailLayout
+      projectId="movilidad"
+      carousel={
+        <ProjectImageCarousel
+          slides={MOVILIDAD_SLIDES}
+          className="border-[#5381B2]/20"
         />
-        <h1 className="font-poppins text-3xl">MOVILIDAD URBANA</h1>
-      </div>
-      {/* cuadro de tecnologias */}
-      <div className="flex flex-col gap-5 lg:flex-row-reverse">
-        <div className="flex h-max w-full flex-col rounded-md border-1 border-blue-800 py-4 pr-4 lg:w-[40%]">
-          <div className="w-full">
-            <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
-              <span className="font-poppins text-xl font-medium tracking-widest">
-                Technologies
-              </span>
-            </div>
+      }
+      header={
+        <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
+          <div className="flex items-center gap-3">
+            <img
+              src="/projects/movilidad/movilidad-logo.svg"
+              alt="Urban Mobility logo"
+              className="h-10 w-10 shrink-0"
+            />
+            <span className="font-poppins text-movilidad text-2xl font-semibold tracking-wide uppercase sm:text-3xl">
+              Urban mobility
+            </span>
           </div>
-          <div className="mt-10 flex flex-wrap gap-2 p-2">
-            <ToolsText title="Python" icons={[FaPython]} />
-            <ToolsText title="HTML" icons={[FaHtml5]} />
-            <ToolsText title="CSS" icons={[FaCss3Alt]} />
-            <ToolsText title="JavaScript" icons={[FaJs]} />
-            <ToolsText title="Jupyter Notebook" icons={[SiJupyter]} />
-          </div>
-          <div>
-            <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
-                {" "}
-                <span className="font-poppins text-xl font-medium tracking-widest">
-                  Período
-                </span>
-              </div>
-            </div>
-            <div className="flex gap-2 pt-4 pl-2 text-xl">
-              <h3 className="">February 2024 -</h3>
-              <span className="">November 2024</span>
-            </div>
-          </div>
-          <div>
-            <div className="w-full pt-10">
-              <div className="flex w-max items-center justify-center rounded-r-md bg-blue-800 px-4 py-2">
-                {" "}
-                <span className="font-poppins text-xl font-medium tracking-widest">
-                  Links
-                </span>
-              </div>
-            </div>
-            <div className="flex flex-col gap-5 pt-4 pl-4 font-medium">
-              {/* <a
-                href="https://github.com/Kartleth/movilidad"
-                target="_blank"
-                className="flex justify-center rounded-lg bg-blue-800/70 py-1"
-              >
-                <span className="flex items-center gap-2 text-lg uppercase">
-                  <FaGithub />
-                  Github Repository
-                </span>
-              </a> */}
-              <a
-                href="https://movilidad.isi.unison.mx/"
-                target="_blank"
-                className="flex justify-center rounded-lg bg-blue-700/30 py-1"
-              >
-                <span className="flex items-center gap-2 text-lg uppercase">
-                  <FaLink />
-                  Ver Proyecto
-                </span>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="font-poppins flex w-full flex-col gap-8 text-left lg:w-[60%]">
-          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Project Description</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p>
-              <strong>Movilidad Urbana</strong> es un proyecto diseñado para
-              analizar, visualizar y optimizar el tráfico y la movilidad urbana.
-              Mediante el uso de tecnología avanzada, proporciona información
-              valiosa para ayudar en la planificación del transporte,
-              optimización de rutas y reducción de la congestión vehicular.
-            </p>
-            <p>
-              El sitio web de <strong>Movilidad Urbana</strong> presenta datos,
-              análisis y visualizaciones sobre patrones de tráfico y movimiento
-              urbano, haciendo que la información clave sea accesible para
-              investigadores, planificadores urbanos y autoridades de movilidad.
-            </p>
-          </div>
-          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>Features</span>
-          </div>
-          <div>
-            <ul className="ml-5 flex list-disc flex-col gap-2">
-              <li>
-                <strong>Data analysis</strong>: Displays relevant information on
-                traffic and urban mobility trends.
-              </li>
-              <li>
-                <strong>Interactive visualization</strong>: Charts and visual
-                representations to improve data understanding.
-              </li>
-              <li>
-                <strong>Accessible design</strong>: A clear, optimized interface
-                for easy access to information.
-              </li>
-              <li>
-                <strong>Research-oriented</strong>: A project focused on
-                exploring solutions to improve urban mobility.
-              </li>
-              <li>
-                <strong>Advanced technology implementation</strong>: Uses
-                cutting-edge tools for data collection and processing.
-              </li>
-            </ul>
-          </div>
+          <p className="font-poppins text-movilidad/80 text-sm tracking-[0.24em] uppercase">
+            Traffic analysis & visualization
+          </p>
+        </header>
+      }
+      technologies={getProjectDetailTechnologies("movilidad")}
+      period={
+        <>
+          February 2024 -{" "}
+          <span className="text-movilidad">November 2024</span>
+        </>
+      }
+      links={[
+        { href: "https://movilidad.isi.unison.mx/", label: "Visit site" },
+      ]}
+      {...MOVILIDAD_ACCENT}
+    >
+      <ProjectDetailSection
+        title="Project Description"
+        accentClassName={MOVILIDAD_ACCENT.accentTextClassName}
+      >
+        <p>
+          <strong>Urban Mobility</strong> is a project built to analyze,
+          visualize, and support improvements to traffic and urban mobility. It
+          uses data and tooling to surface insights that help with transport
+          planning, route optimization, and easing congestion.
+        </p>
+        <p>
+          The <strong>Urban Mobility</strong> website presents data, analysis,
+          and visualizations of traffic patterns and movement in the city, so
+          researchers, urban planners, and mobility authorities can access the
+          information they need in one place.
+        </p>
+      </ProjectDetailSection>
 
-          <div className="w-full rounded-md bg-blue-800 py-2 text-center text-2xl tracking-widest">
-            <span>How does it work?</span>
-          </div>
-          <div className="flex flex-col gap-2">
-            <p>
-              The <strong>Urban Mobility</strong> website development integrates
-              various technologies to ensure efficient data processing and clear
-              presentation of information.
-            </p>
-            <p>
-              The <strong>backend</strong> is built with <strong>Python</strong>
-              , a widely used programming language for data analysis and machine
-              learning. <strong>Jupyter Notebook</strong> is used for data
-              processing, modeling, and generating interactive visualizations.
-            </p>
-            <p>
-              The <strong>frontend</strong> is developed with{" "}
-              <strong>plain HTML and CSS</strong>, providing a simple yet
-              functional design that makes data easy to access. This technology
-              stack ensures the <strong>Urban Mobility</strong> project offers
-              an efficient and user-friendly platform to analyze and improve
-              urban mobility.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <ProjectDetailSection
+        title="Features"
+        accentClassName={MOVILIDAD_ACCENT.accentTextClassName}
+      >
+        <ul className="marker:text-movilidad ml-5 list-disc space-y-3">
+          <li>
+            <strong>Data analysis</strong>: Surfaces relevant information on
+            traffic and urban mobility trends.
+          </li>
+          <li>
+            <strong>Interactive visualization</strong>: Charts and visuals that
+            make patterns easier to understand.
+          </li>
+          <li>
+            <strong>Accessible design</strong>: A clear interface optimized for
+            finding information quickly.
+          </li>
+          <li>
+            <strong>Research-oriented</strong>: Focused on exploring ways to
+            improve urban mobility.
+          </li>
+          <li>
+            <strong>Modern data pipeline</strong>: Uses solid tooling for
+            collection, processing, and presentation of mobility data.
+          </li>
+        </ul>
+      </ProjectDetailSection>
+
+      <ProjectDetailSection
+        title="How does it work?"
+        accentClassName={MOVILIDAD_ACCENT.accentTextClassName}
+      >
+        <p>
+          The <strong>Urban Mobility</strong> site combines a lightweight
+          front-end with Python-based analysis so data can be processed
+          efficiently and shown clearly.
+        </p>
+        <p>
+          The <strong>backend</strong> side relies on <strong>Python</strong>,
+          well suited to analytics and modeling.{" "}
+          <strong>Jupyter Notebook</strong> supports exploration, processing,
+          and generating the visualizations that feed the public-facing views.
+        </p>
+        <p>
+          The <strong>front-end</strong> uses <strong>HTML, CSS, and JavaScript</strong>{" "}
+          for a straightforward, fast experience that puts maps and indicators
+          within reach. Together, the stack keeps the platform practical for
+          teams who need reliable urban mobility insight without unnecessary
+          complexity.
+        </p>
+      </ProjectDetailSection>
+    </ProjectDetailLayout>
   );
 };

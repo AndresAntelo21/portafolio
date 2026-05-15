@@ -58,7 +58,7 @@ export function RelatedProjectTitle({ projectId }: RelatedProjectTitleProps) {
             alt=""
             className="h-8 w-8"
           />
-          Movilidad urbana
+          Urban mobility
         </span>
       );
     default:

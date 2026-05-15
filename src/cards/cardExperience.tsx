@@ -6,7 +6,7 @@ const cardExperience = () => {
                     <img src="./public/hero/test-image.png" />
                 </div>
                 <div className="flex flex-col items-start gap-4">
-                    <h1 className="font-[poppins] text-[26px]">MOVILIDAD</h1>
+                    <h1 className="font-[poppins] text-[26px]">URBAN MOBILITY</h1>
                     <p className="font-[poppins] text-[10px]">Take your client onboard seamlessly by our amazing
                         tool of digital onboard process.
                     </p>

@@ -147,11 +147,11 @@ export const RELATED_PROJECT_CATALOG: RelatedProjectItem[] = [
   {
     id: "movilidad",
     to: "/movilidad-web",
-    name: "Movilidad Urbana",
+    name: "Urban Mobility",
     description:
       "Traffic and urban mobility analysis and visualization project with data, maps, and interface for research and planning.",
     coverSrc: "/projects/unison/movilidad-urbana/movilidad-cover.webp",
-    coverAlt: "Movilidad Urbana project cover",
+    coverAlt: "Urban Mobility project cover",
     category: "Research & Data",
     categoryClassName: "font-semibold text-movilidad",
     previewFocusRingClassName: "focus-visible:ring-blue-primary",
