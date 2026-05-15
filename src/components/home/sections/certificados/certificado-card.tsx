@@ -62,14 +62,14 @@ export const CertificadoCard = ({
           target="_blank"
           rel="noopener noreferrer"
           aria-label={`Open certificate: ${title}`}
-          className="group/preview relative isolate block aspect-[16/10] overflow-hidden outline-none ring-inset focus-visible:ring-2 focus-visible:ring-blue-primary focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
+          className="group/preview relative isolate block aspect-[16/10] min-h-[200px] w-full shrink-0 overflow-hidden rounded-t-2xl outline-none ring-inset focus-visible:ring-2 focus-visible:ring-blue-primary focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-950"
         >
           {imageSrc ? (
             <>
               <img
                 src={imageSrc}
                 alt={imageAlt ?? title}
-                className="h-full w-full object-cover transition-transform duration-500 group-hover/preview:scale-105"
+                className="absolute inset-0 size-full object-cover transition-transform duration-500 group-hover/preview:scale-105"
                 loading="lazy"
               />
               <div
