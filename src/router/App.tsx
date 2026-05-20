@@ -4,6 +4,7 @@ import { Home } from "@/components/home/home";
 import { Navigator } from "@/components/navigator/navigator";
 import { Foooter } from "@/components/footer/footer";
 import { ScrollToTop } from "@/components/scroll-to-top";
+import { getHobbyById } from "@/constants/hobbies";
 // import Aurora from "@/components/ui/Aurora/Aurora";
 
 // Lazy load all project pages
@@ -101,16 +102,16 @@ const Certificados = lazy(() =>
     default: m.Certificados,
   })),
 );
-// const Hobbies = lazy(() =>
-//   import("@/components/home/sections/hobbies/hobbies").then((m) => ({
-//     default: m.Hobbies,
-//   })),
-// );
-// const HobbyDetailPage = lazy(() =>
-//   import("@/components/hobby-detail/hobby-detail-page").then((m) => ({
-//     default: m.HobbyDetailPage,
-//   })),
-// );
+const Hobbies = lazy(() =>
+  import("@/components/home/sections/hobbies/hobbies").then((m) => ({
+    default: m.Hobbies,
+  })),
+);
+const HobbyDetailPage = lazy(() =>
+  import("@/components/hobby-detail/hobby-detail-page").then((m) => ({
+    default: m.HobbyDetailPage,
+  })),
+);
 const Error404 = lazy(() =>
   import("@/components/page-not-found/error404").then((m) => ({
     default: m.Error404,
@@ -246,10 +247,15 @@ const ROUTE_META: Record<string, RouteMeta> = {
   },
 };
 
-function setMetaTags(pathname: string) {
-  const meta = ROUTE_META[pathname] ?? ROUTE_META["*"];
-  const title = meta.title;
-  const description = meta.description;
+function applySeoMeta({
+  title,
+  description,
+  pathname,
+}: {
+  title: string;
+  description: string;
+  pathname: string;
+}) {
   const url = BASE_URL ? `${BASE_URL}${pathname === "/" ? "" : pathname}` : "";
 
   document.title = title;
@@ -306,6 +312,28 @@ function setMetaTags(pathname: string) {
   setTw("twitter:description", description);
 }
 
+function setMetaTags(pathname: string) {
+  if (pathname.startsWith("/hobbies/")) {
+    const hobbyId = pathname.slice("/hobbies/".length);
+    const hobby = getHobbyById(hobbyId);
+    if (hobby && hobbyId.length > 0) {
+      applySeoMeta({
+        title: `${hobby.title} | Andrés Antelo Portfolio`,
+        description: hobby.cardDescription,
+        pathname,
+      });
+      return;
+    }
+  }
+
+  const meta = ROUTE_META[pathname] ?? ROUTE_META["*"];
+  applySeoMeta({
+    title: meta.title,
+    description: meta.description,
+    pathname,
+  });
+}
+
 export default function App() {
   const location = useLocation();
 
@@ -332,8 +360,8 @@ export default function App() {
             <Route path="/work-experience" element={<WorkExperience />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/certificados" element={<Certificados />} />
-            {/* <Route path="/hobbies" element={<Hobbies />} />
-            <Route path="/hobbies/:hobbyId" element={<HobbyDetailPage />} /> */}
+            <Route path="/hobbies" element={<Hobbies />} />
+            <Route path="/hobbies/:hobbyId" element={<HobbyDetailPage />} />
             {/* Projects */}
             <Route path="/csipro-web" element={<CsiproWeb />} />
             <Route path="/movilidad-web" element={<MovilidadWeb />} />

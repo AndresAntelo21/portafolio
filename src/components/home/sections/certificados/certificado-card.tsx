@@ -12,6 +12,7 @@ type CertificadoCardProps = {
   imageAlt?: string;
   badges?: string[];
   animationIndex?: number;
+  animated?: boolean;
 };
 
 const platformStyles: Record<
@@ -41,22 +42,12 @@ export const CertificadoCard = ({
   imageAlt,
   badges = [],
   animationIndex = 0,
+  animated = true,
 }: CertificadoCardProps) => {
   const platformStyle = platformStyles[platform];
 
-  return (
-    <motion.article
-      className="h-full w-full"
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{
-        duration: 0.45,
-        delay: animationIndex * 0.06,
-        ease: "easeOut",
-      }}
-    >
-      <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.06] to-zinc-950/90 shadow-xl shadow-black/40 ring-1 ring-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.14] hover:shadow-2xl hover:shadow-black/55">
+  const cardBody = (
+    <div className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/[0.08] bg-gradient-to-b from-white/[0.06] to-zinc-950/90 shadow-xl shadow-black/40 ring-1 ring-white/[0.05] transition-all duration-300 hover:-translate-y-1.5 hover:border-white/[0.14] hover:shadow-2xl hover:shadow-black/55">
         <a
           href={url}
           target="_blank"
@@ -151,6 +142,25 @@ export const CertificadoCard = ({
           ) : null}
         </div>
       </div>
+  );
+
+  if (!animated) {
+    return <article className="h-full w-full">{cardBody}</article>;
+  }
+
+  return (
+    <motion.article
+      className="h-full w-full"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{
+        duration: 0.45,
+        delay: animationIndex * 0.06,
+        ease: "easeOut",
+      }}
+    >
+      {cardBody}
     </motion.article>
   );
 };

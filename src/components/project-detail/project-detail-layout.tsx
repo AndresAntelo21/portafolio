@@ -12,7 +12,10 @@ import { RelatedProjects } from "@/components/project-detail/related-projects";
 export type ProjectDetailLinkItem = {
   href: string;
   label: string;
+  /** Raster icon (e.g. Figma mark). Ignored when `icon` is set. */
   iconSrc?: string;
+  /** Inline icon (e.g. GitHub mark, external-link). Takes precedence over `iconSrc`. */
+  icon?: ReactNode;
 };
 
 export type ProjectDetailTechnology = {
@@ -99,7 +102,14 @@ export function ProjectDetailLayout({
                         linkClassName,
                       )}
                     >
-                      {link.iconSrc ? (
+                      {link.icon ? (
+                        <span
+                          className="flex size-5 shrink-0 items-center justify-center text-white [&>svg]:size-5"
+                          aria-hidden
+                        >
+                          {link.icon}
+                        </span>
+                      ) : link.iconSrc ? (
                         <img
                           src={link.iconSrc}
                           alt=""
@@ -107,7 +117,12 @@ export function ProjectDetailLayout({
                           aria-hidden="true"
                         />
                       ) : (
-                        <FaLink aria-hidden="true" />
+                        <span
+                          className="flex size-5 shrink-0 items-center justify-center text-white [&>svg]:size-5"
+                          aria-hidden
+                        >
+                          <FaLink />
+                        </span>
                       )}
                       {link.label}
                     </a>

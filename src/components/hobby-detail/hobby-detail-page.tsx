@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { Navigate, useParams } from "react-router-dom";
+import { HobbyLevelBadge } from "@/components/home/sections/hobbies/hobby-level-badge";
 import { ProjectDetailLayout } from "@/components/project-detail/project-detail-layout";
 import { ProjectDetailSection } from "@/components/project-detail/project-detail-section";
 import { ProjectImageCarousel } from "@/components/project-detail/project-image-carousel";
@@ -7,11 +8,12 @@ import { getHobbyDetailTechnologies } from "@/constants/hobby-technology-stacks"
 import { getHobbyById } from "@/constants/hobbies";
 
 const HOBBY_ACCENT = {
-  accentTextClassName: "text-blue-primary",
-  sidebarClassName: "border-blue-primary/25 bg-blue-primary/[0.08]",
-  chipClassName: "border-blue-primary/35 bg-blue-primary/10",
+  accentTextClassName: "text-teal-500/75",
+  sidebarClassName:
+    "border-teal-900/30 bg-zinc-950/90 ring-1 ring-white/[0.04]",
+  chipClassName: "border-teal-500/25 bg-teal-950/25",
   linkClassName:
-    "border-blue-primary/30 bg-blue-primary/15 hover:border-blue-primary/50 hover:bg-blue-primary/25 focus-visible:ring-blue-primary/60",
+    "border-white/[0.08] bg-zinc-900/80 hover:border-teal-500/30 hover:bg-zinc-800/90 focus-visible:ring-teal-400/45",
 } as const;
 
 export const HobbyDetailPage = () => {
@@ -37,10 +39,13 @@ export const HobbyDetailPage = () => {
       }
       header={
         <header className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <h1 className="font-poppins text-3xl font-bold text-white md:text-4xl">
-            {hobby.title}
-          </h1>
-          <p className="font-poppins text-sm tracking-[0.24em] text-blue-primary/80 uppercase">
+          <div className="flex min-w-0 flex-col gap-3">
+            <h1 className="font-poppins text-3xl font-bold text-white md:text-4xl">
+              {hobby.title}
+            </h1>
+            <HobbyLevelBadge level={hobby.level} />
+          </div>
+          <p className="font-poppins text-sm tracking-[0.24em] text-teal-500/75 uppercase">
             {hobby.category}
           </p>
         </header>
@@ -54,14 +59,18 @@ export const HobbyDetailPage = () => {
         title="Project Description"
         accentClassName={HOBBY_ACCENT.accentTextClassName}
       >
-        <p>{hobby.detailDescription}</p>
+        {typeof hobby.detailDescription === "string" ? (
+          <p>{hobby.detailDescription}</p>
+        ) : (
+          hobby.detailDescription
+        )}
       </ProjectDetailSection>
 
       <ProjectDetailSection
         title="Highlights"
         accentClassName={HOBBY_ACCENT.accentTextClassName}
       >
-        <ul className="ml-5 list-disc space-y-3 marker:text-blue-primary">
+        <ul className="ml-5 list-disc space-y-3 marker:text-teal-500/70">
           {hobby.features.map((feature) => (
             <li key={feature}>{feature}</li>
           ))}

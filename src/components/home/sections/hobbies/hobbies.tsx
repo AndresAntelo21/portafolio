@@ -3,15 +3,18 @@ import { useLocation } from "react-router-dom";
 import { SectionPagination } from "@/components/ui/section-pagination";
 import { HOBBY_ITEMS } from "@/constants/hobbies";
 import { usePaginatedPageSize } from "@/hooks/use-paginated-page-size";
+import { HobbiesCarousel } from "./hobbies-carousel";
 import { HobbyCard } from "./hobby-card";
 
 export const Hobbies = () => {
   const location = useLocation();
   const isStandalonePage = location.pathname === "/hobbies";
   const SectionHeading = isStandalonePage ? "h1" : "h2";
-  const pageSize = usePaginatedPageSize();
+  const paginatedPageSize = usePaginatedPageSize();
   const [page, setPage] = useState(1);
   const cardsTopRef = useRef<HTMLDivElement>(null);
+
+  const pageSize = paginatedPageSize;
 
   const totalPages = Math.max(1, Math.ceil(HOBBY_ITEMS.length / pageSize));
 
@@ -21,8 +24,9 @@ export const Hobbies = () => {
   }, [page, pageSize]);
 
   useEffect(() => {
+    if (!isStandalonePage) return;
     setPage((currentPage) => Math.min(currentPage, totalPages));
-  }, [totalPages]);
+  }, [isStandalonePage, totalPages]);
 
   const scrollToCardsFromPagination = () => {
     requestAnimationFrame(() => {
@@ -53,19 +57,25 @@ export const Hobbies = () => {
         ref={cardsTopRef}
         className="scroll-mt-[calc(5rem+env(safe-area-inset-top,0px))] lg:scroll-mt-[calc(6rem+env(safe-area-inset-top,0px))]"
       >
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
-          {visibleHobbies.map((hobby, index) => (
-            <HobbyCard key={hobby.id} {...hobby} animationIndex={index} />
-          ))}
-        </div>
+        {isStandalonePage ? (
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-6">
+            {visibleHobbies.map((hobby, index) => (
+              <HobbyCard key={hobby.id} {...hobby} animationIndex={index} />
+            ))}
+          </div>
+        ) : (
+          <HobbiesCarousel items={HOBBY_ITEMS} />
+        )}
       </div>
 
-      <SectionPagination
-        page={page}
-        totalPages={totalPages}
-        onPageChange={handlePageChange}
-        ariaLabel="Hobbies pagination"
-      />
+      {isStandalonePage && (
+        <SectionPagination
+          page={page}
+          totalPages={totalPages}
+          onPageChange={handlePageChange}
+          ariaLabel="Hobbies pagination"
+        />
+      )}
     </div>
   );
 };
