@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import ShinyText from "@/components/ui/ShinyText/ShinyText";
 
 interface ContactButtonProps {
@@ -34,6 +35,15 @@ export const ContactButton: React.FC<ContactButtonProps> = ({ className }) => {
           aria-label="LinkedIn profile of Andrés Antelo"
         >
           <FaLinkedin aria-hidden="true" />
+        </a>
+        <a
+          href="https://x.com/AFigueroa021"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-transform duration-300 hover:scale-125 hover:text-white"
+          aria-label="X profile of Andrés Antelo"
+        >
+          <FaXTwitter aria-hidden="true" />
         </a>
         <a
           href="mailto:andresantelo12@gmail.com"
